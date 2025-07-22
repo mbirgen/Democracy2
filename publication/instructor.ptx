@@ -23,10 +23,9 @@
     <!-- project).                                                           -->
       <!--<exercise-inline statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" />-->
-
-      <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
+      <!--<exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />-->
       <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
-      <exercise-project statement="yes" hint="yes" answer="yes" solution="no" />
+      <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
 
     <!-- Style of fill-in-the-blanks: -->
       <!--<fillin textstyle="underline" mathstyle="shade" />-->
@@ -108,7 +107,7 @@
       <!--<asymptote links="no" />-->
 
     <!-- Covers: provide paths to pdfs for front and back covers: -->
-      <!--<cover front="cover-front.pdf" back="cover-back.pdf" />-->
+      <!--<covers front="cover-front.pdf" back="cover-back.pdf" />-->
     <!-- Set @formatted to "no" to remove formatting on worksheets: -->
       <!--<worksheets formatted="yes" />-->
   </latex>
