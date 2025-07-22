@@ -1,0 +1,324 @@
+\def\calckey#1{\fbox{\raisebox{0pt}[6pt][0pt]{\footnotesize\tt #1}}}
+
+\def\calcscreen#1{%
+\begin{center}%
+  \fbox{%
+    \begin{minipage}{2in}
+      \tt
+      #1
+    \end{minipage}
+  }
+\end{center}%
+}
+\def\ca{\rule{0pt}{0pt}\hfill}
+
+\def\caret{\char`\^}
+
+\def\rightkey{\calckey{$\blacktriangleright$}}
+\def\stokey{\calckey{STO$\blacktriangleright$}}
+
+\def\tineg{\raisebox{1pt}[0pt][0pt]{-}}
+
+\def\sto{\ensuremath{\rightarrow}}
+
+\chapter{Calculator Tips}
+
+Chapter \ref{ch:finance} requires the use of a calculator to evaluate some rather complicated formulas.
+This appendix contains some advice on how to avoid pitfalls that sometimes afflict students.
+Most of the advice applies to all calculators, but some is geared specifically to Texas Instruments calculators
+like the TI-84 and TI-30.
+
+\section{Parentheses}
+
+One of the greatest challenges to students is using parentheses correctly to help a calculator interpret a formula correctly.
+For example, consider the expression
+\[\frac{1+7}{2}.\]
+We know from elementary school that you compute the whole numerator of the fraction before dividing by the denominator,
+so this expression equals $4$.
+If you type it into the calculator without parentheses, however, we get
+\calcscreen{1+7/2 \\
+            \ca 4.5}
+That's because the calculator, following the order of operations we learned as children,
+first does the division and then the addition: ${\tt 7/2} = 3.5$, so ${\tt 1+7/2}=4.5$.
+
+We human beings can tell, by looking at $\frac{1+7}{2}$, that the $1+7$ has to be done first,
+but the calculator doesn't know that unless we tell it.  So we should really type
+\calcscreen{(1+7)/2 \\
+            \ca 4}
+One way to make this process easier, especially in long complicated formulas, is to draw in the extra parentheses on your paper before you begin typing into the calculator.
+\[\mbox{Given~}\frac{1+7}{2},\mbox{~draw in~}\frac{\textcolor{red}{(}1+7\textcolor{red}{)}}{2}\mbox{~and then type~}{\tt (1+7)/2}.\]
+
+Here are some locations that typically need extra parentheses:
+\begin{itemize}
+  \item The numerator of a fraction:
+        \begin{center}
+            $\dfrac{1+7}{2}$ becomes $\dfrac{\textcolor{red}{(}1+7\textcolor{red}{)}}{2}$. \\
+          \begin{tabular}{ll}
+            \textbf{Incorrect:} & \textbf{Correct:} \\
+            \fbox{\begin{minipage}{2in} \tt
+              1+7/2 \\
+              \ca 4.5
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}{2in} \tt
+              (1+7)/2 \\
+              \ca 4
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+  \item The denominator of a fraction:
+        \begin{center}
+            $\dfrac{\quad8\quad}{\frac{6}{3}}$ becomes $\dfrac{\quad8\quad}{\textcolor{red}{(}\frac{6}{3}\textcolor{red}{)}}$. \\
+          \begin{tabular}{ll}
+            \textbf{Incorrect:} & \textbf{Correct:} \\
+            \fbox{\begin{minipage}{2in} \tt
+              8/6/3 \\
+              \ca 0.444444
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}{2in} \tt
+              8/(6/3) \\
+              \ca 4
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+  \item Exponents:\footnote{Some more recent Texas Instrument calculators help you out by making exponents actually look like exponents.
+                            On such a calculator, if you press the keys \calckey5\,\calckey{\caret}\,\calckey6\,\calckey{-}\,\calckey4\,, it will display as
+                            \calcscreen{$\tt 5^{6-4}$ \\ \ca 25}
+                            On this kind of calculator, if you need to type more \emph{after} the exponent, press the right arrow key \rightkey\ to get ``back down'' to the main line.
+                            For example, to evaluate $5^{6-4}+7$ on such a calculator, you would press the buttons
+                            \calckey5\,\calckey{\caret}\,\calckey6\,\calckey{-}\,\calckey4\,\rightkey\,\calckey{+}\,\calckey7
+                            to get
+                            \calcscreen{$\tt 5^{6-4}+7$ \\ \ca 32}}
+        \begin{center}
+            $5^{6-4}$ becomes $5^{\textcolor{red}{(}6-4\textcolor{red}{)}}$. \\
+          \begin{tabular}{ll}
+            \textbf{Incorrect:} & \textbf{Correct:} \\
+            \fbox{\begin{minipage}{2in} \tt
+              5\caret6-4 \\
+              \ca 15621
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}{2in} \tt
+              5\caret(6-4) \\
+              \ca 25
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+
+        
+
+\end{itemize}
+Of course, one complicated expression may need all of these!
+        \begin{center}
+            $500\dfrac{\left(1+\frac{.07}{52}\right)^{8\cdot52}-1}{\frac{.07}{52}}$ becomes 
+            $500\dfrac{\textcolor{red}{\Big(}\left(1+\frac{.07}{52}\right)^{\textcolor{red}{(}8\cdot52\textcolor{red}{)}}-1\textcolor{red}{\Big)}}{\textcolor{red}{(}\frac{.07}{52}\textcolor{red}{)}}$.  \\
+          \begin{tabular}{ll}
+            \textbf{Incorrect:} & \textbf{Correct:} \\
+            \fbox{\begin{minipage}{2in} \tt
+              500*(1+.07/52)\caret8*52-1/ \\
+              .07/52 \\
+              \ca 26281.04806
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}{2in} \tt
+              500*((1+.07/52)\caret(8*52) \\
+              -1)/(.07/52) \\
+              \ca 278576.3860
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+
+
+\section{Rounding Errors}
+
+We all know that $\frac{1}{3} \times 300 = 100$, 
+but sometimes when working with a calculator we can get wrong answers:
+\calcscreen{1/3 \\
+            \ca .3333333333 \\
+            .3333333333*300 \\
+            \ca 99.99999999}
+The calculator is not at fault here; it has not made any mistakes.
+The decimal equivalent of $\rec{3}$ is $0.33333333333333333333\ldots$;
+it goes on forever.  The calculator gives us as many digits as it can,
+but {\tt .3333333333} is just a \emph{rounded-off approximation} of $\rec{3}$.
+When we then typed {\tt .3333333333} back into the calculator and multiplied by 300,
+the calculator accurately told us the answer was 99.99999999, not 100.
+This is called an \emph{rounding error}.
+
+In this example, the difference between what the calculator told us and the real answer
+is only $0.00000001$, which is not terribly bad.
+Often students round off long decimals to only a few decimal places,
+which is okay for a final answer, but then they run into more problems:
+\calcscreen{1/3 \\
+            \ca .3333333333 \\
+            .33*300 \\
+            \ca 99}
+Now we got an answer of 99 instead of 100, which seems more significant.
+In the more complicated expressions of the financial math chapter,
+we can end up with errors of several dollars (possibly hundreds of dollars) if we're not careful.
+For example, if we need to calculate $\$600 \cdot \frac{1-(1+\frac{.07}{12})^{-12\cdot 25}}{\frac{.07}{12}}$,%$\ds \$600 \cdot \frac{1-(1+\frac{.07}{12})^{-12\cdot 25}}{\frac{.07}{12}}$,
+a common student error would be this:
+\calcscreen{(1-(1+.07/12)\caret(\tineg12*25))/\\
+            (.07/12) \\
+            \ca 141.486903386 \\
+            600*141.49 \\
+            \ca 84894}
+Whereas this student answered \$84,894.00,
+the correct answer (to the nearest penny) is \$84,892.14;
+that's \$1.86 too high, enough to lose points on a test.
+
+Thus when the calculator gives you numbers you will use again later in the problem,
+\emph{never round them off}.  Always type back in \emph{all} the digits.
+Only round off at the very end of the problem!
+
+However, this can \emph{still} cause small errors (as we saw in the first example),
+and it's annoying to punch {\tt 141.486903386} into the calculator.
+There are at least three better solutions to the rounding error problem,
+all of which involve \emph{keeping the numbers in the calculator until the end}.
+
+\begin{itemize}
+  \item One solution is to combine your whole formula into one step in the calculator.
+        \begin{center}
+          \begin{tabular}{ll}
+            \textbf{Example 1:} & \textbf{Example 2:} \\
+            \fbox{\begin{minipage}[t]{2in} \tt
+              (1/3)*300 \\
+              \ca 100
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}[t]{2in} \tt
+              600*(1-(1+.07/12)\caret(\tineg12*\\
+              25))/(.07/12) \\
+              \ca 84892.1420313
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+        The downside of this approach is that 
+        writing the formula all in one line can be long,
+        error-prone, and just plain unpleasant.
+
+  \item An alternative is to break up your calculation into steps using {\tt Ans}.
+        Most calculators have a feature to remember the most recent answer
+        they computed; on a TI machine, this is represented by the symbol {\tt Ans}.
+        The {\tt Ans} automatically appears if you start a line by pressing an operation like \calckey{+} or \calckey{$\div$}\,,
+        or you can also get it by pressing the \calckey{2ND} key 
+        and then the \calckey{(-)} key.
+        \begin{center}
+          \begin{tabular}{ll}
+            \textbf{Example 1:} & \textbf{Example 2:} \\
+            \fbox{\begin{minipage}[t]{2in} \tt
+              1/3 \\
+              \ca 0.3333333333 \\
+              Ans*300 \\
+              \ca 100
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}[t]{2in} \tt
+              (1-(1+.07/12)\caret(\tineg12*25))/\\
+              (.07/12) \\
+              \ca 141.486903386 \\
+              600*Ans\\
+              \ca 84892.1420313
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+        In Example 1, the keystrokes used were 
+        \calckey1\,\calckey/\,\calckey3\,\calckey{ENTER}
+        and then
+        \calckey*\,\calckey3\,\calckey0\,\calckey0\,\calckey{ENTER}\,;
+        the {\tt Ans} was automatically generated by the calculator.
+        In Example 2, 
+        the keys punched in the second line were
+        \calckey6\,\calckey0\,\calckey0\,\calckey*\,\calckey{2ND}\,\calckey{(-)}\,\calckey{ENTER}\,.
+
+  \item The calculator's {\tt Ans} ability remembers just one number,
+        the result of the most recent calculation.
+        There is also a more powerful way to use the calculator's memory,
+        using \emph{variables}, which are letters that stand for numbers.
+
+        Most keys on your TI calculator have a letter printed above them and to the right;
+        on a TI-84 Plus Silver Edition calculator, for example, one key looks like this: \\
+        \centerline{%
+          \tt\begin{tabular}{c}
+               \tiny TEST \hfill \footnotesize A \\
+               \fbox{MATH}
+             \end{tabular}}
+        \medskip
+        
+        To get the letter, you first press the \calckey{ALPHA} key,
+        and then the key with the desired letter;
+        for example, \calckey{ALPHA}\,\calckey{MATH} produces an ``{\tt A}'' on the screen.
+
+        You can make the calculator remember any number at all 
+        by \emph{storing} it to a variable, whose name is a letter.
+        You use the \stokey\ key, 
+        which writes a little ``$\rightarrow$'' symbol on the screen.  
+        Then you choose which letter you want to represent your number,
+        and press \calckey{ENTER}.
+        The first line of this example was created on my TI-84 Plus Silver Edition by pressing
+        \calckey5\,\stokey\,\calckey{ALPHA}\,\calckey{A}\,\calckey{ENTER}\,.
+        \calcscreen{4+1$\rightarrow$A \\
+                    \ca 5 \\
+                    5-2$\rightarrow$B \\
+                    \ca 3 \\
+                    A*B \\
+                    \ca 15}
+        The use of variables can be immensely helpful, 
+        especially if you are doing lots of calculations with the same numbers;
+        they also sometimes mean you need fewer parentheses.
+        Take a look at our two examples one last time.
+        \begin{center}
+          \begin{tabular}{ll}
+            \textbf{Example 1:} & \textbf{Example 2:} \\
+            \fbox{\begin{minipage}[t]{2in} \tt
+              1/3\sto F \\
+              \ca 0.3333333333 \\
+              F*300 \\
+              \ca 100
+            \end{minipage}}
+            &              
+            \fbox{\begin{minipage}[t]{2in} \tt
+              .07/12\sto I \\
+              \ca .005833333333 \\
+              12*25\sto M \\
+              \ca 300 \\
+              (1-(1+I)\caret-M)/I\sto A \\
+              \ca 141.486903386 \\
+              600*A\\
+              \ca 84892.1420313
+            \end{minipage}}
+          \end{tabular}
+        \end{center}
+\end{itemize}
+
+\clearpage
+\section{Subtraction versus Negatives}
+
+On Texas Instruments calculators, there are two keys with horizontal lines.
+The main \calckey{-} key is for \emph{subtraction}, like $5-4$.
+When you type in a \emph{negative number} like $-6$, however, 
+you must use the smaller \calckey{(-)} key, usually located in the bottom row
+of your calculator.
+If you use the wrong button, you will probably see a screen like this:
+\calcscreen{ERR:SYNTAX \\
+            \raisebox{-2pt}{\makebox[0pt][l]{\rule{12pt}{11pt}}}\textcolor{white}{1:}Quit \\
+            2:Goto}
+
+\section{Correcting Mistakes}
+
+At some point in this course you will probably type in a long, complex expression wrong,
+and you'll have to fix it.
+Instead of retyping the whole thing, you might be able to just edit your earlier attempt!
+One of the following may work on your calculator:
+\begin{itemize}
+  \item pressing the up arrow key \fbox{$\blacktriangle$} to scroll up to the earlier line
+  \item pressing \fbox{\tt \footnotesize 2ND}\,\fbox{\footnotesize\tt ENTER} 
+        to access the latest ``{\tt\footnotesize ENTRY}''
+\end{itemize}
+If you do this, you might need to insert new symbols, such as parentheses, into your earlier wrong entry.
+Be sure to change into insert mode (``{\tt \footnotesize INS}'')
+by pressing \fbox{\tt \footnotesize 2ND}\,\fbox{\tt\footnotesize DEL}\,;
+this will let you insert new characters.
+Unfortunately, the calculator will switch back to normal ``overtype'' mode as soon as you press an arrow key to move to another location,
+so you'll need to press \fbox{\tt \footnotesize 2ND}\,\fbox{\tt\footnotesize DEL} again.
