@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-voting-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Voting Paradoxes</title>
+<activity>
+
+<task workspace="1in">
+ \item Of the four voting systems we've studied, which is best?  Why?
+        \fillwithlines{\stretch{1}}
+
+  %PLURALITY METHOD FAILS HEAD-TO-HEAD CRITERION
+  \item The Des Moines Running Club is electing a new team captain.
+        There are three candidates:  Irving, Joseph, and Karl.
+        The preference table is the following.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking    & 4 & 3 & 2 \\ \hline\hline
+            1st choice & J & I & K  \\
+            2nd choice & I & J & I  \\
+            3rd choice & K & K & J  \\ \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item If the club uses the plurality method,
+                who will win the election? \ifsolns\fbox J \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Irving and Joseph, who would win? \ifsolns\fbox I \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Irving and Karl, who would win? \ifsolns\fbox I \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Joseph and Karl, who would win? \ifsolns\fbox J \fi
+                \fillwithlines{\stretch{1}}
+          \item Why does the plurality method's result seem unfair in this election?
+                \ifsolns Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.\fi
+                \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+  \item \boxedblank{\textbf{Head-to-Head Criterion:} 
+	
+	\ifsolns  A candidate who beats all the other candidates head to head should win the election. \fi          \fillwithlines{\stretch{1}}} \index{criterion!head to head}
+
+</task>
+
+</activity>
+       
+
+
+
+</worksheet>
