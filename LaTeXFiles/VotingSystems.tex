@@ -1,0 +1,1247 @@
+\section{Voting Systems}
+
+
+\begin{enumerate}
+  \item The Bellevue Taxicab Union is preparing to elect its president. 
+        Three members are considering running for president:  Alice, Bob, and Charles.
+        Each of the five voters has a first, second, and third choice,
+        as listed in the following table:       
+           \def\A{Alice}
+           \def\B{Bob}
+           \def\C{Charles}
+        \begin{center}
+          \begin{tabular}{l||*{7}{l|}}
+            Voter: & Voter 1 & Voter 2 & Voter 3 & Voter 4 & Voter 5 & Voter 6 & Voter 7 \\ \hline\hline
+            1st choice: & \A & \B & \B & \C & \A & \C & \B\\
+            2nd choice: & \C & \A & \C & \A & \C & \A & \A\\
+            3rd choice: & \B & \C & \A & \B & \B & \B & \C\\
+          \end{tabular}
+        \end{center}
+        Depending on who decides to run, the ballot the voters see in the booth will look different.
+        For each of the following ballots, how many votes will each candidate receive?  Who will win?
+        
+        \begin{center}
+          \begin{tabular}{p{.4\textwidth}p{.45\textwidth}}
+                  (a)
+                  \begin{tabular}{|cl|}\hline
+                    \multicolumn{2}{|c|}{Who should be} \\
+                    \multicolumn{2}{|c|}{president?} \\ \hline
+                    $\square$ & \A  \\
+                    $\square$ & \B     \\
+                    $\square$ & \C \\
+                    \hline
+                  \end{tabular}
+                  \ifsolns
+                    \textbf{ B}
+                  \fi
+            &
+                  (c)
+                  \begin{tabular}{|cl|}\hline
+                    \multicolumn{2}{|c|}{Who should be} \\
+                    \multicolumn{2}{|c|}{president?} \\ \hline
+                    $\square$ & Alice  \\
+                    $\square$ & Charles \\
+                    \hline
+                  \end{tabular}
+                  \ifsolns
+                    \textbf{ Alice}
+                  \fi
+            \\
+          \phantom{X} & \\
+          (b)     \begin{tabular}{|cl|}\hline
+                    \multicolumn{2}{|c|}{Who should be} \\
+                    \multicolumn{2}{|c|}{president?} \\ \hline
+                    $\square$ & Alice  \\
+                    $\square$ & Bob     \\
+                    \hline
+                  \end{tabular}
+                  \ifsolns
+                    \textbf{ Alice}
+                  \fi
+            &
+          (d)     \begin{tabular}{|cl|}\hline
+                    \multicolumn{2}{|c|}{Who should be} \\
+                    \multicolumn{2}{|c|}{president?} \\ \hline
+                    $\square$ & \B     \\
+                    $\square$ & \C \\
+                    \hline
+                  \end{tabular}
+                  \ifsolns
+                    \textbf{ C}
+                  \fi
+          \end{tabular}
+        \end{center}
+
+
+%\clearpage
+%%%%%%%%%%%
+%%%%%%%%%%%Insert instructions on how to make a preference table here!
+%%%%%%%%%%%
+\clearpage
+   %good for Borda count
+	\newcommand{\gardenmatrix}{
+	%}
+   %\def\gardenmatrix{%
+	\large
+        \begin{center}
+          \begin{tabular}{|*{8}{c|}} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking    &  &  &  &  &      \\ \hline\hline
+            1st choice & D & D & E & F & G     \\
+            2nd choice & G & G & G & G & E     \\
+            3rd choice & E & F & F & D & F     \\
+            4th choice & F & E & D & E & D     \\ \hline
+          \end{tabular}
+        \end{center} \normalsize
+				}
+
+
+
+  \item The Shell Rock Gardening Club is electing a new Master of the Greensward.
+        Four candidates are running for the position: Danielle, Edgar, Frederika, and Gustav.
+				
+				    Here is the ballot:
+                \begin{center}
+                  \begin{tabular}{|cl|}\hline
+                    \multicolumn{2}{|c|}{Who should be Master} \\
+                    \multicolumn{2}{|c|}{of the Greensward?} \\ \hline
+                    $\square$ & Danielle  \\
+                    $\square$ & Edgar     \\
+                    $\square$ & Frederika \\
+                    $\square$ & Gustav    \\ \hline
+                  \end{tabular}
+                \end{center}
+      
+				
+				The members cast the following ballots:
+				\begin{center}
+					
+				\begin{tabular}{lllll}
+				            Ranking     &             1st choice  &             2nd choice  &             3rd choice  &             4th choice \\\hline
+Voter 1 & Danielle  & Gustav & Edgar  &  Frederika \\\hline
+Voter 2 & Danielle  & Gustav &  Frederika  & Edgar \\\hline
+Voter 3 & Edgar  & Gustav &  Frederika  & Danielle \\\hline
+Voter 4 &  Frederika  & Gustav & Danielle  & Edgar \\\hline
+Voter 5 & Gustav & Edgar      &  Frederika      & Danielle                   \\\hline
+Voter 6 & Danielle  & Gustav & Edgar  &  Frederika \\\hline
+Voter 7 & Danielle  & Gustav &  Frederika  & Edgar \\\hline
+Voter 8 & Edgar  & Gustav &  Frederika  & Danielle \\\hline
+Voter 9 &  Frederika  & Gustav & Danielle  & Edgar \\\hline
+Voter 10 & Gustav & Edgar      &  Frederika      & Danielle                   \\\hline
+Voter 11 & Danielle  & Gustav & Edgar  &  Frederika \\\hline
+Voter 12 & Edgar  & Gustav &  Frederika  & Danielle \\\hline
+Voter 13 &  Frederika  & Gustav & Danielle  & Edgar \\\hline
+Voter 14 & Edgar  & Gustav &  Frederika  & Danielle\\\hline
+				\end{tabular}
+				
+				\end{center}
+        \begin{enumerate}
+				\item 				Create a preference table for this election by counting the number of voters who have the same preference and putting that number above the appropriate ballot in the table.  You may use tally marks if you prefer.
+	\ifsolns
+	\begin{multicols}{2}
+				\gardenmatrix
+					%\large
+        %\begin{center}
+          %\begin{tabular}{|*{8}{c|}} \hline
+                       %& \multicolumn{5}{c|}{\# of Ballots} \\
+            %Ranking    &  &  &  &  &      \\ \hline\hline
+            %1st choice & D & D & E & F & G     \\
+            %2nd choice & G & G & G & G & E     \\
+            %3rd choice & E & F & F & D & F     \\
+            %4th choice & F & E & D & E & D     \\ \hline
+          %\end{tabular}
+        %\end{center} \normalsize
+				\ifsolns
+				  The solution is
+				\begin{center}
+					\begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking    & 3 &2  &4  &3  &2      \\ \hline\hline
+        \end{tabular}
+				\end{center}
+				\fi
+				\end{multicols}
+\else
+	\gardenmatrix
+\fi
+\clearpage
+\item    Who will be elected Master?  What percent of the vote will he or she have? \label{Ch1Prob3b}
+							
+                \ifsolns
+                  \par\soln D, with $\frac{5}{14}\approx 35.7\%$
+                \fi
+								
+              	\fillwithlines{\stretch{1}}
+          \item As you look at the voters' preferences,
+                who seems like the best choice to make the most voters happy? \label{Ch1Prob3c}
+             
+								\ifsolns
+                  \par\soln G
+                \fi
+                \fillwithlines{\stretch{1}}
+          \item If your answers to parts \ref{Ch1Prob3b} and \ref{Ch1Prob3c} are different,
+                can you explain why?
+								\ifsolns
+	The answers should be different. Since G is nearly everyone's second choice, they are a better candidate than D who is listed last or next to last for everyone except those putting D first.
+\fi
+                \fillwithlines{\stretch{2}}
+\item    Write down how you would tell someone else how to create a preference table.
+												
+              	\fillwithlines{\stretch{1}}
+
+          \item Can you think of a different voting system that would help the voters elect 
+                your choice from part (b)?
+								\fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+\clearpage
+\item \boxedblank{ \textbf{Plurality voting: } \ifsolns 
+	
+	When the candidate with the most first place votes wins. \fi 	
+	\fillwithlines{\stretch{3}}} \index{Plurality} \vfill
+  
+	\item \boxedblank{\textbf{A \defnstyle{majority} is\ldots} \ifsolns 
+	
+	more than 50\% of the votes. \fi 	\fillwithlines{\stretch{1}}} \index{Majority} \vfill
+	
+  \item \boxedblank{\textbf{Borda count:} \ifsolns 
+	
+	If you have $n$ candidates in the election, you give $n$ points for every first place votes, $n-1$ points for every second place vote, etc., and 1 point for every last place vote.  Add up the points for each candidate and the winner is the candidate with the most points. \fi 	\fillwithlines{\stretch{2}}} \index{Borda count}\vfill
+
+  %\item \textbf{Plurality voting: } \ifsolns When the candidate with the most first place votes wins. \fi 	\fillwithlines{\stretch{3}} \index{Plurality}
+  %\item \textbf{A \defnstyle{majority} is\ldots} \ifsolns more than 50\% of the votes. \fi 	\fillwithlines{\stretch{1}}
+  %\item \textbf{Borda count:} \ifsolns If you have $n$ candidates in the election, you give $n$ points for every first place votes, $n-1$ points for every second place vote, etc., and 1 point for every last place vote.  Add up the points for each candidate and the winner is the candidate with the most points. \fi 	\fillwithlines{\stretch{2}} 
+	\index{Borda count}
+
+%%BORDA COUNT
+\clearpage
+  \item If the Shell Rock Gardening Club runs their election as a Borda count,
+        who will win?
+				
+	\ifsolns
+	From the previous problem, we know the header should be
+\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking    & 3 &2  &4  &3  &2      \\ \hline\hline
+      \end{tabular}
+\end{center}
+	\fi
+\begin{center}
+	        \gardenmatrix
+\end{center}
+        \ifsolns
+          \par\soln $\begin{array}{rlcr}
+                       D: & 5\cdot 4+3\cdot 2+6\cdot 1 &=&32 \\
+                       E: & 4\cdot 4 + 2\cdot 3+3\cdot 2+5\cdot 1 &=& 33 \\
+                       F: & 3\cdot 4 + 8\cdot 2+3\cdot 1 &=& 31\\
+                       G: & 2\cdot 4 + 12\cdot 3       &=&44 \\
+                     \end{array}$
+        \fi
+				\vfill%\vfill
+	%\fillwithlines{\stretch{1}}
+%%RUNOFF ELECTIONS, LEADING INTO PLURALITY WITH ELIMINATION
+%<*HWHEADER>
+
+\HOMEWORK
+
+Show all your work. 
+
+\begin{Venumerate}
+	\item Consider the following election ballots:
+
+		\begin{center}
+			\begin{tabular}{llll}
+			Voter 1 & A & B & C\\ \hline 
+			Voter 2 & C & B & A\\ \hline 
+			Voter 3 & B & C & A\\ \hline 
+			Voter 4 & C & B & A\\ \hline 
+			Voter 5 & C & B & A\\ \hline 
+			Voter 6 & B & C & A\\ \hline 
+			Voter 7 & A & B & C\\ \hline 
+			Voter 8 & A & B & C\\ \hline 
+			Voter 9 & A & B & C\\ \hline 
+			Voter 10 & B & C & A\\ \hline 
+			Voter 11 & C & B & A\\ \hline 
+			Voter 12 & A & B & C\\ \hline 
+			\end{tabular}
+		\end{center}
+\begin{multicols}{2}
+		
+		\begin{enumerate}
+			\item Construct a preference table for the above ballots. 
+			
+			\begin{center} \large
+      \ifsolns
+			  \begin{tabular}{|c|c|c|c|} \hline
+            & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking     & 5 & 4  & 3   \\ \hline\hline  
+            1st choice  & A & C & B  \\ 
+            2nd choice  & B & B & C  \\ 
+            3rd choice  & C & A & A  \\ 
+            \hline
+          \end{tabular} 
+			\else 
+			   \begin{tabular}{|c|c|c|c|} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking     &  \makebox[.6cm]{} & \makebox[.6cm]{}  & \makebox[.6cm]{}       \\ \hline\hline  
+            1st choice  & A &  &   \\ 
+            2nd choice  & B &  &   \\ 
+            3rd choice  & C &  &   \\ 
+            \hline
+          \end{tabular}
+					\fi
+					 \normalsize
+        \end{center}
+\vfill
+
+			\item How many votes would be required to win a \emph{majority} in this election?
+					\solution{7}
+         \vspace{1in}
+		 \item Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Using plurality vote.
+                \solution*{ \fbox{A.}}\vspace{1in}
+          \item Using Borda Count.
+                \solution*{ \fbox{B.}} \solution{ \begin{tabular}{c!{$->$}c}
+								A & 22\\ B & 27 \\ C & 23
+								\end{tabular}}
+								
+								\vspace{2in}
+				\end{enumerate}
+
+		\end{enumerate}
+\end{multicols}
+\hwnewpage
+  \item Consider the following preference table: 
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking     & 8 & 6 & 8 & 5 & 1     \\ \hline\hline  
+            1st choice  & \B & \C & \D & \B & \A \\ 
+            2nd choice  & \D & \A & \C & \C & \B \\ 
+            3rd choice  & \C & \D & \A & \A & \C \\ 
+            4th choice  & \A & \B & \B & \D & \D \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Using plurality vote.
+                \solution*{ \fbox{B.}}\vfill
+          \item Using Borda Count.
+                \solution*{ \fbox{C.}}
+								\solution{\begin{tabular}{c!{$->$}c}
+								A & 56\\ B & 69 \\ C & 81 \\ D & 74
+								\end{tabular}}\vfill
+        \end{enumerate}
+
+  \hwnewpage
+  \item Consider the following preference table: 
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{\# of Ballots} \\
+            Ranking     & 3 & 7 & 4 & 1 & 7 & 8     \\ \hline\hline  
+            1st choice  & \B & \B & \C & \A & \C & \A \\ 
+            2nd choice  & \C & \A & \B & \C & \A & \B \\ 
+            3rd choice  & \A & \C & \A & \B & \B & \C \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Using plurality vote.
+                \solution*{\fbox{C.}}\vfill
+          \item Using Borda Count.
+                \solution*{\fbox{Tied between A and B.}}
+								\solution{\begin{tabular}{c!{$->$}c}
+								A & 62\\ B & 70 \\ C & 56 
+								\end{tabular}}\vfill
+        \end{enumerate}
+				
+	\hwnewpage
+  \item Consider the following preference table: 
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D} \def\E{E}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking     & 3 & 5 & 4     \\ \hline\hline  
+            1st choice  & \C & \B & \D \\ 
+            2nd choice  & \E & \E & \C \\ 
+            3rd choice  & \A & \A & \E \\ 
+            4th choice  & \D & \C & \A \\ 
+            5th choice  & \B & \D & \B \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Using plurality vote.
+                \ifsolns  \soln \fbox{B.} \fi\vfill
+          \item Using Borda Count.
+                \ifsolns  \soln \fbox{E.} 
+								\begin{tabular}{c!{$->$}c}
+								A & 32\\ B & 32 \\ C & 41 \\ D & 31 \\ E & 44
+								\end{tabular}\fi\vfill
+        \end{enumerate}
+	\end{Venumerate}
+\ENDHOMEWORK
+
+%%RUNOFF ELECTIONS, LEADING INTO PLURALITY WITH ELIMINATION
+  \item The Ashwaubenon Classical League is voting for its new proconsul,
+        and the candidates are
+          Publius,
+          Quintus,
+          Rufus,
+          and Sextus.
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                                 & \multicolumn{4}{c|}{\# of Ballots} \\
+                      Ranking    & 3 &10 & 9 & 8       \\ \hline\hline
+                      1st choice & S & P & Q & R        \\
+                      2nd choice & R & R & S & Q        \\
+                      3rd choice & P & S & R & S        \\
+                      4th choice & Q & Q & P & P        \\ \hline
+                    \end{tabular}
+                  \end{center}
+        \begin{enumerate}
+          \item Each League member votes for his favorite candidate.  
+                What percentage of votes did the first-place candidate receive?
+                \ifsolns
+                  \par\soln P won with $33\%$ of the vote.
+                \fi
+                	\fillwithlines{\stretch{1}}
+          \item Since none of the candidates received more than 50\% of the votes,
+                the League holds a run-off election between the top two candidates.
+                Who will win the run-off election?
+                \ifsolns
+                  \par\soln Q wins with 17 votes over P's 13 votes.
+                \fi
+                	\fillwithlines{\stretch{1}}
+          \item Was anyone eliminated from the run-off who perhaps shouldn't have been?
+                \ifsolns
+                  \par\soln R received nearly the same number of votes as P and Q, especially as compared to S.
+                \fi
+                	\fillwithlines{\stretch{1}}
+          \item Can you think of a better runoff system for the League than a runoff between just the top two candidates?
+                What result does it give?
+                \ifsolns
+                  \par\soln Eliminate the worst each time.
+                  \[
+                  \begin{array}{rc} P & 10 \\ Q & 9 \\ R & 8 \\ S & 3\end{array}
+                  \leadsto
+                  \begin{array}{rc} P & 10 \\ Q & 9 \\ R & 11\end{array}
+                  \leadsto
+                  \begin{array}{rc} P & 10 \\ R & 20 \end{array}
+                  \leadsto R
+                  \]
+                \fi
+									\fillwithlines{\stretch{2}}
+        \end{enumerate}
+
+\clearpage
+ \item  \boxedblank{ \textbf{Plurality with elimination:} \ifsolns 
+	
+	If no candidate has a majority of first place votes, eliminate the candidate, or candidates with the fewest first place votes.  Repeat until a candidate has a majority of first place votes. \fi \vfill\vfill	\fillwithlines{\stretch{1}}} \vfill\index{Plurality with elimination}
+
+%%PLURALITY WITH ELIMINATION
+%\clearpage
+  \item The Federal Engineering Board is trying to decide on a flood prevention project
+        for the metro area of Oak Rapids.  The options are
+        \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+          \item[(D)] A diversion through Marionville
+          \item[(L)] A lock-and-dam system along the Oak River
+          \item[(F)] Building floodwalls to $50'$ throughout the city
+          \item[(C)] Relocating the community to higher ground in, say, Colorado
+          \item[(G)] Annual goat sacrifices to Poseidon, God of Waters
+        \end{itemize}
+        The eighteen members of the Board have the following preferences:
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{\# of Ballots} \\
+            Ranking    & 5 & 4 & 2 & 3 & 1 & 3 \\ \hline\hline
+            1st choice & F & G & L & D & C & L \\
+            2nd choice & D & D & F & G & D & F \\
+            3rd choice & L & L & C & L & F & D \\
+            4th choice & G & C & D & F & G & G \\
+            5th choice & C & F & G & C & L & C \\ \hline
+          \end{tabular}  
+        \end{center}
+        The Board's voting rules employ \emph{plurality with elimination}.
+        \begin{enumerate}
+          \item What will the vote tallies be after the first round of voting?
+                Is there a winner yet?  If not, who should be eliminated?
+                \ifsolns
+                  \par\soln $\begin{array}{rr}D&3\\L&5\\F&5\\C&1\\G&4\end{array}$, eliminate C.
+                \else
+                  \fillwithlines{\stretch{1}}
+                \fi
+								
+          \item What will the vote tallies be after the second round of voting?
+                Is there a winner yet?  If not, who should be eliminated?
+                \ifsolns
+                  \par\soln $\begin{array}{rr}D&4\\L&5\\F&5\\G&4\end{array}$, eliminate D and G.
+                \else
+                  \fillwithlines{\stretch{1}}
+                \fi
+          \item What will the vote tallies be after the third round of voting?
+                Is there a winner yet?  If not, who should be eliminated?
+                \ifsolns
+                  \par\soln $\begin{array}{rr}L&12\\F&6\end{array}$, eliminate F, L wins.
+                \else
+                  \fillwithlines{\stretch{1}}
+                \fi
+						
+        \end{enumerate}
+  \item If there are $n$ candidates in an election conducted by plurality with elimination, what is the most rounds of voting that could be required?
+        \ifsolns
+          \par\soln $n-1$ or $n-2$
+				\else
+				 	\fillwithlines{\stretch{1}}
+        \fi
+\vfill
+%%PAIRWISE COMPARISON METHOD
+\clearpage
+  \item The \theschool{} Science Fiction Club is voting on who is the Best Starship Captain Ever.
+        The candidates are:
+           \def\AA{Solo}
+           \def\BB{Kirk}
+           \def\CC{Reynolds}
+           \def\DD{Beeblebrox}
+           \def\A{S}
+           \def\B{K}
+           \def\C{R}
+           \def\D{B}
+        \begin{itemize}
+          \item Han Solo, \emph{Millennium Falcon}                     
+          \item James T. Kirk, \emph{USS Enterprise}                   
+          \item Malcolm Reynolds, \emph{Serenity}                      
+          %\item Jean-Luc Picard, \emph{USS Enterprise}                
+          \item Zaphod Beeblebrox, \emph{Heart of Gold}                
+          %\item Phaethon Prime Rhadamanth, \emph{The Phoenix Exultant}
+        \end{itemize}
+        The preference table is the following: \index{preference table}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking    &  4 &  2 &  3 &  2 &  3     \\ \hline\hline
+            1st choice & \C & \D & \B & \A & \A     \\
+            2nd choice & \A & \A & \C & \B & \C     \\
+            3rd choice & \B & \B & \D & \C & \D     \\
+            4th choice & \D & \C & \A & \D & \B     \\ \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item Who would win in a head-to-head race between \AA\ and \BB?
+                \ifsolns\par\soln
+                  \begin{tabular}{lr}\AA & 11\\\BB & 3\end{tabular} 
+                \else
+									\fillwithlines{\stretch{1}}
+								\fi
+          \item Who would win in a head-to-head race between \AA\ and \CC?
+                \ifsolns\par\soln
+                  \begin{tabular}{lr}\AA & 7\\\CC & 7\end{tabular}
+                \else
+                  \fillwithlines{\stretch{1}}
+                \fi
+          \item Fill in the following table of who would win head-to-head races;
+                if there are any ties, put both names in the box.
+          
+                %\def\myblank{\raisebox{0pt}[4ex][2ex]{\rule{1in}{0pt}}}
+                \def\myblank#1{\raisebox{0pt}[4ex][2ex]{\makebox[1in][c]{\ifsolns #1 \fi}}}
+                \begin{tabular}{c||c|c|c|ccccccc}
+                         & \DD  & \CC  & \BB  \\ \hline \hline
+                  {\AA}  & \myblank S    & \myblank{S-R}    & \myblank S   \\ \hline
+                  {\BB}  & \myblank K    & \myblank{K-R}    \\ \cline{1-3}
+                  {\CC}  & \myblank R   \\ \cline{1-2}
+                \end{tabular}
+          \item Who won the most head-to-head races? \\
+                (Count any ties as $\frac{1}{2}$ a win for each contender.)
+                \ifsolns
+                  \par\soln
+                  \begin{tabular}{rl}
+                    S & 2.5 \\
+                    K & 1.5 \\
+                    R & 2 \\
+                    B & 0
+                  \end{tabular}
+                \else
+									\fillwithlines{\stretch{1}}
+								\fi
+        \end{enumerate}
+
+\clearpage
+  \item  \boxedblank{ \textbf{Pairwise Comparison:} \ifsolns 
+	
+	Place every candidate head to head against every other candidate.  Give one point for wins and 1/2 point for ties.  Candidate with most points wins.\fillwithlines{\stretch{1}}\else \vfill\fillwithlines{\stretch{1}} \fi}
+	\vfill \index{pairwise comparison}
+  
+	\item Organizational idea for setting up the head-to-head races: \ifsolns 
+	
+	Put the first $n-1$ candidates vertically.  Then, starting with the missing candidate and working backwards list $n-1$ candidates horizontally. \fillwithlines{\stretch{1}}\vfill \else \fillwithlines{\stretch{1}}\vfill\fi
+
+
+\clearpage
+  \item Our \theclass{} classes are voting on where to take a math field trip.
+        The options are:
+        \begin{itemize}
+          %\item[(N)] The National Security Agency, largest employer of mathematicians in the world
+          \item[(E)] The mudflats of Egypt, birthplace of geometry
+          %\item[(L)] Las Vegas, a city that runs on statistics
+          %\item[(F)] Florence, home of Renaissance perspective
+          \item[(A)] Athens, cradle of logical thought
+          \item[(M)] Moose Lake Credit Union, dispenser of mortgages
+          \item[(K)] K\"onigsberg, for a walking tour of the bridges
+          \item[(P)] Papa John's Pizza, home of yummy garlic sauce
+        \end{itemize}
+        The preference table is the following.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{\# of Ballots} \\
+            Ranking    & 5 & 4 & 4 & 3 & 2 & 1 \\ \hline\hline
+            1st choice & K & M & M & E & P & K \\
+            2nd choice & E & K & E & P & K & A \\
+            3rd choice & A & A & A & K & E & M \\
+            4th choice & P & E & K & M & M & P \\
+            5th choice & M & P & P & A & A & E \\ \hline
+          \end{tabular}
+        \end{center}
+        We decide to use the pairwise comparison method to decide.
+        Where will we go?
+        \ifsolns
+          \par\soln
+          \begin{tabular}{c|cccc}
+               & E & A & M & K  \\ \hline
+             P & E & A & P & K  \\ 
+             K & K & K & K &    \\ 
+             M & E & M &   &    \\
+             A & E &   &   &    \\
+          \end{tabular}
+          \qquad
+          \begin{tabular}{cr}
+            E & 3 \\
+            A & 1 \\
+            M & 1 \\
+            K & 4 \\
+            P & 1 \\
+          \end{tabular}
+          \quad
+          K wins
+        \else
+          \fillwithlines{\stretch{1}}
+        \fi
+  \item If you use the pairwise comparison method with $n$ candidates, how many head-to-head races are there?
+        \ifsolns
+          \par\soln
+          $\binom{n}{2} = \frac{n(n-1)}{2}$
+        \fi\fillwithlines{\stretch{1}}
+
+\end{enumerate}
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+Show all your work.  In particular, for plurality with elimination, show the results of each round of voting;
+for pairwise comparison, show the result of each head-to-head vote.
+
+\begin{Venumerate}
+	\item Consider the following preference table:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D} \def\E{E}
+        \begin{center} 
+          \begin{tabular}{|c|p{1cm}|p{1cm}|p{1cm}|} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking     &  5 &  4 &  3      \\ \hline\hline  
+            1st choice  & \A & \C & \B  \\ 
+            2nd choice  & \B & \B & \C  \\ 
+            3rd choice  & \C & \A & \A  \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+
+		\begin{enumerate}
+			%\item Construct a preference table for the above ballots. \vfill
+			\item How many votes would be required to win a \emph{majority} in this election?
+			\solution*{7  votes
+			}
+         \vfill
+			\item Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+      
+          \item Find the winner using plurality with elimination.
+                \ifsolns
+                  \soln \fbox{C.}
+                \fi\vfill
+          \item Find the winner using pairwise comparison.
+                \ifsolns
+                  \soln \fbox{B.}
+                \fi\vfill
+						\end{enumerate}
+		\end{enumerate}
+		\hwnewpage
+		
+  \item Consider the following preference table:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D} \def\E{E}
+        \begin{center} 
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{\# of Ballots} \\
+            Ranking     &  3 &  4 &  4 &  9 &  3 &  6     \\ \hline\hline  
+            1st choice  & \D & \D & \A & \E & \B & \A \\ 
+            2nd choice  & \C & \C & \B & \C & \E & \B \\ 
+            3rd choice  & \E & \E & \E & \B & \D & \C \\ 
+            4th choice  & \B & \A & \D & \A & \A & \D \\ 
+            5th choice  & \A & \B & \C & \D & \C & \E \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        This race is being decided by plurality vote.
+        \begin{enumerate}
+          \item How many voters are voting in this election? 
+                \solution*{$3+4+4+9+3+6=\boxed{29.}$}\vfill
+          \item How many votes would be required to win a \emph{majority} in this election?
+                \solution*{$29/2 = 14.5$, so it takes \fbox{15 votes.}}\vfill
+          \item Who will win this election?  How many votes will that person get?  Does that candidate have a majority?
+                \esolution*{Candidate A wins with 10 votes, but that is not a majority.}\vfill
+          \item Suppose candidate B drops out of the race.  Who will win this election?  How many votes will that person get?  Does that candidate have a majority?
+                \esolution*{Now candidate \E\ wins (with 12 votes, not a majority).}\vfill
+          \item Suppose all the candidates drop out of the race except A and \C.  Who will win this election?  How many votes will that person get?  Does that candidate have a majority?
+                \esolution*{A gets 13 votes and C gets 16 votes, so C wins with a majority.}\vfill
+        \end{enumerate}
+%
+\hwnewpage
+  \item Consider the following preference table: 
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking     & 8 & 6 & 8 & 5 & 1     \\ \hline\hline  
+            1st choice  & B & C & D & B & A \\ 
+            2nd choice  & D & A & C & C & B \\ 
+            3rd choice  & C & D & A & A & C \\ 
+            4th choice  & A & B & B & D & D \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+       \item Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Find the winner using plurality with elimination.
+					
+               \ifsolns
+                  \soln \fbox{\parbox{.5\textwidth}{Tied between B and D. Or no one wins because both B and D are eliminated in last round.}} \par
+                \fi\vfill
+          \item Find the winner using pairwise comparison.
+               
+							\ifsolns
+                  \soln \fbox{D.}
+                \fi\vfill
+        \end{enumerate}
+
+  \hwnewpage
+  \item Consider the following preference table: 
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{\# of Ballots} \\
+            Ranking     & 3 & 7 & 4 & 1 & 7 & 8     \\ \hline\hline  
+            1st choice  & \B & \B & \C & \A & \C & \A \\ 
+            2nd choice  & \C & \A & \B & \C & \A & \B \\ 
+            3rd choice  & \A & \C & \A & \B & \B & \C \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Find the winner using plurality with elimination.
+                \solution*{\fbox{B.}}\vfill
+          \item Find the winner using pairwise comparison.
+                \solution*{\fbox{A.}}\vfill
+        \end{enumerate}
+				
+	\hwnewpage
+  \item Consider the following preference table: 
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D} \def\E{E}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking     & 3 & 5 & 4     \\ \hline\hline  
+            1st choice  & \C & \B & \D \\ 
+            2nd choice  & \E & \E & \C \\ 
+            3rd choice  & \A & \A & \E \\ 
+            4th choice  & \D & \C & \A \\ 
+            5th choice  & \B & \D & \B \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        \begin{enumerate}
+          \item Find the winner using plurality with elimination.
+                \ifsolns  \soln \fbox{D.} \fi\vfill
+          \item Find the winner using pairwise comparison.
+                \ifsolns  \soln \fbox{C.} \fi\vfill
+        \end{enumerate}
+\hwnewpage
+  \item The AP college football poll is a ranking of the top 25 college football teams in the country and is one of the key polls used for the BCS\footnote{Bowl Championship Series}. The voters in the AP poll are a group of sportswriters and broadcasters chosen from across the country. The top 25 teams are ranked using a Borda count: each first-place vote is worth 25 points, each second-place vote is worth 24 points, each third-place vote is worth 23 points, and so on. The following table shows the ranking and total points for each of the top three teams at the end of the 2006 regular season. (The remaining 22 teams are not shown here because they are irrelevant to this exercise.)
+  \begin{center}
+	\begin{tabular}{ll}
+	\hline
+Team & Points \\\hline
+1. Ohio State & 1625 \\\hline
+2. Florida & 1529 \\\hline
+3. Michigan & 1526 \\\hline
+\end{tabular}
+\end{center}
+  \begin{enumerate}
+	\item  Given that Ohio State was the unanimous first-place choice of all the voters, find the number of voters that participated in the poll.
+	\solution*{\fbox{65}}\vfill
+	
+	\item Find the number of second and third-place votes for Florida.
+			\solution*{Hint: Since Ohio State was the unanimous first-place choice and we are told the other 22 teams are irrelevant, then we can assume that all the second and third place votes went either to Florida or Michigan.  This also means that the voters who didn't put Florida second placed them third.  This is all the information you need to solve the problem.}
+		\ifsolns
+			\fbox{34, 31}
+		\fi \vfill
+	\item Find the number of second and third-place votes for Michigan.
+		\ifsolns
+			\fbox{31, 34}
+		\fi\vfill
+\end{enumerate}
+\end{Venumerate}
+
+
+\ENDHOMEWORK %\ENDHOMEWORK %</HOMEWORK>
+%<*WORKSHEETS>
+
+
+\section{Voting Paradoxes and Problems}
+
+\begin{enumerate}
+  \item Of the four voting systems we've studied, which is best?  Why?
+        \fillwithlines{\stretch{1}}
+
+  %PLURALITY METHOD FAILS HEAD-TO-HEAD CRITERION
+  \item The Des Moines Running Club is electing a new team captain.
+        There are three candidates:  Irving, Joseph, and Karl.
+        The preference table is the following.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{3}{c|}{\# of Ballots} \\
+            Ranking    & 4 & 3 & 2 \\ \hline\hline
+            1st choice & J & I & K  \\
+            2nd choice & I & J & I  \\
+            3rd choice & K & K & J  \\ \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item If the club uses the plurality method,
+                who will win the election? \ifsolns\fbox J \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Irving and Joseph, who would win? \ifsolns\fbox I \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Irving and Karl, who would win? \ifsolns\fbox I \fi
+                \fillwithlines{\stretch{1}}
+          \item If it were a head-to-head race between Joseph and Karl, who would win? \ifsolns\fbox J \fi
+                \fillwithlines{\stretch{1}}
+          \item Why does the plurality method's result seem unfair in this election?
+                \ifsolns Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.\fi
+                \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+  \item \boxedblank{\textbf{Head-to-Head Criterion:} 
+	
+	\ifsolns  A candidate who beats all the other candidates head to head should win the election. \fi          \fillwithlines{\stretch{1}}} \index{criterion!head to head}
+
+\clearpage
+
+  %\item \boxedblank{\textbf{Head-to-Head Criterion:} \ifsolns \par\soln A candidate who beats all the other candidates head to head should win the election. \fi          \fillwithlines{\stretch{1}}} \index{criterion!head to head}
+
+  %BORDA COUNT FAILS MAJORITY CRITERION
+  \item The school board is voting whether to award the contract for building a new elementary school
+        to Aardvark Architects,
+        to Bob's Builders,
+        to the Confident Construction Company,
+        or to Davenfield Developers.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{4}{c|}{\# of Ballots} \\
+            Ranking    & 5 & 3 & 3 & 1   \\ \hline\hline
+            1st choice & B & B & C & A  \\
+            2nd choice & C & C & A & D   \\
+            3rd choice & D & A & D & C   \\
+            4th choice & A & D & B & B   \\ \hline
+          \end{tabular}
+        \end{center}
+      \begin{enumerate}
+        \item The school board votes using a Borda count.  \\
+              Which company will get the contract? %Company C
+              
+							\ifsolns
+                 $\begin{array}{clcr}
+                             A & 5*1+3*2+3*3+1*4 &=& 24 \\
+                             B & 5*4+3*4+3*1+1*1 &=& 36 \\
+                             C & 5*3+3*3+3*4+1*2 &=& 38 \\
+                             D & 5*2+3*1+3*2+1*3 &=& 22 \\
+                           \end{array}$ 
+                \qquad so C wins
+              \fi
+              \fillwithlines{\stretch{2}}
+        \item Does this seem fair?  Why or why not?
+              \ifsolns
+                 No; two-thirds of the voters picked B as their first choice!
+             \fi
+							 \fillwithlines{\stretch{1}}
+      \end{enumerate}  
+
+\clearpage
+  \item \boxedblank{\textbf{Majority Criterion:} \ifsolns A candidate that wins a majority of first place votes should win the election. \fi} \index{criterion!majority}
+  %PLURALITY WITH ELIMINATION FAILS MONOTONICITY
+
+\ifodd\value{page}\clearpage\fi
+
+  \item The board of regents of
+        Western Iowa State at Sema
+        will be voting tomorrow for the University's new president
+        from four candidates: 
+           Zehnpfennig,     \def\A{Z}\def\AA{Zehnpfennig}%
+           Gersbach,        \def\B{G}\def\BB{Gersbach}%
+           Haider,          \def\C{H}\def\CC{Haider}%
+           and Rentmeester. \def\D{R}\def\DD{Rentmeester}%
+        As of this moment, the voters' preferences are as follows:
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{4}{c|}{\# of Ballots} \\
+            Ranking    & 7 & 5 & 4 & 1   \\ \hline\hline
+            1st choice & \A & \C & \B & \D  \\
+            2nd choice & \D & \A & \C & \B   \\
+            3rd choice & \B & \B & \D & \A   \\
+            4th choice & \C & \D & \A & \C   \\ \hline
+          \end{tabular}
+        \end{center}
+        The WIS regents use the plurality with elimination method.
+        \begin{enumerate}
+          \item If the vote were held today, who would be chosen as university president? 
+                \ifsolns
+                  \par\soln
+                  \[\begin{array}{cc}Z& 7 \\ R&1 \\ G&4 \\ H&5\end{array}
+                    \leadsto
+                    \begin{array}{cc}Z&7 \\ G&5 \\ H&5 \end{array}
+                    \leadsto Z\]
+                \else
+								\vfill
+                  \fillwithlines{\stretch{1}}
+                \fi
+        \clearpage
+          \item After thinking it over in bed tonight, 
+                the single voter in the last column decides 
+                that \AA\ really is the best candidate after all, and so his preferences change to \A,\D,\B,\C.
+                Thus when the election is held tomorrow, the preference table is
+                        \newlength{\mywidth}
+                        \def\no#1{\settowidth{\mywidth}{#1}%
+                                  %\makebox[0pt][l]{\raisebox{1.0ex}{\rule{\mywidth}{0.5pt}}}%
+                                  %\makebox[0pt][l]{\raisebox{0.8ex}{\rule{\mywidth}{0.5pt}}}%
+                                  \makebox[0pt][l]{\makebox[\mywidth][c]{$\times$}}%
+                                  %\makebox[0pt][l]{\raisebox{0.6ex}{\rule{\mywidth}{0.5pt}}}%
+                                  #1}
+                        \begin{center}
+                          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                                       & \multicolumn{4}{c|}{\# of Ballots} \\
+                            Ranking    & 7 & 5 & 4 & 1   \\ \hline\hline
+                            1st choice & \A & \C & \B & \no{\D}  \A \\
+                            2nd choice & \D & \A & \C & \no{\B}  \D \\
+                            3rd choice & \B & \B & \D & \no{\A}  \B \\
+                            4th choice & \C & \D & \A & \no{\C}  \C \\ \hline
+                          \end{tabular}
+                        \end{center}
+                Who will be elected president?
+                \ifsolns
+                  \par\soln
+                  $$\begin{array}{cc}Z& 8 \\ R&0 \\ G&4 \\ H&5\end{array}
+                    \leadsto
+                    \begin{array}{cc}Z& 8 \\ G&4 \\ H&5\end{array}
+                    \leadsto
+                    \begin{array}{cc}Z&8 \\ H&9 \end{array}
+                    \leadsto H$$
+                \else
+                  \fillwithlines{\stretch{2}}
+                \fi
+                
+          \item What is odd about your answers to (a) and (b)?
+                \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+\item \boxedblank{\textbf{Monotonicity Criterion:} \ifsolns If the only changes in voting are in favor of the winning candidate, that candidate should still win the election. \fi\fillwithlines{\stretch{1}}} \index{criterion!monotonicity}
+
+\clearpage
+%CONDORCET WINNER MAY NOT EXIST---IN FACT, NONTRANSITIVITY
+  \item Voters are trying to decide what to do with a \$50 million surplus in the state budget.
+        Their options are: 
+        \begin{itemize}
+          \item[(T)] Give the money back to taxpayers as property tax relief.
+          \item[(R)] Spend it on road construction and other infrastructure.
+          \item[(H)] Build a new state historical building.
+        \end{itemize}
+        Here is the preference table:
+                        \begin{center}
+                          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                                       & \multicolumn{3}{c|}{\# of Ballots} \\
+                            Ranking    &  70,000 & 50,000 & 40,000    \\ \hline\hline
+                            1st choice & T & R & H \\
+                            2nd choice & R & H & T \\
+                            3rd choice & H & T & R \\ \hline
+                          \end{tabular}
+                        \end{center}
+        \begin{enumerate}
+          \item The election is run by pairwise comparison.  What is the result?
+                \ifsolns
+                  \par\soln $R>H>T>R$.
+                \fi
+                \vfill\fillwithlines{\stretch{2}}
+          \item What is odd about your results from part (a)?
+					\ifsolns Try having candidate $R$ drop out of the race. \fi\fillwithlines{\stretch{1}}
+        \end{enumerate}
+        
+	 \item \boxedblank{\textbf{Irrelevant Alternatives Criterion:} \ifsolns  If a non-winning candidate leaves the election, the winner should not change, \fi\fillwithlines{\stretch{1}}} \index{criterion!irrelevant alternatives}
+
+\clearpage
+
+  %\item \boxedblank{\textbf{Irrelevant Alternatives Criterion:} \ifsolns \par\soln If a non-winning candidate leaves the election, the winner should not change, \fi\fillwithlines{\stretch{1}}} \index{criterion!irrelevant alternatives}
+
+  \item Approval Voting: \index{approval voting}
+
+
+\ifsolns Vote for all candidates you approve of. For more in-depth explanation of how this works, see \texttt{https://electionscience.org/library/approval-voting/} \fi
+        \fillwithlines{\stretch{1}}
+
+  \item \boxedblank[2in]{\textbf{Arrow's Impossibility Theorem:} \ifsolns There is no way of counting votes that does not violate at least one of the criteria except for a Dictator. \fi\fillwithlines{\stretch{1}}} \index{Arrow's Impossibility Theorem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{enumerate}
+%
+%
+%%</WORKSHEETS>
+%
+%%<*HWHEADER>
+%\cleartooddpage
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+
+\begin{Venumerate}
+  \item Consider the following preference table:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{5}{c|}{\# of Ballots} \\
+            Ranking     & 4 & 10 & 2 & 3 & 5     \\ \hline\hline  
+            1st choice  & \C & \D & \A & \C & \A \\ 
+            2nd choice  & \D & \C & \C & \B & \B \\ 
+            3rd choice  & \B & \A & \B & \A & \D \\ 
+            4th choice  & \A & \B & \D & \D & \C \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+					\item How many votes would be required to win a \emph{majority} in this election?
+\solution{13}
+          \item Does the Borda Count violate the Majority Criterion for this particular preference table?
+                \solution*{
+                  The Borda count tally is
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 58 \\
+                    B & 46 \\
+                    C & 69 \\
+                    D & 67 \\ \hline
+                  \end{tabular}, \\
+                  while a plurality vote yields
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 7 \\
+                    B & 0 \\
+                    C & 7 \\
+                    D & 10 \\ \hline
+                    total & 24 \\ \hline
+                  \end{tabular}
+                  \par
+                  Thus \fbox{no,} the majority criterion is not violated since no candidate had a majority of the 24 votes.
+                  The majority criterion would only be violated if 
+                  \emph{both} (a) some candidate had a majority, and (b) the Borda count elected someone different.
+                } \vfill          \fillwithlines{\stretch{1}}
+          \item Does the Borda Count violate the Head-to-Head Criterion for this particular preference table?
+                \solution*{
+                  \fbox{Yes.} Candidate D would beat each of A, B, and C in head-to-head contests,
+                  but the Borda count elects someone else.
+                }\vfill           \fillwithlines{\stretch{1}}
+        \end{enumerate}
+
+\hwnewpage
+  \item Consider the following preference table:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{6}{c|}{\# of Ballots} \\
+            Ranking     & 11 & 2 & 5 & 1 & 8 & 4     \\ \hline\hline  
+            1st choice  & \C & \D & \C & \D & \A & \B \\ 
+            2nd choice  & \A & \A & \A & \A & \D & \A \\ 
+            3rd choice  & \D & \C & \B & \B & \C & \C \\ 
+            4th choice  & \B & \B & \D & \C & \B & \D \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item Does the Borda Count violate the Majority Criterion for this particular preference table?
+                \ifsolns
+                  \par\soln The Borda count tally is
+                  \begin{tabular}[c]{|ll|}\hline
+                      A & 101 \\
+                    B & 49 \\
+                    C & 93 \\
+                    D & 67 \\ \hline
+                  \end{tabular}
+                  \\ while a plurality vote yields
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 8 \\
+                    B & 4 \\
+                    C & 16 \\
+                    D & 3 \\ \hline
+                    total & 31 \\ \hline
+                  \end{tabular}
+                  \par
+                  Thus \fbox{yes,} the majority criterion is violated, since candidate C has a majority of the 31 votes,
+                  but the Borda Count elects A.
+                \else \vfill          \fillwithlines{\stretch{1}} \fi
+          \item Does the Borda Count violate the Head-to-Head Criterion for this particular preference table?
+                \ifsolns
+                   \par\soln
+                  \fbox{Yes,} since C beats A, B, and D in head-to-head contests but the Borda Count elects A.
+                \else \vfill           \fillwithlines{\stretch{1}}\fi
+        \end{enumerate}
+
+\hwnewpage
+  \item Consider the following preference table:
+        \def\A{A} \def\B{B} \def\C{C} \def\D{D}
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c} \hline
+                       & \multicolumn{4}{c|}{\# of Ballots} \\
+            Ranking     & 9 & 6 & 8 & 5      \\ \hline\hline  
+            1st choice  & \B & \B & \D & \D \\ 
+            2nd choice  & \D & \D & \B & \B \\ 
+            3rd choice  & \C & \A & \A & \C \\ 
+            4th choice  & \A & \C & \C & \A \\ 
+            \hline
+          \end{tabular}
+        \end{center}
+        \begin{enumerate}
+          \item How many points will each candidate receive in a Borda count?  Who will win?
+                \ifsolns
+                  \par\soln
+                  The point tallies are
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 42 \\
+                    B & 99 \\
+                    C & 42 \\
+                    D & 97 \\ \hline
+                  \end{tabular}
+                  so \fbox{B wins.}
+                \else \vfill          \fillwithlines{\stretch{1}}\fi
+          \item The five voters in the last column really do think D is the best candidate and B is the second-best.
+                However, they decide to be sneaky and lie on their Borda count ballots,
+                claiming they think B is the worst candidate;
+                in other words, they say they prefer \D, \C, \A, and B in that order.
+                Now how many points will each candidate receive in a Borda count?  Who will win?
+                \ifsolns
+                  \par\soln
+                  Now the point tallies become
+                  \begin{tabular}[c]{|ll|}\hline
+                    A & 47 \\
+                    B & 89 \\
+                    C & 47 \\
+                    D & 97 \\ \hline
+                  \end{tabular}
+                  so \fbox{D wins.}
+                \else \vfill           \fillwithlines{\stretch{1}}\fi
+          \item Explain in a few complete sentences how these voters manipulated the Borda count and why it is unfair.
+                \ifsolns
+                  \par\soln These voters filled out their ballots deceptively, downgrading the candidate they opposed 
+                  in order to make their own candidate do well by comparison.
+                  This is unfair because it gives dishonest voters more power than honest ones.
+                  (Graders, be generous with students' explanations!)
+                \else \vfill          \fillwithlines{\stretch{1}}\fi
+        \end{enumerate}
+				
+\hwnewpage
+  %COST-CONSCIOUS VOTERS, courtesy of Lisa Moats's REU work
+  \item Voters go to the polls to vote on three propositions simultaneously:
+        \begin{description}
+          \item[Proposition~1.] Spend \$200,000 to plant new flowers and trees at the zoo.
+          \item[Proposition~2.] Spend \$400,000 to build a children's playground at the zoo.
+          \item[Proposition~3.] Spend \$500,000 to add a panda exhibit to the zoo.
+        \end{description}
+        All the voters love the zoo, plants, children, and pandas.
+        They're all fiscally responsible, and only differ in how much money they want to spend.
+        \begin{enumerate}
+          \item Alice is one of a thousand voters who want to improve the zoo,
+                but don't want to spend more than \$1,000,000 total.
+                She wants to spend as close that limit as possible, without going over.
+                Which propositions will Alice and her bloc vote for?
+                \solution*{Alice et al.~will vote for \fbox{Propositions 2 and 3.}}
+          \item Zeke is one of a thousand voters who want to improve the zoo,
+                but don't want to spend more than \$800,000 total.
+                He wants to spend as close that limit as possible, without going over.
+                Which propositions will Zeke and his bloc vote for?
+                \solution*{Zeke et al.~will vote for \fbox{Propositions 1 and 3.}}
+          \item Shadrach is one of a thousand voters who want to improve the zoo,
+                but don't want to spend more than \$600,000 total.
+                He wants to spend as close that limit as possible, without going over.
+                Which propositions will Shadrach and his bloc vote for?
+                \solution*{Shadrach et al.~will vote for \fbox{Propositions 1 and 2.}}
+          \item Fill out the following preference table with the votes---either ``Yes'' or ``No.''\par
+                \def\myblank{\raisebox{0pt}[4ex][2ex]{\rule{1in}{0pt}}}
+                \ifsolns
+                  \def\myblank#1{{\textcolor{red}#1}}
+                \else
+                  \def\myblank#1{\phantom{X}}
+                \fi
+                \begin{tabular}{l||c|c|c|}
+                  Voters          & Alice et al. & Zeke et al. & Shadrach et al. \\
+                  Number of votes & 1000         & 1000        & 1000 \\ \hline\hline
+                  Proposition 1   & \myblank N   & \myblank Y  & \myblank Y \\ \hline
+                  Proposition 2   & \myblank Y   & \myblank N  & \myblank Y \\ \hline
+                  Proposition 3   & \myblank Y   & \myblank Y  & \myblank N \\ \hline
+                \end{tabular}
+          \item Which of the three propositions will pass?  (Only a majority vote is needed for each proposition.)
+                \solution*{\fbox{All three} propositions will pass with 2000 of the 3000 votes.}          \fillwithlines{\stretch{1}}
+          \item How many of the 3,000 voters are happy with the result?
+                \solution*{Since this will cost taxpayers \$1,100,000, \fbox{none of the voters} will be happy.}          \fillwithlines{\stretch{1}}
+          \item Explain in a few complete sentences what is odd or paradoxical about this situation.
+                \solution*{Each of the voters deliberately voted to limit spending, 
+                  yet they collectively ended up spending more than any of them wanted.
+                  \ifgradersolns
+                    (Graders, please be generous with their explanations.)
+                  \fi
+                }          \fillwithlines{\stretch{2}}
+        \end{enumerate}
+\end{Venumerate}
+
+
+\ENDHOMEWORK %</HOMEWORK>
+
+%<*WORKSHEETS>
+
+
+
+\cleartooddpage

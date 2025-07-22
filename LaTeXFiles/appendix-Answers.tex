@@ -1,0 +1,30 @@
+\chapter{Answers to Selected Exercises}
+
+{\footnotesize
+% \parindent 0.3cm
+% \parskip 0cm
+% %\topmargin 0.2cm
+ \oddsidemargin 0in
+ \evensidemargin -0.5in
+ \textwidth 7.0in
+ \linewidth 7.0in
+ \hsize 7.0in
+% \textheight 9in
+  \columnsep 0.5in
+  \solnstrue
+  \studentsolnstrue
+  \gradersolnsfalse
+
+  \ifnum\arabic{numstudentsolns}>0\relax
+    \setlength{\columnseprule}{0.4pt}
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \foreach \k in {1,...,\arabic{numstudentsolns}}
+          {\item[\csname studentsoln-label-\romannumeral\k\endcsname.]
+                \csname studentsoln-\romannumeral\k\endcsname
+          }
+      \end{enumerate}
+    \end{multicols}
+  \fi
+\clearpage
+}

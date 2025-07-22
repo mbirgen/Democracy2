@@ -1,0 +1,878 @@
+\section{Apportionment} 
+\index{apportionment}
+Another mathematical challenge in most Democratic systems is that of Apportionment.  Essentially the problem is one of representation.  Seats in the House of Representatives are given to the states based on population.  There are 435 seats for 2323.1 million people.  That works out to $323100000/435 = 742758.6207$ or about $742,759$ people per seat in the House.  However, even though North Dakota, Vermont, and Wyoming all have smaller populations than that they are guaranteed a seat in the House.  Also, if you look at the other states, it is very rare that their population is exactly an even multiple of $742,759$.  This section is all about how to fairly appoint seats in a house of representatives, as well as a variety of other tasks that turn out to be essentially the same thing.
+
+\begin{enumerate}
+		\item The Republic of Awoi is a small country consisting of four states North-West (population 69,000), South-West 	(population 267,000), South-East (population 133,000) and North-East (population 331,000).  Suppose that there are 160 seats in the Awoi Congress to be apportioned among the four states based on their representative populations.
+		\begin{enumerate}
+			\item On average, how many people per congress seat should there be?\ifsolns \par 5000 \else
+	\fillwithlines{\stretch{1}}
+\fi
+	
+
+			\item How would you give out the 160 seats to the four states and why?
+			\large
+			
+			\ifsolns
+			\begin{tabular}{c|c|c|c|c} \hline
+				& NW & SW & SE & NE \\\hline
+				Seats &14&53&27&66 \\\hline
+			\end{tabular}
+	\end{enumerate}\vfill
+	\else
+			\begin{tabular}{c|c|c|c|c} \hline
+				& NW & SW & SE & NE \\\hline
+				Seats &&&& \\\hline
+			\end{tabular}
+	\end{enumerate} 
+	\fillwithlines{\stretch{1}}\fi
+\normalsize
+\clearpage
+	
+	\item Notes on Apportionment
+	\vfill
+	 \boxedblank[2in]{\textbf{Standard Divisor (SD):}\solution{The whole population divided by the number of seats}\fillwithlines{\stretch{1}}} \index{divisor!standard}
+	 
+  \boxedblank[2in]{\textbf{Standard quotas ($q_1,q_2,\dots q_N$):}\solution{Population of each state divided by the standard divisor.}\fillwithlines{\stretch{1}}} \index{quota!standard}
+	  
+   \boxedblank[2in]{\textbf{Upper and lower quotas:}\solution{The upper quota is the standard quota rounded up and the lower quota is the standard quota rounded down.  A fair apportionment will lead to all states having either their upper or lower quota.}\fillwithlines{\stretch{1}}} \index{quota!upper} \index{quota!lower}
+	   \vfill
+
+	\clearpage
+\subsection{Hamilton's Method} \index{apportionment method!Hamilton}
+	\item 	   \boxedblank[2in]{\textbf{Hamilton's Method:}\solution{Assign all states their lower quota.  Then, to assign the extra seats, look at the state with the largest decimal part in its standard quota and assign it the upper quota.  Continue until all extra seats are assigned.}}
+	\vfill
+	\item Consider the Republic of Awoi:
+	\begin{enumerate}
+			\item Find the standard divisor. \solution{5,000}
+			\fillwithlines{\stretch{1}}
+			%\large
+		{\renewcommand{\arraystretch}{2}
+		
+\begin{tabular}{c|c|c|c|c|c} \hline
+	 & Population  & Standard quota  & LQ  & UQ  & App \\\hline
+\ifsolns NW  & 69,000 & 13.8 & 13 & 14 & 14\\\hline
+ SW  & 267,000 & 53.4 & 53 & 54 & 53\\\hline
+ SE  & 133,000 & 26.6 & 26 & 27 & 27\\\hline
+ NE  & 331,000 & 66.2 & 66 & 67 & 66\\\hline
+	\else
+ NW  & 69,000 &  &  &  & \\\hline
+ SW  & 267,000 &  &  &  & \\\hline
+ SE  & 133,000 &  &  &  & \\\hline
+ NE & 331,000 &  &   &   & \\\hline
+	\fi		\end{tabular}
+	}
+		\normalsize
+		
+		In the table above:
+		\item Find each state's standard quota.
+		\item Find each state's lower and upper quota.
+		\item Find the apportionment as described by Hamilton's Method.
+	\end{enumerate} \vfill
+	
+	\clearpage
+	\item The Republic of Bananarama is  a small country consisting of five states ($A, B, C, D,$ and $E$).  The total population of Bananarama is 23.8 million.  According to the Bananarama constitution, the seats in the legislature are apportioned to the states according to their populations.  The following table shows each state's standard quota:
+	
+	\begin{center}
+	\begin{tabular}{lcccccc}
+State & $A$ & $B$ & $C$ & $D$ & $E$ \\\hline
+Standard quota &40.50 & 29.70 & 23.65 & 14.60 & 10.55 \\\hline
+\end{tabular}
+\end{center}
+	
+	In the Table below:
+	\begin{enumerate}
+	
+	
+	\item Find the number of seats in the Bananarama legislature.
+	\item Find the Standard Divisor.
+	\item Find the population of each state.
+
+	\begin{center}
+	\begin{tabular}{l|c|c|c|c|c} \hline
+State	&	Pop. &Q. &	LQ&  Additional Seats	 	&  	 	Apportionment \\\hline
+\ifsolns	$A$ &8.1&40.5&40&&40\\\hline
+	$B$ &5.94&29.7&29&1&30\\\hline
+	$C$ &4.73&23.65&23&1&24\\\hline
+	$D$ &2.92&14.6&14&1&15\\\hline
+	$E$ &2.11&10.55&10&&10\\\hline
+	Totals &23.8&200,000&119&&116\\\hline
+	\else
+	$A$ &&&&&\\\hline
+	$B$ &&&&&\\\hline
+	$C$ &&&&&\\\hline
+	$D$ &&&&&\\\hline
+	$E$ &&&&&\\\hline
+	Totals &&&&&\\\hline \fi
+	\end{tabular}
+	
+	\end{center}
+
+	\item Find each state's standard lower quota.
+	\item Find the apportionment as described by Hamilton's method.
+\end{enumerate}
+
+
+\end{enumerate}
+%\clearpage
+\clearpage
+\input{Hamilton}
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+
+Show all your work.
+
+\begin{Denumerate}
+
+	\item Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts: $A$ (7:00 AM to 1:00 PM), $B$ (1:00 PM to 7:00 PM), $C$ (7:00 PM to 1:00 AM), $D$ (1:00 AM to 7:00 AM).  The number of nurses apportioned to each shift is based on the average number of patients treated in that shift, given in the following table:
+
+	\begin{center}
+	%\large
+
+		\begin{tabular}{lr|c|c|c|c}
+	\hline
+	Shift &	Patients & Standard Quota & Lower Quota & Additional & Apportionment \\\hline
+\ifsolns$ A $ & 871 & 56.4537 & 56 &  & 56\\\hline 
+$ B $ & 1029 & 66.69444 & 66 & 1 & 67\\\hline 
+$ C$ & 610 & 39.53704 & 39 & 1 & 40\\\hline 
+$D $ & 190 & 12.31481 & 12 &  & 12\\\hline 
+Total  & 2700 & 175 & 173 &  & 175\\\hline \else
+	 $A$ &	871 &&&&\\\hline
+	 $B$ &	1029&&&&\\\hline
+	 $C$&	610&&&&\\\hline
+	$D$ &	190&&&&\\\hline
+	Total && 175 &&&\\\hline \fi
+	\end{tabular}
+	
+	\normalsize
+	\end{center}	
+	
+	\begin{enumerate}
+		\item Find the standard divisor. \solution*{15.42857143}
+		\item Explain what the standard divisor represents in this problem. \solution*{One nurse will be assigned for each 15.4 patients.}\vspace{2in}
+		\item Find the standard quotas.
+		\item Using Hamilton's Method, assign extra seats to the lower quotas, one at a time, until you have apportioned all your nurses.
+		\item Find the apportionment based on Hamilton's method. 
+		\solution*{\begin{tabular}{cc}
+		$ A $ & 56\\
+$ B $ & 67\\
+$ C$ & 40\\
+$D $ & 12\\
+		\end{tabular}}\vfill
+	\end{enumerate}
+
+\hwnewpage
+	\item Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM ($A$, $B$, $E$, $H$, and $S$ for short).  The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.  The following table shows each school's enrollments:
+
+	\begin{center}
+	%\large
+		\begin{tabular}{lr|c|c|c|c}
+	\hline School &	Enrollment & S Q & L Q & Additional & Apportionment \\\hline \ifsolns
+	$A$ & 3292 & 32.92 & 32 & 1 & 33\\\hline
+$B$ & 1524 & 15.24 & 15 &  & 15\\\hline
+$E$ & 4162 & 41.62 & 41 & 1 & 42\\\hline
+$H$ & 2132 & 21.32 & 21 &  & 21\\\hline
+$S$  & 13890 & 138.9 & 138 & 1 & 139\\\hline
+Total  & 25,000 & 250 & 247 & 3 & 250\\\hline
+\else
+	$A$&	3292&&&&\\\hline
+	$B$	&1524&&&&\\\hline
+	$E$	&4162&&&&\\\hline
+	$H$	&2132&&&&\\\hline
+	$S$ &	 13890 &&&&\\\hline
+	Total & 25,000 & 250 &&&\\\hline \fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+
+
+	\begin{enumerate}
+		\item
+		 Find the standard divisor. \solution{ 100}
+		\item Explain what the standard divisor represents in this problem. \solution{Each faculty member is responsible for 100 students, or the student to faculty ratio is 100.}\vspace{2in}
+		\item Find the standard quotas.
+		\item Find the apportionment based on Hamilton's method.
+	\end{enumerate}
+
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\subsection{Paradoxes} \index{paradoxes!Apportionment}
+\begin{enumerate}
+	\item The small country of Amabala consists of three states: Eno, Owt, and Eerht.  With a total population of 20,000 and 200 seats in the House of Representatives the apportionment of the 200 seats under Hamilton's method is shown below:
+
+	\begin{center}
+		\begin{tabular}{lrrrrr} \hline
+	State & Population & Quota & Lower quota & Additional & Apportionment \\\hline
+	Eno & 940 & 9.4 & 9 & 1 & 10 \\\hline
+	Owt & 9030 & 90.3 & 90 & 0 & 90 \\\hline
+	Eerht & 10,030 & 100.3 & 100 & 0 & 100 \\\hline\hline
+	Total & 20,000 & 200.0 & 199 & 1 & 200 \\\hline
+	\end{tabular}
+	\end{center}
+	What was the Standard Divisor that was used to apportion Amabala's seats? \ifsolns 100 \fi\hrulefill
+	
+	Now, imagine that the number of seats is suddenly \textbf{increased to 201}, but \textbf{nothing else changes}.  Since there is one more seat to give out, the apportionment has to be recomputed.
+	\begin{enumerate}
+		\item What is the new Standard Divisor?  It has to change because the number of seats has changed.  \ifsolns 99.50 \fi \hrulefill
+	
+	\begin{center}
+	\large
+		\begin{tabular}{l|r|r|r|r|r} \hline
+	State & Population & SQ & LQ & Additional & Apportionment \\\hline
+	\ifsolns
+	Eno  & 940 & 9.447 & 9 &  & 9\\\hline 
+Owt  & 9030 & 90.7515 & 90 & 1 & 91\\\hline 
+Eerht  & 10,030 & 100.8015 & 100 & 1 & 101 \\\hline \hline
+Total  & 20,000 & 201 & 199 & 2 & 201 \\\hline 
+\else
+	Eno & 940 &  &  &  &  \\\hline
+	Owt & 9030 &  &  &  &  \\\hline
+	Eerht & 10,030 &  &  &  &  \\\hline \hline
+	Total & 20,000 & 201 &  &  &  \\\hline \fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+	
+		\item Which state received an extra seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item Which state lost a seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item What do you find odd about this situation? \hrulefill
+		\fillwithlines{\stretch{1}}
+	\end{enumerate}
+
+	\item \boxedblank[2in]{\textbf{Alabama Paradox:}\fillwithlines{\stretch{1}}} \index{paradox!Alabama}
+\clearpage
+	\item Consider the following apportionment made using Hamilton's method.  Populations are given in millions:
+	
+	\begin{center}
+		\begin{tabular}{lrrrrr} \hline
+	State & Population & Quota & Lower quota & Additional & Apportionment \\\hline
+	Alpha & 150 & $8.\overline{3}$ & 8 & 0 & 8 \\\hline
+	Beta & 78 & $4.\overline{3}$ & 4 & 0 & 4 \\\hline
+	Gamma & 173 & $9.6\overline{1}$ & 9 & 1 & 10 \\\hline
+	Delta & 204 & $11.3\overline{3}$ & 11 &0 & 11 \\\hline
+	Epsilon & 295 & $16.3\overline{8}$ & 16 & 1 & 17 \\\hline\hline
+	
+	Total & 900 & 50 & 48 & 2 & 50 \\\hline
+	\end{tabular}
+	\end{center}
+	
+	Ten years later a new census was taken which showed only a few changes in state populations -- an 8 million increase in the population of Gamma and a 1 million increase in the population of Epsilon.  \emph{The populations of the other states remained unchanged.}  Use Hamilton's method to calculate the new apportionment.
+	\begin{enumerate}
+		\item What is the new Standard Divisor?  It has to change because your total population has changed. \ifsolns 18.18 people/seat \fi \hrulefill
+	
+	\begin{center}
+\ifsolns \else	\large\fi
+		\begin{tabular}{l|r|r|r|r|r} \hline
+	State & Population & Q & LQ & Additional & Apportionment \\\hline
+	\ifsolns
+	Alpha  & 150 & 8.250825083 & 8 &  & 8\\\hline 
+Beta  & 78 & 4.290429043 & 4 & 1 & 5\\\hline 
+Gamma  & 181 & 9.9559956 & 9 & 1 & 10\\\hline 
+Delta  & 204 & 11.22112211 & 11 &  & 11\\\hline 
+Epsilon  & 296 & 16.28162816 & 16 &  & 16\\\hline \hline
+Total  & 909 & 50 & 48 & 2 & 50 \\\hline 
+\else
+	Alpha & 150 &&&& \\\hline
+	Beta & 78 &&&& \\\hline
+	Gamma & 181 &&&& \\\hline
+	Delta & 204 &&&& \\\hline
+	Epsilon & 296 &&&& \\\hline \hline
+	Total & \textbf{909} & 50.00 &  &  & 50 \\\hline\fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+
+		\item Which state received an extra seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item Which state lost a seat?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item What do you find odd about this situation?\hrulefill\fillwithlines{\stretch{1}}
+	\end{enumerate}
+	\item \boxedblank[2in]{\textbf{Population Paradox:} } \index{paradox!population}
+
+\clearpage
+
+	\item The W-CF Garbage Company has a contract to provide garbage collection and recycling services to the two towns of Waterloo (with 89,550 homes) and Cedar Falls (with 10,450 homes).  The company runs 100 little garbage trucks, which are apportioned under Hamilton's method according to the number of homes in the district.  A quick calculation shows that the standard divisor is $SD=1000$ homes, a nice, round number which makes the rest of the calculations easy.  
+	
+		\begin{center}
+		\begin{tabular}{l|r|r|r} \hline
+	State & Population & Q  & Apportionment \\\hline
+	Waterloo & 89,550 &89.55&90 \\\hline
+	Cedar Falls & 10,450 &10.45&10 \\\hline\hline
+	Total & 100,000 & 100.00 & 100 \\\hline
+	\end{tabular}
+	\end{center}
+
+	Now, the W-CF Garbage Company is bidding to expand its territory by adding the town of Evansdale (5250 homes) to its service area.  In the bid, the company promises to buy five additional garbage trucks for the Evansdale run so that its service to the other two towns is not affected.  Calculate the new apportionment.
+		\begin{enumerate}
+		\item What is your new Standard Divisor?  It will probably change because you have changed both your total population and the number of seats. \ifsolns 1002.38 \fi \hrulefill
+	\large
+		\begin{center}
+		\begin{tabular}{l|r|r|r} \hline
+	State & Population & Q  & Apportionment \\\hline \ifsolns
+	Waterloo  & 89550 & 89.33729216   & 89\\\hline
+Cedar Falls  & 10450 & 10.42517815 & 11\\\hline
+Evansdale  & 5250 & 5.237529691  & 5\\\hline\hline
+\else
+	Waterloo & 89,550 && \\\hline
+	Cedar Falls & 10,450 && \\\hline
+	Evansdale & 5250 && \\\hline\hline\fi
+	Total & 105,250 & 105.00 & \\\hline
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+		\item Which city received an extra garbage truck?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item Which state lost a garbage truck?\hrulefill
+		%\fillwithlines{\stretch{1}}
+		\item What do you find odd about this situation?\hrulefill\fillwithlines{\stretch{1}}
+	\end{enumerate}
+	\item \boxedblank[2in]{\textbf{New-States Paradox} \index{paradox!new-states}}
+\end{enumerate}
+%\end{enumerate}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+The following problems are based on the following story:  Your professor found a stash of fun, math toys in her office.  She decides to apportion the toys among her three first-year advisees according to the number of minutes each student spent doing homework during the week.
+\begin{Denumerate}
+\item \studentrand \begin{enumerate}
+	\item Suppose that there were 11 toys in the office.  Given that \randstudent[1]\ did homework for a total of 54 minutes, \randstudent[2]\ did homework for a total of 243 minutes and \randstudent[3]\ did homework for a total of 703 minutes, apportion the 11 toys among the students using Hamilton's method.
+	\solution{\randstudent[1]\ - 0\\
+\randstudent[2]\ - 3\\
+\randstudent[3]\ - 8}
+	\vfill \label{AppPar1}
+	\item Suppose that before the professor hands out the toys, each student decides to spend a ``little'' extra time on homework.  \randstudent[1]\ puts in an extra 2 minutes (for a total of 56 minutes), \randstudent[2]\ put in an extra 12 minutes (for a total of 255 minutes), and \randstudent[3]\ an extra 86 minutes (for a total of 789 minutes).  Using these new totals, apportion the 11 toys among the students using Hamilton's method.
+	\solution{\randstudent[1]\ - 1\\
+\randstudent[2]\ - 2\\
+\randstudent[3]\ - 8
+}
+	\vfill
+	\item These results illustrate one of the paradoxes of Hamilton's method.  Which one?  Explain? \solution*{This is the Population Paradox.  Be sure to explain how you know.}
+	\vfill
+	\end{enumerate}
+	
+	\hwnewpage
+\item \begin{enumerate}
+	\item Suppose there were only 10 toys in the office Given that \randstudent[1]\ did homework for a total of 54 minutes, \randstudent[2]\ did homework for a total of 243 minutes and \randstudent[3]\ did homework for a total of 703 minutes, apportion the 10 toys among the students using Hamilton's method. \solution{Ben - 1, 
+Paul - 2, 
+Ryan - 7}
+
+	\vfill
+	\item Suppose that, just before she hands out the toys, the professor finds one additional math toy.  Using the same total minutes as above, apportion now the 11 math toys among the students using Hamilton's method.  [This is a repeat of Homework~\ref{AppPar1}.] \solution{Ben - 0, 
+Paul - 3, 
+Ryan - 8}
+	\vfill
+	\item These results illustrate one of the paradoxes of Hamilton's method.  Which one?  Explain? \solution{Alabama Paradox}
+	\vfill
+	\end{enumerate}
+	
+	\hwnewpage
+\item \begin{enumerate}
+	\item Suppose that there were 11 toys in the office.  Given that \randstudent[1]\ did homework for a total of 54 minutes, \randstudent[2]\ did homework for a total of 243 minutes and \randstudent[3]\ did homework for a total of 703 minutes, apportion the 11 toys among the students using Hamilton's method.  [This is a repeat of Homework~\ref{AppPar1}.] \solution{Ben - 0, 
+Paul - 3, 
+Ryan - 8}
+	\vfill 
+	\item Suppose that before the 11 toys are given out, a frantic student, \randstudent[4], shows up at the office with a new ``Declaration of Major'' form.  \randstudent[4]\ wants to be included in the game.  \randstudent[4]\ did homework for 580 minutes during the previous week.  To be fair, the professor goes to the next office and finds 6 more math toys to be added to the original 11.  Apportion now the 17 toys among the four students using Hamilton's method.\solution{Ben - 1, 
+Paul - 3, 
+Ryan - 7, 
+Jon - 6
+} \vfill
+		\item These results illustrate one of the paradoxes of Hamilton's method.  Which one?  Explain? \solution{New States}
+	\vfill
+	\end{enumerate}
+	\hwnewpage
+	
+	\item A professor wants to apportion 15 math toys among her three second-year advisees, Kathryn, Lacey, and Jill based on the number of minutes each student spent studying.  The only information we have is that the professor will use Hamilton's method and that Kathryn's standard quota is 6.53
+	\begin{enumerate}
+		\item Explain why it is impossible for all three students to end up with five toys each. \solution{Kathryn must have at least 6 toys, her lower quota.} \vfill
+		\item Explain why it is impossible for Kathryn to end up with nine toys. \solution{Kathryn must have no more than 7 toys, her upper quota.} \vfill
+		\item Explain why it is impossible for Lacey to end up with nine toys. \solution*{Consider closely who will have the largest fractional part.\ifgradersolns Because Kathryn's fractional part is .53, and all the standard quotas must sum to exactly 15, the other fractional parts must sum to .47.  Therefore, if there are any extra toys, Kathryn will get at least her upper quota because she has the largest fractional part \fi} \vfill
+\end{enumerate}
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+	\subsection{Jefferson's Method}\index{apportionment method!Jefferson}
+\begin{enumerate}
+	\item 	   \boxedblank[1in]{\textbf{Modified Divisor:}\ifsolns The Modified Divisor is, for Jefferson's Method, a divisor slightly smaller than the Standard Divisor. \fi} \index{divisor!modified}
+	\item 	   \boxedblank[1in]{\textbf{Modified Lower Quota:}\ifsolns The Modified Lower Quota is where the population is divided by the Modified Divisor and then rounded down.  The hope is that you will get exactly the correct apportionment at this point.\else \fillwithlines{\stretch{1}}\fi} \index{quota!modified lower}
+	
+	\item Consider the Republic of Awoi with 160 seats:
+		\begin{enumerate}
+		\item Find the standard divisor (SD).
+		
+	%	\large
+		
+		\begin{tabular}{l|c|c|c|c|c|c|c} \hline
+	&	Pop. &	LQ& \hspace{.75cm} & \hspace{.75cm} 		& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+	\ifsolns
+	 Divisor&--  & 5000 & 4900 & 4950 & 4930\\\hline
+ NW  & 69000 & 13 & 14 & 13 & 13&&13\\\hline
+ SW  & 267000 & 53 & 54 & 53 & 54&&54\\\hline
+ SE  & 133000 & 26 & 27 & 26 & 26&&26\\\hline
+ NE  & 331000 & 66 & 67 & 66 & 67&&67\\\hline\hline
+Total  & 800,000 & 158 & 162 & 158 & 160&&160 \\\hline
+\else
+MD	&&&&&&&\\\hline
+	 NW &	69,000	&&&&&&\\\hline			
+	 SW &	267,000	&&&&&&\\\hline			
+	 SE &	133,000				&&&&&&\\\hline
+	 NE &	 331,000 &&&&&&\\\hline\hline
+	 Total & &160&&&&&\\\hline\fi
+	\end{tabular}
+	
+	%\begin{enumerate}
+	\normalsize
+		\item Find each state's standard lower quota.
+		\item Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.  If you want to raise the LQ you should make your divisor a bit smaller.
+		\item Find the apportionment as described by Jefferson's Method.
+	\end{enumerate} \vfill
+
+\clearpage
+	\item The Republic of Bananarama is  a small country consisting of five states ($A, B, C, D,$ and $E$).  The total population of Bananarama is 23.8 million.  According to the Bananarama constitution, the seats in the legislature are apportioned to the states according to their populations.  The following table shows each state's standard quota:
+	
+	\begin{center}
+	\begin{tabular}{lcccccc}
+State & $A$ & $B$ & $C$ & $D$ & $E$ \\\hline
+Standard quota &40.50 & 29.70 & 23.65 & 14.60 & 10.55 \\\hline
+\end{tabular}
+\end{center}
+Since we have seen this Republic before, you may want to find the information you have already calculated.
+	\begin{enumerate}
+	\item Find the number of seats in the Bananarama legislature. \ifsolns 119 \fi
+	\item Find the Standard Divisor. \ifsolns 0.2 million \fi
+	\item Find the population of each state. 
+			\item Find each state's standard lower quota.
+		\item Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.  If you want to raise the LQ you should make your divisor a bit smaller.
+		\item Find the apportionment as described by Jefferson's method.
+
+	%\ifsolns \par
+	%\begin{tabular}{cc}
+%State &	Population\\
+ %$A$ &	8.1\\
+ %$B$ 	&5.94\\
+ %$C$ 	&4.73\\
+ %$D$ 	&2.92\\
+ %$E$	&2.11
+%\end{tabular}\fi
+	%
+	\begin{center}
+	\begin{tabular}{l|c|c|c|c|c|c|c} \hline
+State	&	Pop. &	LQ& \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+\ifsolns
+MD  & & SQ & LQ & 0.19 & &0.195\\\hline
+ $A$  & 8.1 & 40.5 & 40 & 42 & &41\\\hline
+ $B$  & 5.94 & 29.7 & 29 & 31 & &30\\\hline
+ $C$  & 4.73 & 23.65 & 23 & 24 & &24\\\hline
+ $D$  & 2.92 & 14.6 & 14 & 15 & &14\\\hline
+ $E$ & 2.11 & 10.55 & 10 & 11 & &10\\\hline\hline
+Totals  & 23.8 & 119 & 116 & 123 && 119\\\hline
+\else
+Divisor	&&&&&&&\\\hline
+	$A$ &&&&&&&\\\hline
+	$B$ &&&&&&&\\\hline
+	$C$ &&&&&&&\\\hline
+	$D$ &&&&&&&\\\hline
+	$E$ &&&&&&&\\\hline
+	Totals &&&&&&&\\\hline\fi
+	\end{tabular}
+	
+	\end{center}
+\end{enumerate}
+\end{enumerate}
+
+
+\clearpage
+%\input{Jefferson}
+%\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+\begin{Denumerate}
+
+	\item Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts: $A$ (7:00 AM to 1:00 PM), $B$ (1:00 PM to 7:00 PM), $C$ (7:00 PM to 1:00 AM), $D$ (1:00 AM to 7:00 AM).  The number of nurses apportioned to each shift is based on the average number of patients treated in that shift, given in the following table:
+
+	\begin{center}
+	\large
+		\begin{tabular}{lr|c|c|c|c|c|c}
+	\hline
+Shift		&	Patients &	LQ& \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline \ifsolns
+  &  & SQ & LQ & 15 & 15.2  & 15.25 & 15.27\\\hline
+ $A$  & 871 & 56.45 & 56 & 58 &  56 & 57 & 57\\\hline
+ $B$  & 1029 & 66.69 & 66 & 68 &  67 & 67 & 67\\\hline
+ $C$  & 610 & 39.53 & 39 & 40 & 40  & 40 & 39\\\hline
+ $D$  & 190 & 12.31 & 12 & 12 & 12  & 12 & 12\\\hline\hline
+Totals  & 2700 & 174.98 & 173 & 178 & 175 & 176 & 175\\\hline
+\else
+Divisor	&&&&&&&\\\hline
+
+	 $A$ &	871 &&&&&&\\\hline
+	 $B$ &	1029&&&&&&\\\hline
+	 $C$&	610&&&&&&\\\hline
+	$D$ &	190&&&&&&\\\hline
+	Total & & 175 &&&&&\\\hline\fi
+	\end{tabular}
+	\normalsize
+	\end{center}	
+	
+	\begin{enumerate}
+		\item Find the standard divisor.
+		\item Find each shift's standard lower quota.
+		\item Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.  If you want to raise the LQ you should make your divisor a bit smaller.
+		\item Find the apportionment as described by Jefferson's Method.
+	\end{enumerate} \vfill
+%\end{enumerate}
+
+\hwnewpage
+	\item Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM ($A$, $B$, $E$, $H$, and $S$ for short).  The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.  The following table shows each school's enrollments:
+
+	\begin{center}
+	\large
+		\begin{tabular}{l|r|c|c|c|c|c|c}
+	\hline
+	 School &	Enrollment  &	LQ& \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+	 \ifsolns
+	 State  & Population & SQ & LQ & 99 & 99.5 & 99.25 & 99.2\\\hline
+$A$ & 3292 & 32.92 & 32 & 33 & 33 & 33 & 33\\\hline
+$B$ & 1524 & 15.24 & 15 & 15 & 15 & 15 & 15\\\hline
+$E$ & 4162 & 41.62 & 41 & 42 & 41 & 41 & 41\\\hline
+$H$ & 2132 & 21.32 & 21 & 21 & 21 & 21 & 21\\\hline
+$S$  & 13890 & 138.9 & 138 & 140 & 139 & 139 & 140\\\hline
+Totals  & 25000 & 250 & 247 & 251 & 249 & 249 & 250\\\hline
+\else
+Divisor	&&&&&&&\\\hline
+	$A$&	3292&&&&&&\\\hline
+	$B$	&1524&&&&&&\\\hline
+	$E$	&4162&&&&&&\\\hline
+	$H$	&2132&&&&&&\\\hline
+	$S$ &	 13890 &&&&&&\\\hline
+	
+	Total &  &&&&&&\\\hline\fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+	
+	\begin{enumerate}
+		\item Find the standard divisor.
+		\item Find each school's standard lower quota.
+		\item Find a modified divisor that will raise the LQ by enough so that you have exactly enough seats.  If you want to raise the LQ you should make your divisor a bit smaller.
+		\item Find the apportionment as described by Jefferson's Method.
+		\item Which state violates the Upper Quota.
+	\end{enumerate}
+
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleartooddpage
+	\subsection{Adam's Method}
+\begin{enumerate}
+	\item 	   \boxedblank[1in]{\textbf{Adam's Method:}\ifsolns Adam's Method is essentially the same as Jefferson's Method, except that you round up.\else \fillwithlines{\stretch{1}}\fi} \index{apportionment method!Adam}
+	\item 	   \boxedblank[1in]{\textbf{Modified Upper Quota:}\ifsolns Because we will have too many seats apportioned with Adam's Method, you need to choose a Modified Upper Quota that is a bit LARGER than the Standard Quota.\else \fillwithlines{\stretch{1}} \fi}\index{quota!modified upper}
+	
+	\item Consider the Republic of Awoi with 160 seats:
+		\begin{enumerate}
+		\item Find the standard divisor (SD).
+		
+	%	\large
+		
+		\begin{tabular}{l|c|c|c|c|c|c|c} \hline \ifsolns
+		 & Population & SQ & UQ & 5100 & 5050\\\hline
+ NW  & 69,000 & 13.8 & 14 & 14 & 14\\\hline
+ SW  & 267,000 & 53.4 & 54 & 53 & 53\\\hline
+ SE  & 133,000 & 26.6 & 27 & 27 & 27\\\hline
+ NE  & 331,000 & 66.2 & 67 & 65 & 66\\\hline
+Total  & 800000 & 160 & 162 & 159 & 160\\\hline
+\else
+	&	Pop. & \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	 NW &	69,000	&&&&&&\\\hline			
+	 SW &	267,000	&&&&&&\\\hline			
+	 SE &	133,000				&&&&&&\\\hline
+	 NE &	 331,000 &&&&&&\\\hline
+	 Total & &160&&&&&\\\hline \fi
+	\end{tabular}
+	
+	%\begin{enumerate}
+	\normalsize
+		\item Find each state's standard upper quota.
+			\item Find a modified divisor that will lower the UQ by enough so that you have exactly enough seats.  If you want to lower the UQ you should make your divisor a bit larger.
+		\item Find the apportionment as described by Adam's Method.
+		\item Compare this apportionment with that of Jefferson's Method.  What stayed the same?  What changed?
+	\end{enumerate} \vfill
+	
+	\clearpage
+	\item The Republic of Bananarama is  a small country consisting of five states ($A, B, C, D,$ and $E$).  The total population of Bananarama is 23.8 million.  According to the Bananarama constitution, the seats in the legislature are apportioned to the states according to their populations.  The following table shows each state's standard quota:
+	
+	\begin{center}
+	\begin{tabular}{lcccccc}
+State & $A$ & $B$ & $C$ & $D$ & $E$ \\\hline
+Standard quota &40.50 & 29.70 & 23.65 & 14.60 & 10.55 \\\hline
+\end{tabular}
+\end{center}
+	\begin{enumerate}
+	\item Find the number of seats in the Bananarama legislature.
+	\item Find the Standard Divisor.
+	\item Find the population of each state.
+	
+	\begin{center}
+	\begin{tabular}{l|c|c|c|c|c|c|c} \hline 
+State	&	Pop. &	UQ& \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline \ifsolns
+	 & Population & SQ & UQ & 0.21 & 0.205\\\hline
+ $A$  & 8.1 & 40.5 & 41 & 39 & 40\\\hline
+ $B$  & 5.94 & 29.7 & 30 & 29 & 29\\\hline
+ $C$  & 4.73 & 23.65 & 24 & 23 & 24\\\hline
+ $D$  & 2.92 & 14.6 & 15 & 14 & 15\\\hline
+ $E$  & 2.11 & 10.55 & 11 & 11 & 11\\\hline
+ Total  & 23.8 & 119 & 121 & 116 & 119 \\\hline
+\else
+	$A$ &&&&&&&\\\hline
+	$B$ &&&&&&&\\\hline
+	$C$ &&&&&&&\\\hline
+	$D$ &&&&&&&\\\hline
+	$E$ &&&&&&&\\\hline
+	Totals &&&&&&&\\\hline
+	\fi
+	\end{tabular}
+	
+	\end{center}
+		\item Find each state's standard upper quota.
+		\item Find a modified divisor that will lower the UQ by enough so that you have exactly enough seats.  If you want to lower the UQ you should make your divisor a bit larger.
+		\item Find the apportionment as described by Adam's method.
+		\item Compare this apportionment with that of Jefferson's Method.  What stayed the same?  What changed?
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\clearpage
+	\subsection{Webster's Method} \index{apportionment method!Webster}
+\begin{enumerate}
+	\item 	   \boxedblank[1in]{\textbf{Webster's Method:}}
+%	\item 	   \boxedblank[1in]{\textbf{Modified Lower Quota:}}
+	\vfill
+	\item Consider the Republic of Awoi with 160 seats:
+		\begin{enumerate}
+		\item Find the standard divisor (SD).
+		
+	%	\large
+		
+		\begin{tabular}{l|c|c|c|c|c|c|c} \hline \ifsolns
+		 & Population & SQ & Q
+\\\hline NW  & 69,000 & 13.8 & 14
+\\\hline SW  & 267,000 & 53.4 & 53
+\\\hline SE  & 133,000 & 26.6 & 27
+\\\hline NE  & 331,000 & 66.2 & 66
+\\\hline &  &  & 
+\\\hline Total  & 800000 & 160 & 160 \\\hline
+\else
+	&	Pop. &	\hspace{.75cm}Q& \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	 NW &	69,000	&&&&&&\\\hline			
+	 SW &	267,000	&&&&&&\\\hline			
+	 SE &	133,000				&&&&&&\\\hline
+	 NE &	 331,000 &&&&&&\\\hline
+	 Total & &&&&&&\\\hline \fi
+	\end{tabular}
+	
+	%\begin{enumerate}
+	\normalsize
+		\item Find each state's standard rounded quota. \index{quota!standard rounded}
+		\item Find a modified divisor that will change the Quota by enough so that you have exactly enough seats.  If you want to raise Q, you should make your divisor a bit smaller.  If you want to lower Q, you should make your divisor a bit larger.
+		\item Find the apportionment as described by Webster's Method.
+		\item Compare this apportionment with that of Jefferson's and Adam's Methods from the earlier sections.  What stayed the same?  What changed?
+	\end{enumerate} \vfill
+	
+	\clearpage
+	\item The Republic of Bananarama is  a small country consisting of five states ($A, B, C, D,$ and $E$).  The total population of Bananarama is 23.8 million.  According to the Bananarama constitution, the seats in the legislature are apportioned to the states according to their populations.  The following table shows each state's standard quota:
+	
+	\begin{center}
+	\begin{tabular}{lcccccc}
+State & $A$ & $B$ & $C$ & $D$ & $E$ \\\hline
+Standard quota &40.50 & 29.70 & 23.65 & 14.60 & 10.55 \\\hline
+\end{tabular}
+\end{center}
+	\begin{enumerate}
+	\item Find the number of seats in the Bananarama legislature.
+	\item Find the Standard Divisor.
+	\item Find the population of each state.
+	
+	\begin{center}
+	\begin{tabular}{l|c|c|c|c|c|c|c} \hline \ifsolns
+	 & Population & SQ & Q & 0.201\\\hline
+ $A$  & 8.1 & 40.5 & 41 & 40\\\hline
+ $B$  & 5.94 & 29.7 & 30 & 30\\\hline
+ $C$  & 4.73 & 23.65 & 24 & 24\\\hline
+ $D$  & 2.92 & 14.6 & 15 & 15\\\hline
+ $E$ & 2.11 & 10.55 & 11 & 10\\\hline
+ Total  & 23.8 & 119 & 121 & 119 \\\hline
+\else
+State	&	Pop. &\hspace{.75cm}	Q& \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	$A$ &&&&&&&\\\hline
+	$B$ &&&&&&&\\\hline
+	$C$ &&&&&&&\\\hline
+	$D$ &&&&&&&\\\hline
+	$E$ &&&&&&&\\\hline
+	Totals &&&&&&&\\\hline\fi
+	\end{tabular}
+	
+	\end{center}
+		\item Find each state's standard rounded quota.
+		\item Find a modified divisor that will change the Quota by enough so that you have exactly enough seats.  If you want to raise Q, you should make your divisor a bit smaller.  If you want to lower Q, you should make your divisor a bit larger.
+		\item Find the apportionment as described by Webster's Method.
+		\item Compare this apportionment with that of Jefferson's and Adam's Methods from the earlier sections.  What stayed the same?  What changed?
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+\begin{Denumerate}
+
+	\item Waterloo General Hospital has a nursing staff of 175 nurses working in four shifts: $A$ (7:00 AM to 1:00 PM), $B$ (1:00 PM to 7:00 PM), $C$ (7:00 PM to 1:00 AM), $D$ (1:00 AM to 7:00 AM).  The number of nurses apportioned to each shift is based on the average number of patients treated in that shift, given in the following table:
+
+	\begin{center}
+	%\large
+		\begin{tabular}{lr|c|c|c|c|c|c}
+	\hline \ifsolns
+\textbf{Adam's Method}		 & Population & SQ & UQ & 16 & 15.6\\\hline
+ $A$  & 871 & 56.4537037 & 57 & 55 & 56\\\hline
+ $B$  & 1029 & 66.69444444 & 67 & 65 & 66\\\hline
+ $C$  & 610 & 39.53703704 & 40 & 39 & 40\\\hline
+ $D$  & 190 & 12.31481481 & 13 & 12 & 13\\\hline
+Total  & 2700 & 175 & 177 & 171 & 175\\\hline\hline
+
+\textbf{Webster's Method}	 & Population & SQ & Q\\\hline
+ $A$  & 871 & 56.4537037 & 56\\\hline
+ $B$  & 1029 & 66.69444444 & 67\\\hline
+ $C$ & 610 & 39.53703704 & 40\\\hline
+$D$  & 190 & 12.31481481 & 12\\\hline
+Total  & 2700 & 175 & 175\\\hline
+\else
+	&&&&&&&Adam's Method\\
+	
+	Shift &	Patients & SQ & \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	 $A$ &	871 &&&&&&\\\hline
+	 $B$ &	1029&&&&&&\\\hline
+	 $C$&	610&&&&&&\\\hline
+	$D$ &	190&&&&&&\\\hline
+	Total & & 175 &&&&&\\\hline\hline
+	&&&&&&&Webster's Method\\
+	
+	Shift &	Patients & SQ & \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	 $A$ &	871 &&&&&&\\\hline
+	 $B$ &	1029&&&&&&\\\hline
+	 $C$&	610&&&&&&\\\hline
+	$D$ &	190&&&&&&\\\hline
+	Total & & 175 &&&&&\\\hline\fi
+	\end{tabular}
+	\normalsize
+	\end{center}	
+	
+	\begin{enumerate}
+		\item Find the standard divisor.
+		\item Find each shift's standard upper quota. \solution*{$A$  	 57\\
+ $B$  	 67\\
+ $C$ 	 40\\
+$D$  	 13\\}
+
+		\item Find each shift's standard rounded quota. \solution*{$A$  	 56\\
+ $B$  	 67\\
+ $C$ 	 40\\
+$D$  	 12\\}
+		\item Find a modified divisor that will lower the Upper Quota by enough so that you have exactly enough seats.  If your UQ is too big, you should make your divisor a bit larger.
+		\item Find the apportionment as described by Adam's Method.
+
+		\item Find a modified divisor that will change the Rounded Quota by enough so that you have exactly enough seats.  If your SQ is too small,  you should make your divisor a bit smaller.  If your SQ is too large, you should make your divisor a bit larger. If your SQ works, leave it be.
+		\item Find the apportionment as described by Webster's Method.
+	\end{enumerate} \vfill
+%\end{enumerate}
+\hwnewpage
+	\item Southern Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM ($A$, $B$, $E$, $H$, and $S$ for short).  The 250 faculty positions at SIU are apportioned to the various schools based on the schools' representative enrollments.  The following table shows each school's enrollments:
+
+	\begin{center}
+	\large
+		\begin{tabular}{l|r|c|c|c|c|c|c}
+	\hline \ifsolns
+	 & Population & SQ & UQ & 101 & 102 & 101.5\\\hline
+$A$ & 3292 & 32.92 & 33 & 33 & 33 & 33\\\hline
+$B$ & 1524 & 15.24 & 16 & 16 & 15 & 16\\\hline
+$E$ & 4162 & 41.62 & 42 & 42 & 41 & 42\\\hline
+$H$ & 2132 & 21.32 & 22 & 22 & 21 & 22\\\hline
+$S$  & 13890 & 138.9 & 139 & 138 & 137 & 137\\\hline
+ Total  & 25000 & 250 & 252 & 251 & 247 & 250 \\\hline
+\else
+	 School &	Enrollment & SUQ & \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	$A$&	3292&&&&&&\\\hline
+	$B$	&1524&&&&&&\\\hline
+	$E$	&4162&&&&&&\\\hline
+	$H$	&2132&&&&&&\\\hline
+	$S$ &	 13890 &&&&&&\\\hline
+	
+	Total &  &&&&&&\\\hline\fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+	
+	\begin{enumerate}
+		\item Find the standard divisor.
+		\item Find each school's standard upper quota.
+		\item Find a modified divisor that will lower the UQ by enough so that you have exactly enough seats.%  If you want to lower the UQ you should make your divisor a bit larger.
+		\item Find the apportionment as described by Adam's Method.
+		\item Which state violates the Lower Quota?
+	\end{enumerate}
+
+
+\hwnewpage
+	\item Western Iowa University is made up of five different schools: Agriculture, Business, Education, Humanities, and STEM ($A$, $B$, $E$, $H$, and $S$ for short).  The 200 faculty positions at WIU are apportioned to the various schools based on the schools' representative enrollments.  The following table shows each school's enrollments:
+
+	\begin{center}
+	\large
+		\begin{tabular}{l|r|c|c|c|c|c|c}
+	\hline \ifsolns
+	 & Population & SQ & Q & 128\\\hline
+$A$ & 2100 & 16.28411911 & 16 & 16\\\hline
+$B$ & 952 & 7.382133995 & 7 & 7\\\hline
+$E$ & 2601 & 20.16904467 & 20 & 20\\\hline
+$H$ & 1458 & 11.30583127 & 11 & 11\\\hline
+$S$  & 18681 & 144.858871 & 145 & 146\\\hline
+ Total  & 25792 & 200 & 199 & 200\\\hline
+\else
+	 School &	Enrollment & SQ & \hspace{.75cm} 	& \hspace{.75cm}	& \hspace{.75cm} 	&\hspace{.75cm} 	&  	 	Apportionment \\\hline
+MD	&&&&&&&\\\hline
+	$A$&	2100&&&&&&\\\hline
+	$B$	&952 &&&&&&\\\hline
+	$E$	&2601&&&&&&\\\hline
+	$H$	&1458&&&&&&\\\hline
+	$S$ &	 18681 &&&&&&\\\hline
+	Total &  &&&&&&\\\hline \fi
+	\end{tabular}
+	\normalsize
+	\end{center}
+	
+	
+	\begin{enumerate}
+		\item Find the standard divisor.
+		\item Find each school's standard rounded quota.
+		\item Find a modified divisor that will change the Quota by enough so that you have exactly enough seats.  If your SQ is too small,  you should make your divisor a bit smaller.  If your SQ is too large, you should make your divisor a bit larger. If your SQ works, leave it be. \solution{Regular rounding gives one too few seats, so the MD must be just a bit smaller.}
+				\item Find the apportionment as described by Webster's Method.
+	\end{enumerate}
+
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

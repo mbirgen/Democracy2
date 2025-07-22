@@ -1,0 +1,373 @@
+%\usepackage[polutonikogreek,english]{babel}
+
+%\usepackage{dingbat}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+%\usepackage{ahmacros}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{intersections}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns.meta}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage[pdfpagelabels]{hyperref}                 % For creating hyperlinks in cross references
+\usepackage{calc}
+\usepackage{fullpage}
+%\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{wrapfig}
+%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+\usepackage{fancyhdr}
+%\usepackage{multicols}
+\usepackage{enumitem}
+\usepackage{pgffor} % for \pgfmathsetmacro and \breakforeach
+\usepackage{listofitems} % to create arrays with \readlist
+\usepackage{ifthen} % for \whiledo
+
+\pagestyle{fancy}
+\setlength{\headheight}{30pt}
+
+
+%\parindent 1cm
+%\parskip 0.2cm
+%\topmargin 0.2cm
+%\oddsidemargin 1cm
+%\evensidemargin 0.5cm
+%\textwidth 15cm
+%\textheight 21cm
+%\parindent 1cm
+%\parskip 0.2cm
+%\topmargin -0.25in
+%\headheight 0.25in
+%\headsep 0.25in
+%\oddsidemargin 0.5in
+%\evensidemargin 0in
+%\textwidth 6in
+%\textheight 8.5in
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\defnstyle}{\emph}
+%\newcommand{Venumerate}{enumerate}
+%\newenvironment{Venumerate}{\begin{enumerate}}{\end{enumerate}}
+\newcommand{\rec}[1]{\frac{1}{#1}}
+
+
+\newif\ifsolns
+\newif\ifmathlab
+
+
+\newcommand{\soln}{\textbf{ANSWER: }}
+
+\newenvironment{alphenumerate}%
+   {\begin{enumerate}%
+      \renewcommand{\theenumi}{\alph{enumi}}%
+      \renewcommand{\labelenumi}{(\theenumi)}}
+   {\end{enumerate}}
+
+
+
+
+
+\def\textdefn{\textbf{Definition:~}}
+
+% \cleartoevenpage acts like \newpage, but guarantees that you'll be at the start of a two-page spread.
+\newcommand*\cleartoevenpage{%
+  \clearpage%
+  \ifodd\value{page}\thispagestyle{empty}\begin{center}\em This page intentionally left blank.\end{center}\clearpage\fi}
+
+\newcommand*\cleartooddpage{%
+  \clearpage%
+  \ifodd\value{page} \else\thispagestyle{empty}\begin{center}\em This page intentionally left blank.\end{center}\clearpage\fi}
+
+
+\newlength\boxedblankwidth
+\setlength{\boxedblankwidth}{.98\textwidth}
+\advance\boxedblankwidth by -\leftmargin
+\newcommand\boxedblank[2][1in]{\fbox{\raisebox{0pt}[\height][#1]{\parbox[t]{\boxedblankwidth}{#2}}}}
+
+\newlength\textwidthinlist
+\newcommand\computetextwidthinlist{\textwidthinlist=\textwidth
+                                   \advance\textwidthinlist by -\leftmargin
+                                   \advance\textwidthinlist by -\rightmargin}
+
+%\HOMEWORK creates the heading for the homework section, including a \newpage command and an entry in the table of contents.
+%\HOMEWORK* creates the same heading and TOC entry, but no \newpage command.
+%\HOMEWORK** merely typesets the heading, but does not force a \newpage and does not put anything in the table of contents.
+%            This is good for a section containing nothing but the homework questions.
+\newcounter{hwkno}
+\setcounter{hwkno}{1}
+
+\makeatletter
+  \newcommand{\HOMEWORK}{\@ifstar\HOMEWORKatleastonestar\HOMEWORKnostar}
+  \newcommand{\HOMEWORKnostar}{%
+  \cleartooddpage \pagestyle{hwk}
+	\ifmathlab \solnsfalse \fi
+%  	\cleardoublepage
+%    \newpage
+    \HOMEWORKheading \stepcounter{hwkno} 
+    \HOMEWORKcontentsline}
+  \def\HOMEWORKatleastonestar{\HOMEWORKcheckforsecondstar}
+  \newcommand{\HOMEWORKcheckforsecondstar}{\@ifstar\HOMEWORKdoublestar\HOMEWORKsinglestar}
+  \newcommand{\HOMEWORKsinglestar}{%
+    \HOMEWORKheading
+    \HOMEWORKcontentsline}
+  \newcommand{\HOMEWORKdoublestar}[1]{%
+    \HOMEWORKheading}
+  \def\HOMEWORKheading{\subsubsection*{Homework \thehwkno}}
+  \def\HOMEWORKcontentsline{\addcontentsline{toc}{subsubsection}{Homework}}
+\makeatother
+
+\newcommand{\ENDHOMEWORK}{\cleartooddpage  \ifmathlab \solnstrue \fi \pagestyle{normal}}
+
+\def\pageover{%
+  \ifodd\value{page}%
+    \par\rule{0pt}{0pt}\hfill\emph{(over)}%
+  \fi}
+
+\def\solnsnewpage{}
+\def\perspectiveHWnewpage{}
+
+% Use \hwnewpage in the homework sections instead of \newpage.
+% This guarantees that if you're at the bottom of an odd (right-hand) page,
+% the word "(over)" will appear to remind students there's more homework on the next page.
+\def\hwnewpage{%
+  \pageover
+  \clearpage
+}
+
+
+
+
+
+
+
+\newcounter{currentyear}
+\setcounter{currentyear}{\theyear}
+\newcounter{tempyear}
+\newcounter{tempyear2}
+
+
+\makeatletter
+\let\xa=\expandafter
+\newcommand\declareproblemlettering[1]{%
+  \newcounter{#1@enum}%
+  \setcounter{#1@enum}{0}%
+  \newenvironment{#1enumerate}%
+    {\begin{list}{\stepcounter{#1@enum}%
+                  #1\arabic{#1@enum}.%
+                  \xdef\@currentlabel{#1\arabic{#1@enum}}%
+                  \gdef\p@enumii{#1\arabic{#1@enum}}%
+                  %\gdef\labelenumii{(\theenumii)}%
+                  \gdef\theenumii{(\alph{enumii})}%
+                  \gdef\labelenumii{\theenumii}%
+                  }{}
+     \@enumdepth=1}%
+    {\end{list}}%
+}
+
+\newcounter{numstudentsolns}
+\setcounter{numstudentsolns}{0}
+
+\newcommand\studentsoln[1]{%
+  %Saves the parameter as a student solution
+  \stepcounter{numstudentsolns}%
+  %\showthe\c@numstudentsolns
+  \xa\xdef\csname studentsoln-label-\roman{numstudentsolns}\endcsname{\@currentlabel}%
+  %\xa\show\csname studentsoln-label-\roman{numstudentsolns}\endcsname%
+  \xa\long\xa\gdef\csname studentsoln-\roman{numstudentsolns}\endcsname{#1}%
+  %\xa\show\csname studentsoln-\roman{numstudentsolns}\endcsname%
+}
+
+\newcommand\saveasstudentsoln[1]{%
+  \studentsoln{#1}%
+  #1%
+}
+
+\newcommand\gradersoln[1]{%
+  %Gives text that shows up for graders' manual only.
+  \ifsolns
+    #1%
+  \fi
+}
+
+
+
+\newcommand\solution{%
+  \@ifnextchar*\soln@star\soln@nostar%
+}
+\long\def\soln@star*#1{%
+  \studentsoln{#1}%
+  \gradersoln{\par\soln #1}%
+}
+\long\def\soln@nostar#1{%
+  \gradersoln{\par\soln #1}%
+}
+
+\newcommand\esolution{%
+  \@ifnextchar*\esoln@star\esoln@nostar%
+}
+\long\def\esoln@star*#1{%
+  \edef\temp@soln{#1}%
+  \xa\soln@star\xa*\xa{\temp@soln}%
+}
+\long\def\esoln@nostar#1{%
+  \edef\temp@soln{#1}%
+  \xa\soln@nostar\xa{\temp@soln}%
+}
+
+\newif\ifstudentsolns
+\newif\ifgradersolns
+
+\newcommand\studentsolnscale[1][0.5]{%
+  \ifstudentsolns
+    \tikzset{scale=#1}
+  \fi
+}
+\newcommand\sspar{%
+  \ifstudentsolns
+    ~\par
+  \fi
+}
+
+
+
+\newcounter{numattributions}
+\setcounter{numattributions}{0}
+
+\newcommand\saveattribution[1]{%
+  %Saves the parameter to be displayed in the attributions section
+  \stepcounter{numattributions}%
+  \edef\attributionlabelname{attribution@page@\roman{numattributions}}
+  \xa\label\xa{\attributionlabelname}
+  \xa\long\xa\gdef\csname attribution-\roman{numattributions}\endcsname{#1}%
+}
+
+
+\makeatother
+
+
+%--------------------------------------------------------------------
+\makeatletter
+%                            \fillwithlines
+
+
+% \fillwithlines takes one argument, which is either a length or \fill
+% or \stretch{number}, and it fills that much vertical space with
+% horizontal lines that run the length of the current line.  That is,
+% they extend from the current left margin (which depends on whether
+% we're in a question, part, subpart, or subsubpart) to the right
+% margin.
+%
+% The distance between the lines is \linefillheight, whose default value
+% is set with the command
+%
+% \setlength\linefillheight{.25in}
+%
+% This value can be changed by giving a new \setlength command.
+%
+% The thickness of the lines is \linefillthickness, whose default value
+% is set with the command
+%
+% \setlength\linefillthickness{.1pt}
+%
+% This value can be changed by giving a new \setlength command.
+
+
+\newlength\linefillheight
+\newlength\linefillthickness
+\setlength\linefillheight{.25in}
+\setlength\linefillthickness{0.1pt}
+
+\newcommand\linefill{\leavevmode
+    \leaders\hrule height \linefillthickness \hfill\kern\z@}
+
+
+\def\fillwithlines#1{%
+  \begingroup
+  \ifhmode
+    \par
+  \fi
+  \hrule height \z@
+  \nobreak
+  \setbox0=\hbox to \hsize{\hskip \@totalleftmargin
+          \vrule height \linefillheight depth \z@ width \z@
+          \linefill}%
+  % We use \cleaders (rather than \leaders) so that a given
+  % vertical space will always produce the same number of lines
+  % no matter where on the page it happens to start:
+  \cleaders \copy0 \vskip #1 \hbox{}%
+  \endgroup
+}
+\makeatother
+%--------------------------------------------------------------------
+
+\newcounter{lettercount}
+\newcounter{numbercount}
+\setcounter{lettercount}{1}
+\setcounter{numbercount}{1}
+
+\newcommand{\vletter}{\Alph{lettercount}. \stepcounter{lettercount}&}
+\newcommand{\vnumber}{\arabic{numbercount}. \stepcounter{numbercount}&}
+
+%-------------------For Drawings-------------------------------------------------
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+
+% ------------------------For Putting Student Names in Document ----------------------
+%\usepackage{pgfplots}
+\usepackage{pgf}
+%\pgfplotsset{compat=1.11}
+
+
+%\pgfmathsetseed{\theyear} % to ensure that the solutions and the original have the same names.
+\pgfmathsetseed{\number\pdfrandomseed} % to ensure that it is randomized
+\def\N{\thestudentnum} % number of elements in list
+\newboolean{unique}
+\newcounter{A}
+\newcounter{B}
+
+\newcommand{\studentrand}{
+	\pgfmathsetmacro\tmplist{random(1,\N)} % first random item
+	\readlist*\mylist\tmplist % convert to array
+	\whiledo{\mylistlen<\N}{ % try until list is of length \N
+		\pgfmathsetmacro\r{random(1,\N)} % generate new random item
+		\setboolean{unique}{true}
+		\foreachitem \i \in \mylist{ % loop over previous elements
+			\ifnum \i=\r % look if new number in list
+				 \setboolean{unique}{false} % already in list
+				 \breakforeach
+			\fi
+		}
+		\ifthenelse{\boolean{unique}}{ % found unique item !
+			\xdef\tmplist{\tmplist,\r} % add new unique item
+			\readlist*\mylist\tmplist % convert to array
+		}{}
+}}
+
+\newcommand{\randstudent}[1][1]{\setcounter{A}{\mylist[#1]}\ignorespaces\getdata[\theA]\studentfirst{}%
+}%
+\newcommand{\randlast}[1][1]{\setcounter{A}{\mylist[#1]}\ignorespaces\getdata[\theA]\studentlast{}}%
+\newcommand{\randpronoun}[1][1]{\setcounter{A}{\mylist[#1]}\ignorespaces\getdata[\theA]\heshe{}}
+\newcommand{\randPronoun}[1][1]{\setcounter{A}{\mylist[#1]}\ignorespaces\getdata[\theA]\Heshe{}}
+\newcommand{\randpronouns}[1][1]{\setcounter{A}{\mylist[#1]}\ignorespaces\getdata[\theA]\hisher{}}
+\newcommand{\randPronouns}[1][1]{\setcounter{A}{\mylist[#1]}\ignorespaces\getdata[\theA]\Hisher{}}
+
