@@ -1,0 +1,184 @@
+\documentclass[12pt,leqno]{book}
+\newcommand{\theyear}{2025}
+\newcommand{\theterm}{Winter }
+\newcommand{\theschool}{Wartburg College }
+\newcommand{\theclass}{Mathematics in Democracy }
+\newif\ifproblemsA
+
+
+\input{options} 
+\ifmathlab \solnstrue \fi
+%\mathlabtrue
+%\solnstrue
+%\problemsAtrue
+
+\makeindex
+
+\title{MA 106: \\ Mathematics of Democracy \\ \ifsolns Teacher's Edition \fi}
+
+\author{Anders O.F. Hendrickson \qquad
+        St.~Norbert College  \\
+        Mariah Birgen \qquad
+				Wartburg College}
+
+\date{\theterm{} \theyear}
+\lhead{Mathematics of Democracy}
+\lfoot{\ifsolns Teacher's Edition \else Mariah Birgen \fi} \rhead{\rightmark}
+\lhead{\leftmark}\cfoot{\thepage} \rfoot{\theterm \theyear}
+
+
+% Define the (unnumbered) title page layout here
+\newcommand{\mytitlepage}{
+	\pagenumbering{alph}
+	\thispagestyle{empty}
+	\beforepartskip
+	\begin{center}
+	\thetitle
+
+	\theauthor
+	\end{center}
+	\afterpartskip
+	\clearpage
+}
+
+%Normal Page Style
+\fancypagestyle{normal}{ %
+	\fancyhf{} % remove everything
+		\lhead{Mathematics of Democracy}
+		\lfoot{\ifsolns Teacher's Edition \else Mariah Birgen \fi} \rhead{\rightmark}
+		\lhead{\leftmark}\cfoot{\thepage} \rfoot{\theterm{}\, \theyear}
+	}
+	
+	%HOMEWORK header - 
+\fancypagestyle{hwk}{ %
+   \fancyhf{} \lfoot{\ifsolns Teacher's Edition \else Mariah Birgen \fi} \cfoot{\rightmark}
+ \rfoot{\theterm{}\, \theyear} \rhead{Name: \underline{\hspace{2.5in}}}
+
+ % remove everything
+  %\renewcommand{\headrulewidth}{0pt} % remove lines as well
+  %\renewcommand{\footrulewidth}{0pt}
+}
+%
+%\includeonly{
+%options,
+%names,
+%chapter-Voting,
+%chapter-Finance3,
+%chapter-Redistricting,
+%chapter-Division,
+%chapter-Infinity,
+%appendix-Answers,
+%appendix-Calculator,
+%}
+
+
+
+\begin{document}
+\input{names}
+
+\frontmatter
+%\thispagestyle{empty}
+	%\pagenumbering{alph}
+	\thispagestyle{empty}
+	%\beforepartskip
+	\vfill
+	\maketitle
+	%\begin{center} \Large
+	%\thetitle
+%
+	%\theauthor
+	%\end{center}
+	%%\afterpartskip
+	\vfill
+	\clearpage
+
+\pagestyle{empty}
+~\clearpage
+
+ \addcontentsline{toc}{chapter}{Contents}
+	%\pagenumbering{alph}
+		\thispagestyle{empty}
+\tableofcontents*
+%\listoffigures
+%\listoftables
+
+
+\chapter*{Preface}\normalsize
+%\renewcommand{\thepage}{\arabic{page}}% Arabic numerals for page counter
+
+%\pagenumbering{roman}
+  \addcontentsline{toc}{chapter}{Preface}
+  \markboth{PREFACE}{} %Sets the headings, so it doesn't still say "CONTENTS"
+This is not a textbook.
+You will find in these printed pages almost no formulae, answers, or information.
+This book will not tell you how to do anything.
+So what is this book?
+It is most emphatically a \emph{workbook}: a place to work on learning mathematics by doing it yourself.
+
+The mathematics in this book will, for the most part, be content that you have never seen or thought about before.  However, it is material that you can figure out with some patience and persistence.  The point to keep in mind is that you are not expected to know beforehand.  To learn the content, use the following devices:
+\begin{itemize}
+	\item Try something.
+	\item Ask yourself why what you have tried doesn't work.
+	\item Brainstorm by yourself.
+	\item Brainstorm with your neighbors or your team members.
+	\item Be willing to say what you are thinking and ask questions.
+	\item Be willing to challenge the statements of others (including the teacher).
+\end{itemize}
+
+One of the most important skills in life, a skill highly valued by employers and spouses alike,
+is the ability to solve problems no one has taught you how to do.
+Any monkey or computer can be taught to follow a rote procedure over and over again,
+and frankly, your previous math courses probably treated you like a monkey.
+It is when you
+  \begin{itemize}
+		\item encounter unforeseen difficulties,
+		\item swiftly learn from experience,
+		\item and devise a suitable plan to overcome them
+	\end{itemize}
+that you show yourself to have a human mind.
+One of the chief goals of MA 106
+is for you to practice this highly creative, utterly vital, and most fully human act
+of doing what you can't do.
+
+There are places in this book for taking notes, and in particular for noting the meanings of mathematical terms. It has become clear over the past five years that the physical act of writing down notes by hand using a pencil or paper leads to significantly superior learning over recording audio or taking pictures with your camera.
+Please don't restrict your note-taking to just filling in the blanks, though!
+There will often be essential points covered in class
+that do not have a corresponding blank space in these pages.
+It's up to you whether to take your other notes in the margins of this workbook or in another notebook,
+but you should take them just as assiduously in this course as in any other course.
+%This advice is particularly important for chapters \ref{ch:finance} and \ref{ch:perspective}.
+
+There are places in this book where we assume that you have a calculator to do things for you.  You will need a calculator that will put any number into an exponent, so look for a button that is labeled $\wedge$ or $x^y$.  You will need a calculator that will calculate standard deviations for you, so make sure that the calculator has the ability to perform statistical calculations.
+
+There will be a lot of trial and error as you work in these pages,
+so I recommend using a pencil rather than a pen!
+
+%\newpage
+%\pagestyle{fancy}
+~\ifodd\value{page}\relax\else\newpage\fi
+
+%\pagestyle{headings}
+
+\mainmatter
+
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\include{chapter-Voting}
+%%\include{chapter-Finance}
+%\include{chapter-Finance2}
+\include{chapter-Finance3}
+%%\include{chapter-WaysAndMeans}
+\include{chapter-Redistricting}
+\include{chapter-Division}
+%%\include{chapter-Statistics}
+\include{chapter-Infinity}
+
+\appendix
+\include{appendix-Answers}
+\include{appendix-Calculator}
+\clearpage
+\bibliography{Birgen106WorkbookBib}{}
+\bibliographystyle{plain}
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+\end{document}
