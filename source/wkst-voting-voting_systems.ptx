@@ -1,0 +1,148 @@
+<worksheet xml:id="ws-voting_systems">
+      <title>Voting Systems</title>
+
+<introduction>
+  <p>
+      When you are trying to choose a best choice among a bunch of options, you will have a preference for which choices you like the best.
+    We will be working on how to chose the "best" when you have multiple people with different opinions.
+    </p>
+</introduction>
+
+<task workspace="Belbue Taxicab Union">
+    <title>Bellevue Taxicab Union</title>
+    <statement>
+       <p>
+      The Bellevue Taxicab Union is preparing to elect its president.
+    </p>
+
+    <p>
+      Three members are considering running for president:  Alice, Bob, and Charles.
+      Each of the five voters has a first, second, and third choice, as listed in the following table:
+    </p>
+
+    <table>
+      <tabular>
+        <row>
+          <cell>Voter:</cell>
+          <cell>Voter 1</cell>
+          <cell>Voter 2</cell>
+          <cell>Voter 3</cell>
+          <cell>Voter 4</cell>
+          <cell>Voter 5</cell>
+          <cell>Voter 6</cell>
+          <cell>Voter 7</cell>
+        </row>
+
+        <row>
+          <cell>1st choice:</cell>
+          <cell>Alice</cell>
+          <cell>Bob</cell>
+          <cell>Bob</cell>
+          <cell>Charles</cell>
+          <cell>Alice</cell>
+          <cell>Charles</cell>
+          <cell>Bob</cell>
+        </row>
+
+        <row>
+          <cell>2nd choice:</cell>
+          <cell>Charles</cell>
+          <cell>Alice</cell>
+          <cell>Charles</cell>
+          <cell>Alice</cell>
+          <cell>Charles</cell>
+          <cell>Alice</cell>
+          <cell>Alice</cell>
+        </row>
+
+        <row>
+          <cell>3rd choice:</cell>
+          <cell>Bob</cell>
+          <cell>Charles</cell>
+          <cell>Alice</cell>
+          <cell>Bob</cell>
+          <cell>Bob</cell>
+          <cell>Bob</cell>
+          <cell>Charles</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Depending on who decides to run, the ballot the voters see in the booth will look different.
+    </p>
+
+    <p>
+      For each of the following ballots, how many votes will each candidate receive?  Who will win?
+    </p>
+    </statement>
+
+    <statement>
+        <p>
+          Who should be president?
+        </p>
+      </statement>
+
+
+      <choices>
+        <choice>
+          <statement>
+            <p>
+              Alice
+            </p>
+          </statement>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+            <p>
+              Bob
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Charles
+            </p>
+          </statement>
+        </choice>
+      </choices>
+
+      <statement>
+        <p>
+          Who should be president Alice, Bob or Charles?
+        </p>
+      </statement>
+
+
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              Alice
+            </p>
+          </statement>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>
+              Bob
+            </p>
+          </statement>
+        </choice>
+
+        <!-- <choice>
+          <statement>
+            <p>
+              Charles
+            </p>
+          </statement>
+        </choice> -->
+      </choices>
+</task>
+  
+
+</worksheet>
