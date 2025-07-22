@@ -1,0 +1,2039 @@
+%chapter-Finance.tex
+
+%<*CHAPTERHEADER>
+\declareproblemlettering{F}
+\pagestyle{fancy}
+
+\cleartooddpage
+
+\chapter{Financial Mathematics}
+\label{ch:finance}
+
+%</CHAPTERHEADER>
+
+%<*WORKSHEETS>
+\section{Simple Interest}
+\index{interest!simple}
+%\noindent
+%In the following problems, there are no discounts for long-term rentals.
+In this chapter, we retain the following conventions:
+\begin{center}
+	\begin{tabular}{l@{ is }l}
+	1 year & 12 months\\
+	1 year & 52 weeks \\
+	1 year & 365 days \\
+	1 week & 7 days \\
+	1 day & 24 hours\\
+	\end{tabular}
+\end{center}
+All interest rates will be annual unless specified otherwise.
+
+\begin{enumerate}
+\studentrand
+  \item \randstudent\ rents a post-hole digger from RentAll to build a fence.
+        The cost is \$12.95 per day, and \randpronoun\ keeps it for three days.
+        How much will \randstudent\ pay? \solution{\$38.85}
+          \vfill
+
+\studentrand
+  \item \randstudent\ is visiting Kentucky for work and will need to rent a furnished apartment.
+        The rate is \$100 per week.  They stay for 18 days.  How much will \randstudent\ pay?
+  \solution{\$257.14}
+          \vfill
+\studentrand
+  \item \randstudent\ needs to lease a car for \$2500 per year.
+        How much will \randstudent\ pay if \randpronoun\ keeps the car for
+        \begin{enumerate}
+          \item 2 years? \solution{\$5,000.00}
+                \vfill
+          \item 5 months? \solution{\$1,041.67}
+                \vfill
+          \item 18 days? \solution{\$123.29}
+                \vfill
+          \item 6 weeks? \solution{\$288.46}
+                \vfill
+        \end{enumerate}
+
+\clearpage
+
+  %\item \fbox{\raisebox{0pt}[\height][1in]{\makebox[\textwidth][l]{\textbf{Simple Interest Formula:} \ifsolns $A=P*(1+r*t)$\fi}}}
+
+  \item Guido ``the Organist'' Landini is a small-time loan shark in downtown Metropolis.
+        He charges clients 43\% simple interest per year.
+        What percentage interest does he charge on a loan of
+        \begin{enumerate}
+          \item 3 years? \solution{129\%}
+                \fillwithlines{\stretch{1}}
+          \item 1 month? \solution{3.58\%}
+                \fillwithlines{\stretch{1}}
+          \item 1 week? \solution{0.827\%}
+                \fillwithlines{\stretch{1}}
+          \item 3 weeks? \solution{2.48\%}
+                \fillwithlines{\stretch{1}}
+          \item 4 days? \solution{0.471\%}
+                \fillwithlines{\stretch{1}}
+        \end{enumerate}
+  \item The interest charged is\ldots \index{interest}\ifsolns the interest rate as a decimal times the time (in the appropriate units) times the principle.\fi
+        
+        \fillwithlines{\stretch{1}}
+\clearpage
+  \item Loans: \index{loan}
+        \ifsolns Loan as renting money\fi
+        \fillwithlines{\stretch{2}}
+        
+  \item Calculations:
+        \ifsolns Calculating simple interest \fi
+        \fillwithlines{\stretch{1}}
+  \item \boxedblank{\textbf{Simple Interest Formula:}\ifsolns $F=P(1+rt)$\fi} \index{interest!simple}
+
+\clearpage
+\studentrand
+  \item Your friend, \randstudent\ borrows \$1800 from you for 3 years, at an annual simple interest rate of 7.0\%.
+        How much will \randpronoun\ repay you? %Solve for A, an odd multiple of years.
+				
+				\begin{tabular}{ccl} \Large
+\(F\) & =&\\ \Large
+\(P\) & =&\solution{\$ 1800}\\ \Large
+\(r\) & =&\solution{0.07}\\ \Large
+\(t\) & =&\solution{3 years}\\ 
+\end{tabular}
+
+				\solution{\$2178}
+        \vfill
+
+  \item Suppose you borrow \$1000 for 4 months at an annual simple interest rate of 8.0\%.
+        Find the total amount that you will have to repay.	
+							
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+
+ \solution{\$1026.66}
+%Solve for A, less than a year.
+        \vfill
+%\studentrand
+  \item Suppose \randstudent[2]\ borrows \$1500 from you for a period of 2 years, at an annual simple interest rate of 6.0\%.
+        Find the amount of interest you will earn from \randstudent[2].		
+						
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+
+\solution{\$180}
+ %Solve for total interest paid.
+        \vfill
+
+\clearpage
+\studentrand
+  \item \randstudent\ took out a loan for 6 months at an annual simple interest rate of 4.0\%.
+        The total amount \randpronoun\ paid for the loan was \$1890.46.  How much did \randpronoun\ borrow?   		
+						
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+  \solution{\$1853.39}
+  % Solve for P.
+        \vfill
+
+  \item Suppose \$2000 is borrowed for 7 months, at the end of which \$2100 is repaid.
+        Find the annual simple interest rate $r$. 		
+						
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+\solution{8.57\%}
+  %Solve for r.
+        \vfill
+        \studentrand
+  \item \randstudent\ got a loan from the city to help repair the sidewalk in front of \randpronouns\ home.
+        \randPronoun\ borrowed \$1800 at an annual simple interest rate of 5\%.
+        The amount \randpronoun\ repaid was \$2025.
+        How long was \randpronouns\ loan?   		
+						
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+   \solution{2.5 years, or 30 months}                % Solve for t.
+        \vfill
+
+\end{enumerate}
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+
+\begin{Fenumerate}
+
+  \item Given the principal $P$, the annual interest rate $r$, and the time $t$,
+        find the amount $F$ that must be repaid.
+        \begin{enumerate}
+          \def\prt#1#2#3{$P={}$\$#1, $r=#2\%$, $t={}$#3}
+          \item \prt{15,000}{6}{5 years}
+                \ifsolns \soln \fbox{\$19,500.00} \fi
+                \studentsoln{\$19,500.00}
+          \item \prt{5,300}{2}{3 months}
+                \ifsolns \soln \fbox{\$5,326.50} \fi
+          \item \prt{9,000}{4.5}{50 days}
+                \ifsolns \soln \fbox{\$9,055.48} \fi
+                \studentsoln{\$9,055.48}
+        \end{enumerate}\vfill
+				
+  \item Of the four values $F$, $P$, $r$, and $t$ in the Simple Interest Formula,
+        three are given to you.  Use the Simple Interest Formula to find the fourth one.
+        \begin{enumerate}
+          \item $F={}$\$12,000, $r=3\%$, $t={}$3 years
+                \ifsolns \soln \fbox{\$11,009.17} \fi
+                \studentsoln{\$11,009.17}
+          \item $F={}$\$8,500,           $t={}$6 months, $P={}$\$8,200
+                \ifsolns \soln \fbox{7.317\%} \fi
+                \studentsoln{7.317\%}
+          \item $F={}$\$4,250,  $r=7\%$,                 $P={}$\$3,500
+                \ifsolns \soln \fbox{3.06 years} \fi
+                \studentsoln{3.06 years}
+        \end{enumerate}\vfill
+  \item You borrow \$2,000 from the city to pay for sidewalk repairs.
+        You promise to repay the loan in three years at 5\% simple interest.
+        How much will you pay the city then?
+						
+						
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+
+        \ifsolns \par \soln \fbox{\$2,300} \fi
+        \studentsoln{\$2,300} \vfill
+\hwnewpage
+  \item \studentrand \randstudent\ \randlast\ knows \randpronoun\ will inherit \$10,000 from \randpronouns\ dying uncle
+        within five months.
+        The bank will lend money at 4\% simple interest.
+        What is the largest amount of money \randpronoun\ could borrow now,
+        if \randpronoun\ plans to use \randpronouns\ inheritance to repay it in five months?
+        \ifsolns \par \soln \fbox{\$9,836.07} \fi
+        \studentsoln{\$9,836.07}\vfill
+				
+%\studentrand \def\A{\ignorespaces\getdata[\mylist[1]]first{}} \def \Aheshe{\ignorespaces\getdata[\mylist[1]]heshe{}}
+%
+  %\def\B{\ignorespaces\getdata[\mylist[2]]first{}} \def \Bheshe{\ignorespaces\getdata[\mylist[1]]heshe{}}
+%\newcommand{\randstudent}[1][\mylist[1]]{\ignorespaces\getdata[#1]\mylist[1]first{}}
+%\newcommand{\randlast}[1][\mylist[1]]{\ignorespaces\getdata[#1]\mylist[1]last{}}
+%\newcommand{\randpronoun}[1][\mylist[1]]{\ignorespaces\getdata[#1]\heshe{}}
+%\newcommand{\randPronoun}[1][\mylist[1]]{\ignorespaces\getdata[#1]\Heshe{}}
+%\newcommand{\randpronouns}[1][\mylist[1]]{\ignorespaces\getdata[#1]\hisher{}}
+%\newcommand{\randPronouns}[1][\mylist[1]]{\ignorespaces\getdata[#1]\Hisher{}}
+
+  \item \randstudent's friend \randstudent[2]\ wants to borrow \$220 from \randpronouns\ for three months.
+        If \randstudent\ wants to earn \$20 in interest on the loan,
+        what percent simple interest should \randpronoun\ charge?
+        \ifsolns \par \soln \fbox{36.36\%} \fi
+        \studentsoln{36.36\%}\vfill
+
+\studentrand
+  \item \randstudent\ has borrowed \$800 from \randpronouns\ friend \randstudent[2], who is charging 2\% simple interest.
+        Eventually \randstudent\ repaid the loan, but it cost \$200 to do so.
+        For how long did \randstudent\ borrow \randstudent[2]'s money?
+        \ifsolns \par \soln \fbox{12.5 years} \fi
+        \studentsoln{12.5 years}\vfill
+
+\end{Fenumerate} \ENDHOMEWORK
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Compound Interest} %(Balance–Sheet Method)} 
+\index{interest!compound}
+%\vspace{-0.5em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Student Guide: Completing a Compound-Interest Balance Sheet
+% ---------------------------------------------------------------------------
+\subsection*{How to Fill Out a Compound-Interest Balance Sheet}
+
+The ledger below grows your money \emph{one period at a time}.
+Each row
+covers a slice of the year-one year, one quarter, one month, or one day-
+so the ``time'' \(t\) in the simple-interest formula
+\[
+I = Prt
+\]
+is written as a \textbf{fraction of a year}.  Follow the four steps every time you
+move to a new row.  Work with a basic calculator (or by hand) and round all
+money amounts to the nearest cent.  Do \emph{not} jump ahead to the
+compound-interest shortcut until your instructor says so.
+
+\begin{enumerate}%[label=\textbf{\arabic*.}, leftmargin=0pt,itemindent=1.8em]
+
+\item \textbf{Record the Beginning Balance.}  
+      In the first row this is the principal you deposited.  
+      In every later row copy the \emph{Ending Balance} from the line just
+      above.
+
+\item \textbf{Compute the Interest for this Period.}  
+      Use \(I = Prt\) \emph{exactly as written}:  
+      \[
+      \text{Interest} \;=\; (\text{Beginning Balance})\;(\text{Interest Rate})\;
+      (\text{Time in years}).
+      \]
+      \begin{align*}
+      5\% \text{ interest rate, yearly period}      &\Longrightarrow t = 1
+          && I = P(0.05)(1)      \\[2pt]
+      4.8\% \text{ interest rate, quarterly period} &\Longrightarrow t = \tfrac14
+          && I = P(0.048)\!\bigl(\tfrac14\bigr) \\[2pt]
+      3.6\% \text{ interest rate, monthly period}   &\Longrightarrow t = \tfrac1{12}
+          && I = P(0.036)\!\bigl(\tfrac1{12}\bigr)
+      \end{align*}
+      Write the dollar value for \(I\) in the ``Interest'' column.
+
+\item \textbf{Find the Ending Balance.}  
+      Add the interest you just calculated to the beginning balance:
+      \[
+        \text{Ending Balance}
+        \;=\;
+        \text{Beginning Balance} + \text{Interest}.
+      \]
+      Enter this rounded amount in the right-hand column.
+
+\item \textbf{Carry Forward.}  
+      The Ending Balance you just found becomes next period’s Beginning
+      Balance.  Repeat Steps 2–4 for as many rows as the problem requires.
+
+\end{enumerate}
+
+%\noindent\textit{Key idea.}  
+%By keeping the APR \emph{unchanged} and shrinking the time \(t\) to match
+%the period length, you stay faithful to \(I = Prt\) while capturing exactly
+%the same pennies the bank would add with a calculator.
+
+
+%\noindent\textit{Checkpoint.}  
+%After you finish the final row, pause and notice the pattern: every Ending
+%Balance equals the original principal multiplied by the same factor the same
+%number of times.  In the next subsection we will capture that shortcut with
+%a single compact formula.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}%[label=\textbf{F.\arabic*}, leftmargin=0pt, itemindent=*]
+
+%----------------------------------------------------------
+\studentrand
+\item %\textbf{Annual Compounding – Small Number of Periods}\\
+\randstudent\ deposits \(\$1{,}000\) in a savings account that pays \(5\%\)
+interest, compounded \emph{once per year}.  Fill in the balance sheet for
+three years.
+
+\begin{center}
+
+\renewcommand{\arraystretch}{2} % Default value: 1
+\begin{tabular}{|c|c|c|c|}
+\hline
+Year & Beginning Balance (\$) & Interest Earned (\$) & Ending Balance (\$) \\
+\hline
+1 & 1000 & 50  & 1050 \\\hline
+2 &  1050 &  & \\\hline
+3 &  &  & \\
+\hline
+\end{tabular}
+\end{center}
+
+\solution{\(F = 1000\!\left(1+\dfrac{0.05}{1}\right)^{1\times3}= \$1{,}157.63\)}
+
+%----------------------------------------------------------
+\item %\textbf{Quarterly Compounding – Watch the Rate}\\
+A certificate of deposit (CD) offers \(4\%\) interest compounded
+\emph{quarterly}.  If \randstudent[2]\ places \$500 in the CD, complete the
+ledger for the first year (four quarters).
+
+\begin{center}\renewcommand{\arraystretch}{2} % Default value: 1
+\begin{tabular}{|c|c|c|c|}
+\hline
+Quarter &Beginning Balance (\$) & Interest Earned (\$) & Ending Balance (\$)\\
+\hline
+Q1 & 500 & 5 & \\\hline
+Q2 &  &  & \\\hline
+Q3 &  &  & \\\hline
+Q4 &  &  & \\\hline
+
+\end{tabular}
+\end{center}
+
+\solution{\(F=500\!\left(1+\frac{0.04}{4}\right)^{4}= \$520.24\)}
+
+%\begin{center}
+%\emph{Work out every interest addition by hand.  Do \textbf{not} use the
+%compound-interest formula until after you complete the four ledgers.}
+%\end{center}
+
+\item %\textbf{Monthly Compounding}\\
+A certificate of deposit starts at \$2,500 and earns \(3.6\%\) APR,
+compounded \emph{monthly}. \randstudent[3] wants to track the balance for the first six months.
+
+\renewcommand{\arraystretch}{1.8}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Month & Beginning Balance (\$) & Interest Earned (\$) & Ending Balance (\$)\\\hline
+1 & & & \\\hline
+2 & & & \\\hline
+3 & & & \\\hline
+4 & & & \\\hline
+5 & & & \\\hline
+6 & & & \\\hline
+\end{tabular}
+\end{center}
+
+%---------------------------------------------------------------------------
+%\item %\textbf{Daily Compounding}\\
+%A money-market fund advertises \(2.75\%\) interest, compounded \emph{daily}
+%(assume 365 days).  Record the first 10 days of growth on an initial
+%deposit of \$5,000.
+%
+%\renewcommand{\arraystretch}{1.8}
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%Day & Beginning Balance & Interest (0.00753\%) & Ending Balance\\\hline
+%1 & & & \\\hline
+%2 & & & \\\hline
+%3 & & & \\\hline
+%4 & & & \\\hline
+%5 & & & \\\hline
+%6 & & & \\\hline
+%7 & & & \\\hline
+%8 & & & \\\hline
+%9 & & & \\\hline
+%10 & & & \\\hline
+%\end{tabular}
+%\end{center}
+
+%\end{enumerate}
+
+% After students finish the tables, introduce the compact formula here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------
+
+%\end{enumerate}
+
+%\section{Compound Interest} \index{interest!compound}
+%\ifsolns Student page {105} \fi
+
+
+%\begin{enumerate}
+\clearpage
+\subsection*{Using the Compound Interest Formula}
+
+  \item \boxedblank[2in]{\textbf{Compound Interest Formula:} 
+	\ifsolns $F=P(1+\frac{r}{n})^{nt}$ \par
+	If desired, let $i=\frac{r}{n}, m=nt$, then $F=P(1+i)^{m}$\fi
+	} \index{interest!compound}
+
+  \item Notes on \defnstyle{nominal interest rate} and \defnstyle{interest per period}:\fillwithlines{\stretch{1}}\index{interest!nominal} \index{interest!per period}
+
+  \item Suppose \$1000 is deposited into an account that yields 9\% annually.
+        Find the amount in the account at the end of the fifth year if the compounding is done
+        \begin{enumerate}
+          \item annually \index{annually}\solution{\$1538.62}
+                \medskip
+          \item semiannually \index{semiannually} \solution{\$1552.97}
+                \medskip
+          \item quarterly\index{quarterly} \solution{\$1560.51}
+                \medskip
+          \item monthly\index{monthly} \solution{\$1565.68}
+                \medskip
+          \item weekly\index{weekly} \solution{\$1567.70}
+                \medskip
+          \item daily\index{daily} \solution{\$1568.23}
+                \medskip
+        \end{enumerate}
+        %\vspace{-1in}
+
+\clearpage
+\studentrand
+  \item \randstudent\ is going to take out a short-term business loan of \$5000 for a period of 5 months.
+        The interest rate is 4\%, compounded monthly.
+        How much will \randstudent\ have to repay at the end of the loan? 		
+						
+				\begin{tabular}{cc} \Large
+\(F\) & =\\ \Large
+\(P\) & =\\ \Large
+\(r\) & =\\ \Large
+\(n\) & =\\ \Large
+\(t\) & =\\ 
+\end{tabular}
+\solution{\$5083.89}
+        \vfill
+  \clearpage
+	\studentrand
+  \item \randstudent\ deposits \$538 in a savings account that earns 3\% interest, compounded monthly.
+        How much interest will \randpronoun\ earn in four years?  (Your answer should be in dollars.) \solution{\$68.50}
+        \vfill
+
+\studentrand
+  \item \setcounter{tempyear}{\arabic{currentyear}-17}
+        In January \arabic{tempyear} \randstudent's uncle deposited some money into a college savings account for \randstudent.
+        The account paid 5\% interest, compounded quarterly.
+        In January \arabic{currentyear} there was \$28,626.40 in the account.
+        How much did \randstudent's uncle deposit back in \arabic{tempyear}? \solution{\$12299.98}
+
+        \vfill
+  %
+	%\studentrand
+	%\clearpage
+  \item \randstudent[2]\ takes out a loan of \$10,000.00 for four years.
+        At the end of the four years, \randpronoun[2]\ pays back \$11,273.30 to the bank.
+        If the interest was compounded monthly,
+        what was the interest rate? \solution{3.00\%}
+        \vfill
+				
+	 \item If the loan that \randstudent[2]\ took out was only compounded yearly,
+        what was the interest rate? %\solution{3.00\%}
+        \vfill
+        
+   \clearpage
+
+     \item Moose Jaw State Bank offers an savings account paying 5.4\% interest, compounded daily.
+           The savings account at Moose Lake Credit Union pays 5.41\% interest, compounded quarterly.
+           Finally, Moose Kneecap Savings \& Loan offers a CD earning 5.5\% interest, compounded annually.
+           You have \$4500 to invest.
+           \begin{enumerate}
+             \item If you deposit your money in Moose Jaw State Bank, how many dollars of interest will you \emph{really} earn in one year?
+                   What percent is that of your deposit?
+                   \vfill
+             \item If you instead deposit your money at Moose Lake Credit Union, 
+                   how many dollars of interest will you have earned one year later?
+                   What percent is that of your deposit?
+                   \vfill
+             \item Finally, how many dollars of interest would you earn if you put your money into Moose Kneecap Savings \& Loan for one year?
+                   What percent is that of your deposit?
+                   \vfill
+             \item Which account is best?
+                   \vfill
+           \end{enumerate}
+%%%%           \vspace{-1in}
+%%%%
+   \clearpage
+
+   \item \boxedblank{\textbf{Annual Effective Yield Formula\footnote{Sometimes this is referred to as Annual Percentage Rate (APR)}:}
+	\ifsolns $APR= (1+\frac{r}{n})^n-1$ \par
+	or $APR= (1+i)^n-1$\fi}
+ 
+\item If you open a savings account at Muddy Lake Credit Union, 
+      you will earn 3\% interest compounded daily.
+      What is the annual effective yield?
+      \solution{ANSWER: 3.0453\%}
+      \vfill
+
+\item If you open a CD at Muddy Ridge State Bank,
+      you will earn 3.2\% interest compounded quarterly.
+      What is the annual effective yield?
+      \solution{ANSWER: 3.2386\%}
+      \vfill
+
+\item Your financial adviser offers you two investment funds.
+      If you invest in the AmerEquiShare Fund, you can expect a return of 9\% compounded semiannually (twice a year).
+      If you invest in the PreferredSource Fund, you can expect a return of 8.8\% compounded monthly.
+      \begin{enumerate}
+        \item What is the annual effective yield for the AmerEquiShare Fund? \solution{9.20\%}
+      \vfill
+        \item What is the annual effective yield for the PreferredSource Fund? \solution{9.16\%}
+      \vfill
+        \item Which investment offers the higher return?\vfill
+      \end{enumerate}
+
+\end{enumerate}
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+
+\begin{Fenumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\studentrand
+\item  
+\randstudent\ deposits \$1\,000 in a savings account that pays \(5\%\) interest,
+compounded \emph{once per year}.  
+
+\begin{enumerate}[label=\alph*)]
+  \item Complete the three-year ledger below, rounding every interest entry
+        to \emph{two} decimal places (cents).
+  \item After finishing the ledger, verify your final balance with the
+        compound-interest formula \[F = P(1+\frac r n)^{nt}.\] The two answers should
+        agree to the cent if every ledger line is correct.
+\end{enumerate}
+
+\renewcommand{\arraystretch}{1.8}   % taller rows for handwriting
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Year & Beginning Balance (\$) & Interest Earned (\$) & Ending Balance (\$)\\\hline
+1 & & & \\\hline
+2 & & & \\\hline
+3 & & & \\\hline
+\end{tabular}
+\end{center}
+
+ \ifsolns
+          \soln \fbox{\$1,157.63}
+        \fi
+        \studentsoln{\$1,157.63}
+
+%\bigskip
+%\textit{Hint.}  
+%The periodic rate here is the full \(5\%\) because the account compounds only
+%once per year.
+%
+%\bigskip
+%\textbf{Instructor Check (hidden in key).}  
+%Using the formula:
+%\[
+%F = 1\,000\,(1+0.05)^{3} = 1\,157.63.
+%\]
+%A correctly rounded ledger yields exactly \$1\,157.63 as well.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+  \item Given the principal $P$, the interest rate $r$, the time $t$, and the frequency of compounding,
+        find the future amount $F$.
+        \begin{enumerate}
+          \def\prct#1#2#3#4{$P={}$\$#1, $r=#2\%$ compounded #3, $t={}$#4}
+          \item \prct{15,000}{6.5}{quarterly}{2 years}
+                \ifsolns \par\soln \fbox{\$17,064.58} \else \vfill \fi
+                \studentsoln{\$17,064.58}
+          \item \prct{100,000}{3}{monthly}{30 years}
+                \ifsolns \par\soln \fbox{\$245,684.22} \else \vfill \fi
+          \item \prct{1,500}{4}{daily}{60 days}
+                \ifsolns \par\soln \fbox{\$1,509.89} \else \vfill \fi
+                \studentsoln{\$1,509.89}
+          \item \prct{6,000}{5}{monthly}{6 months}
+                \ifsolns \par\soln \fbox{\$6,151.57} \else \vfill \fi
+        \end{enumerate}
+%\vfill
+
+	\hwnewpage
+        %Solve for future value
+				\studentrand
+  \item When \randstudent\ \randlast\ was born, \randpronouns\ parents deposited \$4,000 into 
+        a bank account bearing 5\% interest, compounded monthly.
+        When \randpronoun\ reached age 18, how much was in \randpronouns\ account?
+        \ifsolns
+          \soln \fbox{\$9,820.03}
+        \fi
+        \studentsoln{\$9,820.03}
+  \vfill
+	
+        %Solve for interest 
+				\studentrand
+  \item Seventh National Bank is lending \$10,000 to \randstudent\ \randlast\
+        for three years.
+        The bank compounds interest quarterly.
+        If the bank needs to receive \$2,300 in interest from \randstudent\
+        to cover its expenses,
+        what interest rate should it charge?
+        \ifsolns
+          \par\soln \fbox{6.96\% interest.}
+        \fi
+        \studentsoln{6.96\%}
+  \vfill
+        %Solve for initial deposit
+				\studentrand
+  \item \randstudent\ deposited some money in a bank account earning 3\% interest, compounded daily.
+        Twelve years later, there was \$1,720 in the account.  
+        How much money did \randstudent\ originally deposit?
+        \ifsolns
+          \soln \fbox{\$1200.02}
+        \fi
+        \studentsoln{\$1200.02}
+\vfill
+
+	\hwnewpage
+\studentrand
+  \item How much money must \randstudent\ \randlast\ deposit today
+        in order to have \$50,000 in twenty years, if \randpronouns\ account bears
+        \begin{enumerate}
+          \item 8\% interest, compounded annually?
+                \ifsolns \soln \fbox{\$10,727.41} \else \vfill \fi
+                \studentsoln{\$10,727.41}
+          \item 8\% interest, compounded quarterly?
+                \ifsolns \soln \fbox{\$10,255.49} \else \vfill \fi
+          \item 8\% interest, compounded monthly?
+                \solution*{ \fbox{\$10,148.57}} \vfill
+          \item 8\% interest, compounded daily?
+                \ifsolns \soln \fbox{\$10,096.60} \else \vfill \fi
+        \end{enumerate}
+%\vfill
+\end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\section{Savings} \index{annuity} \index{future value}
+
+
+				\begin{enumerate}
+  \item Deriving a very useful formula:
+	\ifsolns
+		The basic idea for a future value annuity is that every month we receive compound interest on our new
+payment along with all of our previous payments. Therefore at each time when we are going to
+compound the interest, each payment has been compounded an additional time.
+
+Example: Payment  is paid four times a year and the interest is compounded quarterly for an annual
+interest rate of \(r\) for one year:
+\begin{itemize}
+	\item  Start: 0
+\item After quarter one: $R$
+\item After quarter two the original $R$ is compounded once now and we pay an additional $R$
+\[R (1 +\frac r4)
+ + R\]
+\item After quarter three the original $R$ has been compounded twice, the second $R$ has been
+compounded once, and we pay an additional $R$
+\[
+R(1+\frac r4)^2	
++ R (1 +\frac r4)
++ R\]
+\item After quarter four (one year) the original $R$ has been compounded three times, the second $R$ has
+been compounded twice, the third $R$ has been compounded once, and we pay an additional $R$
+\[ R(1+\frac r4)^3+
+R(1+\frac r4)^2
++ R (1 +\frac r4)
++ R\]
+\item Thus you can see the pattern that the original payment will always be compounded one less that
+compounding period, which in general will be $nt$ for $n$ compounds per year and $t$ total years
+
+\end{itemize}
+
+The general formula for Future Value $F$ is
+\begin{align}
+F=&R(1 +\frac rn)^{nt-1}+R(1 +\frac rn)^{nt-2}+\cdots +R(1 +\frac rn)^1+R\\
+	=& R\frac{(1+\frac rn)^{nt}-1}{\frac rn}
+	\end{align}
+\fi
+        \fillwithlines{\stretch{1}}
+  \item An \defnstyle{annuity} is a series of equal payments made at regular intervals.
+        For an \defnstyle{ordinary annuity}, the payments are made at the \emph{end} of the interval. \index{annuity!ordinary}
+        If the payments are made at the \emph{beginning} of the interval, it is called an \defnstyle{annuity due}.  We will not be working with this type of annuity in this class.\index{annuity!due}
+				
+				A good way to think about these is as a savings account.  You are putting some money, $R$, into the account every compounding period in order to save up for something in the future.
+        \fillwithlines{\stretch{1}}
+\clearpage
+  \item \boxedblank[2in]{\textbf{Future Value of an Annuity:} \par \color{magenta} \[F=R\left(\frac{(1+\frac rn)^{nt}-1}{\frac rn}\right)\]
+	If we let $i=\frac{r}{n}$ and $m=nt$, we can shorten the formula to:
+	\[ F=R\left(\frac{(1+i)^{m}-1}{i}\right)\]}
+%  \item Notes on the time value of money:
+%        \vfill
+  \item \textbf{Example:} \newline
+        You are going to graduate, get a job, and want to buy a house in two years.
+        How much should you deposit each month into an account bearing 7\% interest, compounded monthly,
+        in order to have \$15,000 for a down payment in two years? \solution{\$584.07}
+        \vfill
+\clearpage
+  \item How much money will you have when you retire if you save \$20 each month from graduation (age 22) until retirement (age 63),
+        if you can average 6.6\% annual interest compounded monthly? \solution{41 years, \$50395.28}
+        \vfill
+  \item \studentrand \randstudent\ starts saving for a down payment on a house by depositing \$100 each month 
+        into an annuity that pays 4.8\% interest, compounded monthly.
+        How large a down payment can \randpronoun\ afford in 3 years? \solution{\$3863.81}
+
+        \vfill
+  \item Hoopla Publishing Company knows its printing press is nearing the end of its life.
+        They will need to purchase a new printing press for \$65,000 in 10 years.
+        What payment should Hoopla make every year into a sinking fund earning
+        7\% interest, compounded annually,
+        in order to have the \$65,000 in ten years? \solution{\$4,704.54}
+        \vfill
+\vspace{-1in}
+\clearpage
+\item Suppose you wanted to compute how much money would be in an account earning 5\% interest compounded monthly if you deposited \$100/month for 25 years.
+\begin{enumerate}
+	\item How much would you have if you used $\displaystyle \frac{0.05}{12}\simeq 0.004$? \vfill
+	\item How much would you have if you used $\displaystyle \frac{0.05}{12}\simeq 0.0041$? \vfill
+	\item How much would you have if you used $\displaystyle \frac{0.05}{12}\simeq 0.00417$? \vfill
+	\item How much would you have if you used $\displaystyle \frac{0.05}{12}\simeq 0.004167$? %\vfill
+\end{enumerate}
+\ifsolns  \$57,804.48 ,
+ \$59,907.89 ,
+ \$59,586.55 ,
+ \$59,554.53 
+\fi \vfill
+\item Suppose you wanted to save up \$60,000 over 20 years by depositing an amount of money in the bank account earning 5\% interest compounded monthly.
+\begin{enumerate}
+	\item How much would you have to save every month if you used $\displaystyle \frac{0.05}{12}\simeq 0.004$? \vfill
+	\item How much would you have to save every month if you used $\displaystyle \frac{0.05}{12}\simeq 0.0041$? \vfill
+	\item How much would you have to save every month if you used $\displaystyle \frac{0.05}{12}\simeq 0.00417$? \vfill
+	\item How much would you have to save every month if you used $\displaystyle \frac{0.05}{12}\simeq 0.004167$? %\vfill
+\end{enumerate}
+\ifsolns   \$149.37 ,
+ \$145.30 ,
+ \$145.91 ,
+ \$145.97 
+\fi\vfill
+
+\end{enumerate}
+
+%\end{enumerate}
+
+%</WORKSHEETS>
+
+%<*HWHEADER>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+\begin{Fenumerate}
+  \item Find the future value of each of the following ordinary annuities.
+        \begin{enumerate}
+          \item Deposits of \$1200 made at the end of each year    for 10 years, where 7\% annual interest is compounded annually.
+                \ifsolns
+                  \par \soln
+                    $\$1200\dfrac{(1+\frac{.07}{1})^{10}-1}{\frac{.07}{1}} = \boxed{\$16579.74.}$
+                \else \vfill \fi
+          \item Deposits of \$300  made at the end of each quarter for 10 years, where 8\% annual interest is compounded quarterly.\label{prob:FVq}
+                \solution*{$\$300\dfrac{(1+\frac{.08}{4})^{4\cdot 10}-1}{\frac{.08}{4}} = \boxed{\$18{,}120.59.}$} \vfill
+%                \ifsolns
+%                  \par \soln
+%                    $\$300\dfrac{(1+\frac{.08}{4})^{4\cdot 10}-1}{\frac{.08}{4}} = \boxed{\$18120.59.}$
+%                \else \vfill \fi
+          \item Deposits of \$51   made at the end of each month   for 20 years, where 6\% annual interest is compounded monthly.
+                \ifsolns
+                  \par \soln
+                    $\$51\dfrac{(1+\frac{.06}{12})^{20\cdot 12}-1}{\frac{.06}{12}} = \boxed{\$23564.09.}$
+                \else \vfill \fi
+          \item Deposits of \$100  made at the end of each week    for 2  years, where 8\% annual interest is compounded weekly.
+                %(Assume 52 weeks in a year.)
+                \solution*{$\$100\dfrac{(1+\frac{.08}{52})^{52\cdot 2}-1}{\frac{.08}{52}} = \boxed{\$11268.83.}$}
+        \end{enumerate}
+				\vfill
+				\studentrand
+  \item \randstudent\ \randlast\ deposits \$50 each week in a bank CD earning 4\% interest compounded weekly.
+        \randPronoun\ does this for 14 years.  
+        \begin{enumerate}
+          \item How much is in \randpronouns\ bank account at the end of those 14 years? \par
+                %(As usual, assume there are 52 weeks in a year.)
+                \solution{%
+                  $\$50\dfrac{(1+\frac{0.04}{52})^{52\cdot 14}-1}{\frac{0.04}{52}} = \boxed{\$48{,}769.22}$
+                }
+                \studentsoln{\$48,769.22}\vfill
+          \item How many dollars of interest did \randpronoun\ earn, in total, over those 14 years?
+                \solution{%
+                  She deposited a total of $\$50 \cdot 52\cdot 14 = \$36{,}400$, so the interest \randpronoun\ earned is
+                  $\$48{,}769.22 - \$36{,}400 = \boxed{\$12{,}369.22.}$
+                }
+                \studentsoln{\$12,369.22}\vfill
+        \end{enumerate}
+\hwnewpage
+\studentrand
+  \item \randstudent\ is graduating from Wartburg College and wants to have \$20,000 ready for a down payment on a house in 5 years.
+        If \randpronouns\ investments pay 6\% interest, compounded monthly,
+        how much money should \randpronoun\ invest every month in order to achieve \randpronouns\ goal?
+        \solution{We want $\$20{,}000 = P \dfrac{(1+\frac{0.06}{12})^{12\cdot 5}-1}{\frac{0.06}{12}}$, \\
+                  so $P = \$20{,}000 \div \dfrac{(1+\frac{0.06}{12})^{12\cdot 5}-1}{\frac{0.06}{12}} = \boxed{\$286.66.}$}
+        \studentsoln{\$286.66}\vfill
+  \item \begin{enumerate}
+\studentrand
+          \item \randstudent\ \randlast\ said \randpronoun\ would set up an ordinary annuity for \randpronouns\ newborn niece Gloria
+                and deposit \$100 each month, with the last payment to occur on Gloria's 18th birthday.
+                The payments would earn 6\% annual interest, compounded monthly.
+                How much will Gloria have on her 18th birthday?
+                \ifsolns
+                  \par \soln
+                    $\$100\dfrac{(1+\frac{.06}{12})^{12\cdot 18}-1}{\frac{.06}{12}} = \boxed{\$38735.32.}$
+                \fi
+                \studentsoln{\$38,735.32}\vfill
+								
+          \item \randstudent's spouse \randstudent[2]\ suggested they should just deposit a lump sum of money \emph{now}
+                into a bank account (earning 6\% annual interest, compounded monthly),
+                so that it would grow to the same amount by Gloria's 18th birthday as you found in part (a).
+                If they go with \randstudent[2]'s plan, how much money must the loving relatives deposit in the account now?
+                \ifsolns
+                  \par \soln
+                    We want to find $P$ such that $\$38735.32=P\left(1+\frac{.06}{12}\right)^{12\cdot 18}$;
+                    solving, we find they would need to deposit \fbox{\$13,189.79} today.
+                \fi
+                \studentsoln{\$13,189.79}\vfill
+        \end{enumerate}
+\hwnewpage
+\studentrand
+  \item \randstudent\ \randlast\ decides to pay \$300 at the end of each month into an ordinary annuity that pays
+        8\% annual interest, compounded monthly, for five years.
+        \randPronoun\ decides to calculate the future value of this annuity at the end of five years,
+        but \randpronoun\ makes a mistake in \randpronouns\ calculations.
+        What was \randpronouns\ mistake?  Is \randpronouns\ answer too big or too small?
+        \begin{eqnarray*}
+          FV &=& P \cdot \left( \frac{(1+i)^m-1}{i}\right) \\
+          FV &=& 300 \cdot \left( \frac{(1+.08)^{60}-1}{.08}\right) \\
+          FV &=& 300 \cdot 1253.213296 \\
+          FV &=& \$375{,}963.99
+        \end{eqnarray*}
+        \ifsolns
+          \par \soln
+            They used $i=.08$, which is wrong.  The \emph{annual} interest rate is $.08$, 
+            but the interest rate \emph{per month} is only $.08/12\approx .0066667$.
+        \fi
+        \studentsoln{The answer is too big.}
+\end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleartooddpage  
+\section{Loans} \index{present value}
+
+%\ifsolns Student Page 117 \fi
+\begin{enumerate}
+  %\item Your computer dies, so you go to Best Buy to get a new laptop.
+        %Since you don't have enough money right now, you buy the laptop for \$820.00 on a credit card.
+        %The credit card charges 12\% interest, compounded monthly.
+        %What will happen if you pay \$141.49 each month?
+        %
+        %\begin{center}
+					%\begin{tabular}{l}
+          %Interest per month:\\
+          %Monthly payment:
+        %\end{tabular}
+        %
+        %\begin{tabular}{l*{3}{|p{0.74in}}|} \hline
+				%Month & Loan Amount & Payment & Interest\\
+				%\ifsolns
+%0 &  \$820.00  & \$141.49  &  \$8.20 \\
+%1 &  \$686.71  & \$141.49  &  \$6.87 \\
+%2 &  \$552.09  & \$141.49  &  \$5.52 \\
+%3 &  \$416.12  & \$141.49  &  \$4.16 \\
+%4 &  \$278.79  & \$141.49  &  \$2.79 \\
+%5 &  \$140.09  & \$141.49  &  \$1.40 \\
+%6 &  \$ 0.00 &  &  \\\hline
+%\else
+          %\rule{0pt}{0.75cm} 0&&& \\ \hline
+          %\rule{0pt}{0.75cm} 1&&& \\ \hline
+          %\rule{0pt}{0.75cm} 2&&& \\ \hline
+          %\rule{0pt}{0.75cm} 3&&& \\ \hline
+          %\rule{0pt}{0.75cm} 4&&& \\ \hline
+          %\rule{0pt}{0.75cm} 5&&& \\ \hline
+          %\rule{0pt}{0.75cm} 6&&& \\ \hline\fi
+        %\end{tabular}
+%
+				%\end{center}  
+				%\item Notes on the time value of money:
+        %\vfill
+%\clearpage
+  \item \boxedblank[2in]{\textbf{Present Value of an Annuity:} \color{magenta}\[ P = R\frac{1-(1+\frac rn)^{-nt}}{\frac rn}\] or
+	\[ P = R\frac{1-(1+i)^{-m}}{i}\] 
+	}
+  \item The Present Value formula states how much a series of payments is worth \emph{as one lump sum at the beginning}.
+        This can show up in several different ways; here are four.
+        \begin{enumerate}
+          \item \textbf{How much money do you need now to fund a series of future payments?} \\
+                Example: You are planning to retire at age 68.  You will need a \$50,000 payment each year to live on,
+                and you plan to be retired for 20 years.  The interest rate is 6\%.
+                How much money do you need in your retirement account when you retire? \solution{\$573,496.06}
+                \vfill
+        \clearpage
+          \item \studentrand \textbf{What is a fair price to charge now in exchange for paying someone regularly in the future?} \\
+				Example: \randstudent[2]\ runs a retirement home, and \randstudent\ wants to pay a fixed sum now to have \randstudent[2]\ take care of \randstudent\ for the rest of \randpronouns\ life.  It will cost \randstudent[2]\ \$2000 per month to take care of \randstudent,		and \randpronoun\ will probably live another 15 years.  \randstudent[2]\ can get interest rates of 5\% compounded monthly.		How much should \randpronoun[2]\ charge \randstudent? \solution{\$252,910.49}
+				\vfill
+				
+          \item \textbf{What is a fair price to pay for something that will pay you regularly in the future?} \\
+                Example: \randstudent[3] is an investor looking at buying a copper mine.  
+                The mine will produce an annual profit of \$1,200,000 per year for its owner for the next 20 years, but then the ore will run out.  Interest rates are sitting at 4\%.
+                How much would be a fair price to pay for the mine? \solution{\$16,308,391.61}
+                \vfill
+          \clearpage
+          \item \studentrand \textbf{How does a loan amount relate to the regular loan payment?} \\
+                Example: \randstudent\ put a \$2000 down payment on a \$12,000 car, financing the rest with a 5-year loan at 6\% interest, compounded monthly.
+                \begin{enumerate}
+                  \item How much will \randpronouns\ monthly payments be? \solution{\$193.33}
+
+                        \vfill
+                  \item How much cash did \randpronoun\ pay, total, for \randpronouns\ \$12,000 car? \solution{\$13,599.68}
+                        \vfill
+                  \item How many dollars of interest did \randpronoun\ pay for this car? \solution{\$1,599.68}
+                        \vfill
+                \end{enumerate}
+                
+        \end{enumerate}
+\clearpage
+  \item \studentrand \randstudent\ has a student loan of \$9,000 to be paid back over 12 years at 4\% interest compounded monthly.
+        \begin{enumerate}\setlength{\itemsep}{2in}
+          \item How much will the monthly payment be? \solution{\$78.80}
+          \item What will be the total amount \randpronoun\ pays for \randpronouns\ \$9,000 loan?  \solution{\$11,346.85}
+          \item How much interest did \randpronoun\ pay for this loan? \solution{\$2,346.85}
+
+          \item If \randpronoun\ wants to pay it off in just 5 years, how much should \randpronoun\ pay each month? \solution{\$165.75}
+                How much interest will that save \randpronouns? \solution{\$1,401.93}
+        \end{enumerate}
+  \clearpage
+  \item You want to buy a car.  You have \$1,500 saved up for a down payment,
+        and you can get a 5-year car loan at 3\% interest, compounded monthly.
+        \begin{enumerate}
+          \item If you can afford a \$200 monthly car payment, what is the most expensive car you can buy? \solution{\$12,630.47}
+                \vfill
+          \item If you want to buy an \$18,000 vehicle, what will the monthly payment be? \solution{\$296.48}
+                \vfill
+          \item If you buy that \$18,000 vehicle, how much will you pay in interest over the life of the loan? \solution{\$1,289.00}
+                \vfill
+        \end{enumerate}
+\end{enumerate}
+
+%</WORKSHEETS>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%<*HWHEADER>
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+\begin{Fenumerate}
+
+\item Find the present value of each of the following ordinary annuities.
+      \begin{enumerate}
+        \item Payments of \$500 made at the end of each quarter for  8 years, where 10\% annual interest is compounded quarterly.
+              \solution*{$\$500 \dfrac{1-(1+\frac{.10}{4})^{-4\cdot 8}}{\frac{.10}{4}} = \boxed{\$10924.59.}$}\vfill
+        \item Payments of \$100 made at the end of each month   for 10 years, where  6\% annual interest is compounded monthly.
+              \ifsolns
+                \par \soln
+                  $\$100 \dfrac{1-(1+\frac{.06}{12})^{-12\cdot 10}}{\frac{.06}{12}} = \boxed{\$9007.35.}$
+              \fi
+              \studentsoln{\$9007.35}\vfill
+      \end{enumerate}
+      
+\item Suppose you borrow \$16,000 from a bank to purchase a car.
+      The bank charges 4\% annual interest, compounded monthly.
+      You are to make equal monthly payments at the end of each of the next 48 months to amortize your loan.
+      How much are your monthly payments?
+      \ifsolns
+        \par\soln
+        We are looking for a payment $P$ such that
+       \\ \centering{$ \displaystyle \$16{,}000 = P \dfrac{1-(1+\frac{.04}{12})^{-48}}{\frac{.04}{12}}.$}
+        Solving we obtain $P=\boxed{\$361.26.}$
+      \fi
+      \studentsoln{\$361.26}\vfill
+
+  \item You want to retire at age 65 with an \$80,000 annual income. You come from a long-lived family, so you want to be prepared in case you live to age 97. Interest rates are at 8\%.  
+							
+				\begin{enumerate}
+          \item How much money will you need in your retirement accounts when you retire, 
+                in order to fund annual payments of \$ 80,000?
+                \solution*{%
+                  You need $97-65=32$ years of retirement income, so you need
+                  \( 80000 \dfrac{1-(1+\frac{0.08}{1})^{-1\cdot 32}}{\frac{0.08}{1}} = \boxed{\$914{,}799.95.}\)
+                }\vfill
+                %\studentsoln{\$914,799.95}
+          \item If you start working at age 22, how much money should you deposit into your retirement account each month
+                in order to have saved up the amount from part (a) by the time you retire at age 65?
+                \solution*{%
+                  You have $65-22 = 43$ working years, so you need $P$ such that$ \displaystyle \$ 914{,}799.95 = P \dfrac{(1+\frac{0.08}{12})^{12\cdot 43}-1}{\frac{0.08}{12}}.$
+                  (This is the \emph{future value} formula, because you are \emph{saving} money.)
+                  Solving, you find $P=\boxed{\$204.43.}$
+                }\vfill
+        \end{enumerate}
+
+
+\hwnewpage
+  \item \studentrand \randstudent\ has to take out \$20,000 in student loans to get through college.  
+        The interest rate is 6.8\% annually, compounded monthly, and \randpronoun\ will make monthly payments for the next ten years.
+        (No interest is charged or payments required until \randpronoun\ leaves school.)
+        \begin{enumerate}
+          \item How much will \randpronouns\ monthly payment be?
+                \solution*{\$230.16}\vfill
+          \item How much interest will \randpronoun\ pay over those ten years?  (The answer should be in dollars.)
+                \solution*{\$7619.20}\vfill
+          \item Suppose \randpronoun\ tries to pay off the loan in just 5 years.
+                How much will \randpronoun\ have to pay each month to do so?
+                \solution*{\$394.14}\vfill
+          \item If \randpronoun\ does pay off the loan in 5 years, how much interest will \randpronoun\ pay total?
+                \solution*{\$3648.40}\vfill
+          \item How much money does \randpronoun\ save by paying off the loan in 5 years instead of 10 years?
+                \solution*{\$3970.80}\vfill
+        \end{enumerate}
+
+\hwnewpage
+  \studentrand 
+  \item Some time ago \randstudent\ \randlast\ took out a mortgage from First National State Local Bank; \randpronouns\ payment was \$900 per month. FNSLB is strapped for cash these days, so it's considering ``selling the mortgage'' to Seventh National Bank; in other words, SNB will pay FNSLB a certain sum of money, and in return SNB will get all \randstudent\ \randlast's remaining mortgage payments. \newline
+There are 187 payments remaining on the mortgage, and interest rates are at 4\% per year. How much should FNSLB charge Seventh National Bank to buy the mortgage?
+        \solution*{\$125,088.21} \vfill
+%\hwnewpage
+
+\item You win a ``one million dollar'' lottery prize.  Hooray!
+        \begin{enumerate}
+          \item Suppose the lottery rules stipulate that you will be paid \$50{,}000 at the end of each of the next 20 years, for a total of \$1{,}000{,}000 paid out. Assuming that annual interest rates will stay at 5\%, what is the present value of this prize? In other words, how much is this prize really worth \emph{today}?
+                
+\solution*{%
+You get an annuity of \$50,000 per year for 20 years.The annuity is worth $ \displaystyle \$50{,}000 \dfrac{1-(1+\frac{.05}{1})^{-20\cdot 1}}{\frac{.05}{1}} = \boxed{\$623{,}110.52.}$}\vfill
+          \item Suppose instead the lottery rules stipulate that you will be paid \$50{,}000 today, and then \$50{,}000 at the end of each year for the next 19 years.  Assuming 5\% interest rates, how much is \emph{this} prize really worth \emph{today}?
+                \solution{%
+                  You get \$50,000 today, plus an annuity of \$50,000 per year for 19 years.%
+                  The annuity is worth %
+                 $ \displaystyle \$50{,}000 \dfrac{1-(1+\frac{.05}{1})^{-19\cdot 1}}{\frac{.05}{1}} = \$604{,}266.04,$ %
+                  so adding in the \$50,000 you get paid now, the answer is %
+                 $ \displaystyle \$50{,}000 + \$604{,}266.04 = \boxed{\$654{,}266.04.}$%
+                }\vfill
+        \end{enumerate}
+
+\hwnewpage
+\item Two oil wells are for sale.  
+      The well in Varmint, TX promises to yield payments of \$6{,}000 at the end of each year for the next 10 years.
+      The well in Mule's Ear, TX will     yield payments of \$4{,}000 at the end of each year for the next 20 years.
+      (Notice that the lengths of time are different!)
+      \begin{enumerate}
+        \item Assuming that annual interest rates will hold steady at 8\% for the next 20 years, find the present value of each oil well.
+              Which oil well is more valuable?\label{partFa}
+              \ifsolns
+                \par \soln
+                The present value in Varmint is
+                    $\$6000 \dfrac{1-(1+\frac{.08}{1})^{-1\cdot 10}}{\frac{.08}{1}} = \boxed{\$40260.49.}$
+                The present value in Mule's Ear is
+                    $\$4000 \dfrac{1-(1+\frac{.08}{1})^{-1\cdot 20}}{\frac{.08}{1}} = \boxed{\$39272.59.}$ \par
+                Thus \fbox{Varmint has the higher present value.}
+              \fi\vfill
+        \item Assuming that annual interest rates will stay at 6\% for the next 20 years, find the present value of each oil well.
+              Which oil well is more valuable?\label{partFb} \vfill
+              \ifsolns
+                \par \soln
+                The present value in Varmint is
+                    $\$6000 \dfrac{1-(1+\frac{.06}{1})^{-1\cdot 10}}{\frac{.06}{1}} = \boxed{\$44160.52.}$
+                The present value in Mule's Ear is
+                    $\$4000 \dfrac{1-(1+\frac{.06}{1})^{-1\cdot 20}}{\frac{.06}{1}} = \boxed{\$45879.68.}$
+             \par   Thus \fbox{Mule's Ear has the higher present value.}
+              \fi
+        \item Why did the present values of the oil wells go up when the interest rates went down from part F\ref{partFa} to  part F\ref{partFb}?
+              \ifsolns
+                \par \soln
+                If interest rates are lower, you would need to invest more money today to earn enough interest
+                to make payments equivalent to what the oil wells will produce. \par
+                \emph{(Note to grader: please don't grade this part of the problem.)}
+              \fi\vfill
+      \end{enumerate}
+
+
+
+\end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\input{StudentLoans}
+%\section{Mortgages and Equity}
+%
+%\ifsolns Student page {125} \fi
+%\index{equity}\index{collateral}\index{down payment}
+%\begin{enumerate}
+  %\item \defnstyle{Collateral} for a loan is \ldots \fillwithlines{\stretch{1}}
+  %\item A \defnstyle{mortgage} is \ldots \fillwithlines{\stretch{1}}
+  %\item A \defnstyle{down payment} is \ldots \fillwithlines{\stretch{1}}
+  %\item You want to buy a \$160,000 house.  Your bank requires a 17\% down payment.
+        %What will your down payment be?\solution{\$27,200.00}
+        %\vfill
+  %\item You have \$11,000 saved up for a down payment on a house.
+        %What is the most expensive house you can buy if your
+        %credit union requires a 20\% down payment? \solution{\$55,000.00}
+        %\vfill
+  %\pagebreak
+  %\item Guinevere de Lubac owns a house but still owes \$103,000 on her mortgage.
+        %She suddenly develops a horrible disease and needs to get cash, fast, for the medical treatments.
+        %If she can sell her house for \$237,900, how much cash will she have available? \solution{\$134,900.00}
+        %\vfill
+  %\item In a house, \defnstyle{equity} means \ldots\fillwithlines{\stretch{1}}
+  %\item \defnstyle{Equity} can always be calculated by\ldots\solution{Value of House minus money left on mortgage}\fillwithlines{\stretch{1}}
+  %\item Steve's monthly mortgage payment is \$836.25, his interest rate is 5\% compounded monthly,
+        %and he has 106 monthly payments left to make.
+        %How much money does Steve still owe on his loan? \solution{\$71,538.68}
+        %\vfill
+  %\clearpage
+  %\item John Johnson bought his house for \$225,000 by getting a 30-year loan at 4.5\% interest compounded monthly. His down payment brought the  monthly mortgage payment to \$1,013.37.
+        %Today he only has 15 years left on his loan.
+        %Assuming his home has not changed in value, how much equity does he have in his house? \solution{\$92,532.17}
+        %\vfill
+  %\item Mark Steubenfeld bought his house twenty years ago for \$150,000, using a 20\% down payment
+        %and a 30-year mortgage at 6\% interest.  His monthly payment is \$719.46.
+        %\begin{enumerate}
+          %\item How much money does Mark still owe on his loan? \solution{\$64,804.25}
+                %\vfill
+          %\item If Mark's house has increased in value 55\% over the past twenty years,
+                %how much equity does he have in his house now? \solution{\$167,695.75}
+                %\vfill
+        %\end{enumerate}
+  %\clearpage
+  %\item Julie and Dan Flaten bought a house in 2006 for \$200,000 with a 5\% down payment.
+        %Their 25-year mortgage had a 5\% interest rate.
+        %By 2010, however, thanks to the 2008 housing crash, their home's value had unfortunately decreased by 18\%.
+        %\begin{enumerate}
+					%\item What is their monthly payment?\vfill
+					%\item How much do they still owe on the house?\vfill
+          %\item How much equity do Julie and Dan now have in their home? \solution{Monthly Payment is \$1,110.72.  They owe \$173,085.37 on the house.  Therefore, they owe \$9,085.37 more than the house is worth.
+%}
+                %\vfill
+          %\item If Dan's company sends him to another city and they have to sell their home, what will happen?
+                %\fillwithlines{\stretch{1}}
+        %\end{enumerate}
+%\end{enumerate}
+%
+%%</WORKSHEETS>
+%
+%%<*HWHEADER>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\HOMEWORK
+%%</HWHEADER>
+%
+%%<*HOMEWORK>
+%
+%
+%\begin{Fenumerate}
+  %\item Ted and Margery Kolstad have saved up \$16,000 for a down payment on a new house.
+        %If their bank needs them to make a 15\% down payment, what is the most expensive house they could get?
+        %\solution*{\$106,666.67.}
+  %\vfill \item Erik and Annabelle Durling have \$13,000 saved for a down payment on their first house.
+        %They have looked at their budget and figured they can spend a total of \$975 each month on their mortgage payment.
+        %They can get a 30-year loan at 5\% interest.
+        %What is the most expensive house they can afford according to these criteria?
+        %\solution{\$194,624.58.}
+  %\vfill \item Gerhard and Maria Klaus bought a house sixteen years ago on a 30-year mortgage at 5\% interest.
+        %Their monthly mortgage payment is \$987.13.
+        %\begin{enumerate}
+           %\item How much do they still owe on their loan?
+                %\solution{\$119,093.36}
+          %\vfill \item If their house is worth \$287,000 today, how much equity do they have?
+                %\solution*{\$167,906.64}\vfill
+        %\end{enumerate}
+%\hwnewpage
+  %\item \setcounter{tempyear}{\arabic{currentyear}-18}
+        %Clarence Phelps bought a house in \arabic{tempyear} for \$158,000.
+        %At that time he put 15\% down and got a 25-year mortgage at 4.75\% interest.
+        %Since \arabic{tempyear} his home's value has increased by 60\%.
+        %What is Clarence's equity in his house today (in the year \arabic{currentyear})?
+        %\solution*{
+          %We first find that his mortgage payment is \$765.67.
+          %Thus he still owes \$54,625.41 on the loan.
+          %His home's value is now \$252,800, so his equity is
+          %\fbox{\$198,174.59.}
+        %}
+  %\vfill \item \setcounter{tempyear}{\arabic{currentyear}-12}
+        %Martin and Sue Brinkley bought a house in \arabic{tempyear} for \$173,000.
+        %They had a 20\% down payment and financed the rest with a 30-year mortgage at 6.5\% interest.
+        %Since that time their home's value has decreased by 12\%.
+        %What is the Brinkleys' equity in their house today (in the year \arabic{currentyear})?
+        %\solution{\$41,023.98}
+				%
+%\hwnewpage
+  %\vfill \item Kasumi Yakamoto has made three year's worth of payments on her 20-year mortgage.
+        %She originally borrowed \$110,000 and her interest rate is 6\%.
+        %She now needs to sell her house and move to Cleveland to pursue her dream of working at the Rock \& Roll Hall of Fame.
+        %How much does she need to sell her house for in order not to be in debt?
+        %\solution{\$100,635.09}
+  %\vfill \item A \defnstyle{home equity loan}, sometimes called a \defnstyle{second mortgage},
+        %lets people borrow money using as collateral their equity in their houses.
+        %Brian Akins has a home currently worth \$119,000 and 17 years of loan payments left;
+        %his monthly payment is \$629.25 and his interest rate is 8\%.
+        %He needs to do some major repairs on his house, so he approaches Smithson Bank about a home equity loan.
+        %Smithson Bank is willing give him a home equity loan of up to 90\% of the equity he has in his house.
+        %What is the most money he could borrow for the repairs?
+				%\ifsolns 
+				%\[ 629.25\frac{1-(1+.08/12)^{-204}}{.08/12}=\$70,052.35\]
+				%\[\$119,000-\$70,052.35=\$48,947.65\]
+				%\[\$48,947.65*90\% = \$44,052.89 \text{ that could be borrowed}\]
+				%\fi
+        %\solution*{\$44,052.89} \vfill
+%\end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%<*WORKSHEETS>
+%
+%\clearpage
+%\section{Affordability}
+%
+%
+%\begin{enumerate}
+  %\item The amount banks generally require for a ``normal'' down payment is\ldots\vspace{0.5in} \ifsolns 10\%-20\% \else \fillwithlines{\stretch{1}}\fi
+  %\item \defnstyle{Private mortgage insurance} (PMI) is \ldots \fillwithlines{\stretch{1}} \ifsolns insurance payable to a lender or trustee for a pool of securities that may be required when taking out a mortgage loan.\fi
+  %\item PMI is always calculated as a percentage of the\ldots \index{Private Mortgage Insurance (PMI)}
+        %\ifsolns loan amount, not the purchase price\fi \vspace{0.5in}
+  %\item The credit union will let you get by with a 5\% down payment
+        %if you pay 0.6\% PMI per year.
+        %You still have \$11,000 in savings.
+        %\begin{enumerate}
+          %\item What is the most expensive house you can buy if you only pay a 5\% down payment? \solution{\$220,000.00}
+                %\vfill
+          %\item In this case, how much will you pay for PMI during the first year? \solution{\$1,254.00}
+                %\vfill
+          %\item How much will you pay each month for PMI? \solution{\$104.50}
+                %\vfill
+        %\end{enumerate}
+%\clearpage
+	%\item A \defnstyle{point} is \ldots  \index{mortgage!points} \ifsolns 1\% of the loan.\else \fillwithlines{\stretch{1}} \fi 
+  %\item \defnstyle{Closing costs} are what you have to pay at the time you take out the loan. \index{closing costs}
+        %There are several types, including the following:
+        %\begin{enumerate}
+          %\item A \defnstyle{down payment}.\fillwithlines{\stretch{1}} \index{mortgage!down payment}
+          %\item A \defnstyle{discount charge} is \fillwithlines{\stretch{1}} \index{mortgage!discount charge}
+          %\item A \defnstyle{loan origination fee} is \ldots  \index{mortgage!loan origination fee} 
+					%\ifsolns An origination fee usually varies from 0.5\% (half a point) to 2\% (two points) of a given loan amount, depending on whether the loan was originated in the prime or the subprime market. For example, an origination fee of 2\% on a \$200,000 loan is \$4,000.[2]
+					%\else \fillwithlines{\stretch{1}} \fi 
+        %\end{enumerate}
+  %
+  %\item \boxedblank{\textbf{Closing costs:}}
+    %\item You are buying a house for \$165,000 with a \$20,000 down payment,
+          %and the bank charges you \$253 in closing fees plus one point.
+          %How much are your closing costs? \solution{\$21,703.00}
+            %\vfill
+%%\clearpage
+%%    \item You want to buy a house.  You have a \$11,000 down payment saved up,
+%%          and you can get a 30-year mortgage at 5\% interest, compounded monthly.
+%%          \begin{enumerate}
+%%            \item If you can afford a \$600 monthly mortgage payment, what is the most expensive house you can buy?
+%%                  \vfill
+%%            \item If you want to buy a \$150,000 house, what will the monthly payment be?
+%%                  \vfill
+%%          \end{enumerate}
+%%\cleartoevenpage
+  %\item Your monthly housing expenses are often referred to as ``PITI.'' \fillwithlines{\stretch{1}} \par
+        %\mbox{\Huge P} \index{housing expenses!Principle} \par \solution{Principle} 
+        %\fillwithlines{\stretch{1}}
+        %\mbox{\Huge I} \index{housing expenses!Interest}\par \solution{Interest}
+        %\fillwithlines{\stretch{1}}
+        %{\Huge T} \index{housing expenses!Taxes}\par \solution{Taxes}
+        %\fillwithlines{\stretch{1}}
+        %{\Huge I} \index{housing expenses!Insurance} \solution{Insurance}
+				%\fillwithlines{\stretch{1}}
+				%\clearpage
+				%
+  %\item
+  	%Josef takes out a 30 year mortgage loan of \$50,000 with an APR of 6\%.
+  	%\begin{enumerate}
+  	%\item What is the monthly payment? \solution{\$299.78} \vfill
+			%\item How much does Josef owe on the mortgage after one month? \solution{\$49,950.22}\vfill
+			%\item How much of the first monthly payment went to paying off the loan (principle)?\solution{\$49.78}\vfill
+			%\item How much of the first monthly payment went to interest? \solution{\$250}\vfill
+		%\end{enumerate}
+%\pagebreak
+  %\item Juan and Regina Hernandez are buying a house selling for \$158,000.
+        %They will put 12\% down and get a 15-year mortgage at 3\% interest compounded monthly,
+        %but they will be charged 0.5\% PMI per year.
+        %Homeowner's insurance costs \$948 per year and property taxes are \$2370 per year.
+        %\begin{enumerate}
+          %\item Determine their monthly mortgage payment (principal and interest). \solution{\$960.18}
+                %\vfill
+          %\item Determine their monthly PMI payment. \solution{\$57.93}
+                %\vfill
+          %\item Determine their complete monthly payment (principal, interest, taxes, and insurance). \solution{\$1,294.61}
+                %\vfill
+        %\end{enumerate}
+%\clearpage
+%
+    %\item Matthias and Joanna Schmitz are interested in buying a house selling for \$249,000. 
+          %The insurance and property taxes on the property are \$1380 and \$1980 per year, respectively. 
+          %The Schmitzes' bank requires 
+              %a 15\% down payment
+              %and a payment of 2 points at closing.
+          %\begin{enumerate}\setlength{\itemsep}{1in}
+             %\item What would the Schmitzes' down payment be? \solution{\$37,350.00}
+                  %\vfill
+             %\item What is the mortgage amount? \solution{\$211,650.00}
+                  %\vfill
+             %\item Determine the closing costs (down payment and points). \solution{\$41,583.00}
+                  %\vfill
+             %\item If the Schmitzes want a 30 year mortgage at 7\% interest compounded monthly, 
+                   %determine the monthly mortgage payment (principal and interest). \solution{\$1,408.11}
+                  %\vfill
+             %\item Determine the Schmitzes' complete monthly payment (principal, interest, taxes, and insurance). \solution{\$1,688.11}
+                  %\vfill
+          %\end{enumerate}
+%\end{enumerate}
+%
+%%</WORKSHEETS>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%<*HWHEADER>
+%\HOMEWORK
+%%</HWHEADER>
+%
+%%<*HOMEWORK>
+%
+%
+%\begin{Fenumerate}
+%
+      %
+  %\item Frank and Lacey Capricorn are buying a \$130,000 house.
+        %They can afford an 8\% down payment, but the bank will charge them 0.7\% PMI per year.
+        %They will get a 20-year mortgage at 4.5\% interest.
+        %Home insurance will cost them \$1260 annually,
+        %and property taxes run \$1986 per year.
+        %How much will their total monthly housing payment (PITI) be?
+        %\solution*{%
+          %Their loan amount is \$119,600,
+          %so their mortgage payment (P\&I) will be \$756.65 per month.
+          %Taxes are \$165.50 per month.
+          %Homeowner's insurance is \$105 per month, and the PMI is \$69.77 per month,
+          %for a total monthly payment of \fbox{\$1096.92.}
+        %}\vfill \vfill
+%
+  %\item Erik and Kristin Halvorson want to buy a house for \$148,000.
+        %They want a standard 30-year, fixed-rate mortgage.
+        %They can get an interest rate of 3.5\% from their bank,
+        %but they will have to pay two points to the bank.
+        %They have saved up enough for a 10\% down payment.
+        %Home insurance will cost \$1500 per year,
+        %and property taxes are \$1800 annually.
+        %\begin{enumerate}
+          %\item Calculate the Halvorsons' closing costs.
+                %\ifsolns
+                  %\par\soln
+                  %The closing costs consist of down payments and points and fees.
+                  %The down payment is 10\% of \$148,000, namely \$14,800.
+                  %Thus the loan amount is $\$148{,}000-\$14{,}800 = \$133{,}200$.
+                  %Two points are 2\% of the loan amount, namely
+                  %\$2664.
+                  %Thus their closing costs are
+                 %\\ \centering{$ \displaystyle \$14{,}800 + \$2{,}664 = \boxed{\$17{,}464.00.}$}
+                %\fi
+                %\studentsoln{\$17,464.00}\vfill
+          %\item Calculate the Halvorsons'
+                %total monthly housing payment (PITI).
+                %\ifsolns
+                  %\par\soln
+                  %Principal and Interest can be found from the present value formula.
+                  %We are looking for the $P$ such that
+                  %$\$133{,}200 = P \dfrac{1-(1+\frac{.035}{12})^{-12\cdot 30}}{\frac{.035}{12}}.$
+                  %Solving, we get $P=\$598.13$ per month for Principal and Interest.
+                  %
+                  %As for Taxes, they are \$1800 per year so $\$1800\div 12 = \$150$ per month.
+                  %Likewise the Insurance costs $\$1500 \div 12 = \$125$ per month.
+                  %We conclude that
+                 %\\ \centering{$ \displaystyle PITI = \$598.13 + \$150 + \$125 = \boxed{\$873.13\mbox{~per month.}}$}
+                %\fi
+                %\studentsoln{\$873.13}\vfill
+        %\end{enumerate}
+%\hwnewpage
+%
+  %\item Marcus and Julia Quackenthorpe want to buy a \$175,000 house.
+        %They will put down a 20\% down payment
+        %and get a 25-year fixed-rate mortgage.
+        %The bank offers a 5\% interest rate,
+        %but if they pay one point,
+        %the bank will lower the interest rate to 4.5\%.
+        %\begin{enumerate}
+          %\item How much money will the Quackenthorpes borrow?
+                %\ifsolns \par\soln \fbox{\$140,000.} \fi\vfill
+          %\item If they go with the 5\% rate, how much will their monthly mortgage payment be?
+                %\ifsolns \par\soln \fbox{\$818.43.} \fi\vfill
+                %\studentsoln{\$818.43}
+          %\item Using that 5\% rate, how much will they pay for their house in total, over the 25 years?
+                %\ifsolns \par\soln $\$818.43 \cdot 12\cdot 25 + \$35,000 = \boxed{\$280{,}529;}$ 
+                         %accept \$245,529 for less credit (that's forgetting the down payment).\fi
+                %\studentsoln{\$280,529}\vfill
+          %\item If they pay one point and get a 4.5\% interest rate, how much will their monthly mortgage payment be?
+                %\ifsolns \par\soln \fbox{\$778.17.} \fi\vfill
+                %%\studentsoln{\$778.17}
+          %\item Using that 4.5\% rate, how much will they pay for their house in total, over the 25 years,
+                %\emph{including the one point they paid for the discounted rate}?
+                %\ifsolns \par\soln $\$778.17 \cdot 12\cdot 25 + \$1400 + \$35,000 = \boxed{\$269,851;}$ 
+                %accept \$234,851 for less credit (that's forgetting the down payment).\fi\vfill
+                %%\studentsoln{\$269,851}
+          %\item Should the Quackenthorpes pay for the discount or not?
+                %\ifsolns \par\soln \fbox{Yes, they should;} it will save them over \$10,000.\fi\vfill
+        %\end{enumerate}
+%
+%
+  %\item You are shopping for a new house.  You have saved up \$10,500
+        %towards a down payment, and you calculate that you can afford \$1100 per month
+        %for housing total (PITI).
+        %Real estate taxes for a house in your city will probably be about \$2300 per year,
+        %and insurance will be about \$1600 annually.
+        %You can get a 30-year mortgage with 4\% interest, compounded monthly.
+        %What is the most expensive house you could buy and still keep under your \$1100/month budget?
+        %\ifsolns
+          %\par\soln
+          %Your Taxes will be $\$2300\div 12 = \$191.67$ per month, and your Insurance will be
+          %$\$1600 \div 12 = \$133.33$.  That leaves
+         %\\ \centering{$ \displaystyle \$1100 - \$191.67 - \$133.33 = \$775.00$}
+          %per month for Principal and Interest.
+          %Thus you can afford a loan of 
+         %\\ \centering{$ \displaystyle PV = \$775 \dfrac{1-(1+\frac{.04}{12})^{-360}}{\frac{.04}{12}}=\$162{,}332.46.$}
+          %Adding in the \$10,500 down payment you have saved,
+          %you can afford a house costing
+          %$\$162{,}332.46 + \$10{,}500 = \boxed{\$172{,}832.46.}$
+        %\fi
+        %\studentsoln{\$172,832.46}\vfill
+%
+%\end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{TaxBrackets}
+
+%</HOMEWORK>
+
+%%%%%%%%%%%%%  %<*WORKSHEETS>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \clearpage
+%%%%%%%%%%%%%  \section{Income Tax, Part 1}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \begin{enumerate}
+%%%%%%%%%%%%%    \item The difference between \defnstyle{deductions} and \defnstyle{credits} is\ldots \fillwithlines{\stretch{1}}
+%%%%%%%%%%%%%    \item You are a single college student.
+%%%%%%%%%%%%%          Your taxable income is \$7,500, and the government taxes your income at a tax rate of 10\%.
+%%%%%%%%%%%%%          \begin{enumerate}
+%%%%%%%%%%%%%            \item Find how much tax you will pay.
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item If you could claim a \$500 tax deduction for tuition, how much tax would you pay?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item If you could claim a \$500 tax credit for tuition, how much tax would you pay?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Which is better for you, a deduction or a credit?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%          \end{enumerate}
+%%%%%%%%%%%%%    \clearpage
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \begin{tabular}{|ll|}\hline
+%%%%%%%%%%%%%           Status & 2012 Standard Deduction \\ \hline
+%%%%%%%%%%%%%           Married Filing Jointly    & \$11,900 \\
+%%%%%%%%%%%%%           Head of Household         & \$8,700  \\
+%%%%%%%%%%%%%           Single                    & \$5,950  \\
+%%%%%%%%%%%%%           Married Filing Separately & \$5,950  \\ \hline
+%%%%%%%%%%%%%         \end{tabular}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \fbox{2012 Exemption: \$3,800 per person}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%    \item Christine is a single woman without children who makes \$38,500 annually.  
+%%%%%%%%%%%%%          Find her taxable income for 2012.
+%%%%%%%%%%%%%          \vfill
+%%%%%%%%%%%%%    \item Zeke and Susan are married and file their taxes jointly.
+%%%%%%%%%%%%%          Zeke earns \$57,300 in wages as a city planner,
+%%%%%%%%%%%%%          while Susan is a part-time teacher and earns \$12,450 per year.
+%%%%%%%%%%%%%          They have three young children.
+%%%%%%%%%%%%%          Find their taxable income for 2012.
+%%%%%%%%%%%%%          \vfill
+%%%%%%%%%%%%%    %\clearpage
+%%%%%%%%%%%%%    \item The difference between \defnstyle{refundable} and \defnstyle{non-refundable credits} is \ldots \fillwithlines{\stretch{1}}
+%%%%%%%%%%%%%    \item Abednego is a student filling out his tax return.
+%%%%%%%%%%%%%          After taking his deductions and figuring his tax,
+%%%%%%%%%%%%%          his tax initially comes to 
+%%%%%%%%%%%%%          \$1732.
+%%%%%%%%%%%%%          He gets a non-refundable tuition credit of \$2000
+%%%%%%%%%%%%%          and a refundable Earned Income Credit of \$264.
+%%%%%%%%%%%%%          How much will the government pay Abednego this year?
+%%%%%%%%%%%%%          \vfill
+%%%%%%%%%%%%%  %\clearpage
+%%%%%%%%%%%%%  %  \item How taxation works:
+%%%%%%%%%%%%%  \clearpage
+%%%%%%%%%%%%%         \hbox{\hskip 0.0pt minus 1.0fil
+%%%%%%%%%%%%%         {\small
+%%%%%%%%%%%%%         \begin{tabular}{|lllll|} \hline
+%%%%%%%%%%%%%         2012 
+%%%%%%%%%%%%%          & Married 
+%%%%%%%%%%%%%          & 
+%%%%%%%%%%%%%          & 
+%%%%%%%%%%%%%          & Married \\
+%%%%%%%%%%%%%         Tax Rate
+%%%%%%%%%%%%%          & Filing Jointly 
+%%%%%%%%%%%%%          & Head of Household
+%%%%%%%%%%%%%          & Single 
+%%%%%%%%%%%%%          & Filing Separately \\ \hline
+%%%%%%%%%%%%%         10\% & Not over \$17,400        & Not over \$12,400      & Not over \$8,700       & Not over \$8,700       \\
+%%%%%%%%%%%%%         15\% &  \$17,400 -- \$70,700    & \$12,400 -- \$47,350   & \$8,700 -- \$35,350    & \$8,700 -- \$35,350    \\
+%%%%%%%%%%%%%         25\% &  \$70,700 -- \$142,700   & \$47,350 -- \$122,300  & \$35,350 -- \$85,650   & \$35,350 -- \$71,350   \\
+%%%%%%%%%%%%%         28\% & \$142,700 -- \$217,450   & \$122,300 -- \$198,050 & \$85,650 -- \$178,650  & \$71,350 -- \$108,725  \\
+%%%%%%%%%%%%%         33\% & \$217,450 -- \$388,350   & \$198,050 -- \$388,350 & \$178,650 -֠\$388,350 & \$108,725 -֠\$194,175 \\
+%%%%%%%%%%%%%         35\% & Over \$388,350           & Over \$388,350         & Over \$388,350         & Over \$194,175         \\ \hline
+%%%%%%%%%%%%%         \end{tabular}}\hfil}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%    \item John and Martha Kent are a married couple with a 2012 taxable income of \$53,000.
+%%%%%%%%%%%%%          How much is their 2012 tax (before any credits are applied)?
+%%%%%%%%%%%%%          \vfill
+%%%%%%%%%%%%%    \item Susan Smith files her taxes as Head of Household.  Her taxable income was \$42,000.
+%%%%%%%%%%%%%          How much is her 2012 tax (before any credits are applied)?
+%%%%%%%%%%%%%          \vfill
+%%%%%%%%%%%%%    \item Shadrach Goldberg is a single workaholic with a 2010 taxable income of \$127,000.
+%%%%%%%%%%%%%          How much was his 2012 tax (before any credits were applied)?
+%%%%%%%%%%%%%          \vfill
+%%%%%%%%%%%%%  \clearpage
+%%%%%%%%%%%%%    \item Archibald and Alexandra Campbell are married but don't have any children yet.
+%%%%%%%%%%%%%          In 2012 Archibald's income at the meatpacking plant was \$53,210.37,
+%%%%%%%%%%%%%          while Alexandra earned wages of \$22,329.53 as a waitress.
+%%%%%%%%%%%%%          At the bank they earned taxable interest of \$121.83.
+%%%%%%%%%%%%%          According to their W-2's, Archibald had \$6213.20 withheld from his paychecks throughout the year,
+%%%%%%%%%%%%%          while Alexandra had \$1923.10 withheld.
+%%%%%%%%%%%%%          
+%%%%%%%%%%%%%          Fill out Form 1040EZ for the Campbells.  (Be sure to fill out the worksheet for line 8.)
+%%%%%%%%%%%%%          
+%%%%%%%%%%%%%          \emph{(For this and all other tax problems, you may assume that I have given you all relevant information.
+%%%%%%%%%%%%%          For example, because I didn't say anything about a nontaxable combat pay election,
+%%%%%%%%%%%%%          you may assume the Campbells don't have anything for that line of the form.)}
+%%%%%%%%%%%%%          
+%%%%%%%%%%%%%  \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %</WORKSHEETS>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %<*HWHEADER>
+%%%%%%%%%%%%%  \HOMEWORK
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \begin{center}
+%%%%%%%%%%%%%    \fbox{\begin{minipage}{5in}
+%%%%%%%%%%%%%      \begin{center}
+%%%%%%%%%%%%%        \bfseries Instructions for Income Tax Homework
+%%%%%%%%%%%%%      \end{center}
+%%%%%%%%%%%%%      \begin{itemize}\setlength{\itemsep}{0pt}
+%%%%%%%%%%%%%        \item In the following questions, you may assume that I have given you all relevant information;
+%%%%%%%%%%%%%              for example, if I do not tell you that a person has a farm, then that person's 
+%%%%%%%%%%%%%              ``farm income (or loss)'' (Form 1040, line 18) will be zero.
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%        \item Some questions ask you to fill out tax forms,
+%%%%%%%%%%%%%              which may be downloaded from the course website at
+%%%%%%%%%%%%%              \begin{center}
+%%%%%%%%%%%%%                  \url{http://home.snc.edu/anders/hendrickson/123/taxforms/}.
+%%%%%%%%%%%%%              \end{center}
+%%%%%%%%%%%%%              Fill out separate tax forms for each question.
+%%%%%%%%%%%%%        \item When computing the tax, be sure to use the 2012 Tax Tables, which are also found on that webpage;
+%%%%%%%%%%%%%              I recommend viewing the Tax Tables online rather than printing them out,
+%%%%%%%%%%%%%              so as to save paper.
+%%%%%%%%%%%%%        \item All married couples will file jointly.
+%%%%%%%%%%%%%              No filer can be claimed as a dependent on his or her parents' return.
+%%%%%%%%%%%%%        \item When an entry on the tax form should be zero because it's irrelevant,
+%%%%%%%%%%%%%              you may leave it blank instead.
+%%%%%%%%%%%%%        \item None of these examples qualifies for the Earned Income Credit.
+%%%%%%%%%%%%%        \item For the personal information at the top of the tax form
+%%%%%%%%%%%%%              (e.g.~Social Security numbers and addresses)
+%%%%%%%%%%%%%              please make up the answers yourself.
+%%%%%%%%%%%%%              You may sign your own name as the ``Paid Preparer'' at the bottom of the tax return.
+%%%%%%%%%%%%%        %\item Be sure to reach the ultimate answer---either how much the person will get as a refund,
+%%%%%%%%%%%%%        %      or how much the person still owes.
+%%%%%%%%%%%%%      \end{itemize}
+%%%%%%%%%%%%%    \end{minipage}}
+%%%%%%%%%%%%%  \end{center}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \clearpage
+%%%%%%%%%%%%%  %</HWHEADER>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %<*HOMEWORK>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \def\turnin#1{\fbox{{\sc Turn in:} #1}}
+%%%%%%%%%%%%%  \begin{Fenumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \item The IRS has announced that the \emph{2011} marginal income tax brackets will be
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \hbox{\hskip 0.0pt plus 1.0fil minus 1.0fil
+%%%%%%%%%%%%%         {\footnotesize
+%%%%%%%%%%%%%         \begin{tabular}{|lllll|} \hline
+%%%%%%%%%%%%%         Tax Rate
+%%%%%%%%%%%%%          & Married Filing Jointly 
+%%%%%%%%%%%%%          & Head of Household
+%%%%%%%%%%%%%          & Single 
+%%%%%%%%%%%%%          & Married Filing Separately \\
+%%%%%%%%%%%%%         10\% & Not over \$17,000        & Not over \$12,150      & Not over \$8,500       & Not over \$8,500       \\
+%%%%%%%%%%%%%         15\% &  \$17,000 -- \$69,000    & \$12,150 --  \$46,250   & \$8,500 -- \$34,500    & \$8,500-- \$34,500    \\
+%%%%%%%%%%%%%         25\% &  \$69,000 -- \$139,350   & \$46,250 --  \$119,400  & \$34,500 -- \$83,600   & \$34,500 -- \$69,675   \\
+%%%%%%%%%%%%%         28\% & \$139,350 -- \$212,300   & \$119,400 --  \$193,350 & \$83,600 -- \$174,400  & \$69,675 -- \$106,150  \\
+%%%%%%%%%%%%%         33\% & \$212,300 -- \$379,150   & \$193,350 --  \$379,150 & \$174,400 -- \$379,150 & \$106,150 --  \$189,575 \\
+%%%%%%%%%%%%%         35\% & Over \$379,150           & Over \$379,150         & Over \$379,150         & Over \$189,575         \\ \hline
+%%%%%%%%%%%%%         \end{tabular}}\hfil}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \begin{tabular}{|ll|}\hline
+%%%%%%%%%%%%%           Status & 2011 Standard Deduction \\
+%%%%%%%%%%%%%           Married Filing Jointly    & \$11,600 \\
+%%%%%%%%%%%%%           Head of Household         & \$8,500  \\
+%%%%%%%%%%%%%           Single                    & \$5,800  \\
+%%%%%%%%%%%%%           Married Filing Separately & \$5,800  \\ \hline
+%%%%%%%%%%%%%         \end{tabular}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \fbox{2011 Exemption: \$3,700}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%                 
+%%%%%%%%%%%%%         \label{prob:Zeke} 
+%%%%%%%%%%%%%         \begin{enumerate}
+%%%%%%%%%%%%%           \item Zeke wants to estimate how much he will have to pay on his 2011 tax return (which will be filed April 2012).
+%%%%%%%%%%%%%                 Zeke is married with three young children,
+%%%%%%%%%%%%%                 and his adjusted gross income is \$53,000.
+%%%%%%%%%%%%%                 He will take the standard deduction.
+%%%%%%%%%%%%%                 Use the tables above to estimate as accurately as possible how much Zeke's taxes will be,
+%%%%%%%%%%%%%                 \emph{before} any credits are applied.
+%%%%%%%%%%%%%                 
+%%%%%%%%%%%%%                 \ifsolns
+%%%%%%%%%%%%%                   \soln
+%%%%%%%%%%%%%                   The standard deduction is \$11,600, and they get five exemptions, so the taxable income is
+%%%%%%%%%%%%%                  \\ \centering{$ \displaystyle 53000-11600-5\cdot 3700 = 22900.$}
+%%%%%%%%%%%%%                   The first \$17000 is taxed at 10\%, so that yields $\$17000\times 0.10=\$1700$ in tax. \\
+%%%%%%%%%%%%%                   The remainder, $22900-17000=5900$, is taxed at 15\%, so that yields $\$5900\times 0.15 = 885.$
+%%%%%%%%%%%%%                   Thus the total tax will be
+%%%%%%%%%%%%%                  \\ \centering{$ \displaystyle 1700 + 885 = \boxed{\$2585.00.}$}
+%%%%%%%%%%%%%                 \fi
+%%%%%%%%%%%%%           \item Money is tight these days, so Zeke's wife Susanna is thinking about getting a job to bring in extra income.
+%%%%%%%%%%%%%                 She can earn \$20 per hour working in the hospital.
+%%%%%%%%%%%%%                 The social security tax takes 4.2\% of her paycheck, and the Medicare tax takes 1.45\%.
+%%%%%%%%%%%%%                 They would have to pay \$6/hour for child care while Susanna is at work.
+%%%%%%%%%%%%%                 After social security, Medicare, income taxes, and child care,
+%%%%%%%%%%%%%                 how much extra money is Susanna bringing in per hour?
+%%%%%%%%%%%%%                 
+%%%%%%%%%%%%%                 \ifsolns
+%%%%%%%%%%%%%                   \soln
+%%%%%%%%%%%%%                   Every hour she works she earns \$20.
+%%%%%%%%%%%%%                   Every hour she works, she also has to pay the following:
+%%%%%%%%%%%%%                   
+%%%%%%%%%%%%%                   $\begin{array}{l@{{}={}}rll}
+%%%%%%%%%%%%%                     \$20 \times 0.042   & \$0.84 & \mbox{for social security} \\
+%%%%%%%%%%%%%                     \$20 \times 0.0145  & \$0.29 & \mbox{for Medicare} \\
+%%%%%%%%%%%%%                     \$20 \times 0.15    & \$3.00 & \mbox{for income taxes} & \mbox{(since they're in the 15\% bracket)} \\
+%%%%%%%%%%%%%                     \multicolumn{1}{l}{}& \$6.00 & \mbox{for child care} \\ \cline{1-3}
+%%%%%%%%%%%%%                     \multicolumn{1}{l}{}& \$10.13& \mbox{total}
+%%%%%%%%%%%%%                   \end{array}$
+%%%%%%%%%%%%%                   Thus she is actually earning only $\$20.00 - \$10.13 = {}$\fbox{\$9.87 per hour.}
+%%%%%%%%%%%%%                 \fi
+%%%%%%%%%%%%%         \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \item For each of the following people, fill out a 2010 tax return,
+%%%%%%%%%%%%%        \underline{using form 1040EZ}.
+%%%%%%%%%%%%%        
+%%%%%%%%%%%%%        \begin{enumerate}
+%%%%%%%%%%%%%          \item Shadrach Cohen is single; because his tax situation is utterly simple, he chooses to file form 1040EZ.
+%%%%%%%%%%%%%                His W-2 from work reports \$38,127.28 in income and \$3210.15 in federal withholdings.
+%%%%%%%%%%%%%                His bank's 1099-INT reports \$57.32 in taxable interest.
+%%%%%%%%%%%%%                \turnin{Form 1040EZ, including the back side.}
+%%%%%%%%%%%%%                \ifsolns
+%%%%%%%%%%%%%                  \par\soln See attached 1040EZ.
+%%%%%%%%%%%%%                \fi
+%%%%%%%%%%%%%          \item Nick and Jessica Cointreau are married.
+%%%%%%%%%%%%%                Nick's W-2 from the city sanitation department reports \$42,329.72 in income and \$4121.32 in federal withholdings.
+%%%%%%%%%%%%%                Jessica's office sent a W-2 reporting \$31,573.09 in income and \$2917.31 in withholdings.
+%%%%%%%%%%%%%                Their bank's 1099-INT reports \$181.79 in taxable interest. \\
+%%%%%%%%%%%%%                \turnin{Form 1040EZ, including the back side.}
+%%%%%%%%%%%%%                \ifsolns
+%%%%%%%%%%%%%                  \par\soln See attached 1040EZ.
+%%%%%%%%%%%%%                \fi
+%%%%%%%%%%%%%        \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %</HOMEWORK>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %<*WORKSHEETS>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \clearpage
+%%%%%%%%%%%%%  \section{Income Tax, Part 2}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \begin{enumerate}
+%%%%%%%%%%%%%    
+%%%%%%%%%%%%%    %Itemizing deductions
+%%%%%%%%%%%%%    \item Joseph and Bernadette Zwingling are married and file jointly.
+%%%%%%%%%%%%%          Their Adjusted Gross Income (Form 1040, line 38) for 2010 is \$63,210.32.
+%%%%%%%%%%%%%          They paid \$6,532.10 in mortgage interest on their home, as well as \$2,103.23 in real estate taxes.
+%%%%%%%%%%%%%          They gave \$3,320.00 to their church and \$2,100.00 to other charities,
+%%%%%%%%%%%%%          as well as donating a used computer worth \$200.00 to the Goodwill Store.
+%%%%%%%%%%%%%          Joseph's knee surgery cost them \$4,832.00, and he had to spend \$1350.86 for job travel.
+%%%%%%%%%%%%%          \begin{enumerate}
+%%%%%%%%%%%%%            \item Fill out Schedule A for the Zwinglings.
+%%%%%%%%%%%%%                  \fillwithlines{\stretch{1}}
+%%%%%%%%%%%%%            \item The standard deduction for a married couple filing jointly is \$11,400.
+%%%%%%%%%%%%%                  Should they itemize or take the standard deduction?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item The Zwinglings are in the 15\% tax bracket.  How much will your decision from part (b) reduce their tax bill?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%          \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%    \clearpage
+%%%%%%%%%%%%%    %Tuition and fee deductions
+%%%%%%%%%%%%%    \item Giuseppe Garibaldi of Sleepy Ear, MN finished college years ago, 
+%%%%%%%%%%%%%          but he took a business course
+%%%%%%%%%%%%%          at the local community college in 2010.  He paid \$5320 in tuition.
+%%%%%%%%%%%%%          He is in the 25\% marginal tax bracket.
+%%%%%%%%%%%%%          \begin{enumerate}
+%%%%%%%%%%%%%            \item Is he eligible for the tuition and fees deduction?  If so, how much will it reduce his taxes?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Is he eligible for the American Opportunity Credit?  If so, how much would it be worth?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Is he eligible for the Lifetime Learning Credit?  If so, how much would it be worth?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%          \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%    \item Wolfgang Schmitz is a full-time student working towards a B.A. in brewing at East Dakota State University.
+%%%%%%%%%%%%%          He paid \$12,297 in tuition and fees in 2010.  He is in the 15\% marginal tax bracket.
+%%%%%%%%%%%%%          \begin{enumerate}
+%%%%%%%%%%%%%            \item Is he eligible for the tuition and fees deduction?  If so, how much will it reduce his taxes?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Is he eligible for the American Opportunity Credit?  If so, how much would it be worth?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Is he eligible for the Lifetime Learning Credit?  If so, how much would it be worth?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%          \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%    \item Lars Olson of New Trondheim, ND is a college graduate and farmer.
+%%%%%%%%%%%%%          He took a Norwegian language course in 2010 from Bergen Lutheran College,
+%%%%%%%%%%%%%          which cost \$4100 in tuition.
+%%%%%%%%%%%%%          He is in the 25\% marginal tax bracket.
+%%%%%%%%%%%%%          \begin{enumerate}
+%%%%%%%%%%%%%            \item Is he eligible for the tuition and fees deduction?  If so, how much will it reduce his taxes?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Is he eligible for the American Opportunity Credit?  If so, how much would it be worth?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%            \item Is he eligible for the Lifetime Learning Credit?  If so, how much would it be worth?
+%%%%%%%%%%%%%                  \vfill
+%%%%%%%%%%%%%          \end{enumerate}
+%%%%%%%%%%%%%    \vspace{-1in}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %</WORKSHEETS>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %<*HWHEADER>
+%%%%%%%%%%%%%  \HOMEWORK
+%%%%%%%%%%%%%  %</HWHEADER>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %<*HOMEWORK>
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \hbox{\hskip 0.0pt minus 1.0fil
+%%%%%%%%%%%%%         {\small
+%%%%%%%%%%%%%         \begin{tabular}{|lllll|} \hline
+%%%%%%%%%%%%%         2010 
+%%%%%%%%%%%%%          & Married 
+%%%%%%%%%%%%%          & 
+%%%%%%%%%%%%%          & 
+%%%%%%%%%%%%%          & Married \\
+%%%%%%%%%%%%%         Tax Rate
+%%%%%%%%%%%%%          & Filing Jointly 
+%%%%%%%%%%%%%          & Head of Household
+%%%%%%%%%%%%%          & Single 
+%%%%%%%%%%%%%          & Filing Separately \\ \hline
+%%%%%%%%%%%%%         10\% & Not over \$16,750        & Not over \$11,950      & Not over \$8,375       & Not over \$8,375       \\
+%%%%%%%%%%%%%         15\% &  \$16,750-- \$68,000    & \$11,950 -- \$45,550   & \$8,375 ֭ \$34,000    & \$8,375 ֭ \$34,000    \\
+%%%%%%%%%%%%%         25\% &  \$68,000-- \$137,300   & \$45,550 -- \$117,650  & \$34,000 -- \$82,400   & \$34,000 -- \$68,650   \\
+%%%%%%%%%%%%%         28\% & \$137,300 -- \$209,250   & \$117,650 -- \$190,550 & \$82,400 -- \$171,850  & \$68,650 -- \$104,625  \\
+%%%%%%%%%%%%%         33\% & \$209,250 -- \$373,650   & \$190,550 -- \$373,650 & \$171,850 -֠\$373,650 & \$104,625 -- \$186,825 \\
+%%%%%%%%%%%%%         35\% & Over \$373,650           & Over \$373,650         & Over \$373,650         & Over \$186,825         \\ \hline
+%%%%%%%%%%%%%         \end{tabular}}\hfil}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%         \begin{tabular}{|ll|}\hline
+%%%%%%%%%%%%%           Status & 2010 Standard Deduction \\ \hline
+%%%%%%%%%%%%%           Married Filing Jointly    & \$11,400 \\
+%%%%%%%%%%%%%           Head of Household         & \$8,400  \\
+%%%%%%%%%%%%%           Single                    & \$5,700  \\
+%%%%%%%%%%%%%           Married Filing Separately & \$5,700  \\ \hline
+%%%%%%%%%%%%%         \end{tabular}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \begin{Fenumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \item Thomas and Susan Ogilvie 
+%%%%%%%%%%%%%        gave \$3725 to charities in 2010,
+%%%%%%%%%%%%%        and they also donated \$125 worth of used items to the St.~Vincent de Paul thrift store.
+%%%%%%%%%%%%%        Susan is still recovering from a kidney transplant, 
+%%%%%%%%%%%%%        and they had \$4,521.39 in medical expenses.
+%%%%%%%%%%%%%        Thomas had \$853.19 of unreimbursed expenses for his job as a building inspector.
+%%%%%%%%%%%%%        Their form 1098 reports that they paid \$5,760.23 in home mortgage interest,
+%%%%%%%%%%%%%        and their property tax bill was \$2012.00.
+%%%%%%%%%%%%%        On Form 1040, their Adjusted Gross Income on line 38 is \$53,240.
+%%%%%%%%%%%%%        They lie in the 15\% marginal tax bracket.
+%%%%%%%%%%%%%        \begin{enumerate}
+%%%%%%%%%%%%%          \item Fill out Schedule A for the Ogilvies.  \turnin{Schedule A}
+%%%%%%%%%%%%%                \ifsolns
+%%%%%%%%%%%%%                  \par\soln See attached Schedule A.
+%%%%%%%%%%%%%                \fi
+%%%%%%%%%%%%%          \item Should they itemize deductions or take the standard deduction?                 
+%%%%%%%%%%%%%                \ifsolns
+%%%%%%%%%%%%%                  \par\soln If they itemize, they can deduct \$12,150.62.
+%%%%%%%%%%%%%                  The standard deduction for 2010 is only \$11,400.00.
+%%%%%%%%%%%%%                  \fbox{Thus they should itemize deductions.}
+%%%%%%%%%%%%%                \fi
+%%%%%%%%%%%%%          \item How much tax will that choice save them?
+%%%%%%%%%%%%%                \ifsolns
+%%%%%%%%%%%%%                  \par\soln It will save them $\$12150.62-\$11400.00 = \boxed{\$750.62.}$
+%%%%%%%%%%%%%                \fi
+%%%%%%%%%%%%%        \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \item Fill out a 2010 tax return 
+%%%%%%%%%%%%%        for the following couple
+%%%%%%%%%%%%%        using Form 1040.
+%%%%%%%%%%%%%        Be sure to pay attention to the Making Work Pay credit and the Child Tax Credit. \\
+%%%%%%%%%%%%%        \turnin{Form 1040 and Schedule M}
+%%%%%%%%%%%%%        
+%%%%%%%%%%%%%        %All relevant tax forms can be downloaded from the course website at
+%%%%%%%%%%%%%        %    \url{http://www.cord.edu/faculty/ahendric/105/taxforms/}.
+%%%%%%%%%%%%%        %The 2010 Tax Tables are also found on that webpage;
+%%%%%%%%%%%%%        %I recommend viewing the Tax Tables online rather than printing them out,
+%%%%%%%%%%%%%        %so as to save paper.
+%%%%%%%%%%%%%        
+%%%%%%%%%%%%%        %\begin{enumerate}
+%%%%%%%%%%%%%        %  \item 
+%%%%%%%%%%%%%                Abednego and Hannah Leibowitz have one daughter, Jessica, who is 7 years old.
+%%%%%%%%%%%%%                They moved to Moose Lake this year; according to Form 3903, their eligible moving expenses are \$873.12.
+%%%%%%%%%%%%%                The W-2's report \$68,721.14 from Abednego's job at the steel mill, with \$8,731.21 in withholdings,
+%%%%%%%%%%%%%                and \$23,421.38 from Hanna's part-time job at the junior high school, with \$412.18 in withholdings.
+%%%%%%%%%%%%%                Moose Lake Credit Union has sent a 1099-INT showing \$91.23 in taxable interest.
+%%%%%%%%%%%%%                Hannah is still paying off her student loans from college,
+%%%%%%%%%%%%%                and paid \$1,210.13 in interest this year.
+%%%%%%%%%%%%%                They will take the standard deduction.
+%%%%%%%%%%%%%                
+%%%%%%%%%%%%%                \ifsolns
+%%%%%%%%%%%%%                  \par\soln See attached Form 1040 and Schedule M.
+%%%%%%%%%%%%%                \fi
+%%%%%%%%%%%%%        %\end{enumerate}
+%%%%%%%%%%%%%        \pageover
+%%%%%%%%%%%%%        
+%%%%%%%%%%%%%    \item Sven Olson is a single man working his way through college.  
+%%%%%%%%%%%%%          His W-2 reads \$18,243.12 in wages, and %this is also the amount on form 1040, line 22.
+%%%%%%%%%%%%%          Sven paid \$8,892.00 in tuition and fees 
+%%%%%%%%%%%%%          to St.~Hallvard's College this year.
+%%%%%%%%%%%%%          %Sven will take the standard deduction.
+%%%%%%%%%%%%%          
+%%%%%%%%%%%%%          \enlargethispage{\baselineskip}
+%%%%%%%%%%%%%          Sven wants to know how to use the tuition and fees to his best advantage.
+%%%%%%%%%%%%%          Use Forms 8917 and 8863 to answer the following questions.
+%%%%%%%%%%%%%          \emph{(You should complete form 8863 two separate times, once for part (c) and once for part (d).)}
+%%%%%%%%%%%%%          \begin{enumerate}
+%%%%%%%%%%%%%            \item What marginal tax bracket is Sven in?
+%%%%%%%%%%%%%                  \ifsolns
+%%%%%%%%%%%%%                    \par\soln He is in \fbox{the 15\% tax bracket.}
+%%%%%%%%%%%%%                  \fi
+%%%%%%%%%%%%%            \item If Sven takes the Tuition and Fees deduction (Form 8917, and Form 1040 line 34),
+%%%%%%%%%%%%%                  how much will that reduce his tax?
+%%%%%%%%%%%%%                  \turnin{Form 8917}
+%%%%%%%%%%%%%                  \emph{(Form 1040, line 22 will just be Sven's wages.
+%%%%%%%%%%%%%                         On Form 8917, enter \$0.00 on line 4.)}
+%%%%%%%%%%%%%                  \ifsolns
+%%%%%%%%%%%%%                    \par\soln See attached Form 8917.  His deduction is \$4000, so he would save
+%%%%%%%%%%%%%                              $\$4000 \times 0.15 = \boxed{\$600.}$
+%%%%%%%%%%%%%                  \fi
+%%%%%%%%%%%%%            \item If Sven takes the American Opportunity Credit (Form 8863),
+%%%%%%%%%%%%%                  how large would that credit be?
+%%%%%%%%%%%%%                  How much of this credit is refundable, and how much nonrefundable?
+%%%%%%%%%%%%%                  \turnin{Form 8863}
+%%%%%%%%%%%%%                  \emph{(Form 1040, line 38 will just be Sven's wages.
+%%%%%%%%%%%%%                         On Form 8863, enter the amount from line 15 on line 23.)}
+%%%%%%%%%%%%%                  \ifsolns
+%%%%%%%%%%%%%                    \par\soln See attached Form 8863.
+%%%%%%%%%%%%%                              The credit will be \fbox{\$2500.00},
+%%%%%%%%%%%%%                              of which \fbox{\$1000 is refundable and \$1500 is nonrefundable.}
+%%%%%%%%%%%%%                  \fi
+%%%%%%%%%%%%%            \item If Sven takes the Lifetime Learning Credit (Form 8863),
+%%%%%%%%%%%%%                  how much will that reduce his tax?
+%%%%%%%%%%%%%                  How much of this credit is refundable, and how much nonrefundable?
+%%%%%%%%%%%%%                  \turnin{Form 8863}
+%%%%%%%%%%%%%                  \emph{(Form 1040, line 38 will just be Sven's wages.
+%%%%%%%%%%%%%                         On Form 8863, enter the amount from line 22 on line 23.)}
+%%%%%%%%%%%%%                  \ifsolns
+%%%%%%%%%%%%%                    \par\soln See attached Form 8863.
+%%%%%%%%%%%%%                              The credit will be \fbox{\$1778.40},
+%%%%%%%%%%%%%                              of which \fbox{\$0 is refundable and \$1778.40 is nonrefundable.}
+%%%%%%%%%%%%%                  \fi
+%%%%%%%%%%%%%          \end{enumerate}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  \end{Fenumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%  %</HOMEWORK>
+
+%<*WORKSHEETS>
+
+\clearpage
+\section{Study Guide}
+
+To prepare for the exam over this chapter,
+you should the in-class worksheets and homework.
+Be ready to do the kind of problems you faced on the homework.
+
+As a general guide, I recommend reviewing the following topics.
+
+\begin{enumerate}
+  \item Calculate compound interest; use this to determine the future savings from a \emph{one-time deposit}.
+  \item Find interest per period.
+  \item Calculate the future value of an annuity; use this to determine future savings when making \emph{regular deposits}.
+  %\item Compare two savings accounts using the \defnstyle{effective annual yield}
+  \item Calculate (a) how much you can save for the future by making a series of regular deposits,
+        and (b) how much you must deposit regularly to have a certain amount in the future.
+  \item Calculate how much money you need now in order to fund a series of future payments.
+  \item Calculate the regular payment for a loan;
+        conversely, given the regular payment, calculate how much you can borrow.
+  \item Calculate the equity held in a house, given information about the home's value and the mortgage.
+  \item Calculate mortgage costs involving down payments and closing costs.
+  \item Calculate mortgage costs involving taxes and insurance (PITI).
+  %\item Given information like in problem \ref{prob:Zeke}, calculate someone's taxable income.
+  %\item Given someone's taxable income
+  %      and the tax rates as in problem \ref{prob:Zeke}, 
+  %      estimate someone's income tax.
+  %\item Understand the difference between tax deductions and tax credits.
+  %      Be able to use tax deductions and credits in figuring someone's income tax.
+  %\item Understand the difference between refundable and non-refundable credits,
+  %      and do examples.
+  %
+  %\item Estimate the price of items in the future due to inflation.
+  %\item Calculate the price of items in the past due to inflation.
+\end{enumerate}
+
+\clearpage
+\ifsolns
+	\section{Review Worksheet}
+	\begin{enumerate}
+		\item 	You take out a subsidized student loan at 4.66\% compounded monthly.  You have a monthly discretionary income  of \$ P/month of which you can put up to 20\% towards paying off your loan.  To calculate P, take your current age divided by 3 times 100.  What is the largest loan you can get under each plan?
+
+	\textbf{Standard Repayment}
+	With the standard plan, you'll pay a fixed amount each month until your loans are paid in full. Your monthly payments will be at least \$50, and you'll have up to 10 years to repay your loans.
+	The standard plan is good for you if you can handle higher monthly payments because you'll repay your loans more quickly. Your monthly payment under the standard plan may be higher than it would be under the other plans because your loans will be repaid in the shortest time. For the same reason—the 10-year limit on repayment—you may pay the least interest.
+
+	\textbf{Extended Repayment}
+	To be eligible for the extended plan, you must have more than \$30,000 in Direct Loan debt and you must not have an outstanding balance on a Direct Loan as of October 7, 1998. Under the extended plan you have 25 years for repayment.
+
+	\item	Typically, most lenders suggest that you spend no more than 28\% of your monthly income on a mortgage.  Today, home loans for a 30 year fixed-rate mortgage are running at approximately 4\%.  What is the largest loan you can afford on your monthly income of \$P?\label{EPpart2}
+	\item	You want to take 5 years to save up a 20\% down payment for your house.  What is the value of the house if you take out the loan you found in part \ref{EPpart2} with a 20\% down payment?  How much would you have to put aside monthly to save up that amount?  What percentage of your monthly income of \$P is that?
+	\item	If you are also spending 28\% of your monthly income on rent, how much money do you have to live on during the time you are paying off your loan and saving up for your house?
+	\end{enumerate}
+	\begin{center}
+		\begin{tabular}{llllll}
+	Age & 18 & 19 & 20 & 21 & 22\\ \hline 
+	income &  \$600.00  &  \$633.33  &  \$666.67  &  \$700.00  &  \$733.33 \\ \hline 
+	10 year &  \$11,493.00  &  \$12,131.50  &  \$12,770.00  &  \$13,408.50  &  \$14,047.00 \\ \hline 
+	25 year &  \$21,240.70  &  \$22,420.74  &  \$23,600.78  &  \$24,780.82  &  \$25,960.86 \\ \hline 
+	mortgage payment &  \$168.00  &  \$177.33  &  \$186.67  &  \$196.00  &  \$205.33 \\ \hline 
+	Mortgage &  \$35,189.49  &  \$37,144.46  &  \$39,099.43  &  \$41,054.40  &  \$43,009.37 \\ \hline 
+	House Value &  \$43,986.86  &  \$46,430.57  &  \$48,874.29  &  \$51,318.00  &  \$53,761.72 \\ \hline 
+	20 percent &  \$8,797.37  &  \$9,286.11  &  \$9,774.86  &  \$10,263.60  &  \$10,752.34 \\ \hline 
+	monthly savings &  \$132.69  &  \$140.06  &  \$147.44  &  \$154.81  &  \$162.18 \\ \hline 
+	percentage & 22\% & 22\% & 22\% & 22\% & 22\%\\ \hline 
+	Live on &  \$179.31  &  \$189.27  &  \$199.23  &  \$209.19  &  \$219.15 \\ \hline 
+	percentage & 30\% & 30\% & 30\% & 30\% & 30\%\\ \hline 
+	\end{tabular}
+
+	\end{center}
+\fi
+%</WORKSHEETS>
+
+%\endinput

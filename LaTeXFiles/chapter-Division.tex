@@ -1,0 +1,717 @@
+%chapter-Apportionment.tex
+
+%<*CHAPTERHEADER>
+
+\declareproblemlettering{D}
+\pagestyle{fancy}
+\cleartooddpage
+
+\chapter{Apportionment and Division}\label{ch:division}
+
+\input{section-Apportionment}
+\section{Fair Division}
+\begin{enumerate}
+
+\item My friend and I decide have pizza for dinner. We order pizza which is half red sauce with pepperoni and half garlic sauce with ham and pineapple. To my friend, pizza is pizza. He has no preference for one type of pizza over another. On the other hand, I have an allergy to oregano and cannot eat any red sauce. It gives me a horrible stomach ache and I'm grumpy for about eight hours. 
+\begin{enumerate}
+	\item What is a fair way to divide this pizza so that my friend and I both believe we are getting a value of at least 50\% of the pizza. \vfill
+	\item My friend never remembers that I do not eat red sauce. Therefore, he divides the pizza so that each half has exactly half red sauce and half garlic sauce. Am I able to choose a slice where I receive 50\% of the value of the pizza? \solution{Yes} \vfill
+	\item Suppose instead, I slice the pizza. When I do so, because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce. Have I divided the pizza in such a way that each slice is worth 50\%  to me? \solution{No, because one slice is worth 100\% and the other 0\% to me.} \vfill
+	\item Is there a way that I could divide the pizza in order to have each slice worth 50\% to me and have all the red sauce on one of the slices? \solution{Yes.  One slice would have all red plus 1/2 of the garlic.} \vfill
+	\item In the case above, which of the slices with my friend choose? \solution{The larger one.}\vfill
+\end{enumerate}
+
+\clearpage
+The basic issue at all fair division problems can be stated in a reasonably simple terms: How can something that must be shared by a set of competing parties be divided among them in a way that ensures that each party receives a fair share? Of course, part of the answer to this question will involve defining what we mean by a fair share.
+
+We are going to start with the most common method for fair division, that of the divider-chooser. \index{divider-chooser}  This is the problem where there are two people and one thing to divide. One person has chosen to do the cutting, and then the other person gets to choose which part they want.
+              	\fillwithlines{\stretch{1}}
+
+\begin{description}
+	\item[Rationality] \ifsolns Each of the players is a thinking, rational agent seeking to maximize his or her share of the booty $S$.  We further assume that in pursuit of this goal, a player's moves are based on reason alone. \fi\vfill
+	\item[Cooperation] \ifsolns The players are willing participants and accept the rules of the game as binding.  The rules are such that after a \emph{finite} number of moves by the players the game terminates with a division of $S$. \fi              	\fillwithlines{\stretch{1}}
+
+	\item[Privacy]\ifsolns Players have no useful information on the other players' value systems, and thus if what kinds of moves they are going to make in the game. \fi              	\fillwithlines{\stretch{1}}
+
+	\item[Symmetry] \ifsolns Players have \emph{equal} rights in sharing the set $S$.  A consequence of this assumption is that at a minimum, each player is entitled to a \emph{proportional} share of $S$, that is $\frac{S}{N}$ when there are $N$ players. \fi               	\fillwithlines{\stretch{1}}
+
+\end{description}
+
+
+\item \boxedblank{\textbf{Fair Share:} \ifsolns Suppose that $s$ denotes a share of the booty $S$ and $P$ is one of the players in a fair division game with $N$ players.  We say that $s$ is a \textbf{fair share to player $P$} if $s$ is worth \textit{at least} $1/N$th of the total value of $S$ \textit{in the opinion of $P$}.\fi} 
+              	\fillwithlines{\stretch{1}}
+\index{fair share}
+ 
+ \clearpage
+
+\subsection{Divider-Chooser}
+  \item \boxedblank[2in]{\textbf{Divider-Chooser:}\fillwithlines{\stretch{1}}}
+              	
+\item Sometimes it is easier to work with fair division problems when we put a monetary value on the object being divided because then we can quantify how much each piece is worth to each player. Suppose the cost of the pizza which is half red sauce and half white sauce is \$10. 
+\begin{figure}%
+\begin{center}
+	
+
+\begin{tikzpicture}
+	\draw[fill=darkgray, domain=0:180,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	\draw[fill=lightgray, domain=180:360,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+  \draw[domain=0:360,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=0:540,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	
+	\draw[fill=darkgray] (2.5,.3) rectangle (3,.6) node[right]  {Red Sauce};
+	\draw[fill=lightgray] (2.5,0) rectangle (3,-0.3) node[right]  {Garlic Sauce};
+
+\end{tikzpicture}
+\end{center}
+\caption{Pizza which is half Red Sauce and half Garlic Sauce}%
+\label{fig:pizza1}%
+\end{figure}
+\begin{enumerate}
+		\item My friend never remembers that I do not eat red sauce. Therefore, he divides the pizza so that each half has exactly half red sauce and half garlic sauce. How much is each slice of pizza worth to my friend? How much is each slice of pizza worth to me?
+		%\begin{center}
+	
+\begin{tikzpicture}[every text node part/.style={align=center}]
+				\begin{scope}
+						\draw[fill=darkgray, domain=90:180,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30}) -- (0,0)
+	;
+	\draw[fill=lightgray, domain=180:270,scale=1.5,samples=500] (0,0) -- plot (\x:{1.2 + sin(\x*30)/30})
+	;
+  \draw[domain=90:270,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=90:270,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+
+				\end{scope}
+				\begin{scope}[xshift = 1cm]
+						\draw[fill=darkgray, domain=0:90,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30}) -- (0,0)
+	;
+	\draw[fill=lightgray, domain=-90:0,scale=1.5,samples=500] (0,0) -- plot (\x:{1.2 + sin(\x*30)/30})
+	;
+  \draw[domain=-90:90,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=-90:90,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+
+
+	\draw[fill=darkgray] (2.5,.3) rectangle (3,.6) node[right]  {Red Sauce};
+	\draw[fill=lightgray] (2.5,0) rectangle (3,-0.3) node[right]  {Garlic Sauce};
+
+				\end{scope}
+
+\end{tikzpicture}
+%\end{center}
+\fillwithlines{\stretch{1}}
+	\item Suppose instead, I slice the pizza. When I do so, because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce. How much is each slice of pizza worth to me? How much of each slice of pizza worth to my friend? If I do the division, why is this not a fair division of the pizza? What happens if my friend is the one doing the division? Is it fair?  
+	
+	\begin{tikzpicture}[every text node part/.style={align=center}]
+				\begin{scope}
+						\draw[fill=darkgray, domain=0:180,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30}) -- (0,0)
+	;
+	%\draw[fill=lightgray, domain=180:270,scale=1.5,samples=500] (0,0) -- plot (\x:{1.2 + sin(\x*30)/30})
+	%;
+  \draw[domain=0:180,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=0:180,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+
+				\end{scope}
+				\begin{scope}[yshift = -1cm]
+						%\draw[fill=darkgray, domain=0:90,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30}) -- (0,0)
+	%;
+	\draw[fill=lightgray, domain=-180:0,scale=1.5,samples=500] (0,0) -- plot (\x:{1.2 + sin(\x*30)/30})
+	;
+  \draw[domain=-180:0,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=-180:0,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+
+
+	\draw[fill=darkgray] (2.5,.3) rectangle (3,.6) node[right]  {Red Sauce};
+	\draw[fill=lightgray] (2.5,0) rectangle (3,-0.3) node[right]  {Garlic Sauce};
+
+				\end{scope}
+
+\end{tikzpicture}
+\fillwithlines{\stretch{1}}
+	\item Now, divide the pizza in such a way that all the red sauce is in one slice yet both slices are worth five dollars to me. How much is each slice of the pizza worth to my friend? If I do the division, why is this a fair division of the pizza? What happens if my friend is the one doing the division? Is it fair? 
+	
+	\begin{tikzpicture}
+	\draw[fill=darkgray, domain=0:180,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	\draw[fill=lightgray, domain=180:360,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+  \draw[domain=0:360,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=0:540,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	
+	\draw[fill=darkgray] (2.5,.3) rectangle (3,.6) node[right]  {Red Sauce};
+	\draw[fill=lightgray] (2.5,0) rectangle (3,-0.3) node[right]  {Garlic Sauce};
+
+\end{tikzpicture}
+\fillwithlines{\stretch{1}}
+	
+\end{enumerate}
+
+\clearpage
+\subsection{Lone Divider}
+%\clearpage
+\studentrand
+\item Three players (\randstudent[1], \randstudent[2], and \randstudent[3]) must divide cake among themselves. Suppose the cake is divided into three slices ($s_1$, $s_2$, and $s_3$). The values of the entire cake and at each of the three slices in the eyes of each of the players are shown in the following table.
+
+\begin{center}
+	\begin{tabular}{ccccc}
+\hline
+& Whole cake & $s_1$ & $s_2$ &$s_3$\\\hline
+\randstudent[1] & \$12.00 & \$3.00 & \$5.00 & \$4.00 \\\hline
+\randstudent[2] & \$15.00 & \$4.00 & \$4.50 & \$6.50 \\\hline
+\randstudent[3] & \$13.50 & \$4.50 & \$4.50 & \$4.50 \\\hline 
+\end{tabular}
+
+\end{center}
+ \begin{enumerate}
+	\item Indicate which of the three slices are fair shares to \randstudent[1]. \fillwithlines{\stretch{1}}
+	\item Indicate which of the three slices are fair shares to \randstudent[2].\fillwithlines{\stretch{1}}
+	\item Indicate which of the three slices are fair shares \randstudent[3].\fillwithlines{\stretch{1}}
+	\item How do you know which player divided the cake into three equal pieces?\fillwithlines{\stretch{1}}
+	\item Describe a fair division of the cake.\fillwithlines{\stretch{1}}
+\end{enumerate}
+%\item Three players (Anna, Ben, and Cara) must divide cake among themselves. Suppose the cake is divided into three slices ($s_1$, $s_2$, and $s_3$). The values of the entire cake and at each of the three slices in the eyes of each of the players are shown in the following table.
+%
+%\begin{center}
+	%\begin{tabular}{ccccc}
+%\hline
+%& Whole cake & $s_1$ & $s_2$ &$s_3$\\\hline
+%Anna & \$12.00 & \$3.00 & \$5.00 & \$4.00 \\\hline
+%Ben & \$15.00 & \$4.00 & \$4.50 & \$6.50 \\\hline
+%Cara & \$13.50 & \$4.50 & \$4.50 & \$4.50 \\\hline 
+%\end{tabular}
+%
+%\end{center}
+ %\begin{enumerate}
+	%\item Indicate which of the three slices are fair shares to Anna. \fillwithlines{\stretch{1}}
+	%\item Indicate which of the three slices are fair shares to Ben.\fillwithlines{\stretch{1}}
+	%\item Indicate which of the three slices are fair shares Cara.\fillwithlines{\stretch{1}}
+	%\item How do you know which player divided the cake into three equal pieces?\fillwithlines{\stretch{1}}
+	%\item Describe a fair division of the cake.\fillwithlines{\stretch{1}}
+%\end{enumerate}
+\item \boxedblank[2in]{\textbf{Lone Divider:}\ifsolns One of the players is assigned to be the divider.  The player divides the booty into equal shares (according to him).  The other players are called the choosers.  They indicate which of the shares are fair according to them.  The booty is split by giving each of the choosers one of the shares they have indicated and the divider gets the remaining share.\else \fillwithlines{\stretch{1}}\fi} 
+%Make this two sections where one section is lone dider easy and the other is what to do when more than one player only bids on one plot.
+\vfill \index{lone divider}
+
+\clearpage
+
+\item Three partners (David, Carol, and Charlotte) are dividing the plot of land among themselves using the loan divider method. Using a map, the divider (David) divides the property into three parcels $s_1$, $s_2$, and $s_3$. When the choosers bid lists are open, Carol's bid list is $\{s_1,s_2,s_3\}$ and Charlotte's bid list is $\{s_1\}$.
+\begin{enumerate}
+	\item Describe the fair division where David's fair share is $s_2$ \fillwithlines{\stretch{1}}
+	\item Describe the fair division where David's fair share is $s_3$\fillwithlines{\stretch{1}}
+\end{enumerate}
+
+
+\item What should you do if both Carol and Charlotte bid $\{s_1,s_2\}$?
+\fillwithlines{\stretch{1}}
+
+
+\item How would you run a fair division if there were four people trying to divide an item? \fillwithlines{\stretch{2}}
+
+\clearpage
+\item We have one divider, Demon and three choosers, Chuck, Charlie, and Charles.  Demon divides the cake into four shares, $s_1, s_2, s_3$ and $s_4$.  The following table shows how each of the players values each of the four shares.  Remember that this information is private and not known to the other players.
+
+\begin{center}
+	\begin{tabular}{lcccc}
+\hline
+& $s_1$&$s_2$&$s_3$ & $s_4$\\\hline
+Demon & 25\% & 25\% & 25\% & 25\% \\\hline
+Chuck & 30\% & 20\% & 35\% & 15\% \\\hline
+Charlie & 20\% & 20\% & 40\% & 20\% \\\hline
+Charles & 25\% & 20\% & 20\% & 35\% \\\hline
+\end{tabular}
+\end{center}
+\begin{enumerate}
+	\item What are each player's bidding lists?
+	\begin{center}
+	\begin{tabular}{lp{2in}}
+\hline
+\ifsolns
+	Demon & $s_1,s_2, s_3, s_4$\\\hline
+	Chuck & $s_1, s_3$\\\hline
+	Charlie &  $s_3$\\\hline
+	Charles &  $s_1, s_4$\\\hline
+\else
+	Demon & \hspace{2in}\\\hline
+	Chuck & \\\hline
+	Charlie &\\\hline
+	Charles &\\\hline
+\fi
+\end{tabular}
+\end{center}
+	
+	\item What is the distribution
+	
+	Demon  \par
+Chuck  \par
+Charlie   \par
+Charles   \par
+\end{enumerate}
+\fillwithlines{\stretch{1}}
+
+\end{enumerate}
+
+\clearpage
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+
+\begin{Denumerate}
+	\item \studentrand \randstudent\ buys a chocolate-strawberry-vanilla cake for \$14.00. \randPronoun\ cuts the cake into six \(60^o\) wedges as shown. \randstudent\ likes chocolate twice as much as vanilla and likes vanilla twice as much as strawberry. Calculate the value of each wedge to \randstudent. 
+	
+	\begin{tikzpicture}
+	\draw[fill=darkgray, domain=120:240,scale=1.5,samples=500] (0,0) -- plot (\x:{1.2 + sin(\x*30)/30}) 	;
+	%\draw[fill=darkgray, domain=120:240,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	%\draw[fill=lightgray, domain=240:360,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	\draw[fill=lightgray, domain=240:360,scale=1.5,samples=500] (0,0) -- plot (\x:{1.2 + sin(\x*30)/30}) 	;
+  \draw[domain=0:360,scale=1.5,samples=500] plot (\x:{1 + sin(\x*30)/30});
+  \draw[domain=0:540,scale=1.5,samples=500] plot (\x:{1.2 + sin(\x*30)/30});
+	
+	\draw[thick,scale=1.5] (0,0) -- (30:1.5) node[above =2em] {piece 1} ;
+	\draw[thick,scale=1.5] (0,0) -- (90:1.5) node[left =2em] {piece 2};
+	\draw[thick,scale=1.5] (0,0) -- (150:1.5) node[below left =1.5em] {piece 3};
+	\draw[thick,scale=1.5] (0,0) -- (210:1.5) node[below  =2em] {piece 4};
+	\draw[thick,scale=1.5] (0,0) -- (270:1.5) node[right =2em] {piece 5};
+	\draw[thick,scale=1.5] (0,0) -- (330:1.5) node[above right =1.5em] {piece 6};
+	\draw[thick,scale=1.5] (0,0) circle (1.5) ;
+	
+\begin{scope}[xshift = 2cm]
+		\draw[fill=darkgray] (2.5,.3) rectangle (3,.6) node[right]  {Chocolate};
+	\draw[fill=lightgray] (2.5,0) rectangle (3,-0.3) node[right]  {Strawberry};
+	\draw[] (2.5,-.6) rectangle (3,-.9) node[right]  {Vanilla};
+\end{scope}
+
+\end{tikzpicture}
+\solution*{\fbox{piece 1  = \$2, piece 2 = \$3}  If you look at the whole cake, to our student, the strawberry part will be worth \$2, the vanilla part is worth \$4 and the chocolate part is worth \$8.}\vfill
+	
+  \item Three partners (David, Carol, and Charlotte) are dividing the plot of land among themselves using the loan divider method. Using a map, the divider (David) divides the property into three parcels $s_1$, $s_2$, and $s_3$. When the choosers bid lists are open, Carol's bid list $\{s_2,s_3\}$ and Charlotte's bid list is $\{s_1, s_3\}$.
+		\begin{enumerate}
+			\item Describe the fair division where David's fair share is $s_1$.
+			\solution*{ \fbox{David - $s_1$, Carol - $s_2$, Charlotte - $s_3$} Because David has a fair share of $s_1$, the only other option for Charlotte is $s_3$. Since Carol will take $s_2$ or $s_3$, and $s_3$ is taken, Carol gets $s_2$.
+                }\vfill
+			\item Describe the fair division where David's fair share is $s_2$.
+						\solution*{ \fbox{David - $s_2$, Carol - $s_3$, Charlotte - $s_1$} Because David has a fair share of $s_1$, the only other option for Charlotte is $s_3$. Since Carol will take $s_2$ or $s_3$, and $s_3$ is taken, Carol gets $s_2$.
+                }\vfill
+			\item Describe the fair division where David's fair share is $s_3$.
+			\solution{\fbox{David - $s_3$, Carol - $s_2$, Charlotte - $s_1$}}\vfill
+		\end{enumerate}
+%  \begin{enumerate}
+%          \item 
+%                
+%          \item 
+%          			\solution*{
+%                  \fbox{} 
+%                }
+%        \end{enumerate}
+
+\hwnewpage
+\studentrand
+\item Four partners (\randstudent[1], \randstudent[2], \randstudent[3], and \randstudent[4]) are dividing a piece of land valued at \$480,000 among themselves using the lone-divider method. Using a map, the divider divides the property into four parcels, $s_1,s_2,s_3$ and $s_4$. The following table shows the value of each of the four parcels in the eyes of each partner, but some of the information in the table is missing.
+
+\begin{center}
+	\begin{tabular}{lcccc}
+&$s_1$&$s_2 $&$ s_3$ & $s_4$\\\hline\ifsolns
+\randstudent[1]  & \$80,000 & \$85,000 & \textbf{\$120,000} & \$195,000\\\hline
+\randstudent[2]  & \textbf{\$125,000} & \$100,000 & \$135,000 & \$120,000\\\hline
+\randstudent[3]  & \$120,000 & \textbf{\$120,000} & \$120,000 & \textbf{\$120,000}\\\hline
+\randstudent[4]  & \$95,000 & \$100,000 & \textbf{\$175,000} & \$110,000 \\\hline
+\else
+\randstudent[1] & \$80,000 & \$85,000 & & \$195,000\\\hline
+\randstudent[2] & & \$100,000 & \$135,000 & \$120,000 \\\hline
+\randstudent[3] & \$120,000 & & \$120,000 &\\\hline
+\randstudent[4] & \$95,000 & \$100,000 & & \$110,000 \\\hline\fi
+\end{tabular}
+
+\end{center}
+\begin{enumerate}
+	\item Who was the divider? Explain. \solution{\randstudent[3] because he has the same amount for every piece.}\vfill
+	\item Describe the choosers' respective bid lists.
+	\ifsolns
+	\par
+	\begin{tabular}{lcccc}
+	\randstudent[1]  &  &  & $s_3$ & $s_4$\\
+\randstudent[2]  & $s_1$ &  & $s_3$ & $s_4$\\
+\randstudent[3]  & $s_1$ & $s_2$ & $s_3$ & $s_4$\\
+\randstudent[4]  &  &  & $s_3$ & \\
+	\end{tabular}\fi\vfill
+	\item Described a fair division of property. \solution{\par \randstudent[1]\     $s_4$\\\randstudent[2]\  $s_1$   \\\randstudent[3]\   $s_2$  \\\randstudent[4]\    $s_3$}
+	\item Explain why your answer above is the only possible fair division of the property.
+	\solution{\fbox{ Basically, because \randstudent[4]\ only bids on one property, \par he starts the ball rolling.}}\vfill
+\end{enumerate}
+\end{Denumerate} \ENDHOMEWORK
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Lone-Divider Case 2}
+
+There is one complication that can happen with the lone-divider method we have not yet discussed.  It happens when two players want one and only one of the shares.  This can be solved, but requires a little more analysis.
+
+\begin{enumerate}
+	\item Dale divides the cake into three pieces $s_1$, $s_2$, and $s_3$.  The table below shows the value of the three pieces in the eyes of each of the players.
+	
+	\begin{center}
+	\begin{tabular}{lccc}
+	\hline
+	 & $s_1$ & $s_2$ & $s_3$ \\\hline
+	Dale & $33\frac13$\% & $33\frac13$\% & $33\frac13$\% \\\hline
+	Cindy & 20\% & 30 \% & 50\% \\\hline
+	Cher & 10\% & 20\% & 70\% \\\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+	\item Describe the choosers' respective bid lists.
+	\ifsolns
+		Dale  $\qquad s_1,s_2, s_3$\\
+	Cindy $\qquad  s_3$\\
+	Cher $\qquad  s_3$\\
+	\else
+	\fillwithlines{\stretch{1}}
+	\fi
+		\item What problem do you run into when you try to divide the cake? \ifsolns \par Both Cindy and Cher only want the last piece. \else \fillwithlines{\stretch{1}}\fi
+		%\vfill
+%	\item Described a fair division of property.
+What we are going to do is to give Dale one of the pieces that Cindy and Cher do not want, say slice $s_2$.
+	\item How much are $s_1$ and $s_3$ worth together to Cindy?  to Cher? \ifsolns \par 70\% and 80\% \fi
+	\fillwithlines{\stretch{1}}
+	\item What you are going to to is combine $s_1$ and $s_3$ and give them to Cindy and Cher to perform a Divider-Chooser.  Explain why this will result in both Cindy and Cher receiving at least $33\frac13$\% of the cake in their eyes.  \fillwithlines{\stretch{1}}
+	\item In fact, what is the minimum percentage Cindy will receive?  What is the minimum percentage Cher will receive? \ifsolns \par 35\% and 40\%\else \fillwithlines{\stretch{1}} \fi %\vfill
+
+\end{enumerate}
+%\vfill
+\clearpage
+
+	\item Three partners (David, Carol, and Charlotte) are dividing the plot of land among themselves using the loan divider method. Using a map, the divider (David) divides the property into three parcels $s_1$, $s_2$, and $s_3$. When the choosers bid lists are open, Carol's bid list $\{s_1\}$ and Charlotte's bid list is $\{s_1\}$.
+\begin{enumerate}
+	\item Considering that Carol only bid on the first parcel, explain how we know that parcel 2 is worth less than $1/3$ of the value of the land to Carol. Explain how we know that parcel 3 is worth less than $1/3$ of the value of the land to Carol.  \ifsolns \par \fbox{Because if they were worth at least $1/3$ of the value, they would be on the bid list.}\else \fillwithlines{\stretch{1}}\fi 
+	\item Using the above information, explain how the combination of the first two parcels is worth more than $2/3$ of the value of the land to Carol. \ifsolns \par \fbox{Because what is left over is worth less than $1/3$.}\else \fillwithlines{\stretch{1}}\fi
+	\item Using similar logic, explain how the combination of the first two parcels is worth more than $2/3$ of the value of the land to Charlotte.\fillwithlines{\stretch{1}}
+\end{enumerate}
+
+
+\end{enumerate}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+\begin{Denumerate}
+
+\item Six players (D,$C_1,C_2,C_3,C_4$ and $C_5$) are dividing a cake among themselves using the lone-divider method. D cuts the cake into six slices $s_1,s_2,s_3,s_4,s_5,$ and $s_6$. When the choosers' bid lists are opened, $C_1$'s bid list is $\{s_1\}$, $C_2$'s bid list is $\{s_2,s_3\}$, $C_3$'s bid list is $\{s_4,s_5\}$, $C_4$'s bid list is $\{s_4,s_5\}$, and $C_5$'s bid list is $\{s_1\}$. Describe how to proceed to obtain a fair division of the cake.
+\solution{ There are  many correct solutions.  They all include $C_2$ getting either $s_2$ or $s_3$.  
+$C_3$ and $C_4$ getting either $s_4$ or $s_5$ and the other one going to the other, and $C_1$ and $C_5$
+splitting the combination of $s_1$ and another piece which are then split using divider-chooser.}
+\vfill
+\fillwithlines{\stretch{1}}
+\item We have one divider, Demon and three choosers, Chuck, Charlie, and Charles.  Demon divides the cake into four shares, $s_1, s_2, s_3$ and $s_4$.  The following table shows how each of the players values each of the four shares.  Remember that this information is private and not known to the other players.
+
+\begin{multicols}{2}
+\begin{center}
+	\begin{tabular}{lcccc}
+\hline
+& $s_1$&$s_2$&$s_3$ & $s_4$\\\hline
+Demon & 25\% & 25\% & 25\% & 25\% \\\hline
+Chuck & 15\% & 20\% & 50\% & 15\% \\\hline
+Charlie & 20\% & 20\% & 40\% & 20\% \\\hline
+Charles & 25\% & 20\% & 20\% & 35\% \\\hline
+\end{tabular}
+\end{center}
+\begin{enumerate}
+	\item What are each player's bidding lists?
+	
+	\begin{center}
+	\ifsolns
+	\begin{tabular}{lcccc}
+	Demon  &  $s_1$ & $s_2$ & $s_3$  &  $s_4$\\
+Chuck  &  &  & $s_3$  & \\
+Charlie  &  &  & $s_3$  & \\
+Charles  &  $s_1$ &  &  &  $s_4$ \\
+	\end{tabular}
+	\else
+	\begin{tabular}{lp{2in}}
+\hline
+%& $s_1$&$s_2$&$s_3$ & $s_4$\\\hline
+Demon & \\\hline
+Chuck & \\\hline
+Charlie &  \\\hline
+Charles &  \\\hline
+\end{tabular}\fi
+\end{center}
+\end{enumerate}
+	\end{multicols}
+	\begin{enumerate}
+	
+  \setcounter{enumi}{2}
+	\item How are you going to make a fair division?
+	\solution{Similar to the previous problem, Charles gets	 $s_1$ or	 $s_4$, Demon gets something, and Chuck and Charlie will take the combination of $s_3$ and another slice and perform divider-chooser.}
+	
+\fillwithlines{\stretch{1}}
+\end{enumerate}
+
+
+
+
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+%\subsection{Lone Chooser}
+%
+%The lone chooser method was proposed in 1964 by A.M. Fink, a mathematician at Iowa State University and a Wartburg College graduate.  The lone chooser method is an iterative process that generalizes to multiple players more easily than the lone divider method. 
+%
+%\begin{enumerate}
+%	\item \vfill
+%	\item \vfill
+%	\item \vfill
+%
+%\end{enumerate}
+%
+%\clearpage
+
+\clearpage
+\subsection{Method of Sealed Bids} 
+\index{sealed bids} \studentrand
+Sometimes you want to split up items without physically cutting them apart.  For example, suppose \randstudent[1]\ is living with two roommates and everyone is graduating.  Over the years, they have purchased some appliances together and now they need to fairly divide the appliances.  
+
+In the method of sealed bids, each roommate is going to write down what they believe is a fair value for each appliance and seal the ``bids'' in an envelope.  When the envelopes are opened, we get the following results:
+
+\begin{tabular}{llll}
+ &  \randstudent[1]  &  \randstudent[2]  &  \randstudent[3] \\\hline
+ T.V.  &  \$75  &  \$100  &  \$120 \\\hline
+ Microwave  &  \$35  &  \$30  &  \$40 \\\hline
+ Crock Pot  &  \$5  &  \$10  &  \$7 \\\hline
+ Toaster Oven  &  \$7  &  \$10  &  \$5 \\\hline
+ Blender  &  \$20  &  \$25 &  \$20 \\\hline\ifsolns
+ Total &\$142	&\$175	&\$192 \\\hline
+Fair Share &\$ 47.33	&\$	58.33&\$ 64.00\\\hline
+ \else
+ Total &\$	&\$	&\$ \\\hline
+Fair Share &\$	&\$	&\$ \\\hline
+ \fi
+ 
+\end{tabular}
+\begin{enumerate}
+	\item How much does each person think the whole property to be split is worth?  What would be their fair share? 
+	\ifsolns  \$47.33 	 \$58.33 	 \$64.00 
+\else
+	\fillwithlines{\stretch{1}}
+\fi
+	
+	\item How would you propose splitting up the property?
+\fillwithlines{\stretch{1}}
+	%\vfill
+	
+	\clearpage
+	
+	\item Method of Sealed Bids
+	\begin{enumerate}
+	\item Assign each item to the highest bidder.  Who gets what?
+	\begin{center}
+	\large
+	\begin{tabular}{lp{3in}}
+	Roommate & Items  \\\hline \ifsolns
+	Rachel & \\\hline
+	 Sally &   Crock Pot, 
+ Toaster Oven, 
+ Blender 
+\\\hline
+	 Theresa & T.V., 
+ Microwave 
+\\\hline
+\else
+		\randstudent[1] & \\\hline
+	 \randstudent[2] &  \\\hline
+	 \randstudent[3] &\\\hline
+\fi
+	\end{tabular}
+\end{center}
+\normalsize
+	\item What is the total value of the items to the winners?  Use the prices they have assigned themselves.
+	\begin{center}
+	\large
+		\begin{tabular}{lcccc}
+	Roommate & Value  & Fair Share & Cash Paid & Cash Received\\\hline
+\ifsolns
+Rachel  &  &  \$47.33  &    &  \$47.33 \\\hline
+ Sally  &  \$45.00  &  \$58.33  &    &  \$13.33 \\\hline
+ Theresa  &  \$160.00  &  \$64.00  &  \$96.00  &    \\\hline
+\else
+	\randstudent[1] & \$ \\\hline
+	 \randstudent[2] & \$ \\\hline
+	 \randstudent[3] & \$ \\\hline
+	\fi
+	\end{tabular}
+\normalsize
+\end{center}	 
+	 \item Which of the roommates have received more than their fair share of the property?  How much more did they receive? \label{sb1}
+
+	 \item Which of the roommates have received less than their fair share of the property?  How much less did they receive? \label{sb2}
+	\item Have the roommates who received too much pay cash for the extra value of the property over and above their fair share.  Pay the roommates who did not receive enough the shortfall between what they see as a fair share and the value of the property they have received.
+	\item How much cash do you have left? \solution{ \$35.33} 
+	\item Divide the extra cash by 3 and give each roommate one third of the extra cash.
+	\ifsolns
+	\begin{tabular}{lcr}
+Roommate  & \\
+\randstudent[1]  &  \$59.11 \\
+ \randstudent[2]  &  \$25.11  & Crock Pot,  Toaster Oven,  Blender\\
+ \randstudent[3]  &  \$(84.22) & T.V.,  Microwave\\
+\end{tabular} \else
+	\fillwithlines{\stretch{1}}
+\fi
+	
+
+\item Explain how each roommate has received a fair share.
+	\fillwithlines{\stretch{1}}
+	
+
+\item What are some of the drawbacks of the  method of sealed bids?
+
+\fillwithlines{\stretch{1}}
+\end{enumerate}
+
+
+\clearpage
+
+\item Five heirs ($A,B,C, D,$ and $E$) are dividing an estate consisting of six items using the method of sealed bids.  The heirs bids on each of the times are given in the following table.
+
+\begin{center}
+	\begin{tabular}{c c c c c c}
+	& $A$ & $B$ & $C$ & $D$ & $E$ \\\hline
+	\ifsolns
+	Item 1  &  \$352.00  &  \$295.00  &  \$395.00  &  \$368.00  &  \$324.00 \\\hline
+Item 2  &  \$98.00  &  \$102.00  &  \$98.00  &  \$95.00  &  \$105.00 \\\hline
+Item 3  &  \$460.00  &  \$449.00  &  \$510.00  &  \$501.00  &  \$476.00 \\\hline
+Item 4  &  \$852.00  &  \$825.00  &  \$832.00  &  \$817.00  &  \$843.00 \\\hline
+Item 5  &  \$513.00  &  \$501.00  &  \$505.00  &  \$505.00  &  \$491.00 \\\hline
+Item 6  &  \$725.00  &  \$738.00  &  \$750.00  &  \$744.00  &  \$761.00 \\\hline\hline
+Total &  \$3,000.00  &  \$2,910.00  &  \$3,090.00  &  \$3,030.00  &  \$3,000.00\\\hline
+\else
+Item 1 & \$352 & \$295 & \$395 & \$368 & \$324 \\\hline
+Item 2 & \$98 & \$102 & \$98 & \$95 & \$105 \\\hline
+Item 3 & \$460 & \$449 & \$510 & \$501 & \$476 \\\hline
+Item 4 & \$852 & \$825 & \$832 & \$817 & \$843 \\\hline
+Item 5 & \$513 & \$501 & \$505 & \$505 & \$491 \\\hline
+Item 6 & \$725 & \$738 & \$750 & \$744 & \$761 \\\hline\hline
+Total &  &  &  &  & \\\hline
+Fair Share &  &  &  &  & \\\hline \fi
+
+\end{tabular}
+
+\end{center}
+\begin{enumerate}
+	\item Describe the first settlement of this estate and compute the surplus cash. 
+	\ifsolns
+	\$130 
+	
+	\begin{tabular}{lrccc}
+ & Items & Fair Share & Initial Cash & Final Cash\\\hline
+$A$   &  4,5  &   \$600.00   &   \$(765.00)  & (\$739.00)	\\\hline
+ $B$   &    &   \$582.00   &   \$582.00   & \$608.00 	\\\hline
+ $C$   &  1,3  &   \$618.00   &   \$(287.00)  & (\$261.00)	\\\hline
+ $D$   &    &   \$606.00   &   \$606.00   & \$632.00 	\\\hline
+ $E$  &  2,6  &   \$600.00   &   \$(266.00)  & (\$240.00)	\\\hline
+\end{tabular} \else
+	\fillwithlines{\stretch{1}}
+\fi
+	
+
+	\item Describe the final settlement of this estate.
+	\fillwithlines{\stretch{1}}
+	
+
+\end{enumerate}
+
+\end{enumerate}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\HOMEWORK
+%</HWHEADER>
+
+%<*HOMEWORK>
+
+
+\begin{Denumerate}
+  \item Aden, Ben, and Charles are dividing four pieces of furniture using the method of sealed bids.  Their bids on each of the items are given in the following table.
+  
+\begin{center}
+	  \begin{tabular}{cccc}
+ & Aden & Ben & Charles \\\hline
+ Dresser & \$150 & \$300 & \$275 \\\hline
+ 
+ Desk & \$180 & \$150 & \$165 \\\hline
+ 
+ TV Cabinet & \$170 & \$200 & \$260 \\\hline
+ Tapestry & \$400 & \$250 & \$500 \\\hline \hline
+\ifsolns 
+Total & \$900 & \$ 900 & \$1200\\\hline
+Fair Share & \$300 & \$300 & \$400\\\hline
+\else
+Total &  &  & \\\hline
+Fair Share &  &  & \\\hline
+\fi
+\end{tabular}
+
+\end{center}
+		\begin{enumerate}
+			\item Describe the first settlement of the items and compute the Surplus.
+			\solution*{ Aden gets the Desk and \$120, Ben gets the Dresser, Charles gets the TV Cabinet and the Tapestry, but pays in \$360.  There is a surplus of \$240.
+                }\vfill
+			\item Describe the final settlement of the items.\vfill
+				\solution*{ Aden gets the Desk and \$200, Ben gets the Dresser and \$80, Charles gets the TV Cabinet and the Tapestry, but pays \$280.
+                }\vfill
+			\end{enumerate}
+	\item Kathy, Susie, and Judy are equal partners in a small bookstore.  They can't get along anymore, but they don't want to  sell the bookstore to an outsider so they decide to settle the matter using the method of sealed bids. Kathy bids \$240,000 for the business, Susie bids \$210,000, and Judy bids \$225,000.  Describe the final settlement of this bookstore.
+			\solution{As the highest bidder, Kathy receives the store and owes \$155,000, Susie receives \$ 75,000  and Judy receives \$ 80,000. 
+			}\vfill
+\hwnewpage
+		\item Three women (Carrie, Jeri, and Violet) share an apartment and wish to divide the chores: bathrooms, cooking, dishes, laundry, and vacuuming.  For each chore, they privately write the least they are willing to receive monthly (their negative valuation) in return for doing that chore.  The results are shown in the following table.
+		
+		\begin{center}
+	\begin{tabular}{lccc}
+ & Carrie & Jeri & Violet \\\hline
+ Clean bathrooms & \$-20 & \$-30 & \$-40 \\\hline
+ Do cooking & \$-50 & \$-10 & \$-25 \\\hline
+ Wash dishes & \$-30 & \$-20 & \$-15 \\\hline
+ Mow the lawn & \$-30 & \$-20 & \$-10 \\\hline
+ Vacuum and dust & \$-20 & \$-40 & \$-15 \\\hline 
+\end{tabular}
+\end{center}
+Divide the chores using the method of sealed bids.  Who does which chores?  Who gets paid, and how much? Who pays, and how much? 
+		\solution*{Carrie cleans the bathrooms and pays \$12.  Jeri does the cooking and pays \$12.  Violet washes the dishes, mows the lawn, vacuums and dusts and gets paid \$23 (or \$24 with rounding).
+		}
+
+\end{Denumerate} \ENDHOMEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage 
+%\solnstrue
+\clearpage
+\section{Study Guide}
+
+
+To prepare for the exam over this chapter,
+you should review the in-class worksheets and homework.
+Be ready to do the kind of problems you faced on the homework.
+
+As a general guide, I recommend reviewing the following topics.
+
+\begin{enumerate}
+  \item Know what it means for a division of assets to be fair.
+  \item Calculate the fair division by method of
+        \begin{enumerate}
+          \item Divider-Chooser
+          \item Lone-Divider
+          \item Sealed Bids
+        \end{enumerate}
+  \item Know what to do when two players want one and only one piece of the division.
+  \item Apportionment
+        \begin{enumerate}
+          \item Know how to find the Standard Divisor and the Standard Quota.
+          \item Understand the quota rule.
+   				\item Be able to understand when a modification of the apportionment problem violates the Population Paradox.
+   				\item Be able to understand when a modification of the apportionment problem violates the New States Paradox.
+   				\item Be able to understand when a modification of the apportionment problem violates the Alabama Paradox.
+        \end{enumerate}
+   \item Given an apportionment problem, be able to find the apportionment using Hamilton's Method.
+    \item Given an apportionment problem, be able to find the apportionment using Jefferson's Method.
+    \item Given an apportionment problem, be able to find the apportionment using Adam's Method.
+    \item Given an apportionment problem, be able to find the apportionment using Webster's Method
+\end{enumerate}
+
+%</WORKSHEETS>
+
+\endinput
