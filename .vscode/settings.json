@@ -1,0 +1,9 @@
+{
+    "xml.downloadExternalResources.enabled": true,
+    "xml.fileAssociations": [
+        {
+            "pattern": "**/source/**.ptx",
+            "systemId": "c:\\Users\\hp\\.vscode\\extensions\\oscarlevin.pretext-tools-0.32.4\\assets\\schema\\pretext.rng"
+        }
+    ]
+}
