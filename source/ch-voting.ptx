@@ -7,9 +7,15 @@
     <p> Text before the first section. </p>
   </introduction>
 
-  <xi:include href="./ws-voting-systems.ptx"/>
+<section xml:id="sec-Voting_Systems">
+  <title>Voting Systems</title>
+    <xi:include href="./ws-voting-systems.ptx"/>
 
   <xi:include href="./hw-voting-systems.ptx"/>
+</section>
   
-  <xi:include href="./ws-voting-paradoxes.ptx"/>
+ <section xml:id="sec-Voting_Paradoxes">
+  <title>Voting Paradoxes</title>
+   <xi:include href="./ws-voting-paradoxes.ptx"/>
+ </section>
 </chapter>

@@ -14,7 +14,7 @@
     <!-- Include chapters -->
 
     <xi:include href="./ch-voting.ptx" />
-
+    <xi:include href="./ch-apportionment.ptx" />
 
 
     <!-- Include backmatter -->
