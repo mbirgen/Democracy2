@@ -8,5 +8,6 @@
   </introduction>
 
   <xi:include href="./ws-voting-systems.ptx"/>
+  <xi:include href="./ws-voting-paradoxes.ptx"/>
 
 </chapter>
