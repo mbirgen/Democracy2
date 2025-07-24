@@ -12,7 +12,7 @@
                       A coalition is? 
                     </p>
                 </statement>
-            </definition>>
+            </definition>
                 
             <solution>
                 <p>
@@ -22,7 +22,6 @@
                 Since coalitions are just sets of players, the most convenient way to describe coalitions mathematically is to use the <em>set</em> notation.  
                 </p>
             </solution>
-            </p>
         </li>
 
         <li>
@@ -123,7 +122,7 @@
         </li>
 
         <li>
-                <definition xml:id="def-">
+                <definition xml:id="def-winning-coalition">
                     <statement>
                         <p>
                           A winning coalition is … coalition!winning  
@@ -136,9 +135,6 @@
                 A single player coalition can be a winning coalition only when that player is a dictator, so under the assumption that there are no dictators in our weighted voting system (dictators are boring) a winning coalition must have at least two players.  
                 </p>
             </solution>
-
-                
-            </p>
 
             <p>
             </p>
