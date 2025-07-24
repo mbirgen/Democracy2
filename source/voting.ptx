@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="voting" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Voting</title>
+
+  <introduction>
+    <p>
+        This chapter introduces fundamental concepts of voting and democratic decision-making.
+        We explore basic voting methods and their applications in various contexts.
+    </p>
+  </introduction>
+
+  <section xml:id="sec-voting-basics">
+    <title>Basic Voting Concepts</title>
+    
+    <p>
+        In a democracy, voting is the primary mechanism by which citizens make collective decisions.
+        This section introduces the fundamental concepts and terminology used in voting theory.
+    </p>
+    
+    <definition xml:id="def-preference">
+      <title>Preference</title>
+      <statement>
+        <p>
+          A <term>preference</term> is an ordering of candidates or alternatives from most preferred to least preferred.
+        </p>
+      </statement>
+    </definition>
+    
+    <definition xml:id="def-ballot">
+      <title>Ballot</title>
+      <statement>
+        <p>
+          A <term>ballot</term> is a way of recording a voter's preference among the candidates or alternatives.
+        </p>
+      </statement>
+    </definition>
+    
+    <definition xml:id="def-voting-method">
+      <title>Voting Method</title>
+      <statement>
+        <p>
+          A <term>voting method</term> (or voting system) is a procedure for determining the winner of an election based on the ballots cast.
+        </p>
+      </statement>
+    </definition>
+  </section>
+  
+  <section xml:id="sec-simple-voting">
+    <title>Simple Voting Methods</title>
+    
+    <p>
+        We begin with some of the most straightforward voting methods used in elections.
+    </p>
+    
+    <subsection xml:id="subsec-plurality">
+      <title>Plurality Method</title>
+      
+      <p>
+          The plurality method is perhaps the most familiar voting method.
+      </p>
+      
+      <definition xml:id="def-plurality">
+        <title>Plurality Method</title>
+        <statement>
+          <p>
+            In the <term>plurality method</term>, each voter votes for exactly one candidate, and the candidate with the most votes wins.
+          </p>
+        </statement>
+      </definition>
+    </subsection>
+  </section>
+</chapter>

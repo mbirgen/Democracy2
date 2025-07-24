@@ -1,0 +1,10 @@
+<chapter xml:id="ch-beyond-numbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Beyond Numbers</title>
+    
+     <xi:include href="sections/sec-mathematical-stories.ptx"/>
+     <xi:include href="sections/sec-what-does-2-mean.ptx"/>
+     <xi:include href="sections/sec-familiar-but-infinite.ptx"/>
+     <xi:include href="sections/sec-rational-numbers.ptx"/>
+     <xi:include href="sections/sec-the-missing-member.ptx"/>
+
+</chapter>

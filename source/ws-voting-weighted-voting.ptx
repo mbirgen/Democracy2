@@ -3,51 +3,170 @@
 <worksheet xml:id="ws-voting-weighted-voting" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Weighted Voting Systems</title>
 
-<activity>
+    <introduction>
+        <p>In this worksheet, we explore weighted voting systems where different voters have different amounts of voting power.</p>
+    </introduction>
 
-<task workspace="1in">
-<p>
-      Notes on weighted voting systems: \index{weighted voting}
-	
-	<ul>
-    <li>
-        <p>
-            <m>P_{i}</m>
-        </p>
-    </li>
+    <activity xml:id="act-weighted-voting-intro">
+        <title>Introduction to Weighted Voting</title>
+        
+        <task>
+            <statement>
+                <p>Complete the definitions for weighted voting systems:</p>
+                <ul>
+                    <li><p><m>P_i</m> = <fillin characters="30"/></p></li>
+                    <li><p><m>w_i</m> = <fillin characters="30"/></p></li>
+                    <li><p><m>q</m> = <fillin characters="30"/></p></li>
+                    <li><p><m>[q|w_1,w_2,\dots,w_n]</m> = <fillin characters="30"/></p></li>
+                </ul>
+            </statement>
+            <solution>
+                <ul>
+                    <li><p><m>P_i</m> = The <m>i</m>-th voter</p></li>
+                    <li><p><m>w_i</m> = The weight (voting power) of voter <m>P_i</m></p></li>
+                    <li><p><m>q</m> = The quota (minimum votes needed for a motion to pass)</p></li>
+                    <li><p><m>[q|w_1,w_2,\dots,w_n]</m> = Notation for a weighted voting system</p></li>
+                </ul>
+            </solution>
+        </task>
 
-    <li>
-        <p>
-            <m>w_{i}</m>
-        </p>
-    </li>
+        <task>
+            <statement>
+                <p>Weighted voting systems are when there are <m>n</m> voters labeled <m>P_1, \dots, P_n</m>, and each voter casts a vote with a certain weight, <m>w_i</m>. Think of this as having each voter being able to cast <m>w_i</m> votes all for the same decision. In order for a motion to pass, the sum of all the votes needs to be at least <m>q</m>, the quota. We need the quota to be more than 50% of the sum of all the votes and no more than the sum of all the votes, but it can be anything in between. We give a weighted voting system as <m>[q|w_1,w_2,\dots,w_n]</m>.</p>
+            </statement>
+        </task>
+    </activity>
 
-    <li>
-        <p>
-            <m>q</m>
-        </p>
-    </li>
+    <activity xml:id="act-quota-calculations">
+        <title>Quota Calculations</title>
+        
+        <task>
+            <statement>
+                <p>In a weighted voting system with weights <m>[30, 29, 16, 8, 3, 1]</m>, if a two-thirds majority of votes is needed to pass a motion, what is the quota?</p>
+            </statement>
+            <solution>
+                <p>Total votes = <m>30 + 29 + 16 + 8 + 3 + 1 = 87</m></p>
+                <p>Two-thirds of 87 = <m>\frac{2}{3} \times 87 = 58</m></p>
+            </solution>
+        </task>
 
-    <li>
-        <p>
-            <m>[q|w_{1},w_{2},\dots,w_{n}]</m>
-        </p>
-    </li>
-</ul>
+        <task>
+            <statement>
+                <p>Consider the weighted voting system <m>[14, 9, 8, 5]</m>.</p>
+                <ol>
+                    <li><p>What is the largest reasonable quota for this system?</p></li>
+                    <li><p>What is the smallest reasonable quota for this system?</p></li>
+                </ol>
+            </statement>
+            <solution>
+                <ol>
+                    <li><p>Largest reasonable quota = total votes = <m>14 + 9 + 8 + 5 = 36</m></p></li>
+                    <li><p>Smallest reasonable quota = more than half = <m>\lceil \frac{36}{2} \rceil + 1 = 19</m></p></li>
+                </ol>
+            </solution>
+        </task>
+    </activity>
 
-<p>
-</p>
+    <activity xml:id="act-weighted-voting-analysis">
+        <title>Analyzing Weighted Voting Systems</title>
+        
+        <task>
+            <statement>
+                <p>Consider the weighted voting system <m>[20|7,5,4,4,2,2,2,1,1]</m>.</p>
+                <ol>
+                    <li><p>How many voters are there?</p></li>
+                    <li><p>What is the quota?</p></li>
+                    <li><p>What is the weight for voter <m>P_2</m>?</p></li>
+                    <li><p>If the first 4 voters vote for a motion and the rest vote against, does the motion pass?</p></li>
+                    <li><p>If <m>P_1</m> and <m>P_2</m> vote against a motion, will the motion pass?</p></li>
+                </ol>
+            </statement>
+            <solution>
+                <ol>
+                    <li><p>9 voters</p></li>
+                    <li><p>20</p></li>
+                    <li><p>5</p></li>
+                    <li><p>First 4 voters have weights 7+5+4+4 = 20 ≥ quota, so Yes</p></li>
+                    <li><p>Without <m>P_1</m> and <m>P_2</m>, remaining votes = 4+4+2+2+2+1+1 = 16 &lt; 20, so No</p></li>
+                </ol>
+            </solution>
+        </task>
+    </activity>
 
-<p>
-    Weighted voting systems are when there are <m>n</m> voters labeled <m>P_{1}\dots P_{n}</m>, and each voter casts a vote with a certain weight, <m>w_{i}</m>.
-    Think of this as having each voter being able to cast <m>w_{i}</m> votes all for the same decision.
-    In order for a motion to pass, the sum of all the votes needs to be at least <m>q</m>, the quota.
-    We need the quota to be more than 50%of the sum of all the votes and no more than the sum of all the votes, but it can be anything in between.
-    We give a weighted voting system as <m>[q|w_{1},w_{2},\dots,w_{n}]</m>.
-</p>
-</p>
-</task>
-</activity>
+    <activity xml:id="act-special-weighted-systems">
+        <title>Special Cases in Weighted Voting</title>
+        
+        <task>
+            <statement>
+                <p>What is peculiar about each of the following weighted voting systems?</p>
+                <ol>
+                    <li><p><m>[20|10, 10, 9]</m></p></li>
+                    <li><p><m>[7|4, 2, 1]</m></p></li>
+                    <li><p><m>[51|50, 49, 1]</m></p></li>
+                    <li><p><m>[6|6, 2, 1, 1]</m></p></li>
+                </ol>
+            </statement>
+            <solution>
+                <ol>
+                    <li><p>Cannot win without both <m>P_1</m> and <m>P_2</m></p></li>
+                    <li><p>Everyone must vote for the motion to pass</p></li>
+                    <li><p>First voter must vote for the motion for it to pass</p></li>
+                    <li><p>First voter is the only one who makes a difference</p></li>
+                </ol>
+            </solution>
+        </task>
+    </activity>
 
+    <assemblage xml:id="weighted-voting-definitions">
+        <title>Key Terms in Weighted Voting</title>
+        
+        <definition xml:id="def-dummy">
+            <statement>
+                <p>A <term>dummy</term> is a voter whose vote does not make any difference on whether a motion passes or not.</p>
+            </statement>
+        </definition>
 
+        <definition xml:id="def-dictator">
+            <statement>
+                <p>A <term>dictator</term> is a voter where their vote is the only reason a motion passes.</p>
+            </statement>
+        </definition>
+
+        <definition xml:id="def-veto-power">
+            <statement>
+                <p>A voter has <term>veto power</term> if they must vote for a motion in order for it to pass.</p>
+            </statement>
+        </definition>
+    </assemblage>
+
+    <activity xml:id="act-power-analysis">
+        <title>Analyzing Voting Power</title>
+        
+        <task>
+            <statement>
+                <p>In the weighted voting system <m>[12|9,5,4,2]</m>, are there any dummies or dictators?</p>
+            </statement>
+            <solution>
+                <p><m>P_4</m> (weight 2) is a dummy because any winning coalition already has at least 12 votes without <m>P_4</m>.</p>
+            </solution>
+        </task>
+
+        <task>
+            <statement>
+                <p>In designing a weighted voting system <m>[q|6,5,4,3,2,1]</m>, what is the largest quota <m>q</m> you could pick without giving veto power to anyone?</p>
+            </statement>
+            <solution>
+                <p>15. You need the rest of the voters to be able to pass a motion without the largest voter.</p>
+            </solution>
+        </task>
+
+        <task>
+            <statement>
+                <p>In the weighted voting system <m>[q|8,5,4,1]</m>, if every voter has veto power, what is the quota <m>q</m>?</p>
+            </statement>
+            <solution>
+                <p>18. The last voter needs to have veto power, so the only way a motion passes is if the vote is unanimous.</p>
+            </solution>
+        </task>
+    </activity>
 </worksheet>

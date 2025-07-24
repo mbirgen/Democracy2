@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xml:id="ws-Hamilton">
+<worksheet xml:id="ws-Hamilton-2">
   <title>Hamilton's Method Worksheet</title>
   
   <introduction>
     <p>In this worksheet, you'll practice Hamilton's method for apportionment by working through the Republic of Awoi example.</p>
   </introduction>
 
-  <activity xml:id="hamilton-awoi-practice">
+  <activity xml:id="hamilton-awoi-practice-2">
     <title>Republic of Awoi - Hamilton's Method</title>
     <introduction>
       <p>Consider the Republic of Awoi with four states:
@@ -155,7 +155,7 @@
     </task>
   </activity>
 
-  <assemblage xml:id="hamilton-method-steps">
+  <assemblage xml:id="hamilton-method-steps-2">
     <title>Hamilton's Method - Step by Step</title>
     <ol>
       <li><p>Calculate the total population</p></li>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="redistricting" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Redistricting</title>
+
+  <introduction>
+    <p>
+        According to the Supreme Court, the Constitution requires that population must be equalized across districts. 
+        The idea is that if one Iowan lives in a district with 1 million other voters while another Iowan lives in a 
+        district with only 200,000 other voters, the second one's vote is more influential in choosing a member of Congress. 
+        Of course, populations shift, growing or shrinking over time.
+    </p>
+    <p>
+        To prevent those shifts from leaving unbalanced districts, state legislatures must redraw their electoral districts 
+        every 10 years, after the Census Bureau releases its new population data. Redistricting regularly leads to heated 
+        political and legal fights as legislators scramble to gain advantage for their parties.
+    </p>
+    <p>
+        Once the census has been taken and all the numbers have been added up and the apportionment problem has been solved 
+        (up to the Supreme Court if necessary), it is time to divide up each state into districts (one per representative). 
+        Some of the rules of redistricting are:
+    </p>
+    <ul>
+      <li><p>Population must be equalized across districts.</p></li>
+      <li><p>Each district must be (if possible) physically connected.</p></li>
+    </ul>
+    <p>
+        Additionally, each state has more rules that they have decided on. In most states, the party in power when the census 
+        data comes out gets to draw in district lines for Federal Representatives and all state offices that need districts. 
+        This process is done by hand often block by block. In 2011 the new field of data science made it possible for whoever 
+        was in charge to manipulate the lines in such a way that their majority was nearly guaranteed in the near future.
+    </p>
+  </introduction>
+
+  <section xml:id="sec-gerrymandering">
+    <title>Gerrymandering</title>
+    
+    <p>
+        The process of dividing the state into the appropriate number of districts is called redistricting, but in the popular press, 
+        it is often referred to as gerrymandering. This is because the map-makers often decide to split things up to their benefit. 
+        One of the earliest, most obvious examples of this was in 1812 when Massachusetts Governor Gerry and his party drew one 
+        district in such a curvy and jagged manner that the local press thought it looked like a Salamander and coined the term Gerrymander.
+    </p>
+
+    <activity xml:id="act-simple-state-redistricting">
+      <title>Simple State Redistricting</title>
+      <introduction>
+        <p>Consider a simple state with 50 people who belong to two different political parties: 
+        20 Orange party members and 30 Teal party members. The census says that they should have 5 seats, 
+        so we need to divide up these people into 5 groups of 10 people each.</p>
+        
+        <p>In the diagrams below, assume Orange party members are represented by solid squares and 
+        Teal party members are represented by hatched squares, arranged in a 10×5 grid where the 
+        bottom 2 rows are Orange (20 people) and the top 3 rows are Teal (30 people).</p>
+      </introduction>
+      
+      <task>
+        <title>Horizontal Districts</title>
+        <statement>
+          <p>Consider dividing the state into 5 horizontal districts (each district is one row). 
+          Who would win with a majority of votes in each district? Who has an advantage in the legislature? 
+          Does it seem fair? Are the people in each district connected to each other? Are the districts generally compact?</p>
+        </statement>
+        <solution>
+          <p>
+            <ul>
+              <li>Row 1 (bottom): 10 Orange, 0 Teal → Orange wins</li>
+              <li>Row 2: 10 Orange, 0 Teal → Orange wins</li>
+              <li>Row 3: 0 Orange, 10 Teal → Teal wins</li>
+              <li>Row 4: 0 Orange, 10 Teal → Teal wins</li>
+              <li>Row 5 (top): 0 Orange, 10 Teal → Teal wins</li>
+            </ul>
+            Result: Orange wins 2 seats, Teal wins 3 seats. This is proportional to the population (40% vs 60%). 
+            Districts are connected and compact.
+          </p>
+        </solution>
+      </task>
+      
+      <task>
+        <title>Vertical Districts</title>
+        <statement>
+          <p>Consider dividing the state into 5 vertical districts (each district is two columns). 
+          Who would win with a majority of votes in each district? Who has an advantage in the legislature? 
+          Does it seem fair? Are the people in each district connected to each other? Are the districts generally compact?</p>
+        </statement>
+        <solution>
+          <p>Each vertical district contains 4 Orange voters (from bottom 2 rows) and 6 Teal voters (from top 3 rows).
+            <ul>
+              <li>District 1: 4 Orange, 6 Teal → Teal wins</li>
+              <li>District 2: 4 Orange, 6 Teal → Teal wins</li>
+              <li>District 3: 4 Orange, 6 Teal → Teal wins</li>
+              <li>District 4: 4 Orange, 6 Teal → Teal wins</li>
+              <li>District 5: 4 Orange, 6 Teal → Teal wins</li>
+            </ul>
+            Result: Orange wins 0 seats, Teal wins 5 seats. This gives Teal 100% of seats despite having only 60% of population. 
+            Districts are connected and compact, but not proportionally representative.
+          </p>
+        </solution>
+      </task>
+      
+      <task>
+        <title>Gerrymandered Districts</title>
+        <statement>
+          <p>Consider a more complex districting scheme designed to favor the Orange party. 
+          This might involve creating oddly-shaped districts that pack Teal voters into few districts 
+          while spreading Orange voters to create slim majorities in most districts. 
+          Analyze how this type of gerrymandering can distort representation.</p>
+        </statement>
+        <solution>
+          <p>Through careful district design, it would be possible to create districts where:
+            <ul>
+              <li>One district has 9-10 Teal voters (a "packed" district)</li>
+              <li>Four districts each have 6 Orange and 4 Teal voters</li>
+            </ul>
+            This could result in Orange winning 4 out of 5 seats despite being only 40% of the population.
+          </p>
+        </solution>
+      </task>
+    </activity>
+
+    <p>The last example illustrates the "packing" and "cracking" strategies that are characteristic of modern gerrymandering:</p>
+
+    <definition xml:id="def-packing">
+      <statement>
+        <p><term>Packing</term>: Putting a very large number of voters who all vote the same way in a single district. 
+        In this case, the election is won by these voters, but by a very large margin, "wasting" many votes.</p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-cracking">
+      <statement>
+        <p><term>Cracking</term>: Putting a slight majority of voters for one party in a single district. 
+        In this case, the election is won by these voters by a slim margin. There are a lot of minority voters 
+        in the district, but not enough to ever win an election.</p>
+      </statement>
+    </definition>
+
+    <activity xml:id="act-proportional-representation">
+      <title>Creating Proportional Representation</title>
+      <statement>
+        <p>Suppose a state has approximately 40% Orange party voters and 60% Teal party voters (distributed somewhat randomly). 
+        The challenge is to divide the state into 10 districts in such a way that in an election, 40% of the seats will be won 
+        by the Orange party and 60% by the Teal party.</p>
+        
+        <p>This means Orange should win 4 seats and Teal should win 6 seats. Describe a strategy for creating districts 
+        that achieve this proportional representation, and explain why this might be difficult to achieve in practice.</p>
+      </statement>
+      <solution>
+        <p>To achieve proportional representation:
+        <ul>
+          <li>Create 4 districts with slight Orange majorities (e.g., 6 Orange, 4 Teal each)</li>
+          <li>Create 6 districts with slight Teal majorities (e.g., 4 Orange, 6 Teal each)</li>
+        </ul>
+        This is difficult because:
+        <ul>
+          <li>Voters are not uniformly distributed geographically</li>
+          <li>Districts must be contiguous and reasonably compact</li>
+          <li>Population equality requirements must be met</li>
+          <li>The party in charge of redistricting has incentives to favor themselves</li>
+        </ul>
+        </p>
+      </solution>
+    </activity>
+  </section>
+
+  <section xml:id="sec-fairness">
+    <title>Fairness</title>
+    
+    <p>Various mathematical measures have been developed to detect and quantify gerrymandering and ensure fairness in redistricting, including:</p>
+    
+    <ul>
+      <li><p><term>Efficiency Gap</term>: Measures "wasted votes" - votes that don't contribute to victory</p></li>
+      <li><p><term>Compactness Measures</term>: Geometric measures of how "oddly shaped" districts are</p></li>
+      <li><p><term>Partisan Symmetry</term>: Whether both parties would be treated equally under the district plan</p></li>
+    </ul>
+    
+    <p>These mathematical tools are increasingly used in court cases challenging redistricting plans as unconstitutional gerrymanders.</p>
+    
+    <activity xml:id="act-fairness-measures">
+      <title>Evaluating Fairness in Redistricting</title>
+      <introduction>
+        <p>Consider different ways to measure whether a redistricting plan is fair.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>What characteristics would you expect in a "fair" redistricting plan?</p>
+        </statement>
+        <solution>
+          <p>A fair plan might have: equal population districts, compact shapes, preserved communities of interest, competitive races, and proportional representation.</p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>How might mathematical measures help courts determine if a redistricting plan is fair?</p>
+        </statement>
+        <solution>
+          <p>Mathematical measures provide objective, quantifiable criteria that can be applied consistently across different plans and jurisdictions.</p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+</chapter>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="apportionment-and-division-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Apportionment and Division</title>
+
+  <introduction>
+    <p>
+        This chapter covers advanced topics in apportionment methods and fair division procedures.
+        We examine different approaches to distributing resources fairly among multiple parties.
+    </p>
+  </introduction>
+
+  <section xml:id="sec-apportionment-methods">
+    <title>Apportionment</title>
+    
+    <p>
+        Apportionment involves distributing a fixed number of items (such as legislative seats) 
+        among different groups based on some measure (such as population).
+    </p>
+    
+    <xi:include href="./wkst-Hamilton-2.ptx"/>
+    <xi:include href="./wkst-Jefferson.ptx"/>
+  </section>
+  
+  <section xml:id="sec-fair-division-methods">
+    <title>Fair Division</title>
+    
+    <p>
+        Fair division deals with the problem of dividing resources among multiple parties 
+        in a way that each party considers fair.
+    </p>
+    
+    <subsection xml:id="subsec-divider-chooser-2">
+      <title>Divider-Chooser Method</title>
+      
+      <p>
+          The divider-chooser method is a simple fair division procedure for two parties.
+      </p>
+      
+      <definition xml:id="def-divider-chooser-2">
+        <title>Divider-Chooser Method</title>
+        <statement>
+          <p>
+            In the <term>divider-chooser method</term>, one party (the divider) divides the resource into what they consider to be equal parts, and the other party (the chooser) selects their preferred part.
+          </p>
+        </statement>
+      </definition>
+    </subsection>
+  </section>
+  
+  <section xml:id="sec-apportionment-division-study-guide">
+    <title>Study Guide</title>
+    
+    <p>
+        This section provides a summary of key concepts and practice problems for apportionment and fair division methods.
+    </p>
+    
+    <subsection xml:id="subsec-key-concepts-2">
+      <title>Key Concepts</title>
+      
+      <p>
+          Review the following important terms and methods:
+      </p>
+      
+      <ul>
+        <li>Standard divisor and quota</li>
+        <li>Hamilton's method</li>
+        <li>Jefferson's method</li>
+        <li>Fair division procedures</li>
+        <li>Divider-chooser method</li>
+      </ul>
+    </subsection>
+  </section>
+</chapter>

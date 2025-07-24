@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="financial-mathematics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Financial Mathematics</title>
+
+  <introduction>
+    <p>
+        In this chapter, we explore the mathematics behind personal finance, loans, investments, and retirement planning.
+        We retain the following conventions:
+    </p>
+    <table>
+      <tabular>
+        <row>
+          <cell>1 year</cell>
+          <cell>12 months</cell>
+        </row>
+        <row>
+          <cell>1 year</cell>
+          <cell>52 weeks</cell>
+        </row>
+        <row>
+          <cell>1 year</cell>
+          <cell>365 days</cell>
+        </row>
+        <row>
+          <cell>1 week</cell>
+          <cell>7 days</cell>
+        </row>
+        <row>
+          <cell>1 day</cell>
+          <cell>24 hours</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>All interest rates will be annual unless specified otherwise.</p>
+  </introduction>
+
+  <section xml:id="sec-simple-interest">
+    <title>Simple Interest</title>
+    
+    <activity xml:id="act-simple-rental-problems">
+      <introduction>
+        <p>We'll start with some basic rental and leasing problems to understand proportional relationships.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>A student rents a post-hole digger from RentAll to build a fence. The cost is $12.95 per day, and they keep it for three days. How much will they pay?</p>
+        </statement>
+        <solution>
+          <p><m>12.95 \times 3 = \$38.85</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student is visiting Kentucky for work and will need to rent a furnished apartment. The rate is $100 per week. They stay for 18 days. How much will they pay?</p>
+        </statement>
+        <solution>
+          <p><m>18 \text{ days} \times \frac{1 \text{ week}}{7 \text{ days}} \times \frac{\$100}{1 \text{ week}} = \frac{18 \times 100}{7} = \$257.14</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student needs to lease a car for $2500 per year. How much will they pay if they keep the car for:</p>
+          <ol>
+            <li><p>2 years?</p></li>
+            <li><p>5 months?</p></li>
+          </ol>
+        </statement>
+        <solution>
+          <ol>
+            <li><p><m>2500 \times 2 = \$5,000.00</m></p></li>
+            <li><p><m>2500 \times \frac{5}{12} = \$1,041.67</m></p></li>
+          </ol>
+        </solution>
+      </task>
+    </activity>
+
+    <p>These problems show us the basic idea behind simple interest: the amount charged is proportional to the principal (amount borrowed) and the time period.</p>
+
+    <definition xml:id="def-simple-interest-formula">
+      <statement>
+        <p>The <term>simple interest formula</term> is:
+        <me>F = P + Prt = P(1 + rt)</me>
+        where:
+        <ul>
+          <li><m>F</m> = final amount to be repaid</li>
+          <li><m>P</m> = principal (initial amount borrowed)</li>
+          <li><m>r</m> = annual interest rate (as a decimal)</li>
+          <li><m>t</m> = time period (in years)</li>
+        </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="act-simple-interest-calculations">
+      <introduction>
+        <p>Practice using the simple interest formula to solve various problems.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>Suppose you borrow $1000 for 4 months at an annual simple interest rate of 8.0%. Find the total amount that you will have to repay.</p>
+          <p>Fill in the values:
+          <tabular>
+            <row>
+              <cell><m>F</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+            <row>
+              <cell><m>P</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+            <row>
+              <cell><m>r</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+            <row>
+              <cell><m>t</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+          </tabular>
+          </p>
+        </statement>
+        <solution>
+          <p><m>P = 1000</m>, <m>r = 0.08</m>, <m>t = \frac{4}{12} = \frac{1}{3}</m></p>
+          <p><m>F = 1000(1 + 0.08 \times \frac{1}{3}) = 1000(1 + 0.0267) = \$1026.67</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Suppose a student borrows $1500 from you for a period of 2 years, at an annual simple interest rate of 6.0%. Find the amount of interest you will earn.</p>
+        </statement>
+        <solution>
+          <p>Interest = <m>Prt = 1500 \times 0.06 \times 2 = \$180</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student took out a loan for 6 months at an annual simple interest rate of 4.0%. The total amount they paid for the loan was $1890.46. How much did they borrow?</p>
+        </statement>
+        <solution>
+          <p><m>F = 1890.46</m>, <m>r = 0.04</m>, <m>t = 0.5</m></p>
+          <p><m>1890.46 = P(1 + 0.04 \times 0.5) = P(1.02)</m></p>
+          <p><m>P = \frac{1890.46}{1.02} = \$1853.39</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Suppose $2000 is borrowed for 7 months, at the end of which $2100 is repaid. Find the annual simple interest rate <m>r</m>.</p>
+        </statement>
+        <solution>
+          <p><m>2100 = 2000(1 + r \times \frac{7}{12})</m></p>
+          <p><m>1.05 = 1 + r \times \frac{7}{12}</m></p>
+          <p><m>0.05 = r \times \frac{7}{12}</m></p>
+          <p><m>r = \frac{0.05 \times 12}{7} = 0.0857 = 8.57\%</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student got a loan from the city to help repair the sidewalk in front of their home. They borrowed $1800 at an annual simple interest rate of 5%. The amount they repaid was $2025. How long was their loan?</p>
+        </statement>
+        <solution>
+          <p><m>2025 = 1800(1 + 0.05t)</m></p>
+          <p><m>1.125 = 1 + 0.05t</m></p>
+          <p><m>0.125 = 0.05t</m></p>
+          <p><m>t = 2.5 \text{ years, or } 30 \text{ months}</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+
+  <section xml:id="sec-compound-interest">
+    <title>Compound Interest</title>
+    
+    <introduction>
+      <p>Unlike simple interest, compound interest allows interest to earn interest. This creates exponential growth over time.</p>
+    </introduction>
+
+    <definition xml:id="def-compound-interest">
+      <statement>
+        <p>The <term>compound interest formula</term> is:
+        <me>F = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+        where:
+        <ul>
+          <li><m>F</m> = final amount</li>
+          <li><m>P</m> = principal (initial amount)</li>
+          <li><m>r</m> = annual interest rate (as a decimal)</li>
+          <li><m>n</m> = number of times interest is compounded per year</li>
+          <li><m>t</m> = time period (in years)</li>
+        </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <assemblage xml:id="compound-interest-table-method">
+      <title>Compound Interest Table Method</title>
+      <p>To understand how compound interest works, we can create a table showing the balance period by period:</p>
+      <ol>
+        <li><p><term>Beginning Balance</term>: Start with the principal amount for the first period, then use the previous period's ending balance.</p></li>
+        <li><p><term>Calculate Interest</term>: Use <m>I = P \times r \times t</m> where <m>t</m> is the fraction of a year for one period.</p></li>
+        <li><p><term>Find Ending Balance</term>: Add the interest to the beginning balance.</p></li>
+        <li><p><term>Carry Forward</term>: The ending balance becomes the next period's beginning balance.</p></li>
+      </ol>
+    </assemblage>
+
+    <activity xml:id="act-compound-interest-tables">
+      <title>Compound Interest Using Tables</title>
+      
+      <task>
+        <title>Annual Compounding</title>
+        <statement>
+          <p>A student deposits $1,000 in a savings account that pays 5% interest, compounded once per year. Fill in the balance sheet for three years.</p>
+          <table>
+            <tabular>
+              <row>
+                <cell>Year</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+                <cell>1000</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+        <solution>
+          <table>
+            <tabular>
+              <row>
+                <cell>Year</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+                <cell>1000</cell>
+                <cell>50.00</cell>
+                <cell>1050.00</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell>1050.00</cell>
+                <cell>52.50</cell>
+                <cell>1102.50</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell>1102.50</cell>
+                <cell>55.13</cell>
+                <cell>1157.63</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>Using the formula: <m>F = 1000(1 + \frac{0.05}{1})^{1 \times 3} = \$1157.63</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <title>Quarterly Compounding</title>
+        <statement>
+          <p>A certificate of deposit (CD) offers 4% interest compounded quarterly. If a student places $500 in the CD, complete the ledger for the first year (four quarters).</p>
+          <table>
+            <tabular>
+              <row>
+                <cell>Quarter</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>Q1</cell>
+                <cell>500</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>Q2</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>Q3</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>Q4</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+        <solution>
+          <p>Interest per quarter = <m>0.04 \div 4 = 0.01 = 1\%</m></p>
+          <table>
+            <tabular>
+              <row>
+                <cell>Quarter</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>Q1</cell>
+                <cell>500.00</cell>
+                <cell>5.00</cell>
+                <cell>505.00</cell>
+              </row>
+              <row>
+                <cell>Q2</cell>
+                <cell>505.00</cell>
+                <cell>5.05</cell>
+                <cell>510.05</cell>
+              </row>
+              <row>
+                <cell>Q3</cell>
+                <cell>510.05</cell>
+                <cell>5.10</cell>
+                <cell>515.15</cell>
+              </row>
+              <row>
+                <cell>Q4</cell>
+                <cell>515.15</cell>
+                <cell>5.15</cell>
+                <cell>520.30</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>Using the formula: <m>F = 500(1 + \frac{0.04}{4})^{4} = \$520.24</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <title>Monthly Compounding</title>
+        <statement>
+          <p>A certificate of deposit starts at $2,500 and earns 3.6% APR, compounded monthly. Track the balance for the first six months.</p>
+        </statement>
+        <solution>
+          <p>Monthly rate = <m>3.6\% \div 12 = 0.3\%</m></p>
+          <p>Each month, multiply the balance by 1.003.</p>
+          <p>After 6 months: <m>F = 2500(1 + \frac{0.036}{12})^{6} = \$2545.29</m></p>
+        </solution>
+      </task>
+    </activity>
+
+    <activity xml:id="act-compound-interest-formula">
+      <title>Using the Compound Interest Formula</title>
+      
+      <task>
+        <statement>
+          <p>Find the future value of $10,000 invested at 6% annual interest, compounded monthly, for 5 years.</p>
+        </statement>
+        <solution>
+          <p><m>F = 10000\left(1 + \frac{0.06}{12}\right)^{12 \times 5} = 10000(1.005)^{60} = \$13,488.50</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>How much should you invest today at 8% annual interest, compounded quarterly, to have $25,000 in 10 years?</p>
+        </statement>
+        <solution>
+          <p>Solve for P: <m>25000 = P\left(1 + \frac{0.08}{4}\right)^{4 \times 10}</m></p>
+          <p><m>P = \frac{25000}{(1.02)^{40}} = \$11,307.29</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+
+  <section xml:id="sec-savings">
+    <title>Savings</title>
+    
+    <p>
+        Savings accounts and investment vehicles allow individuals to grow their money over time 
+        through the power of compound interest.
+    </p>
+    
+    <activity xml:id="act-savings-scenarios">
+      <introduction>
+        <p>Explore different savings scenarios and their outcomes.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>If you save $200 per month in an account earning 3% annual interest compounded monthly, how much will you have after 5 years?</p>
+        </statement>
+        <solution>
+          <p>This is an annuity problem. Using the annuity formula: <m>F = PMT \times \frac{(1+r)^n - 1}{r}</m></p>
+          <p>Where PMT = $200, r = 0.03/12 = 0.0025, n = 5×12 = 60</p>
+          <p><m>F = 200 \times \frac{(1.0025)^{60} - 1}{0.0025} = \$12,918.85</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+  
+  <section xml:id="sec-loans">
+    <title>Loans</title>
+    
+    <p>
+        Understanding loan calculations is essential for making informed financial decisions 
+        about mortgages, car loans, and other forms of borrowing.
+    </p>
+    
+    <definition xml:id="def-loan-payment">
+      <title>Loan Payment Formula</title>
+      <statement>
+        <p>
+          The monthly payment for a loan is given by:
+          <me>PMT = P \times \frac{r(1+r)^n}{(1+r)^n - 1}</me>
+          where P is the principal, r is the monthly interest rate, and n is the number of payments.
+        </p>
+      </statement>
+    </definition>
+    
+    <activity xml:id="act-loan-calculations">
+      <introduction>
+        <p>Calculate monthly payments for various loan scenarios.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>Calculate the monthly payment for a $300,000 mortgage at 4.5% annual interest for 30 years.</p>
+        </statement>
+        <solution>
+          <p>P = $300,000, r = 0.045/12 = 0.00375, n = 30×12 = 360</p>
+          <p><m>PMT = 300000 \times \frac{0.00375(1.00375)^{360}}{(1.00375)^{360} - 1} = \$1,520.06</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+  
+  <section xml:id="sec-student-loans">
+    <title>Student Loans and Financing</title>
+    
+    <p>
+        Student loans represent a significant financial commitment for many individuals. 
+        Understanding the terms and repayment options is crucial for managing educational debt.
+    </p>
+    
+    <activity xml:id="act-student-loan-scenarios">
+      <introduction>
+        <p>Analyze different student loan repayment scenarios.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>A student graduates with $40,000 in student loans at 5.5% annual interest. Calculate the monthly payment for a 10-year repayment plan.</p>
+        </statement>
+        <solution>
+          <p>P = $40,000, r = 0.055/12 = 0.004583, n = 10×12 = 120</p>
+          <p><m>PMT = 40000 \times \frac{0.004583(1.004583)^{120}}{(1.004583)^{120} - 1} = \$433.49</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Compare the total amount paid over the life of the loan for 10-year vs. 20-year repayment plans.</p>
+        </statement>
+        <solution>
+          <p>10-year plan: $433.49 × 120 = $52,018.80</p>
+          <p>20-year plan would have lower monthly payments but higher total interest paid.</p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+  
+  <section xml:id="sec-financial-study-guide">
+    <title>Study Guide</title>
+    
+    <p>
+        This section provides a summary of key concepts and practice problems for financial mathematics.
+    </p>
+    
+    <subsection xml:id="subsec-key-financial-concepts">
+      <title>Key Concepts</title>
+      
+      <p>
+          Review the following important formulas and concepts:
+      </p>
+      
+      <ul>
+        <li>Simple Interest: <m>F = P(1 + rt)</m></li>
+        <li>Compound Interest: <m>F = P\left(1 + \frac{r}{n}\right)^{nt}</m></li>
+        <li>Loan Payment Formula</li>
+        <li>Present Value and Future Value</li>
+        <li>Annuities and Savings</li>
+        <li>Student Loan Repayment Options</li>
+      </ul>
+    </subsection>
+    
+    <subsection xml:id="subsec-financial-practice">
+      <title>Practice Problems</title>
+      
+      <p>
+          Work through additional problems to reinforce your understanding of financial mathematics concepts.
+      </p>
+    </subsection>
+  </section>
+
+  <!-- Additional sections would be added here for annuities, loans, etc. -->
+</chapter>
