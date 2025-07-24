@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<publication>
+  <common>
+    <chunking level="1" />
+    <tableofcontents level="2" />
+    <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-project statement="yes" hint="yes" answer="yes" solution="no" />
+  </common>
+
+  <source>
+    <directories external="../assets" generated="../generated-assets" />
+  </source>
+
+  <numbering>
+    <divisions chapter-start="1" level="2"/>
+    <blocks level="2" />
+    <projects level="2" />
+    <equations level="2" />
+    <footnotes level="2" />
+  </numbering>
+
+  <latex>
+    <worksheets formatted="yes" />
+  </latex>
+
+  <html>
+    <platform host="web"/>
+    <knowl
+      theorem="no"
+      proof="yes"
+      definition="no"
+      example="yes"
+      example-solution="yes"
+      project="no"
+      task="no"
+      remark="no"
+      objectives="no"
+      outcomes="no"
+      figure="no"
+      table="no"
+      listing="no"
+      list="no"
+      exercise-inline="yes"
+      exercise-divisional="no"
+      exercise-worksheet="no"
+      exercise-readingquestion="no"
+    />
+    <navigation logic="linear" upbutton="no" />
+    <cross-references knowled="cross-page" />
+  </html>
+</publication>

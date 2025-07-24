@@ -7,9 +7,14 @@
   <bibinfo>
   
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>Anders O.F. Hendrickson</personname>
+      <department>Mathematics</department>
+      <institution>St. Norbert College</institution>
+    </author>
+    <author>
+      <personname>Mariah Birgen</personname>
+      <department>Mathematics</department>
+      <institution>Wartburg College</institution>
     </author>
     <date>
       <today />
@@ -35,5 +40,51 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
+
+  <preface xml:id="preface">
+    <title>Preface</title>
+    <p>This is not a textbook.
+You will find in these printed pages almost no formulae, answers, or information.
+This book will not tell you how to do anything.
+So what is this book?
+It is most emphatically a <em>workbook</em>: a place to work on learning mathematics by doing it yourself.</p>
+
+<p>The mathematics in this book will, for the most part, be content that you have never seen or thought about before.  However, it is material that you can figure out with some patience and persistence.  The point to keep in mind is that you are not expected to know beforehand.  To learn the content, use the following devices:</p>
+<ul>
+	<li>Try something.</li>
+	<li>Ask yourself why what you have tried doesn't work.</li>
+	<li>Brainstorm by yourself.</li>
+	<li>Brainstorm with your neighbors or your team members.</li>
+	<li>Be willing to say what you are thinking and ask questions.</li>
+	<li>Be willing to challenge the statements of others (including the teacher).</li>
+</ul>
+
+<p>One of the most important skills in life, a skill highly valued by employers and spouses alike,
+is the ability to solve problems no one has taught you how to do.
+Any monkey or computer can be taught to follow a rote procedure over and over again,
+and frankly, your previous math courses probably treated you like a monkey.
+It is when you</p>
+<ul>
+		<li>encounter unforeseen difficulties,</li>
+		<li>swiftly learn from experience,</li>
+		<li>and devise a suitable plan to overcome them</li>
+</ul>
+<p>that you show yourself to have a human mind.
+One of the chief goals of MA 106
+is for you to practice this highly creative, utterly vital, and most fully human act
+of doing what you can't do.</p>
+
+<p>There are places in this book for taking notes, and in particular for noting the meanings of mathematical terms. It has become clear over the past five years that the physical act of writing down notes by hand using a pencil or paper leads to significantly superior learning over recording audio or taking pictures with your camera.
+Please don't restrict your note-taking to just filling in the blanks, though!
+There will often be essential points covered in class
+that do not have a corresponding blank space in these pages.
+It's up to you whether to take your other notes in the margins of this workbook or in another notebook,
+but you should take them just as assiduously in this course as in any other course.</p>
+
+<p>There are places in this book where we assume that you have a calculator to do things for you.  You will need a calculator that will put any number into an exponent, so look for a button that is labeled <m>x^y</m> or similar.  You will need a calculator that will calculate standard deviations for you, so make sure that the calculator has the ability to perform statistical calculations.</p>
+
+<p>There will be a lot of trial and error as you work in these pages,
+so I recommend using a pencil rather than a pen!</p>
+  </preface>
 </frontmatter>
 

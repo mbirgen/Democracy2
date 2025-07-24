@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-redistricting" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Redistricting</title>
+
+  <introduction>
+    <p>
+        In this chapter, we examine the mathematics behind redistricting and gerrymandering.
+    </p>
+  </introduction>
+
+  <!-- Content to be converted from chapter-Redistricting.tex -->
+  <section xml:id="sec-redistricting-basics">
+    <title>Introduction to Redistricting</title>
+    <p>Content to be converted from LaTeX.</p>
+  </section>
+
+</chapter>

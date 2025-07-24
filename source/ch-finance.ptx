@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-finance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Financial Mathematics</title>
+
+  <introduction>
+    <p>
+        In this chapter, we explore the mathematics behind personal finance, loans, investments, and retirement planning.
+    </p>
+  </introduction>
+
+  <!-- Content to be converted from chapter-Finance3.tex -->
+  <section xml:id="sec-interest-basics">
+    <title>Interest and Time Value of Money</title>
+    <p>Content to be converted from LaTeX.</p>
+  </section>
+
+</chapter>

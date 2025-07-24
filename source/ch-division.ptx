@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-division" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fair Division</title>
+
+  <introduction>
+    <p>
+        In this chapter, we explore mathematical methods for fair division of resources.
+    </p>
+  </introduction>
+
+  <!-- Content to be converted from chapter-Division.tex -->
+  <section xml:id="sec-division-basics">
+    <title>Introduction to Fair Division</title>
+    <p>Content to be converted from LaTeX.</p>
+  </section>
+
+</chapter>
