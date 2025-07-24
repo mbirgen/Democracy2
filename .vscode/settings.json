@@ -3,7 +3,7 @@
     "xml.fileAssociations": [
         {
             "pattern": "**/source/**.ptx",
-            "systemId": "/root/.vscode-remote/extensions/oscarlevin.pretext-tools-0.32.4/assets/schema/pretext.rng"
+            "systemId": "/home/innodems-dan/.vscode/extensions/oscarlevin.pretext-tools-0.32.4/assets/schema/pretext-dev.rng"
         }
     ],
     "cSpell.languageSettings": []

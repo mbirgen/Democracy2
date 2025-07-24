@@ -1,0 +1,10 @@
+<chapter xml:id="ch-financial-mathematics" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Financial Mathematics</title>
+    
+     <xi:include href="sections/sec-simple-interest.ptx"/>
+     <xi:include href="sections/sec-compound-interest.ptx"/>
+     <xi:include href="sections/sec-savings.ptx"/>
+     <xi:include href="sections/sec-loans.ptx"/>
+     <xi:include href="sections/sec-student-loans-and-financing.ptx"/>
+     <xi:include href="sections/sec-study-guide.ptx"/>
+</chapter>

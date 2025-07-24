@@ -1,0 +1,7 @@
+<section xml:id="sec-fair-division" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Fair Division</title>
+    <xi:include href="subsections/fair-division/subsec-divider-chooser.ptx" />
+    <xi:include href="subsections/fair-division/subsec-lone-divider.ptx" />
+    <xi:include href="subsections/fair-division/subsec-lone-divider-case-2.ptx" />
+    <xi:include href="subsections/fair-division/subsec-method-of-sealed-bids.ptx" />
+</section>

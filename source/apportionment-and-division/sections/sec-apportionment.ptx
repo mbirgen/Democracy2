@@ -1,0 +1,9 @@
+<section xml:id="sec-apportionment" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Apportionment</title>
+    
+    <xi:include href="subsections/apportionment/subsec-hamiltons-method.ptx" />
+    <xi:include href="subsections/apportionment/subsec-paradoxes.ptx" />
+    <xi:include href="subsections/apportionment/subsec-jeffersons-method.ptx" />
+    <xi:include href="subsections/apportionment/subsec-adams-method.ptx" />
+    <xi:include href="subsections/apportionment/subsec-websters-method.ptx" />
+</section>
