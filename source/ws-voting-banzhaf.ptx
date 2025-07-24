@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-voting-banzhaf">
+    <title>Banzhaf Power Index</title>
+    
+<definition xml:id="def-Voting-Banzhaf_Coalition">
+    <title>Banzhaf Coalition</title>
+    
+      <statement>
+        <p>
+          A <defn>Banzhaf coalition</defn> is ...
+        </p>
+      </statement>
+      <answer>
+        <p>
+            any set of players that might join forces and vote the same way.
+In principle, we can have a coalition with as few as <em>one</em> player and as many as <em>all</em> players.
+The coalition consisting of all the players is called the <alert>grand coalition</alert>.
+Since coalitions are just sets of players, the most convenient way to describe coalitions mathematically is to use the <em>set</em> notation.
+        </p>
+      </answer>
+</definition>    
+    
+<activity>
+    <title>Practicing with Coalitions of Different Sizes</title>
+    
+    
+    <introduction>
+      <p>Work with the following examples:</p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>Consider a weighted voting system with three voters <m>P_1</m>, <m>P_2</m>, and <m>P_3</m>.  
+        List all the coalitions. How many are there?</p>
+      </statement>
+      <solution>
+        <p>
+            <m>\begin{array}{c}\{P_1\}, \{P_2\}, \{P_3\}\\ \{P_1, P_2\}, \{P_1, P_3\}, \{P_2, P_3\}\\ 
+            \{P_1, P_2, P_3\}\end{array}</m>
+        </p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>Consider a weighted voting system with four voters <m>P_1</m>, <m>P_2</m>, <m>P_3</m>, and <m>P_4</m>.  
+        List all the coalitions. How many are there?</p>
+      </statement>
+      <solution>
+        <p>
+            <m>  \begin{array}{c}
+										\{P_1\}, \{P_2\}, \{P_3\}, \{P_4\}\\
+										\{P_1, P_2\}, \{P_1, P_3\}, \{P_1, P_4\}, \{P_2, P_3\}, \{P_2, P_4\}, \{P_3, P_4\}\\
+										\{P_1, P_2, P_3\}, \{P_1, P_3, P_4\}, \{P_1, P_2, P_4\}, \{P_2, P_3, P_4\}\\
+										\{P_1, P_2, P_3, P_4\}
+									\end{array} </m>
+        </p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>If a weighted voting system has <m>n</m> voters, how many coalitions are there?</p>
+      </statement>
+      <solution>
+        <p>
+            <m>2^n-1</m>
+        </p>
+      </solution>
+    </task>
+  </activity>
+
+  <definition xml:id="def-voting-banzhaf-winning_coalition">
+    <statement>
+        <p>
+            A <defn>winning coalition</defn> is ...
+        </p>
+    </statement>
+    <answer>
+        <p>
+            one that has enough votes to win.  A single player coalition can be a winning coalition only 
+            when that player is a dictator, so under the assumption that there are no dictators in our 
+            weighted voting system (dictators are boring) a winning coalition must have at least two players.
+        </p>
+    </answer>
+  </definition>
+
+    <activity>
+  <title>Identifying Winning Coalitions</title>
+
+  <task>
+    <statement>
+      <p>
+        List all the winning coalitions in the weighted voting system <m>[10 \;|\; 5,\,4,\,3,\,2,\,1]</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        For quota 10, any combination that sums to 10 or more is winning.  
+        
+        <m>
+         \begin{array}{c}
+			\{P_1, P_2, P_3\}, \{P_1, P_2, P_4\},\{P_1, P_2, P_5\},  \{P_1, P_3, P_4\}\\
+			\{P_1, P_2, P_3, P_4\}, \{P_1, P_2, P_3, P_5\}, \{P_1, P_2, P_4, P_5\}, \{P_2, P_3, P_4, P_5\}\\
+			\{P_1, P_2, P_3, P_4, P_5\}
+		\end{array}
+        </m>
+      </p>
+    </solution>
+  </task>
+<!-- </activity>
+
+<activity>
+  <title>Finding Critical Voters</title> -->
+
+  <task>
+    <statement>
+      <p>
+        In the weighted voting system <m>[10 | 6,4,3,2,\,1]</m>,  
+        consider the winning coalition <m>\{P_1, P_2, P_3, P_4\}</m>.  
+        Which voter(s) could change their mind and vote “no” without changing the outcome?  
+        Which voter(s) must keep voting “yes” for the motion to pass?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The total is 6 + 4 + 3 + 2 = 15. The quota is 10.  
+        - If <m>P_1</m> leaves: 4 + 3 + 2 = 9 → motion fails, so <m>P_1</m> is critical.  
+        - If <m>P_2</m> leaves: 6 + 3 + 2 = 11 → still passes, so <m>P_2</m> is not critical.  
+        - If <m>P_3</m> leaves: 6 + 4 + 2 = 12 → still passes, so <m>P_3</m> is not critical.  
+        - If <m>P_4</m> leaves: 6 + 4 + 3 = 13 → still passes, so <m>P_4</m> is not critical.
+      </p>
+    </solution>
+  </task>
+</activity>
+
+<definition xml:id="def-voting-banzhaf-critical_voter">
+  <title>Critical Voter</title>
+  <statement>
+    <p>
+      A <defn>critical voter</defn> in a winning coalition is ...
+    </p>
+  </statement>
+  <answer>
+    <p>
+      a voter who, if they leave the coalition, makes the coalition lose.
+    </p>
+  </answer>
+</definition>
+
+
+</worksheet>
+
+<!-- <worksheet>
+
+  <activity>
+    <task>
+      <statement>
+        <p>
+          List all the winning coalitions in the weighted voting system [10 | 5, 4, 3, 2, 1].
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>
+          In the weighted voting system [10 | 6, 4, 3, 2, 1],  
+          consider the winning coalition {<m>P_1</m>, <m>P_2</m>, <m>P_3</m>, <m>P_4</m>}.  
+          Which voter(s) could change their minds and vote “no” without changing the outcome?  
+          Which voter(s) must keep voting “yes” for the motion to pass?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>
+          A <defn>critical voter</defn> in a winning coalition is ...
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <p>Consider the voting system [19 | 11, 9, 8, 5].</p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>List all the winning coalitions.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>In each winning coalition above, identify the <defn>critical voters</defn>.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Count the number of times each voter is critical. This is that voter's Banzhaf power.</p>
+      </statement>
+    </task>
+
+    <tabular halign="center" top="medium">
+      <row>
+        <cell left="medium" right="medium">Voter</cell>
+        <cell right="medium">Banzhaf Power</cell>
+      </row>
+      <row bottom="medium">
+        <cell left="medium" right="medium"><m>P_1</m></cell>
+        <cell right="medium"></cell>
+      </row>
+      <row>
+        <cell left="medium" right="medium"><m>P_2</m></cell>
+        <cell right="medium"></cell>
+      </row>
+      <row>
+        <cell left="medium" right="medium"><m>P_3</m></cell>
+        <cell right="medium"></cell>
+      </row>
+      <row>
+        <cell left="medium" right="medium"><m>P_4</m></cell>
+        <cell right="medium"></cell>
+      </row>
+    </tabular>
+
+    <task>
+      <statement>
+        <p>Add up all the Banzhaf powers; this sum is called the <defn>total Banzhaf power</defn> of the system.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Divide each voter’s Banzhaf power by the total to get the <defn>Banzhaf power index</defn>.</p>
+      </statement>
+    </task>
+
+    <tabular halign="center" top="medium">
+      <row>
+        <cell left="medium" right="medium">Voter</cell>
+        <cell right="medium">Banzhaf Power Index</cell>
+      </row>
+      <row bottom="medium">
+        <cell left="medium" right="medium"><m>P_1</m></cell>
+        <cell right="medium"></cell>
+      </row>
+      <row>
+        <cell left="medium" right="medium"><m>P_2</m></cell>
+        <cell right="medium"></cell>
+      </row>
+      <row>
+        <cell left="medium" right="medium"><m>P_3</m></cell>
+        <cell right="medium"></cell>
+      </row>
+      <row>
+        <cell left="medium" right="medium"><m>P_4</m></cell>
+        <cell right="medium"></cell>
+      </row>
+    </tabular>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>Calculate the Banzhaf power index for each voter in [51 | 32, 22, 12].</p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>Make up a weighted voting system with a dummy, and calculate the Banzhaf index for the dummy.</p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>Make up a weighted voting system with a dictator, and calculate the Banzhaf index for the dictator.</p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>Make up a weighted voting system where several voters have veto power. Calculate their Banzhaf indices. What do you notice?</p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <title>United Nations Security Council</title>
+    <introduction>
+      <p>
+        The U.N. Security Council has 15 members: 5 permanent and 10 non-permanent.  
+        A motion passes only if all 5 permanent members plus at least 4 non-permanent members agree.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>Describe the critical players in a winning coalition.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Use the fact that there are 210 nine-member winning coalitions and 638 coalitions with 10 or more members to explain why the total number of times all players are critical is 5080.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Show that the Banzhaf index of a permanent member is 848/5080.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Show that the Banzhaf index of a non-permanent member is 84/5080.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Explain why the U.N. Security Council is equivalent to a weighted voting system where each non-permanent member has 1 vote, each permanent member has 7 votes, and the quota is 39 votes.</p>
+      </statement>
+    </task>
+  </activity>
+
+</worksheet> -->
