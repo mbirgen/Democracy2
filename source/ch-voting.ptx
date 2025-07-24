@@ -18,4 +18,9 @@
   <title>Voting Paradoxes</title>
    <xi:include href="./ws-voting-paradoxes.ptx"/>
  </section>
+
+ <section xml:id="sec-Weighted_Voting">
+  <title>Weighted Voting Systems</title>
+   <xi:include href="./ws-voting-weighted-voting.ptx"/>
+ </section>
 </chapter>
