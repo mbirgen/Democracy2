@@ -7,13 +7,14 @@
     <p>
         The Bellevue Taxicab Union is preparing to elect its president.
         Three members are considering running for president:  Alice, Bob, and Charles.
-        
+
         Each of the five voters has a first, second, and third choice, as listed in the following table:
     </p>
     <tabular>
       
     <row>
         <cell>Voter:</cell>
+        
         <cell>Voter 1</cell>
         <cell>Voter 2</cell>
         <cell>Voter 3</cell>
