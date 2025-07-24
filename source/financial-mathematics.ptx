@@ -399,5 +399,135 @@
     </activity>
   </section>
 
+  <section xml:id="sec-savings">
+    <title>Savings</title>
+    
+    <p>
+        Savings accounts and investment vehicles allow individuals to grow their money over time 
+        through the power of compound interest.
+    </p>
+    
+    <activity xml:id="act-savings-scenarios">
+      <introduction>
+        <p>Explore different savings scenarios and their outcomes.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>If you save $200 per month in an account earning 3% annual interest compounded monthly, how much will you have after 5 years?</p>
+        </statement>
+        <solution>
+          <p>This is an annuity problem. Using the annuity formula: <m>F = PMT \times \frac{(1+r)^n - 1}{r}</m></p>
+          <p>Where PMT = $200, r = 0.03/12 = 0.0025, n = 5×12 = 60</p>
+          <p><m>F = 200 \times \frac{(1.0025)^{60} - 1}{0.0025} = \$12,918.85</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+  
+  <section xml:id="sec-loans">
+    <title>Loans</title>
+    
+    <p>
+        Understanding loan calculations is essential for making informed financial decisions 
+        about mortgages, car loans, and other forms of borrowing.
+    </p>
+    
+    <definition xml:id="def-loan-payment">
+      <title>Loan Payment Formula</title>
+      <statement>
+        <p>
+          The monthly payment for a loan is given by:
+          <me>PMT = P \times \frac{r(1+r)^n}{(1+r)^n - 1}</me>
+          where P is the principal, r is the monthly interest rate, and n is the number of payments.
+        </p>
+      </statement>
+    </definition>
+    
+    <activity xml:id="act-loan-calculations">
+      <introduction>
+        <p>Calculate monthly payments for various loan scenarios.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>Calculate the monthly payment for a $300,000 mortgage at 4.5% annual interest for 30 years.</p>
+        </statement>
+        <solution>
+          <p>P = $300,000, r = 0.045/12 = 0.00375, n = 30×12 = 360</p>
+          <p><m>PMT = 300000 \times \frac{0.00375(1.00375)^{360}}{(1.00375)^{360} - 1} = \$1,520.06</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+  
+  <section xml:id="sec-student-loans">
+    <title>Student Loans and Financing</title>
+    
+    <p>
+        Student loans represent a significant financial commitment for many individuals. 
+        Understanding the terms and repayment options is crucial for managing educational debt.
+    </p>
+    
+    <activity xml:id="act-student-loan-scenarios">
+      <introduction>
+        <p>Analyze different student loan repayment scenarios.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>A student graduates with $40,000 in student loans at 5.5% annual interest. Calculate the monthly payment for a 10-year repayment plan.</p>
+        </statement>
+        <solution>
+          <p>P = $40,000, r = 0.055/12 = 0.004583, n = 10×12 = 120</p>
+          <p><m>PMT = 40000 \times \frac{0.004583(1.004583)^{120}}{(1.004583)^{120} - 1} = \$433.49</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Compare the total amount paid over the life of the loan for 10-year vs. 20-year repayment plans.</p>
+        </statement>
+        <solution>
+          <p>10-year plan: $433.49 × 120 = $52,018.80</p>
+          <p>20-year plan would have lower monthly payments but higher total interest paid.</p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+  
+  <section xml:id="sec-financial-study-guide">
+    <title>Study Guide</title>
+    
+    <p>
+        This section provides a summary of key concepts and practice problems for financial mathematics.
+    </p>
+    
+    <subsection xml:id="subsec-key-financial-concepts">
+      <title>Key Concepts</title>
+      
+      <p>
+          Review the following important formulas and concepts:
+      </p>
+      
+      <ul>
+        <li>Simple Interest: <m>F = P(1 + rt)</m></li>
+        <li>Compound Interest: <m>F = P\left(1 + \frac{r}{n}\right)^{nt}</m></li>
+        <li>Loan Payment Formula</li>
+        <li>Present Value and Future Value</li>
+        <li>Annuities and Savings</li>
+        <li>Student Loan Repayment Options</li>
+      </ul>
+    </subsection>
+    
+    <subsection xml:id="subsec-financial-practice">
+      <title>Practice Problems</title>
+      
+      <p>
+          Work through additional problems to reinforce your understanding of financial mathematics concepts.
+      </p>
+    </subsection>
+  </section>
+
   <!-- Additional sections would be added here for annuities, loans, etc. -->
 </chapter>

@@ -15,12 +15,60 @@
 </section>
   
  <section xml:id="sec-Voting_Paradoxes">
-  <title>Voting Paradoxes</title>
+  <title>Voting Paradoxes and Problems</title>
    <xi:include href="./ws-voting-paradoxes.ptx"/>
  </section>
 
  <section xml:id="sec-Weighted_Voting">
   <title>Weighted Voting Systems</title>
    <xi:include href="./ws-voting-weighted-voting.ptx"/>
+ </section>
+
+ <section xml:id="sec-banzhaf-power-index">
+  <title>Banzhaf Power Index</title>
+   <xi:include href="./ch-voting-Banzhaf-Power-Index.ptx"/>
+ </section>
+
+ <section xml:id="sec-shapley-shubik-power-index">
+  <title>Shapley-Shubik Power Index</title>
+  
+  <p>
+      The Shapley-Shubik Power Index is another method for measuring voting power in weighted voting systems.
+  </p>
+  
+  <definition xml:id="def-shapley-shubik">
+    <title>Shapley-Shubik Power Index</title>
+    <statement>
+      <p>
+        The <term>Shapley-Shubik Power Index</term> measures the power of each player based on the number of times they are pivotal when players join a coalition in all possible orders.
+      </p>
+    </statement>
+  </definition>
+ </section>
+
+ <section xml:id="sec-voting-theory-study-guide">
+  <title>Study Guide</title>
+  
+  <p>
+      This section provides a summary of key concepts and practice problems for voting theory.
+  </p>
+  
+  <subsection xml:id="subsec-key-voting-concepts">
+    <title>Key Concepts</title>
+    
+    <p>
+        Review the following important terms and methods:
+    </p>
+    
+    <ul>
+      <li>Plurality method</li>
+      <li>Borda count</li>
+      <li>Elimination methods</li>
+      <li>Voting paradoxes</li>
+      <li>Weighted voting systems</li>
+      <li>Banzhaf Power Index</li>
+      <li>Shapley-Shubik Power Index</li>
+    </ul>
+  </subsection>
  </section>
 </chapter>

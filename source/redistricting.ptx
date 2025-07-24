@@ -163,10 +163,10 @@
     </activity>
   </section>
 
-  <section xml:id="sec-measuring-gerrymandering">
-    <title>Measuring Gerrymandering</title>
+  <section xml:id="sec-fairness">
+    <title>Fairness</title>
     
-    <p>Various mathematical measures have been developed to detect and quantify gerrymandering, including:</p>
+    <p>Various mathematical measures have been developed to detect and quantify gerrymandering and ensure fairness in redistricting, including:</p>
     
     <ul>
       <li><p><term>Efficiency Gap</term>: Measures "wasted votes" - votes that don't contribute to victory</p></li>
@@ -175,5 +175,30 @@
     </ul>
     
     <p>These mathematical tools are increasingly used in court cases challenging redistricting plans as unconstitutional gerrymanders.</p>
+    
+    <activity xml:id="act-fairness-measures">
+      <title>Evaluating Fairness in Redistricting</title>
+      <introduction>
+        <p>Consider different ways to measure whether a redistricting plan is fair.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>What characteristics would you expect in a "fair" redistricting plan?</p>
+        </statement>
+        <solution>
+          <p>A fair plan might have: equal population districts, compact shapes, preserved communities of interest, competitive races, and proportional representation.</p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>How might mathematical measures help courts determine if a redistricting plan is fair?</p>
+        </statement>
+        <solution>
+          <p>Mathematical measures provide objective, quantifiable criteria that can be applied consistently across different plans and jurisdictions.</p>
+        </solution>
+      </task>
+    </activity>
   </section>
 </chapter>
