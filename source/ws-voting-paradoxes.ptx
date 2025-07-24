@@ -37,10 +37,6 @@
       </row>
 
       <row>
-            <cell> </cell>
-      </row>
-
-      <row>
       </row>
 
       <row>
@@ -64,14 +60,10 @@
             <cell>J</cell>
       </row>
 
-      <row>
-            <cell> </cell>
-      </row>
 </tabular>
    </introduction>   
-<!-- Change tasks to include solutions -->
 
-<task workspace="1in">
+<task workspace=".5in">
       <statement>
             <p>
                    If the club uses the plurality method, who will win the election?
@@ -79,11 +71,11 @@
       </statement>
       <solution>
             <p>
-                  J
+                  Joseph
             </p>
       </solution>
 </task>
-<task workspace="1in">
+<task workspace=".5in">
       <statement>
             <p>
                   If it were a head-to-head race between Irving and Joseph, who would win?
@@ -91,39 +83,55 @@
       </statement>
       <solution>
             <p>
-                  I
+                  Irving
             </p>
       </solution>
 </task>
 
-      <task>
+
+<task workspace=".5in">
             <p>
-                  If it were a head-to-head race between Irving and Karl, who would win? I  1
+                  If it were a head-to-head race between Irving and Karl, who would win?
             </p>
+      <solution>
+            <p>
+                  Irving
+            </p>
+      </solution>
+</task>
+
+
+<task workspace=".5in">
+            <p>
+                  If it were a head-to-head race between Joseph and Karl, who would win?
+            </p>
+                  <solution>
+            <p>
+                  Joseph
+            </p>
+      </solution>
       </task>
 
-      <task>
+
+<task workspace=".5in">
             <p>
-                  If it were a head-to-head race between Joseph and Karl, who would win? J  1
+                  Why does the plurality method's result seem unfair in this election?
             </p>
-      </task>
-
-      <task>
+       <solution>
             <p>
-                  Why does the plurality method's result seem unfair in this election?  Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.
+                  Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.
             </p>
-      </task>
-
-
+      </solution>
+     </task>
 </activity>       
-      <definition xml:id="def-Head-to-Head">
-            <statement>
-                  <p>
-                        <term>Head-to-Head Criterion</term> 
-                        A candidate who beats all the other candidates head to head should win the election.
-                  </p>
-            </statement>
-      </definition>
+<definition xml:id="def-Head-to-Head">
+      <statement>
+            <p>
+                  <term>Head-to-Head Criterion</term> 
+                  A candidate who beats all the other candidates head to head should win the election.
+            </p>
+      </statement>
+</definition>
 <activity>
       <introduction>
             <p>
@@ -217,10 +225,11 @@
       </task>
       <task>
            <p> Does this seem fair?  Why or why not?</p>
-      </task>
-      <solution>
-            <p>No; two-thirds of the voters picked B as their first choice!</p>
+            <solution>
+            <p>No; two-thirds of the voters picked Bob's Builders as their first choice!</p>
       </solution>
+</task>
+
 
 </activity>
 <definition xml:id="def-Majority_Criterion">
@@ -235,15 +244,15 @@
       <introduction>
             <p>
                   The board of regents of
-        Western Iowa State at Sema
-        will be voting tomorrow for the University's new president
-        from four candidates: 
-           Zehnpfennig, 
-           Gersbach,    
-           Haider,    
-           and Rentmeester. </p>
+                  Western Iowa State at Sema
+                  will be voting tomorrow for the University's new president
+                  from four candidates: 
+                  Zehnpfennig, 
+                  Gersbach,    
+                  Haider,    
+                  and Rentmeester. </p>
            <p>
-        As of this moment, the voters' preferences are as follows:
+                  As of this moment, the voters' preferences are as follows:
             </p>
            <tabular left="minor">
                   <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>

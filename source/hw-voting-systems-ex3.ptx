@@ -5,7 +5,7 @@
       <p>
         Consider the following preference table: 
       </p>
-      <tabular left="minor">
+      <!-- <tabular left="minor">
   <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col>
   <row>
   </row>
@@ -65,7 +65,52 @@
   <row>
     <cell> </cell>
   </row>
+</tabular> -->
+      <tabular halign="center" top="medium">
+  <row>
+    <cell left="medium" right="medium"></cell>
+    <cell colspan="6" right="medium">
+      <hash /> of Ballots
+    </cell>
+  </row>
+  <row bottom="medium">
+    <cell left="medium" right="medium">Ranking</cell>
+    <cell right="medium">3</cell>
+    <cell right="medium">7</cell>
+    <cell right="medium">4</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">7</cell>
+    <cell right="medium">8</cell>
+  </row>
+  <row>
+    <cell left="medium" right="medium">1st choice</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium">A</cell>
+  </row>
+  <row>
+    <cell left="medium" right="medium">2nd choice</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium">B</cell>
+  </row>
+  <row bottom="medium">
+    <cell left="medium" right="medium">3rd choice</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium">C</cell>
+  </row>
 </tabular>
+
 <p>
   Find the winner of an election held using each of the following voting schemes.
         (If it is a tie, say who tied.)

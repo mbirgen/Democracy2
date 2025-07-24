@@ -145,7 +145,7 @@
             <p>
               Construct a preference table for the above ballots. 
             </p>
-           <tabular left="minor">
+           <!-- <tabular left="minor">
     <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
     <row>
     </row>
@@ -193,7 +193,42 @@
     <row>
         <cell> </cell>
     </row>
+</tabular> -->
+        <tabular halign="center" top="medium">
+  <row>
+    <cell left="medium" right="medium"></cell>
+    <cell colspan="3" right="medium">
+      <hash /> of Ballots
+    </cell>
+  </row>
+  <row bottom="medium">
+    <cell left="medium" right="medium">
+      Ranking
+    </cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+  <row>
+    <cell left="medium" right="medium">1st choice</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+  <row>
+    <cell left="medium" right="medium">2nd choice</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+  <row bottom="medium">
+    <cell left="medium" right="medium">3rd choice</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
 </tabular>
+
         </statement>
         <solution>
             <p>
@@ -294,22 +329,22 @@
         <solution>
             <p>
              <tabular>
-    <col halign="center"> </col> <col halign="center"> </col>
-    <row>
-        <cell>A</cell>
-        <cell>22</cell>
-    </row>
+                <col halign="center"> </col> <col halign="center"> </col>
+                <row>
+                    <cell>A</cell>
+                    <cell>22</cell>
+                </row>
 
-    <row>
-        <cell>B</cell>
-        <cell>27</cell>
-    </row>
+                <row>
+                    <cell>B</cell>
+                    <cell>27</cell>
+                </row>
 
-    <row>
-        <cell>C</cell>
-        <cell>23</cell>
-    </row>
-</tabular>
+                <row>
+                    <cell>C</cell>
+                    <cell>23</cell>
+                </row>
+            </tabular>
             </p>
         </solution>
     </task>
