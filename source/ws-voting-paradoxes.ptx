@@ -3,6 +3,9 @@
 <worksheet xml:id="ws-voting-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Voting Paradoxes</title>
 <activity>
+      <title>Reflection</title>
+      
+      
       <introduction>
             <p>
                   Of the four voting systems we've studied, which is best? Why?
@@ -12,6 +15,9 @@
 </activity>
 
 <activity>
+      <title>Des Moines Running Club</title>
+      
+      
    <introduction>
     <p>
       The Des Moines Running Club is electing a new team captain.
@@ -125,14 +131,20 @@
      </task>
 </activity>       
 <definition xml:id="def-Head-to-Head">
+      <title>Head-to-Head Criterion</title>
+      
+      
       <statement>
             <p>
-                  <term>Head-to-Head Criterion</term> 
+                 
                   A candidate who beats all the other candidates head to head should win the election.
             </p>
       </statement>
 </definition>
 <activity>
+      <title>School Board Building Decision</title>
+      
+      
       <introduction>
             <p>
                   The school board is voting whether to award the contract for building a new 
@@ -233,14 +245,17 @@
 
 </activity>
 <definition xml:id="def-Majority_Criterion">
+      <title>Majority Criterion</title>
+      
       <statement>
-            <p><term>Majority Criterion</term></p>
-      </statement>
-      <answer>
             <p>A candidate that wins a majority of first place votes should win the election.</p>
-      </answer>
+      </statement>
+
 </definition>
 <activity>
+      <title>Elect a University President</title>
+      
+      
       <introduction>
             <p>
                   The board of regents of
@@ -423,16 +438,20 @@
       </task>
 </activity>
       <definition xml:id="def-Monotonicity_Criterion">
+            <title>Monotonicity Criterion</title>
+            
+            
       <statement>
-            <p><term>Monotonicity Criterion</term></p>
-      </statement>
-      <answer>
             <p>If the only changes in voting are in favor of the winning candidate, 
                   that candidate should still win the election.</p>
-      </answer>
+      </statement>
+
 </definition>
 
 <activity>
+      <title>State Budget Surplus Decision</title>
+      
+      
       <introduction>
             <p>
                   Voters are trying to decide what to do with a $50 million surplus in the state budget.
@@ -534,35 +553,38 @@
       </task>
 </activity>
 <definition xml:id="def-Irrelevant_Alternatives_Criterion">
+      <title>Irrelevant Alternatives Criterion</title>
+      
+      
       <statement>
-            <p><term>Irrelevant Alternatives Criterion</term></p>
-      </statement>
-      <answer>
-            <p>If a non-winning candidate leaves the election, the winner should not change.
+           <p>If a non-winning candidate leaves the election, the winner should not change.
 </p>
-      </answer>
+      </statement>
+
 </definition>
 
 <definition xml:id="def-Approval_Voting">
+      <title>Approval Voting</title>
+      
+      
       <statement>
-            <p><term>Approval Voting</term></p>
-      </statement>
-      <answer>
             <p>Vote for all candidates you approve of. For more in-depth explanation of how this works, 
                   see <em>https://electionscience.org/library/approval-voting/</em>
             </p>
-      </answer>
+      </statement>
+
 </definition>
 
 <definition xml:id="def-Arrow_Theorem">
+      <title>Arrow's Impossibility Theorem</title>
+      
+      
       <statement>
-            <p><term>Arrow's Impossibility Theorem</term></p>
-      </statement>
-      <answer>
             <p>
                   There is no way of counting votes that does not violate at least one of the criteria except for a Dictator.
             </p>
-      </answer>
+      </statement>
+
 </definition>
 </worksheet>
 
