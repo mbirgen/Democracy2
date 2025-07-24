@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-voting-weighted-voting" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Weighted Voting Systems</title>
+
+<activity>
+
+<task workspace="1in">
+<p>
+      Notes on weighted voting systems: \index{weighted voting}
+	
+	<ul>
+    <li>
+        <p>
+            <m>P_{i}</m>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <m>w_{i}</m>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <m>q</m>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <m>[q|w_{1},w_{2},\dots,w_{n}]</m>
+        </p>
+    </li>
+</ul>
+
+<p>
+</p>
+
+<p>
+    Weighted voting systems are when there are <m>n</m> voters labeled <m>P_{1}\dots P_{n}</m>, and each voter casts a vote with a certain weight, <m>w_{i}</m>.
+    Think of this as having each voter being able to cast <m>w_{i}</m> votes all for the same decision.
+    In order for a motion to pass, the sum of all the votes needs to be at least <m>q</m>, the quota.
+    We need the quota to be more than 50%of the sum of all the votes and no more than the sum of all the votes, but it can be anything in between.
+    We give a weighted voting system as <m>[q|w_{1},w_{2},\dots,w_{n}]</m>.
+</p>
+</p>
+</task>
+</activity>
+
+
+</worksheet>

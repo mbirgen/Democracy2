@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex-voting" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="hw-voting-systems-ex1.ptx" />
+  <xi:include href="hw-voting-systems-ex2.ptx" />  
+  <xi:include href="hw-voting-systems-ex3.ptx" />
+  <xi:include href="hw-voting-systems-ex4.ptx" />
+  
+</exercises>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercise>
+    <introduction>
+        <p>
+            Consider the following preference table:
+        </p>
+        <table>
+  <tabular halign="center" top="medium">
+    <row>
+      <cell left="medium" right="medium">
+      </cell>
+      <cell colspan="5" right="medium">
+        <hash /> of Ballots
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium" right="medium">
+        Ranking
+      </cell>
+      <cell right="medium">
+        8
+      </cell>
+      <cell right="medium">
+        6
+      </cell>
+      <cell right="medium">
+        8
+      </cell>
+      <cell right="medium">
+        5
+      </cell>
+      <cell right="medium">
+        1
+      </cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">
+        1st choice
+      </cell>
+      <cell right="medium">
+        B
+      </cell>
+      <cell right="medium">
+        C
+      </cell>
+      <cell right="medium">
+        D
+      </cell>
+      <cell right="medium">
+        B
+      </cell>
+      <cell right="medium">
+        A
+      </cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">
+        2nd choice
+      </cell>
+      <cell right="medium">
+        D
+      </cell>
+      <cell right="medium">
+        A
+      </cell>
+      <cell right="medium">
+        C
+      </cell>
+      <cell right="medium">
+        C
+      </cell>
+      <cell right="medium">
+        B
+      </cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">
+        3rd choice
+      </cell>
+      <cell right="medium">
+        C
+      </cell>
+      <cell right="medium">
+        D
+      </cell>
+      <cell right="medium">
+        A
+      </cell>
+      <cell right="medium">
+        A
+      </cell>
+      <cell right="medium">
+        C
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium" right="medium">
+        4th choice
+      </cell>
+      <cell right="medium">
+        A
+      </cell>
+      <cell right="medium">
+        B
+      </cell>
+      <cell right="medium">
+        B
+      </cell>
+      <cell right="medium">
+        D
+      </cell>
+      <cell right="medium">
+        D
+      </cell>
+    </row>
+  </tabular>
+</table>
+<p>
+    Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+</p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Using <xref ref="def-Plurality_Voting" text="custom">Plurality </xref> voting.
+            </p>
+        </statement>
+    </task>
+    <answer>
+      <p>
+        B
+      </p>
+    </answer>
+    <task>
+        <statement>
+            <p>
+                Using <xref ref="def-Borda_Count" text="custom">Borda Count</xref>.
+            </p>
+        </statement>
+    </task>
+    <answer>
+      <p>
+        C
+      </p>
+    </answer>
+    <solution>
+      <p>
+        <tabular>
+  <col halign="center"> </col> <col halign="center"> </col>
+  <row>
+    <cell>A</cell>
+    <cell>56</cell>
+  </row>
+
+  <row>
+    <cell>B</cell>
+    <cell>69</cell>
+  </row>
+
+  <row>
+    <cell>C</cell>
+    <cell>81</cell>
+  </row>
+
+  <row>
+    <cell>D</cell>
+    <cell>74</cell>
+  </row>
+</tabular>
+      </p>
+    </solution>
+</exercise>
