@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="apportionment-and-division" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Apportionment and Division</title>
+
+  <introduction>
+    <p>
+        Another mathematical challenge in most Democratic systems is that of Apportionment. 
+        Essentially the problem is one of representation. Seats in the House of Representatives 
+        are given to the states based on population. There are 435 seats for 323.1 million people. 
+        That works out to <m>323100000/435 = 742758.6207</m> or about <m>742,759</m> people per seat 
+        in the House. However, even though North Dakota, Vermont, and Wyoming all have smaller 
+        populations than that they are guaranteed a seat in the House. Also, if you look at the 
+        other states, it is very rare that their population is exactly an even multiple of <m>742,759</m>. 
+        This section is all about how to fairly appoint seats in a house of representatives, as well 
+        as a variety of other tasks that turn out to be essentially the same thing.
+    </p>
+  </introduction>
+
+  <section xml:id="sec-apportionment-intro">
+    <title>Introduction to Apportionment</title>
+    
+    <activity xml:id="act-awoi-republic">
+      <introduction>
+        <p>The Republic of Awoi is a small country consisting of four states North-West (population 69,000), 
+        South-West (population 267,000), South-East (population 133,000) and North-East (population 331,000). 
+        Suppose that there are 160 seats in the Awoi Congress to be apportioned among the four states based 
+        on their representative populations.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>On average, how many people per congress seat should there be?</p>
+        </statement>
+        <solution>
+          <p><m>(69000 + 267000 + 133000 + 331000) \div 160 = 800000 \div 160 = 5000</m> people per seat.</p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>How would you give out the 160 seats to the four states and why?</p>
+          <table>
+            <tabular>
+              <row>
+                <cell></cell>
+                <cell>NW</cell>
+                <cell>SW</cell>
+                <cell>SE</cell>
+                <cell>NE</cell>
+              </row>
+              <row>
+                <cell>Seats</cell>
+                <cell><fillin characters="3"/></cell>
+                <cell><fillin characters="3"/></cell>
+                <cell><fillin characters="3"/></cell>
+                <cell><fillin characters="3"/></cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+        <solution>
+          <table>
+            <tabular>
+              <row>
+                <cell></cell>
+                <cell>NW</cell>
+                <cell>SW</cell>
+                <cell>SE</cell>
+                <cell>NE</cell>
+              </row>
+              <row>
+                <cell>Seats</cell>
+                <cell>14</cell>
+                <cell>53</cell>
+                <cell>27</cell>
+                <cell>66</cell>
+              </row>
+            </tabular>
+          </table>
+        </solution>
+      </task>
+    </activity>
+    
+    <definition xml:id="def-standard-divisor">
+      <statement>
+        <p>The <term>Standard Divisor (SD)</term> is the whole population divided by the number of seats.</p>
+      </statement>
+    </definition>
+    
+    <definition xml:id="def-standard-quota">
+      <statement>
+        <p>The <term>Standard quotas</term> <m>(q_1, q_2, \ldots, q_N)</m> are the population of each state divided by the standard divisor.</p>
+      </statement>
+    </definition>
+    
+    <definition xml:id="def-upper-lower-quota">
+      <statement>
+        <p>The <term>upper quota</term> is the standard quota rounded up and the <term>lower quota</term> is the standard quota rounded down. A fair apportionment will lead to all states having either their upper or lower quota.</p>
+      </statement>
+    </definition>
+  </section>
+
+  <section xml:id="sec-hamilton-method">
+    <title>Hamilton's Method</title>
+    
+    <definition xml:id="def-hamilton-method">
+      <statement>
+        <p><term>Hamilton's Method</term>: Assign all states their lower quota. Then, to assign the extra seats, look at the state with the largest decimal part in its standard quota and assign it the upper quota. Continue until all extra seats are assigned.</p>
+      </statement>
+    </definition>
+    
+    <xi:include href="./wkst-Hamilton.ptx"/>
+  </section>
+
+  <section xml:id="sec-fair-division">
+    <title>Fair Division</title>
+
+    <introduction>
+      <p>The basic issue at all fair division problems can be stated in reasonably simple terms: 
+      How can something that must be shared by a set of competing parties be divided among them 
+      in a way that ensures that each party receives a fair share? Of course, part of the answer 
+      to this question will involve defining what we mean by a fair share.</p>
+    </introduction>
+
+    <activity xml:id="act-pizza-division">
+      <introduction>
+        <p>My friend and I decide have pizza for dinner. We order pizza which is half red sauce with 
+        pepperoni and half garlic sauce with ham and pineapple. To my friend, pizza is pizza. He has 
+        no preference for one type of pizza over another. On the other hand, I have an allergy to oregano 
+        and cannot eat any red sauce. It gives me a horrible stomach ache and I'm grumpy for about eight hours.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>What is a fair way to divide this pizza so that my friend and I both believe we are getting a value of at least 50% of the pizza?</p>
+        </statement>
+      </task>
+      
+      <task>
+        <statement>
+          <p>My friend never remembers that I do not eat red sauce. Therefore, he divides the pizza so that each half has exactly half red sauce and half garlic sauce. Am I able to choose a slice where I receive 50% of the value of the pizza?</p>
+        </statement>
+        <solution>
+          <p>Yes</p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Suppose instead, I slice the pizza. When I do so, because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce. Have I divided the pizza in such a way that each slice is worth 50% to me?</p>
+        </statement>
+        <solution>
+          <p>No, because one slice is worth 100% and the other 0% to me.</p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Is there a way that I could divide the pizza in order to have each slice worth 50% to me and have all the red sauce on one of the slices?</p>
+        </statement>
+        <solution>
+          <p>Yes. One slice would have all red plus 1/2 of the garlic.</p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>In the case above, which of the slices would my friend choose?</p>
+        </statement>
+        <solution>
+          <p>The larger one.</p>
+        </solution>
+      </task>
+    </activity>
+
+    <p>We are going to start with the most common method for fair division, that of the divider-chooser. 
+    This is the problem where there are two people and one thing to divide. One person has chosen to do 
+    the cutting, and then the other person gets to choose which part they want.</p>
+
+    <assemblage xml:id="fair-division-assumptions">
+      <title>Fair Division Assumptions</title>
+      <dl>
+        <li>
+          <title>Rationality</title>
+          <p>Each of the players is a thinking, rational agent seeking to maximize his or her share of the booty <m>S</m>. We further assume that in pursuit of this goal, a player's moves are based on reason alone.</p>
+        </li>
+        <li>
+          <title>Cooperation</title>
+          <p>The players are willing participants and accept the rules of the game as binding. The rules are such that after a <em>finite</em> number of moves by the players the game terminates with a division of <m>S</m>.</p>
+        </li>
+        <li>
+          <title>Privacy</title>
+          <p>Players have no useful information on the other players' value systems, and thus if what kinds of moves they are going to make in the game.</p>
+        </li>
+        <li>
+          <title>Symmetry</title>
+          <p>Players have <em>equal</em> rights in sharing the set <m>S</m>. A consequence of this assumption is that at a minimum, each player is entitled to a <em>proportional</em> share of <m>S</m>, that is <m>\frac{S}{N}</m> when there are <m>N</m> players.</p>
+        </li>
+      </dl>
+    </assemblage>
+
+    <definition xml:id="def-fair-share">
+      <statement>
+        <p><term>Fair Share</term>: Suppose that <m>s</m> denotes a share of the booty <m>S</m> and <m>P</m> is one of the players in a fair division game with <m>N</m> players. We say that <m>s</m> is a <term>fair share to player <m>P</m></term> if <m>s</m> is worth <em>at least</em> <m>1/N</m>th of the total value of <m>S</m> <em>in the opinion of <m>P</m></em>.</p>
+      </statement>
+    </definition>
+
+    <subsection xml:id="subsec-divider-chooser">
+      <title>Divider-Chooser Method</title>
+      
+      <definition xml:id="def-divider-chooser">
+        <statement>
+          <p><term>Divider-Chooser</term>: One person (the divider) divides the item into pieces they consider to be of equal value, then the other person (the chooser) selects the piece they prefer.</p>
+        </statement>
+      </definition>
+    </subsection>
+  </section>
+</chapter>
