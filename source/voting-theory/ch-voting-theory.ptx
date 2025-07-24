@@ -1,0 +1,9 @@
+<chapter xml:id="ch-voting-theory" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Voting Theory</title>
+     <xi:include href="sections/sec-voting-systems.ptx"/>
+     <xi:include href="sections/sec-voting-paradoxes-and-problems.ptx"/>
+     <xi:include href="sections/sec-weighted-voting-systems.ptx"/>
+     <xi:include href="sections/sec-banzhaf-power-index.ptx"/>
+     <xi:include href="sections/sec-shapley-shubik-power-index.ptx"/>
+     <xi:include href="sections/sec-study-guide.ptx"/>
+</chapter>
