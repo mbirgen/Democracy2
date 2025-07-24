@@ -180,5 +180,224 @@
     </activity>
   </section>
 
-  <!-- Additional sections would be added here for compound interest, annuities, etc. -->
+  <section xml:id="sec-compound-interest">
+    <title>Compound Interest</title>
+    
+    <introduction>
+      <p>Unlike simple interest, compound interest allows interest to earn interest. This creates exponential growth over time.</p>
+    </introduction>
+
+    <definition xml:id="def-compound-interest">
+      <statement>
+        <p>The <term>compound interest formula</term> is:
+        <me>F = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+        where:
+        <ul>
+          <li><m>F</m> = final amount</li>
+          <li><m>P</m> = principal (initial amount)</li>
+          <li><m>r</m> = annual interest rate (as a decimal)</li>
+          <li><m>n</m> = number of times interest is compounded per year</li>
+          <li><m>t</m> = time period (in years)</li>
+        </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <assemblage xml:id="compound-interest-table-method">
+      <title>Compound Interest Table Method</title>
+      <p>To understand how compound interest works, we can create a table showing the balance period by period:</p>
+      <ol>
+        <li><p><term>Beginning Balance</term>: Start with the principal amount for the first period, then use the previous period's ending balance.</p></li>
+        <li><p><term>Calculate Interest</term>: Use <m>I = P \times r \times t</m> where <m>t</m> is the fraction of a year for one period.</p></li>
+        <li><p><term>Find Ending Balance</term>: Add the interest to the beginning balance.</p></li>
+        <li><p><term>Carry Forward</term>: The ending balance becomes the next period's beginning balance.</p></li>
+      </ol>
+    </assemblage>
+
+    <activity xml:id="act-compound-interest-tables">
+      <title>Compound Interest Using Tables</title>
+      
+      <task>
+        <title>Annual Compounding</title>
+        <statement>
+          <p>A student deposits $1,000 in a savings account that pays 5% interest, compounded once per year. Fill in the balance sheet for three years.</p>
+          <table>
+            <tabular>
+              <row>
+                <cell>Year</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+                <cell>1000</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+        <solution>
+          <table>
+            <tabular>
+              <row>
+                <cell>Year</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+                <cell>1000</cell>
+                <cell>50.00</cell>
+                <cell>1050.00</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell>1050.00</cell>
+                <cell>52.50</cell>
+                <cell>1102.50</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell>1102.50</cell>
+                <cell>55.13</cell>
+                <cell>1157.63</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>Using the formula: <m>F = 1000(1 + \frac{0.05}{1})^{1 \times 3} = \$1157.63</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <title>Quarterly Compounding</title>
+        <statement>
+          <p>A certificate of deposit (CD) offers 4% interest compounded quarterly. If a student places $500 in the CD, complete the ledger for the first year (four quarters).</p>
+          <table>
+            <tabular>
+              <row>
+                <cell>Quarter</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>Q1</cell>
+                <cell>500</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>Q2</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>Q3</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+              <row>
+                <cell>Q4</cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+                <cell><fillin characters="10"/></cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+        <solution>
+          <p>Interest per quarter = <m>0.04 \div 4 = 0.01 = 1\%</m></p>
+          <table>
+            <tabular>
+              <row>
+                <cell>Quarter</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned ($)</cell>
+                <cell>Ending Balance ($)</cell>
+              </row>
+              <row>
+                <cell>Q1</cell>
+                <cell>500.00</cell>
+                <cell>5.00</cell>
+                <cell>505.00</cell>
+              </row>
+              <row>
+                <cell>Q2</cell>
+                <cell>505.00</cell>
+                <cell>5.05</cell>
+                <cell>510.05</cell>
+              </row>
+              <row>
+                <cell>Q3</cell>
+                <cell>510.05</cell>
+                <cell>5.10</cell>
+                <cell>515.15</cell>
+              </row>
+              <row>
+                <cell>Q4</cell>
+                <cell>515.15</cell>
+                <cell>5.15</cell>
+                <cell>520.30</cell>
+              </row>
+            </tabular>
+          </table>
+          <p>Using the formula: <m>F = 500(1 + \frac{0.04}{4})^{4} = \$520.24</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <title>Monthly Compounding</title>
+        <statement>
+          <p>A certificate of deposit starts at $2,500 and earns 3.6% APR, compounded monthly. Track the balance for the first six months.</p>
+        </statement>
+        <solution>
+          <p>Monthly rate = <m>3.6\% \div 12 = 0.3\%</m></p>
+          <p>Each month, multiply the balance by 1.003.</p>
+          <p>After 6 months: <m>F = 2500(1 + \frac{0.036}{12})^{6} = \$2545.29</m></p>
+        </solution>
+      </task>
+    </activity>
+
+    <activity xml:id="act-compound-interest-formula">
+      <title>Using the Compound Interest Formula</title>
+      
+      <task>
+        <statement>
+          <p>Find the future value of $10,000 invested at 6% annual interest, compounded monthly, for 5 years.</p>
+        </statement>
+        <solution>
+          <p><m>F = 10000\left(1 + \frac{0.06}{12}\right)^{12 \times 5} = 10000(1.005)^{60} = \$13,488.50</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>How much should you invest today at 8% annual interest, compounded quarterly, to have $25,000 in 10 years?</p>
+        </statement>
+        <solution>
+          <p>Solve for P: <m>25000 = P\left(1 + \frac{0.08}{4}\right)^{4 \times 10}</m></p>
+          <p><m>P = \frac{25000}{(1.02)^{40}} = \$11,307.29</m></p>
+        </solution>
+      </task>
+    </activity>
+  </section>
+
+  <!-- Additional sections would be added here for annuities, loans, etc. -->
 </chapter>
