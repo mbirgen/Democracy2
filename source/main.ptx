@@ -13,11 +13,11 @@
 
     <!-- Include chapters -->
 
-    <xi:include href="./ch-voting.ptx" />
-    <xi:include href="./ch-apportionment.ptx" />
-    <xi:include href="./ch-finance.ptx" />
-    <xi:include href="./ch-redistricting.ptx" />
-    <xi:include href="./ch-division.ptx" />
+    <xi:include href="./voting-theory.ptx" />
+    <xi:include href="./apportionment-and-division.ptx" />
+    <xi:include href="./financial-mathematics.ptx" />
+    <xi:include href="./redistricting.ptx" />
+    <xi:include href="./beyond-numbers.ptx" />
 
 
     <!-- Include backmatter -->
