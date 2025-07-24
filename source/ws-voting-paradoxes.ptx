@@ -3,12 +3,12 @@
 <worksheet xml:id="ws-voting-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Voting Paradoxes</title>
 <activity>
+      <introduction>
+            <p>
+                  Of the four voting systems we've studied, which is best? Why?
+            </p>
+      </introduction>
 
-<task workspace="1in">
-<p>
-      Of the four voting systems we've studied, which is best? Why?
-</p>
-</task>
 </activity>
 
 <activity>
@@ -69,7 +69,7 @@
       </row>
 </tabular>
    </introduction>   
-
+<!-- Change tasks to include solutions -->
 
 <task workspace="1in">
       <statement>
@@ -111,7 +111,6 @@
       <task>
             <p>
                   Why does the plurality method's result seem unfair in this election?  Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.
-                  1
             </p>
       </task>
 
@@ -228,9 +227,9 @@
       <statement>
             <p><term>Majority Criterion</term></p>
       </statement>
-      <solution>
+      <answer>
             <p>A candidate that wins a majority of first place votes should win the election.</p>
-      </solution>
+      </answer>
 </definition>
 <activity>
       <introduction>
@@ -418,10 +417,10 @@
       <statement>
             <p><term>Monotonicity Criterion</term></p>
       </statement>
-      <solution>
+      <answer>
             <p>If the only changes in voting are in favor of the winning candidate, 
                   that candidate should still win the election.</p>
-      </solution>
+      </answer>
 </definition>
 
 <activity>
@@ -529,32 +528,32 @@
       <statement>
             <p><term>Irrelevant Alternatives Criterion</term></p>
       </statement>
-      <solution>
+      <answer>
             <p>If a non-winning candidate leaves the election, the winner should not change.
 </p>
-      </solution>
+      </answer>
 </definition>
 
 <definition xml:id="def-Approval_Voting">
       <statement>
             <p><term>Approval Voting</term></p>
       </statement>
-      <solution>
+      <answer>
             <p>Vote for all candidates you approve of. For more in-depth explanation of how this works, 
                   see <em>https://electionscience.org/library/approval-voting/</em>
             </p>
-      </solution>
+      </answer>
 </definition>
 
 <definition xml:id="def-Arrow_Theorem">
       <statement>
             <p><term>Arrow's Impossibility Theorem</term></p>
       </statement>
-      <solution>
+      <answer>
             <p>
                   There is no way of counting votes that does not violate at least one of the criteria except for a Dictator.
             </p>
-      </solution>
+      </answer>
 </definition>
 </worksheet>
 
