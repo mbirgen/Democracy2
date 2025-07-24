@@ -15,7 +15,7 @@
         <p>
             any set of players that might join forces and vote the same way.
 In principle, we can have a coalition with as few as <em>one</em> player and as many as <em>all</em> players.
-The coalition consisting of all the players is called the <alert>grand coalition</alert>.
+The coalition consisting of all the players is called the <em>grand coalition</em>.
 Since coalitions are just sets of players, the most convenient way to describe coalitions mathematically is to use the <em>set</em> notation.
         </p>
       </answer>
@@ -117,7 +117,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
   <task>
     <statement>
       <p>
-        In the weighted voting system <m>[10 | 6,4,3,2,\,1]</m>,  
+        In the weighted voting system <m>[10 | 6,4,3,2,1]</m>,  
         consider the winning coalition <m>\{P_1, P_2, P_3, P_4\}</m>.  
         Which voter(s) could change their mind and vote “no” without changing the outcome?  
         Which voter(s) must keep voting “yes” for the motion to pass?
@@ -140,6 +140,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
   <statement>
     <p>
       A <defn>critical voter</defn> in a winning coalition is ...
+      <m>\{\overset{\circ}{P_1}, P_2\}</m>
     </p>
   </statement>
   <answer>
@@ -149,44 +150,156 @@ Since coalitions are just sets of players, the most convenient way to describe c
   </answer>
 </definition>
 
+<!-- <activity>
+  <title>Full Banzhaf Calculation</title>
+
+  <introduction>
+    <p>Consider the voting system <m>[19 \;|\; 11,\, 9,\, 8,\, 5]</m>.</p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>List all the winning coalitions.</p>
+    </statement>
+    <solution>
+      <p>
+        Any combination that sums to 19 or more:<br/>
+        <m>
+          \{P_1, P_2\}, \{P_1, P_3\}, \{P_1, P_4\}, \{P_2, P_3\},  
+          \{P_1, P_2, P_3\}, \{P_1, P_2, P_4\}, \{P_1, P_3, P_4\}, \{P_2, P_3, P_4\},  
+          \{P_1, P_2, P_3, P_4\}
+        </m>
+      </p>
+    </solution>
+  </task>
+
+  <task>
+    <statement>
+      <p>In each winning coalition above, identify the critical voters.</p>
+    </statement>
+    <solution>
+      <p>
+        - \{P_1, P_2\}: both critical.  
+        - \{P_1, P_3\}: both critical.  
+        - \{P_1, P_4\}: both critical.  
+        - \{P_2, P_3\}: both critical.  
+        - \{P_1, P_2, P_3\}: each critical? 11+9+8=28, so if P_1 leaves: 17 (fails); P_2 leaves: 19–9=19–9=19–9=19–9=19–9=19–9= so still winning. Wait! Must check:
+        Actually:  
+        - If P_1 leaves: 17 → loses → P_1 is critical  
+        - If P_2 leaves: 19–9=19–9=19–9= so 11+8=19 → exactly at quota → still winning → P_2 not critical  
+        - If P_3 leaves: 11+9=20 → still winning → P_3 not critical  
+        - So only P_1 is critical in this coalition.
+
+        Continue:
+        - \{P_1, P_2, P_4\}: 11+9+5=25  
+          - P_1 leaves: 14 → fails → P_1 critical  
+          - P_2 leaves: 16 → fails → P_2 critical  
+          - P_4 leaves: 20 → still passes → P_4 not critical
+
+        - \{P_1, P_3, P_4\}: 11+8+5=24  
+          - P_1 leaves: 13 → fails → P_1 critical  
+          - P_3 leaves: 16 → fails → P_3 critical  
+          - P_4 leaves: 19–5=19 → exactly quota → still wins → P_4 not critical
+
+        - \{P_2, P_3, P_4\}: 9+8+5=22  
+          - P_2 leaves: 13 → fails → P_2 critical  
+          - P_3 leaves: 14 → fails → P_3 critical  
+          - P_4 leaves: 17 → fails → P_4 critical
+
+        - \{P_1, P_2, P_3, P_4\}: sum = 33  
+          - Removing any one still exceeds 19, so no one critical.
+      </p>
+    </solution>
+  </task>
+
+  <task>
+    <statement>
+      <p>Count the number of times each voter is critical. This is their Banzhaf power.</p>
+    </statement>
+    <solution>
+      <p>
+        - P_1: in <m>\{P_1,P_2\}, \{P_1,P_3\}, \{P_1,P_4\}, \{P_1P_2P_3\}, \{P_1P_2P_4\}, \{P_1P_3P_4\}</m>
+        - P_2: in \{P_1P_2\}, \{P_2P_3\}, \{P_1P_2P_4\}, \{P_2P_3P_4\} → **4 times**  
+        - P_3: in \{P_1P_3\}, \{P_2P_3\}, \{P_1P_3P_4\}, \{P_2P_3P_4\} → **4 times**  
+        - P_4: only in \{P_2P_3P_4\} → **1 time**
+      </p>
+    </solution>
+  </task>
+
+  <tabular halign="center" top="medium">
+    <row>
+      <cell left="medium" right="medium">Voter</cell>
+      <cell right="medium">Banzhaf Power</cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium" right="medium">P_1</cell>
+      <cell right="medium">6</cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">P_2</cell>
+      <cell right="medium">4</cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">P_3</cell>
+      <cell right="medium">4</cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">P_4</cell>
+      <cell right="medium">1</cell>
+    </row>
+  </tabular>
+
+  <task>
+    <statement>
+      <p>Add up all the Banzhaf powers. This is the total Banzhaf power.</p>
+    </statement>
+    <solution>
+      <p>6 + 4 + 4 + 1 = 15</p>
+    </solution>
+  </task>
+
+  <task>
+    <statement>
+      <p>Divide each voter’s Banzhaf power by the total to get their Banzhaf power index.</p>
+    </statement>
+    <solution>
+      <p>
+        P_1: 6/15 = 0.4  
+        P_2: 4/15 ≈ 0.27  
+        P_3: 4/15 ≈ 0.27  
+        P_4: 1/15 ≈ 0.07
+      </p>
+    </solution>
+  </task>
+
+  <tabular halign="center" top="medium">
+    <row>
+      <cell left="medium" right="medium">Voter</cell>
+      <cell right="medium">Banzhaf Index</cell>
+    </row>
+    <row bottom="medium">
+      <cell left="medium" right="medium">P_1</cell>
+      <cell right="medium">0.4</cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">P_2</cell>
+      <cell right="medium">0.27</cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">P_3</cell>
+      <cell right="medium">0.27</cell>
+    </row>
+    <row>
+      <cell left="medium" right="medium">P_4</cell>
+      <cell right="medium">0.07</cell>
+    </row>
+  </tabular>
+</activity> -->
 
 </worksheet>
 
 <!-- <worksheet>
-
-  <activity>
-    <task>
-      <statement>
-        <p>
-          List all the winning coalitions in the weighted voting system [10 | 5, 4, 3, 2, 1].
-        </p>
-      </statement>
-    </task>
-  </activity>
-
-  <activity>
-    <task>
-      <statement>
-        <p>
-          In the weighted voting system [10 | 6, 4, 3, 2, 1],  
-          consider the winning coalition {<m>P_1</m>, <m>P_2</m>, <m>P_3</m>, <m>P_4</m>}.  
-          Which voter(s) could change their minds and vote “no” without changing the outcome?  
-          Which voter(s) must keep voting “yes” for the motion to pass?
-        </p>
-      </statement>
-    </task>
-  </activity>
-
-  <activity>
-    <task>
-      <statement>
-        <p>
-          A <defn>critical voter</defn> in a winning coalition is ...
-        </p>
-      </statement>
-    </task>
-  </activity>
-
+ 
   <activity>
     <introduction>
       <p>Consider the voting system [19 | 11, 9, 8, 5].</p>

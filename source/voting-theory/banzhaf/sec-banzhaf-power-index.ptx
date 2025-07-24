@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Banzhaf-Power-Index">
+    <title>Banzhaf Power Index</title>
+    <p>
+        power index!Banzhaf
+    </p>
+
+    <ol>
+        <li>
+            <definition xml:id="def-coalition">
+                <statement>
+                    <p>
+                      A coalition is? 
+                    </p>
+                </statement>
+            </definition>
+                
+            <solution>
+                <p>
+                  any set of players that might join forces and vote the same way.
+                In principle, we can have a coalition with as few as <em>one</em> player and as many as <em>all</em> players.
+                The coalition consisting of all the players is called the <alert>grand coalition</alert>.
+                Since coalitions are just sets of players, the most convenient way to describe coalitions mathematically is to use the <em>set</em> notation.  
+                </p>
+            </solution>
+        </li>
+
+        <li>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Consider a weighted voting system with three voters <m>P_{1}</m>, <m>P_{2}</m>, and <m>P_{3}</m>.
+                        </p>
+
+                        <p>
+                            List all the coalitions.
+                        </p>
+
+                        <p>
+                            How many are there?
+                        </p>
+
+                        <p>
+                        </p>
+
+                        <p>
+                            <m>\begin{array}{c}\{P_1\}, \{P_2\}, \{P_3\}\\
+                            \{P_1, P_2\}, \{P_1, P_3\}, \{P_2, P_3\}\\ \{P_1, P_2, P_3\}\end{array}</m>
+                        </p>
+
+                        <p>
+                        </p>
+
+                        <p>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Consider a weighted voting system with four voters <m>P_{1}</m>, <m>P_{2}</m>, <m>P_{3}</m>, and <m>P_{4}</m>.
+                        </p>
+
+                        <p>
+                            List all the coalitions.
+                        </p>
+
+                        <p>
+                            How many are there?
+                        </p>
+
+                        <p>
+                        </p>
+
+                        <p>
+                            <m>\begin{array}{c}\{P_1\}, \{P_2\}, \{P_3\}, \{P_4\}\\ \{P_1, P_2\}, \{P_1, P_3\}, \{P_1, P_4\}, \{P_2, P_3\}, \{P_2, P_4\}, \{P_3, P_4\}\\ \{P_1, P_2, P_3\}, \{P_1, P_3, P_4\}, \{P_1, P_2, P_4\}, \{P_2, P_3, P_4\}\\ \{P_1, P_2, P_3, P_4\}\end{array}</m>
+                        </p>
+
+                        <p>
+                        </p>
+
+                        <p>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            If a weighted voting system has <m>n</m> voters <m>P_{1}</m>, <m>P_{2}</m>, …, <m>P_{n}</m>,
+                        </p>
+
+                        <task>
+                            <statement>
+                                <p>
+                                    <p>
+                            how many coalitions are there?
+                        </p>
+                                </p>
+                            </statement>
+                        </task>
+
+                        <p>
+                        </p>
+
+                        <p>
+                            $2^{n}-1$
+                        </p>
+
+                        <p>
+                        </p>
+
+                        <p>
+                            1
+                        </p>
+
+                        <p>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+                <definition xml:id="def-winning-coalition">
+                    <statement>
+                        <p>
+                          A winning coalition is … coalition!winning  
+                        </p>
+                    </statement>
+                </definition>
+            <solution>
+                <p>
+                  one that has enough votes to win.
+                A single player coalition can be a winning coalition only when that player is a dictator, so under the assumption that there are no dictators in our weighted voting system (dictators are boring) a winning coalition must have at least two players.  
+                </p>
+            </solution>
+
+            <p>
+            </p>
+
+            <p>
+                1
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                List all the winning coalitions in the weighted voting system <m>[10 | 5, 4, 3, 2, 1]</m>.
+            </p>
+
+            <p>
+                <m>\begin{array}{c}\{P_1, P_2, P_3\}, \{P_1, P_2, P_4\},\{P_1, P_2, P_5\}, \{P_1, P_3, P_4\}\\ \{P_1, P_2, P_3, P_4\}, \{P_1, P_2, P_3, P_5\}, \{P_1, P_2, P_4, P_5\}, \{P_2, P_3, P_4, P_5\}\\ \{P_1, P_2, P_3, P_4, P_5\}\end{array}</m>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                In the weighted voting system
+                <me>
+                    [10 | 6, 4, 3, 2, 1],
+                </me>
+            </p>
+
+            <p>
+                consider <alert>the winning coalition</alert> <m>\{P_{1}, P_{2}, P_{3}, P_{4}\}</m>.
+            </p>
+
+            <p>
+                Which voter(s) could change their minds and vote “no” without changing the outcome of the vote?
+            </p>
+
+            <p>
+                Which voter(s) <em>need</em> to keep voting “yes” in order for the motion to pass?
+            </p>
+
+            <p>
+                <m>P_{3}, P_{4}</m> could change their minds without changing the outcome. <m>P_{1}</m> and <m>P_{2}</m> will change the outcome if they change their minds.
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                A critical voter in a winning coalition is … critical voter
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                the coalition must have that player’s votes to win.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                1
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Consider the voting system <m>[19|11,9,8,5]</m>.
+            </p>
+
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            List all the <em>winning</em> coalitions.
+                        </p>
+
+                        <p>
+                            inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{1}$}; inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{2}$};  inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{1}$};inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{3}$};, inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{1}$};inner sep=.25ex,baseline=-.75ex\node {$P_{2} P_{3}$};, inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{1}$};inner sep=.25ex,baseline=-.75ex\node[circle, draw] {$P_{2}$}; inner sep=.25ex, baseline=-.75ex\node {$P_{4}$};,  inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{1}$};inner sep=.25ex,baseline=-.75ex\node[circle, draw] {$P_{3}$}; inner sep=.25ex, baseline=-.75ex\node {$P_{4}$};,  inner sep=.25ex,baseline=-.75ex\node[circle,draw] {$P_{2}$};inner sep=.25ex,baseline=-.75ex\node[circle, draw] {$P_{3}$}; inner sep=.25ex, baseline=-.75ex\node[circle, draw] {$P_{4}$};,  <m>P_{1} P_{2} P_{3} P_{4}</m>,
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            In each winning coalition above, circle the critical voters.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Count the number of times each voter is a critical voter.
+                        </p>
+
+                        <p>
+                            This is called that voter’s Banzhaf power.
+                            power index!Banzhaf
+                        </p>
+
+                        <p>
+                            <tabular>
+                                <col right="minor"> </col> <col halign="center"> </col>
+                                <row>
+                                    <cell>Voter</cell>
+                                    <cell>Banzhaf power</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{1}</m> </cell>
+                                    <cell>5</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{2}</m> </cell>
+                                    <cell>3</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{3}</m> </cell>
+                                    <cell>3</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{4}</m> </cell>
+                                    <cell>1</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{1}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{2}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{3}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{4}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+                            </tabular>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Add up all the voters’ Banzhaf powers; this sum is called the total Banzhaf power of the voting system.
+                            <alert>8</alert>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Finally, divide each voter’s Banzhaf power by the total Banzhaf power.
+                        </p>
+
+                        <p>
+                            The percentage that results is called the voter’s Banzhaf power <em>index</em>.
+                        </p>
+
+                        <p>
+                            <tabular>
+                                <col right="minor"> </col> <col halign="center"> </col>
+                                <row>
+                                    <cell>Voter</cell>
+                                    <cell>Banzhaf power <em>index</em> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{1}</m> </cell>
+                                    <cell>5/8</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{2}</m> </cell>
+                                    <cell>3/8</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{3}</m> </cell>
+                                    <cell>3/8</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{4}</m> </cell>
+                                    <cell>1/8</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{1}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{2}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{3}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> <m>P_{4}</m> </cell>
+                                    <cell>0pt15pt5pt</cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+
+                                <row>
+                                    <cell> </cell>
+                                </row>
+                            </tabular>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Calculate the Banzhaf Power Index for each voter in the weighted voting system
+                <me>
+                    [51| 32, 22, 12]
+                </me>.
+            </p>
+
+            <p>
+                The first two voters have a power of 50%and the last voter has no power.
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Make up a weighted voting system with a dummy, and calculate the Banzhaf Power Index for the dummy.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                Dummies never have any power.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Make up a weighted voting system with a dictator, and calculate the Banzhaf Power Index for the dictator.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                Dictators always have all the power.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Make up a weighted voting system in which several voters have veto power.
+            </p>
+
+            <p>
+                Calculate the Banzhaf Power Index for the voters with veto power.
+                What do you notice?
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                All the voters with veto power have the same amount of power and they have more power than any voter without veto power.
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+                1
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                The U.N.
+                Security Council consists of 15 member countries–5 permanent members and 10 non-permanent members.
+                A motion can pass only if it has the vote of <em>all five</em> of the permanent members plus at least four of the non-permanent members.
+            </p>
+
+            <p>
+                <alert>This problem is more advanced than most of the students are comfortable with, but is excellent for your more mathematically comfortable students.</alert>
+            </p>
+
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Describe the critical players in a winning coalition.
+                            UNSC1
+                        </p>
+
+                        <p>
+                            1
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Use your answer in (a),
+                        </p>
+
+                        <p>
+                            together with the fact that there are 210 nine-member winning coalitions and 638 winning coalitions with 10 or more members, to explain why the total number of times all players are critical is 5080.
+                            UNSC21
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Using the results of (a) and (b),
+                        </p>
+
+                        <p>
+                            show that the Banzhaf power index of a permanent member is given by the ratio <m>848/5080</m>.
+                            UNSC3
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Using the results of (a), (b) and (c),
+                        </p>
+
+                        <p>
+                            show that the Banzhaf power index of a non-permanent member is given by the ratio <m>84/5080</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Explain why the U.N.
+                            Security Council is equivalent to the weighed voting system in which each non-permanent member has 1 vote, each permanent member has 7 votes and the quota is 39 votes.
+                            1
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+    </ol>
+</section>
