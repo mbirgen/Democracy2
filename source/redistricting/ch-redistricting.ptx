@@ -3,4 +3,6 @@
     
     <xi:include href="sections/sec-gerrymandering.ptx" />
     <xi:include href="sections/sec-fairness.ptx" />
+
+    
 </chapter>
