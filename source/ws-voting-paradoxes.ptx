@@ -423,4 +423,138 @@
                   that candidate should still win the election.</p>
       </solution>
 </definition>
+
+<activity>
+      <introduction>
+            <p>
+                  Voters are trying to decide what to do with a $50 million surplus in the state budget.
+        Their options are: 
+           <dl>
+            <li>
+                  <title>(T)</title>
+
+                  <p>
+                        Give the money back to taxpayers as property tax relief.
+                  </p>
+            </li>
+
+            <li>
+                  <title>(R)</title>
+
+                  <p>
+                        Spend it on road construction and other infrastructure.
+                  </p>
+            </li>
+
+            <li>
+                  <title>(H)</title>
+
+                  <p>
+                        Build a new state historical building.
+                  </p>
+            </li>
+            </dl>
+        Here is the preference table:
+            </p>
+            <tabular left="minor">
+                  <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
+                  <row>
+                        <cell> </cell>
+                        <cell colspan="3"> # of Ballots</cell>
+                  </row>
+
+                  <row>
+                        <cell>Ranking</cell>
+                        <cell>70,000</cell>
+                        <cell>50,000</cell>
+                        <cell>40,000</cell>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                  </row>
+
+                  <row>
+                        <cell>1st choice</cell>
+                        <cell>T</cell>
+                        <cell>R</cell>
+                        <cell>H</cell>
+                  </row>
+
+                  <row>
+                        <cell>2nd choice</cell>
+                        <cell>R</cell>
+                        <cell>H</cell>
+                        <cell>T</cell>
+                  </row>
+
+                  <row>
+                        <cell>3rd choice</cell>
+                        <cell>H</cell>
+                        <cell>T</cell>
+                        <cell>R</cell>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                  </row>
+            </tabular>
+      </introduction>
+      <task xml:id="task-voting-paradox-budget1">
+            <statement>
+                  <p>
+                        The election is run by pairwise comparison.  What is the result?
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                        <m>R>H>T>R</m>.
+                  </p>
+            </solution>
+      </task>
+      <task>
+            <statement>
+                  <p>
+                        What is odd about your results from <xref ref="task-voting-paradox-budget1"/>
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                        Try having candidate R drop out of the race. 
+                  </p>
+            </solution>
+      </task>
+</activity>
+<definition xml:id="def-Irrelevant_Alternatives_Criterion">
+      <statement>
+            <p><term>Irrelevant Alternatives Criterion</term></p>
+      </statement>
+      <solution>
+            <p>If a non-winning candidate leaves the election, the winner should not change.
+</p>
+      </solution>
+</definition>
+
+<definition xml:id="def-Approval_Voting">
+      <statement>
+            <p><term>Approval Voting</term></p>
+      </statement>
+      <solution>
+            <p>Vote for all candidates you approve of. For more in-depth explanation of how this works, 
+                  see <em>https://electionscience.org/library/approval-voting/</em>
+            </p>
+      </solution>
+</definition>
+
+<definition xml:id="def-Arrow_Theorem">
+      <statement>
+            <p><term>Arrow's Impossibility Theorem</term></p>
+      </statement>
+      <solution>
+            <p>
+                  There is no way of counting votes that does not violate at least one of the criteria except for a Dictator.
+            </p>
+      </solution>
+</definition>
 </worksheet>
+
