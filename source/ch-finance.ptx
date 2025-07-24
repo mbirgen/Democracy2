@@ -6,13 +6,179 @@
   <introduction>
     <p>
         In this chapter, we explore the mathematics behind personal finance, loans, investments, and retirement planning.
+        We retain the following conventions:
     </p>
+    <table>
+      <tabular>
+        <row>
+          <cell>1 year</cell>
+          <cell>12 months</cell>
+        </row>
+        <row>
+          <cell>1 year</cell>
+          <cell>52 weeks</cell>
+        </row>
+        <row>
+          <cell>1 year</cell>
+          <cell>365 days</cell>
+        </row>
+        <row>
+          <cell>1 week</cell>
+          <cell>7 days</cell>
+        </row>
+        <row>
+          <cell>1 day</cell>
+          <cell>24 hours</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>All interest rates will be annual unless specified otherwise.</p>
   </introduction>
 
-  <!-- Content to be converted from chapter-Finance3.tex -->
-  <section xml:id="sec-interest-basics">
-    <title>Interest and Time Value of Money</title>
-    <p>Content to be converted from LaTeX.</p>
+  <section xml:id="sec-simple-interest">
+    <title>Simple Interest</title>
+    
+    <activity xml:id="act-simple-rental-problems">
+      <introduction>
+        <p>We'll start with some basic rental and leasing problems to understand proportional relationships.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>A student rents a post-hole digger from RentAll to build a fence. The cost is $12.95 per day, and they keep it for three days. How much will they pay?</p>
+        </statement>
+        <solution>
+          <p><m>12.95 \times 3 = \$38.85</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student is visiting Kentucky for work and will need to rent a furnished apartment. The rate is $100 per week. They stay for 18 days. How much will they pay?</p>
+        </statement>
+        <solution>
+          <p><m>18 \text{ days} \times \frac{1 \text{ week}}{7 \text{ days}} \times \frac{\$100}{1 \text{ week}} = \frac{18 \times 100}{7} = \$257.14</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student needs to lease a car for $2500 per year. How much will they pay if they keep the car for:</p>
+          <ol>
+            <li><p>2 years?</p></li>
+            <li><p>5 months?</p></li>
+          </ol>
+        </statement>
+        <solution>
+          <ol>
+            <li><p><m>2500 \times 2 = \$5,000.00</m></p></li>
+            <li><p><m>2500 \times \frac{5}{12} = \$1,041.67</m></p></li>
+          </ol>
+        </solution>
+      </task>
+    </activity>
+
+    <p>These problems show us the basic idea behind simple interest: the amount charged is proportional to the principal (amount borrowed) and the time period.</p>
+
+    <definition xml:id="def-simple-interest-formula">
+      <statement>
+        <p>The <term>simple interest formula</term> is:
+        <me>F = P + Prt = P(1 + rt)</me>
+        where:
+        <ul>
+          <li><m>F</m> = final amount to be repaid</li>
+          <li><m>P</m> = principal (initial amount borrowed)</li>
+          <li><m>r</m> = annual interest rate (as a decimal)</li>
+          <li><m>t</m> = time period (in years)</li>
+        </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <activity xml:id="act-simple-interest-calculations">
+      <introduction>
+        <p>Practice using the simple interest formula to solve various problems.</p>
+      </introduction>
+      
+      <task>
+        <statement>
+          <p>Suppose you borrow $1000 for 4 months at an annual simple interest rate of 8.0%. Find the total amount that you will have to repay.</p>
+          <p>Fill in the values:
+          <tabular>
+            <row>
+              <cell><m>F</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+            <row>
+              <cell><m>P</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+            <row>
+              <cell><m>r</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+            <row>
+              <cell><m>t</m></cell>
+              <cell>=</cell>
+              <cell><fillin characters="10"/></cell>
+            </row>
+          </tabular>
+          </p>
+        </statement>
+        <solution>
+          <p><m>P = 1000</m>, <m>r = 0.08</m>, <m>t = \frac{4}{12} = \frac{1}{3}</m></p>
+          <p><m>F = 1000(1 + 0.08 \times \frac{1}{3}) = 1000(1 + 0.0267) = \$1026.67</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Suppose a student borrows $1500 from you for a period of 2 years, at an annual simple interest rate of 6.0%. Find the amount of interest you will earn.</p>
+        </statement>
+        <solution>
+          <p>Interest = <m>Prt = 1500 \times 0.06 \times 2 = \$180</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student took out a loan for 6 months at an annual simple interest rate of 4.0%. The total amount they paid for the loan was $1890.46. How much did they borrow?</p>
+        </statement>
+        <solution>
+          <p><m>F = 1890.46</m>, <m>r = 0.04</m>, <m>t = 0.5</m></p>
+          <p><m>1890.46 = P(1 + 0.04 \times 0.5) = P(1.02)</m></p>
+          <p><m>P = \frac{1890.46}{1.02} = \$1853.39</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>Suppose $2000 is borrowed for 7 months, at the end of which $2100 is repaid. Find the annual simple interest rate <m>r</m>.</p>
+        </statement>
+        <solution>
+          <p><m>2100 = 2000(1 + r \times \frac{7}{12})</m></p>
+          <p><m>1.05 = 1 + r \times \frac{7}{12}</m></p>
+          <p><m>0.05 = r \times \frac{7}{12}</m></p>
+          <p><m>r = \frac{0.05 \times 12}{7} = 0.0857 = 8.57\%</m></p>
+        </solution>
+      </task>
+      
+      <task>
+        <statement>
+          <p>A student got a loan from the city to help repair the sidewalk in front of their home. They borrowed $1800 at an annual simple interest rate of 5%. The amount they repaid was $2025. How long was their loan?</p>
+        </statement>
+        <solution>
+          <p><m>2025 = 1800(1 + 0.05t)</m></p>
+          <p><m>1.125 = 1 + 0.05t</m></p>
+          <p><m>0.125 = 0.05t</m></p>
+          <p><m>t = 2.5 \text{ years, or } 30 \text{ months}</m></p>
+        </solution>
+      </task>
+    </activity>
   </section>
 
+  <!-- Additional sections would be added here for compound interest, annuities, etc. -->
 </chapter>

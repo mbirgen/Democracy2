@@ -1,121 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws-Hamilton">
-      <title>Hamilton</title>
-<introduction>
-  <p>
-      When you are trying to choose a best choice among a bunch of options, you will have a preference for which choices you like the best.
-    We will be working on how to chose the "best" when you have multiple people with different opinions.
-    </p>
-</introduction>
+  <title>Hamilton's Method Worksheet</title>
+  
+  <introduction>
+    <p>In this worksheet, you'll practice Hamilton's method for apportionment by working through the Republic of Awoi example.</p>
+  </introduction>
 
-<p>
-</p>
+  <activity xml:id="hamilton-awoi-practice">
+    <title>Republic of Awoi - Hamilton's Method</title>
+    <introduction>
+      <p>Consider the Republic of Awoi with four states:
+      <ul>
+        <li>North-West (NW): population 69,000</li>
+        <li>South-West (SW): population 267,000</li> 
+        <li>South-East (SE): population 133,000</li>
+        <li>North-East (NE): population 331,000</li>
+      </ul>
+      There are 160 seats to be apportioned.</p>
+    </introduction>
 
-<ol>
-  <li>
-    <p>
-      What is the total population?
-    </p>
-  </li>
+    <task>
+      <statement>
+        <p>Find the standard divisor.</p>
+      </statement>
+      <solution>
+        <p>Total population = 69,000 + 267,000 + 133,000 + 331,000 = 800,000</p>
+        <p>Standard divisor = 800,000 ÷ 160 = 5,000</p>
+      </solution>
+    </task>
 
-  <li>
-    <p>
-      How many seats are you apportioningIf you aren’t given this number, it is the total of the Standard Quotas?
-    </p>
-  </li>
+    <task>
+      <statement>
+        <p>Complete the Hamilton's method calculation table:</p>
+        <table>
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Standard Quota</cell>
+              <cell>Lower Quota</cell>
+              <cell>Decimal Part</cell>
+              <cell>Additional Seats</cell>
+              <cell>Final Apportionment</cell>
+            </row>
+            <row>
+              <cell>NW</cell>
+              <cell>69,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>SW</cell>
+              <cell>267,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>SE</cell>
+              <cell>133,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>NE</cell>
+              <cell>331,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>Totals</cell>
+              <cell>800,000</cell>
+              <cell>160</cell>
+              <cell><fillin characters="3"/></cell>
+              <cell>—</cell>
+              <cell><fillin characters="3"/></cell>
+              <cell>160</cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <table>
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Standard Quota</cell>
+              <cell>Lower Quota</cell>
+              <cell>Decimal Part</cell>
+              <cell>Additional Seats</cell>
+              <cell>Final Apportionment</cell>
+            </row>
+            <row>
+              <cell>NW</cell>
+              <cell>69,000</cell>
+              <cell>13.8</cell>
+              <cell>13</cell>
+              <cell>0.8</cell>
+              <cell>1</cell>
+              <cell>14</cell>
+            </row>
+            <row>
+              <cell>SW</cell>
+              <cell>267,000</cell>
+              <cell>53.4</cell>
+              <cell>53</cell>
+              <cell>0.4</cell>
+              <cell>0</cell>
+              <cell>53</cell>
+            </row>
+            <row>
+              <cell>SE</cell>
+              <cell>133,000</cell>
+              <cell>26.6</cell>
+              <cell>26</cell>
+              <cell>0.6</cell>
+              <cell>1</cell>
+              <cell>27</cell>
+            </row>
+            <row>
+              <cell>NE</cell>
+              <cell>331,000</cell>
+              <cell>66.2</cell>
+              <cell>66</cell>
+              <cell>0.2</cell>
+              <cell>0</cell>
+              <cell>66</cell>
+            </row>
+            <row>
+              <cell>Totals</cell>
+              <cell>800,000</cell>
+              <cell>160</cell>
+              <cell>158</cell>
+              <cell>—</cell>
+              <cell>2</cell>
+              <cell>160</cell>
+            </row>
+          </tabular>
+        </table>
+      </solution>
+    </task>
+  </activity>
 
-  <li>
-    <p>
-      Calculate the Standard Divisor (divide your population by the number of seats):
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Calculate all the Standard Quotas (Q.) (divide the population of each state by your Standard Divisor).
-      The total of your standard quotas should be the same as the number of seats.
-      If that is not the case, you have rounded off too much.:
-    </p>
-
-      <tabular>
-        <col right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="parbox" right="minor"> </col> <col halign="parbox"> </col>
-        <row>
-        </row>
-
-        <row>
-          <cell>State</cell>
-          <cell>Pop.</cell>
-          <cell>Q.</cell>
-          <cell>LQ</cell>
-          <cell>Addi­tional Seats</cell>
-          <cell>Appor­tionment</cell>
-        </row>
-
-        <row>
-        </row>
-
-        <row>
-          <cell>A </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-        </row>
-         <row>
-          <cell>B </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-        </row>
- <row>
-          <cell>C </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-        </row>
-         <row>
-          <cell>D </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-        </row>
-        <row>
-          <cell> </cell>
-        </row>
-
-        <row>
-          <cell>Totals</cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-          <cell> </cell>
-        </row>
-      </tabular>
-    
-  </li>
-
-  <li>
-    <p>
-      Write down all the Lower Quotas (LQ) by cutting off the decimal places.
-      The total of your lower quotas should be less than the number of seats.
-      The difference between the two is the additional seats you get to give out.
-    </p>
-  </li>
-
-  <li>
-    <p>
-      Give out your additional seats by giving one seat to each state ranked by the stuff to the right of the decimal point on the standard quotas.
-    </p>
-  </li>
-</ol>
-
+  <assemblage xml:id="hamilton-method-steps">
+    <title>Hamilton's Method - Step by Step</title>
+    <ol>
+      <li><p>Calculate the total population</p></li>
+      <li><p>Identify the number of seats to be apportioned</p></li>
+      <li><p>Calculate the Standard Divisor (total population ÷ number of seats)</p></li>
+      <li><p>Calculate all Standard Quotas (each state's population ÷ Standard Divisor). 
+          The total of standard quotas should equal the number of seats.</p></li>
+      <li><p>Find all Lower Quotas by dropping the decimal parts. 
+          The total of lower quotas should be less than the number of seats.</p></li>
+      <li><p>Distribute additional seats by giving one seat to each state with the largest decimal parts 
+          until all seats are assigned.</p></li>
+    </ol>
+  </assemblage>
 </worksheet>
