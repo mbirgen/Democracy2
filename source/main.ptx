@@ -6,7 +6,7 @@
 
   <book xml:id="democracy-book">
     <title>MA 106: Mathematics of Democracy</title>
-    <subtitle>Winter 2025</subtitle>
+    <!-- <subtitle>Winter 2025</subtitle> -->
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
@@ -18,11 +18,11 @@
 
 
       <!-- Include the five chapters -->
-    <xi:include href="voting-theory/ch-voting-theory.ptx" />
-    <xi:include href="financial-mathematics/ch-financial-mathematics.ptx" />
+    <xi:include href="./voting-theory/ch-voting-theory.ptx" />
+    <!-- <xi:include href="financial-mathematics/ch-financial-mathematics.ptx" />
     <xi:include href="redistricting/ch-redistricting.ptx" />
     <xi:include href="apportionment-and-division/ch-apportionment-and-division.ptx" />
-    <xi:include href="beyond-numbers/ch-beyond-numbers.ptx" />
+    <xi:include href="beyond-numbers/ch-beyond-numbers.ptx" /> -->
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
