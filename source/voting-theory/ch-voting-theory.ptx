@@ -16,11 +16,11 @@
     <xi:include href="./voting-systems/hw-voting-systems.ptx"/>
 </section>
   
- <!-- <section xml:id="sec-Voting_Paradoxes">
-  <title>Voting Paradoxes</title>
-   <xi:include href="./paradoxes-and-problems/ws-voting-paradoxes.ptx" />
+<section xml:id="sec-voting-paradoxes-and-problems" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Voting Paradoxes and Problems</title>
+   <!-- <xi:include href="./paradoxes-and-problems/ws-voting-paradoxes.ptx" /> -->
    <xi:include href="./paradoxes-and-problems/hw-voting-paradoxes.ptx" />
- </section> -->
+ </section>
 
  <!-- <section xml:id="sec-Weighted_Voting_Introduction">
   <title>Weighted Voting Introduction</title>
@@ -28,11 +28,11 @@
    <xi:include href="./weighted-voting-introduction/hw-voting-weighted.ptx" />
  </section> -->
 
- <!-- <section xml:id="sec-Banzhaf_Power_Index">
+ <section xml:id="sec-Banzhaf_Power_Index" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Banzhaf_Power_Index</title>
    <xi:include href="./banzhaf/ws-voting-banzhaf.ptx" />
-   <xi:include href="./banzhaf/hw-voting-banzhaf.ptx" /> 
- </section> -->
+   <!-- <xi:include href="./banzhaf/hw-voting-banzhaf.ptx" />  -->
+ </section>
 
  <!-- <section xml:id="sec-Shapley-Shubik_Power_Index">
   <title>Shapley-Shubik Power Index</title>

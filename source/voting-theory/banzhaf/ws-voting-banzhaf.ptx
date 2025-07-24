@@ -92,7 +92,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
   <task>
     <statement>
       <p>
-        List all the winning coalitions in the weighted voting system <m>[10 \;|\; 5,\,4,\,3,\,2,\,1]</m>.
+        List all the winning coalitions in the weighted voting system <m>[10 | 5,4,3,2,1]</m>.
       </p>
     </statement>
     <solution>

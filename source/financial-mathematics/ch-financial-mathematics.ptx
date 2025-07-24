@@ -1,10 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <chapter xml:id="ch-financial-mathematics" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Financial Mathematics</title>
-    
-     <xi:include href="sections/sec-simple-interest.ptx"/>
-     <xi:include href="sections/sec-compound-interest.ptx"/>
+    <introduction>
+        <p>
+            Describe here what happens in the Financial Mathematics Chapter.
+        </p>
+    </introduction>
+
+     
+    <section xml:id="sec-Simple_Interest">
+        <title>Simple Interest</title>
+        
+        <xi:include href="./simple-interest/wk-financial-simple.ptx"/>
+        <xi:include href="./simple-interest/hw-financial-simple.ptx"/>
+    </section>
+
+     <!-- 
+    <section xml:id="sec-Compound_Interest">
+        <title>Compound Interest</title>
+        
+        <xi:include href="./compound-interest/wk-financial-compound.ptx"/>
+        <xi:include href="./compound-interest/hw-financial-compound.ptx"/>
+    </section> -->
+</chapter>
+
+     <!-- <xi:include href="sections/sec-compound-interest.ptx"/>
      <xi:include href="sections/sec-savings.ptx"/>
      <xi:include href="sections/sec-loans.ptx"/>
      <xi:include href="sections/sec-student-loans-and-financing.ptx"/>
-     <xi:include href="sections/sec-study-guide.ptx"/>
-</chapter>
+     <xi:include href="sections/sec-study-guide.ptx"/>  -->
