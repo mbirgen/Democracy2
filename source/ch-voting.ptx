@@ -4,7 +4,9 @@
   <title>Voting</title>
 
   <introduction>
-    <p> This Chapter is about Voting including multicandidate elections and weighted voting. </p>
+    <p>
+      This Chapter is about Voting including multicandidate elections and weighted voting. 
+    </p>
   </introduction>
 
 <section xml:id="sec-Voting_Systems">
