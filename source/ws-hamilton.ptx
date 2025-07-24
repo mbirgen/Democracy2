@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xml:id="ws-voting-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+<worksheet xml:id="ws-hamilton-voting" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Voting Systems</title>
 <activity>
 <introduction>

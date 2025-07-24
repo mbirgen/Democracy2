@@ -4,17 +4,21 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+  <book xml:id="democracy-book">
+    <title>MA 106: Mathematics of Democracy</title>
+    <subtitle>Winter 2025</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-
-    <xi:include href="./ch-voting.ptx" />
-    <xi:include href="./ch-apportionment.ptx" />
+    <xi:include href="./voting.ptx" />
+    <xi:include href="./apportionment-and-division.ptx" />
+    <xi:include href="./voting-theory.ptx" />
+    <xi:include href="./financial-mathematics.ptx" />
+    <xi:include href="./redistricting.ptx" />
+    <xi:include href="./apportionment-and-division-2.ptx" />
+    <xi:include href="./beyond-numbers.ptx" />
 
 
     <!-- Include backmatter -->
