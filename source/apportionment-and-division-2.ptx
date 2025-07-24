@@ -18,7 +18,7 @@
         among different groups based on some measure (such as population).
     </p>
     
-    <xi:include href="./wkst-Hamilton.ptx"/>
+    <xi:include href="./wkst-Hamilton-2.ptx"/>
     <xi:include href="./wkst-Jefferson.ptx"/>
   </section>
   
@@ -30,14 +30,14 @@
         in a way that each party considers fair.
     </p>
     
-    <subsection xml:id="subsec-divider-chooser">
+    <subsection xml:id="subsec-divider-chooser-2">
       <title>Divider-Chooser Method</title>
       
       <p>
           The divider-chooser method is a simple fair division procedure for two parties.
       </p>
       
-      <definition xml:id="def-divider-chooser">
+      <definition xml:id="def-divider-chooser-2">
         <title>Divider-Chooser Method</title>
         <statement>
           <p>
