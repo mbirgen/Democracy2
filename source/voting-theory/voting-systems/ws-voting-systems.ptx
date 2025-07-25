@@ -12,8 +12,8 @@
     </p>
     <tabular>
       
-    <row>
-        <cell>Voter:</cell>
+    <row bottom="medium">
+        <cell right="medium">Voter:</cell>
         <cell>Voter 1</cell>
         <cell>Voter 2</cell>
         <cell>Voter 3</cell>
@@ -24,14 +24,7 @@
     </row>
 
     <row>
-        <cell> </cell>
-    </row>
-
-    <row>
-    </row>
-
-    <row>
-        <cell>1st choice:</cell>
+        <cell right="medium">1st choice:</cell>
         <cell>Alice</cell>
         <cell>Bob</cell>
         <cell>Bob</cell>
@@ -42,7 +35,7 @@
     </row>
 
     <row>
-        <cell>2nd choice:</cell>
+        <cell right="medium">2nd choice:</cell>
         <cell>Carlos</cell>
         <cell>Alice</cell>
         <cell>Carlos</cell>
@@ -53,7 +46,7 @@
     </row>
 
     <row>
-        <cell>3rd choice:</cell>
+        <cell right="medium">3rd choice:</cell>
         <cell>Bob</cell>
         <cell>Carlos</cell>
         <cell>Alice</cell>
@@ -141,11 +134,14 @@
            <p>
             Here is the ballot:
         </p>
-        <p halign="center">
+        <!-- <p halign="center">
        Who should be Master of the Greensward?
-        </p>
-<tabular left="minor">
-    <col halign="center"> </col> <col right="minor"> </col>
+        </p> -->
+<tabular >
+    <col halign="center"> </col> <col > </col>
+    <row>
+      <cell colspan="2" halign="center"><term>Who should be Master of the Greensward?</term></cell>
+    </row>
 
     <row>
         <cell> <m>\square</m> </cell>
@@ -445,14 +441,14 @@
             putting that number above the appropriate ballot in the table.  
             You may use tally marks if you prefer.
         </p>
-<tabular>
+<tabular  halign="center">
     <row>
-        <cell></cell>
+        <cell right="medium"></cell>
         <cell colspan="5" halign="center">No. of Ballots</cell>
     </row>
 
     <row>
-        <cell>Ranking</cell>
+        <cell right="medium"> Ranking</cell>
         <cell><fillin characters="5" /> </cell>
         <cell><fillin characters="5" /> </cell>
         <cell><fillin characters="5" /> </cell>
@@ -461,14 +457,13 @@
     </row>
 
     <row>
-        <cell> </cell>
+        <cell right="medium"> </cell>
     </row>
 
-    <row>
-    </row>
+
 
     <row>
-        <cell>1st choice</cell>
+        <cell right="medium">1st choice</cell>
         <cell>D</cell>
         <cell>D</cell>
         <cell>E</cell>
@@ -477,7 +472,7 @@
     </row>
 
     <row>
-        <cell>2nd choice</cell>
+        <cell right="medium">2nd choice</cell>
         <cell>G</cell>
         <cell>G</cell>
         <cell>G</cell>
@@ -486,7 +481,7 @@
     </row>
 
     <row>
-        <cell>3rd choice</cell>
+        <cell right="medium">3rd choice</cell>
         <cell>E</cell>
         <cell>F</cell>
         <cell>F</cell>
@@ -495,7 +490,7 @@
     </row>
 
     <row>
-        <cell>4th choice</cell>
+        <cell right="medium">4th choice</cell>
         <cell>F</cell>
         <cell>E</cell>
         <cell>D</cell>
@@ -503,9 +498,6 @@
         <cell>D</cell>
     </row>
 
-    <row>
-        <cell> </cell>
-    </row>
 </tabular>
     </statement>
    </task>
@@ -612,7 +604,7 @@
         <p>
             Recall from <xref ref="voting-systems-gardning-question"/>
         </p>
-        <tabular>
+        <tabular  halign="center">
     <row>
         <cell></cell>
         <cell colspan="5" halign="center">No. of Ballots</cell>
