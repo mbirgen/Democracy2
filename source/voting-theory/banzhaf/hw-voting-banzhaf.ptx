@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ws-voting-hw-banzhaf">
+  <title>Banzhaf Power Index Exercises</title>
+
+  <exercise>
+    <introduction>
+        <p>
+            Consider the weighted voting system <m>[12 | 7, 5, 4, 2]</m>.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>List all the winning coalitions in the system.</p>
+      </statement>
+      <answer>
+        <p>
+          For convenience, we list them both by player and by weights:
+        </p>
+        <!-- <me>
+          \begin{array}{ll}
+            \{P_1, P_2, P_3, P_4\} & \{7,5,4,2\} \\
+            \{P_1, P_2, P_3\} & \{7,5,4\} \\
+            \{P_1, P_2, P_4\} & \{7,5,2\} \\
+            \{P_1, P_3, P_4\} & \{7,4,2\} \\
+            \{P_1, P_2\} & \{7,5\}
+          \end{array}
+        </me> -->
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+        <p>
+            Consider the weighted voting system <m>[11 | 6, 4, 3, 3, 1]</m>.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>List all the winning coalitions in the system.</p>
+      </statement>
+      <solution>
+        <p>For convenience, we list them both by player and by weights:</p>
+        <!-- <me>
+          \begin{array}{ll}
+            \{P_1, P_2, P_3, P_4, P_5\} & \{6,4,3,3,1\} \\
+            \{P_1, P_2, P_3, P_4\} & \{6,4,3,3\} \\
+            \{P_1, P_2, P_3, P_5\} & \{6,4,3,1\} \\
+            \{P_1, P_2, P_4, P_5\} & \{6,4,3,1\} \\
+            \{P_1, P_3, P_4, P_5\} & \{6,3,3,1\} \\
+            \{P_2, P_3, P_4, P_5\} & \{4,3,3,1\} \\
+            \{P_1, P_2, P_3\} & \{6,4,3\} \\
+            \{P_1, P_2, P_4\} & \{6,4,3\} \\
+            \{P_1, P_2, P_5\} & \{6,4,1\} \\
+            \{P_1, P_3, P_4\} & \{6,3,3\}
+          \end{array}
+        </me> -->
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+        <p>
+           Consider the weighted voting system <m>[38 | 22, 20, 17, 9, 5]</m> 
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          In the system, consider the winning coalition <m>\{P_2, P_3, P_4, P_5\}</m>.  
+          Which voters are critical voters in this coalition?
+        </p>
+      </statement>
+      <answer>
+        <p><m>P_2</m> and <m>P_3</m> are critical voters (the 20 and the 17).</p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+        <p>
+            Consider the weighted voting system <m>[7 | 3, 3, 2, 2, 2, 1]</m>.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          In the system, consider the winning coalition <m>\{P_1, P_3, P_4, P_6\}</m>.  
+          Which voters are critical voters in this coalition?
+        </p>
+      </statement>
+      <solution>
+        <p><m>P_1</m>, <m>P_3</m>, and <m>P_4</m> are critical voters (the 3, 2, and 2).</p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+        <p>
+            Consider the weighted voting system <m>[34 | 12, 10, 7, 6]</m>.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Calculate the Banzhaf Power Index for each voter in the system.
+        </p>
+      </statement>
+      <answer>
+        <p>All four voters have equal Banzhaf power: 0.25, 0.25, 0.25, 0.25.</p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+        <p>
+            Consider the weighted voting system <m>[27 | 15, 7, 5]</m>.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>Calculate the Banzhaf Power Index for each voter in the system.</p>
+      </statement>
+      <solution>
+        <p>0.33, 0.33, 0.33</p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the voting system <m>[25 | 24, 20, 1]</m>.</p>
+    </introduction>
+    <task xml:id="voting-banzhaf-homework1">
+      <statement>
+        <p>Calculate the percentage of the total weight that each voter holds.</p>
+      </statement>
+      <answer>
+        <p>53.3%, 44.4%, 2.2%</p>
+      </answer>
+    </task>
+    <task xml:id="voting-banshaf-homework2">
+      <statement>
+        <p>Calculate the Banzhaf Power Index for each voter.</p>
+      </statement>
+      <answer>
+        <p>0.60, 0.20, 0.20</p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Comparing your answers to parts <xref ref="voting-banzhaf-homework1" text="local"/> and <xref ref="voting-banshaf-homework2" text="local"/>, explain in complete sentences
+          why the weight controlled by the voter is not the same thing as the power held by each voter.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For example, voter <m>P_2</m> has twenty times more weight than voter <m>P_3</m>,
+          but they have exactly the same power.
+          Another way to see it is that voter <m>P_1</m> has three times as much power as voter <m>P_2</m>,
+          even though the weights of 24 and 20 are not that different.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Consider the weighted voting system <m>[26 | 15, 13, 7]</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Calculate the Banzhaf Power Index for each voter in the system.
+        </p>
+      </statement>
+      <answer>
+        <p>0.5, 0.5, 0</p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Consider the weighted voting system <m>[63 | 43, 35, 22, 16]</m>.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Calculate the Banzhaf Power Index for each voter in the system.
+        </p>
+      </statement>
+      <solution>
+        <p>0.417, 0.25, 0.25, 0.0833</p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Nassau County, New York used to be governed by a Board of Supervisors.
+        The county had six districts, each of which sent one delegate to vote on county issues.
+        The delegates' votes were weighted proportionately to the districts' population in 1964:
+      </p>
+      <tabular halign="center">
+        <row bottom="medium">
+          <cell left="medium" right="medium">District</cell>
+          <cell right="medium">Weight</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">Hempstead #1</cell>
+          <cell right="medium">31</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">Hempstead #2</cell>
+          <cell right="medium">31</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">Oyster Bay</cell>
+          <cell right="medium">28</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">North Hempstead</cell>
+          <cell right="medium">21</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">Long Beach</cell>
+          <cell right="medium">2</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">Glen Cove</cell>
+          <cell right="medium">2</cell>
+        </row>
+      </tabular>
+      <p>A simple majority was needed to pass a motion.</p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>Express this weighted voting system in our usual notation.</p>
+      </statement>
+      <solution>
+        <p><m>[58 | 31, 31, 28, 21, 2, 2]</m></p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>Calculate the Banzhaf power of each district.</p>
+      </statement>
+      <solution>
+        <tabular halign="center">
+          <row>
+            <cell left="medium" right="medium">District</cell>
+            <cell right="medium">Weight</cell>
+            <cell right="medium">Banzhaf Power</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">Hempstead #1</cell>
+            <cell right="medium">31</cell>
+            <cell right="medium">0.33</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">Hempstead #2</cell>
+            <cell right="medium">31</cell>
+            <cell right="medium">0.33</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">Oyster Bay</cell>
+            <cell right="medium">28</cell>
+            <cell right="medium">0.33</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">North Hempstead</cell>
+            <cell right="medium">21</cell>
+            <cell right="medium">0.00</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">Long Beach</cell>
+            <cell right="medium">2</cell>
+            <cell right="medium">0.00</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">Glen Cove</cell>
+            <cell right="medium">2</cell>
+            <cell right="medium">0.00</cell>
+          </row>
+        </tabular>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What percentage of the county population lived in districts that are dummies?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since the weights are proportionate to the population,  
+          <m>(21 + 2 + 2)/115 = 25/115 ≈ 21.7%</m> of the population had no say at all.
+        </p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          In 1965 John F. Banzhaf III argued in court that even though the weights were proportionate to population,
+          this system of government was unfair. He won!
+        </p>
+      </statement>
+      <solution>
+        <p><emph>(No answer required.)</emph></p>
+      </solution>
+    </task>
+  </exercise>
+
+</exercises>
