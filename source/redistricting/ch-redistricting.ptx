@@ -1,0 +1,24 @@
+<chapter xml:id="ch-redistricting" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Redistricting</title>
+
+    <introduction>
+        <p>
+            
+        </p>
+    </introduction>
+
+    <section xml:id="sec-Gerrymandering">
+        <title>Gerrymandering</title>
+        
+        <xi:include href="sections/sec-gerrymandering.ptx" />
+    </section>
+
+    <section xml:id="sec-Fairness">
+        <title>Fairness</title>
+        
+        <xi:include href="sections/sec-fairness.ptx" />
+
+    </section>
+    
+    
+</chapter>

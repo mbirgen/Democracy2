@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-Hamilton">
+  <title>Hamilton's Method Worksheet</title>
+  
+  <introduction>
+    <p>In this worksheet, you'll practice Hamilton's method for apportionment by working through the Republic of Awoi example.</p>
+  </introduction>
+
+  <activity xml:id="hamilton-awoi-practice">
+    <title>Republic of Awoi - Hamilton's Method</title>
+    <introduction>
+      <p>Consider the Republic of Awoi with four states:
+      <ul>
+        <li>North-West (NW): population 69,000</li>
+        <li>South-West (SW): population 267,000</li> 
+        <li>South-East (SE): population 133,000</li>
+        <li>North-East (NE): population 331,000</li>
+      </ul>
+      There are 160 seats to be apportioned.</p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>Find the standard divisor.</p>
+      </statement>
+      <solution>
+        <p>Total population = 69,000 + 267,000 + 133,000 + 331,000 = 800,000</p>
+        <p>Standard divisor = 800,000 ÷ 160 = 5,000</p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>Complete the Hamilton's method calculation table:</p>
+        <table>
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Standard Quota</cell>
+              <cell>Lower Quota</cell>
+              <cell>Decimal Part</cell>
+              <cell>Additional Seats</cell>
+              <cell>Final Apportionment</cell>
+            </row>
+            <row>
+              <cell>NW</cell>
+              <cell>69,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>SW</cell>
+              <cell>267,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>SE</cell>
+              <cell>133,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>NE</cell>
+              <cell>331,000</cell>
+              <cell><fillin characters="8"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="5"/></cell>
+              <cell><fillin characters="3"/></cell>
+              <cell><fillin characters="3"/></cell>
+            </row>
+            <row>
+              <cell>Totals</cell>
+              <cell>800,000</cell>
+              <cell>160</cell>
+              <cell><fillin characters="3"/></cell>
+              <cell>—</cell>
+              <cell><fillin characters="3"/></cell>
+              <cell>160</cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <table>
+          <tabular>
+            <row>
+              <cell>State</cell>
+              <cell>Population</cell>
+              <cell>Standard Quota</cell>
+              <cell>Lower Quota</cell>
+              <cell>Decimal Part</cell>
+              <cell>Additional Seats</cell>
+              <cell>Final Apportionment</cell>
+            </row>
+            <row>
+              <cell>NW</cell>
+              <cell>69,000</cell>
+              <cell>13.8</cell>
+              <cell>13</cell>
+              <cell>0.8</cell>
+              <cell>1</cell>
+              <cell>14</cell>
+            </row>
+            <row>
+              <cell>SW</cell>
+              <cell>267,000</cell>
+              <cell>53.4</cell>
+              <cell>53</cell>
+              <cell>0.4</cell>
+              <cell>0</cell>
+              <cell>53</cell>
+            </row>
+            <row>
+              <cell>SE</cell>
+              <cell>133,000</cell>
+              <cell>26.6</cell>
+              <cell>26</cell>
+              <cell>0.6</cell>
+              <cell>1</cell>
+              <cell>27</cell>
+            </row>
+            <row>
+              <cell>NE</cell>
+              <cell>331,000</cell>
+              <cell>66.2</cell>
+              <cell>66</cell>
+              <cell>0.2</cell>
+              <cell>0</cell>
+              <cell>66</cell>
+            </row>
+            <row>
+              <cell>Totals</cell>
+              <cell>800,000</cell>
+              <cell>160</cell>
+              <cell>158</cell>
+              <cell>—</cell>
+              <cell>2</cell>
+              <cell>160</cell>
+            </row>
+          </tabular>
+        </table>
+      </solution>
+    </task>
+  </activity>
+
+  <assemblage xml:id="hamilton-method-steps">
+    <title>Hamilton's Method - Step by Step</title>
+    <ol>
+      <li><p>Calculate the total population</p></li>
+      <li><p>Identify the number of seats to be apportioned</p></li>
+      <li><p>Calculate the Standard Divisor (total population ÷ number of seats)</p></li>
+      <li><p>Calculate all Standard Quotas (each state's population ÷ Standard Divisor). 
+          The total of standard quotas should equal the number of seats.</p></li>
+      <li><p>Find all Lower Quotas by dropping the decimal parts. 
+          The total of lower quotas should be less than the number of seats.</p></li>
+      <li><p>Distribute additional seats by giving one seat to each state with the largest decimal parts 
+          until all seats are assigned.</p></li>
+    </ol>
+  </assemblage>
+</worksheet>

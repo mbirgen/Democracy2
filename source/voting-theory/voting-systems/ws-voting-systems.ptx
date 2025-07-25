@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-voting-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Voting Systems</title>
+<activity>
+<introduction>
+    <p>
+        The Bellevue Taxicab Union is preparing to elect its president.
+        Three members are considering running for president:  Alice, Bob, and Charles.
+        
+        Each of the five voters has a first, second, and third choice, as listed in the following table:
+    </p>
+    <tabular>
+      
+    <row>
+        <cell>Voter:</cell>
+        <cell>Voter 1</cell>
+        <cell>Voter 2</cell>
+        <cell>Voter 3</cell>
+        <cell>Voter 4</cell>
+        <cell>Voter 5</cell>
+        <cell>Voter 6</cell>
+        <cell>Voter 7</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+    </row>
+
+    <row>
+        <cell>1st choice:</cell>
+        <cell>Alice</cell>
+        <cell>Bob</cell>
+        <cell>Bob</cell>
+        <cell>Carlos</cell>
+        <cell>Alice</cell>
+        <cell>Carlos</cell>
+        <cell>Bob</cell>
+    </row>
+
+    <row>
+        <cell>2nd choice:</cell>
+        <cell>Carlos</cell>
+        <cell>Alice</cell>
+        <cell>Carlos</cell>
+        <cell>Alice</cell>
+        <cell>Carlos</cell>
+        <cell>Alice</cell>
+        <cell>Alice</cell>
+    </row>
+
+    <row>
+        <cell>3rd choice:</cell>
+        <cell>Bob</cell>
+        <cell>Carlos</cell>
+        <cell>Alice</cell>
+        <cell>Bob</cell>
+        <cell>Bob</cell>
+        <cell>Bob</cell>
+        <cell>Carlos</cell>
+    </row>
+</tabular>
+
+<p>
+    Depending on who decides to run, the ballot the voters see in the booth will look different.
+    For each of the following ballots, how many votes will each candidate receive?  Who will win?
+</p>
+</introduction>
+<task workspace="1in">
+    <statement>
+        <p>
+            What if the choices on the ballot were Alice, Bob, and Carlos?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            Alice: 2 votes
+            Bob: 3 votes
+            Carlos: 2 votes.
+            Winner:  Bob
+        </p>
+    </solution>
+</task>
+
+<task workspace="1in">
+    <statement>
+        <p>
+            What if the choices on the ballot were Alice and Bob?
+        </p>
+    </statement>
+        <solution>
+        <p>
+            Alice: 4 votes
+            Bob: 3 votes
+            Winner:  Alice
+        </p>
+    </solution>
+</task>
+
+<task workspace="1in">
+    <statement>
+        <p>
+            What if the choices on the ballot were Alice and Carlos?
+        </p>
+    </statement>
+        <solution>
+        <p>
+            Alice: 4 votes
+            Carlos: 3 votes
+            Winner:  Alice
+        </p>
+    </solution>
+</task>
+
+<task workspace="1in">
+    <statement>
+        <p>
+            What if the choices on the ballot were Bob and Carlos?
+        </p>
+    </statement>
+        <solution>
+        <p>
+            Carlos: 4 votes
+            Bob: 3 votes
+            Winner:  Carlos
+        </p>
+    </solution>
+</task>
+
+</activity>
+
+<activity xml:id="voting-systems-gardning-question">
+    <introduction>
+        <p>
+            The Shell Rock Gardening Club is electing a new Master of the Greensward.
+        Four candidates are running for the position: Danielle, Edgar, Frederika, and Gustav.
+        </p>
+           <p>
+            Here is the ballot:
+        </p>
+        <p halign="center">
+       Who should be Master of the Greensward?
+        </p>
+<tabular left="minor">
+    <col halign="center"> </col> <col right="minor"> </col>
+
+    <row>
+        <cell> <m>\square</m> </cell>
+        <cell>Danielle</cell>
+    </row>
+
+    <row>
+        <cell> <m>\square</m> </cell>
+        <cell>Edgar</cell>
+    </row>
+
+    <row>
+        <cell> <m>\square</m> </cell>
+        <cell>Frederika</cell>
+    </row>
+
+    <row>
+        <cell> <m>\square</m> </cell>
+        <cell>Gustav</cell>
+    </row>
+
+
+</tabular>
+<p>
+    The members cast the following ballots:
+
+</p>
+<table>
+    <title>Ballots for Gardening Club ELection</title>
+    
+    
+  <tabular>
+    <row bottom="medium">
+      <cell>
+        Ranking
+      </cell>
+      <cell>
+        1st choice
+      </cell>
+      <cell>
+        2nd choice
+      </cell>
+      <cell>
+        3rd choice
+      </cell>
+      <cell>
+        4th choice
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 1
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 2
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 3
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 4
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 5
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 6
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 7
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 8
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 9
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 10
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 11
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 12
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 13
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        Voter 14
+      </cell>
+      <cell>
+        Edgar
+      </cell>
+      <cell>
+        Gustav
+      </cell>
+      <cell>
+        Frederika
+      </cell>
+      <cell>
+        Danielle
+      </cell>
+    </row>
+  </tabular>
+</table>
+    </introduction>
+   <task>
+   
+     <statement>
+        <p>
+            Create a preference table for this election by counting 
+            the number of voters who have the same preference and 
+            putting that number above the appropriate ballot in the table.  
+            You may use tally marks if you prefer.
+        </p>
+<tabular>
+    <row>
+        <cell></cell>
+        <cell colspan="5" halign="center">No. of Ballots</cell>
+    </row>
+
+    <row>
+        <cell>Ranking</cell>
+        <cell><fillin characters="5" /> </cell>
+        <cell><fillin characters="5" /> </cell>
+        <cell><fillin characters="5" /> </cell>
+        <cell><fillin characters="5" /> </cell>
+        <cell><fillin characters="5" /> </cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+    </row>
+
+    <row>
+        <cell>1st choice</cell>
+        <cell>D</cell>
+        <cell>D</cell>
+        <cell>E</cell>
+        <cell>F</cell>
+        <cell>G</cell>
+    </row>
+
+    <row>
+        <cell>2nd choice</cell>
+        <cell>G</cell>
+        <cell>G</cell>
+        <cell>G</cell>
+        <cell>G</cell>
+        <cell>E</cell>
+    </row>
+
+    <row>
+        <cell>3rd choice</cell>
+        <cell>E</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>D</cell>
+        <cell>F</cell>
+    </row>
+
+    <row>
+        <cell>4th choice</cell>
+        <cell>F</cell>
+        <cell>E</cell>
+        <cell>D</cell>
+        <cell>E</cell>
+        <cell>D</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+</tabular>
+    </statement>
+   </task>
+
+   <task xml:id="voting-into-gardening1">
+    <statement>
+        <p>
+            Who will be elected Master?  What percent of the vote will he or she have?
+        </p>
+
+    </statement>
+            <solution>
+            <p>
+                D, with <m>\frac{5}{14}\approx 35.7\%</m>
+            </p>
+        </solution>
+   </task>
+   <task xml:id="voting-into-gardening2" workspace="1in">
+    <statement>
+        <p>
+            As you look at the voters' preferences,
+                who seems like the best choice to make the most voters happy?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            G because they seem to be either first or second choice to nearly all voters.
+        </p>
+    </solution>
+   </task>
+   <task workspace="1in">
+    <statement>
+        <p>
+            If your answers to <xref ref="voting-into-gardening1"/> and <xref ref="voting-into-gardening2"/> are different, can you explain why?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            	The answers should be different. Since G is nearly everyone's second choice, they are a better candidate than 
+                D who is listed last or next to last for everyone except those putting D first.
+        </p>
+    </solution>
+   </task>
+   <task workspace="1in">
+    <statement>
+        <p>
+            Write down how you would tell someone else how to create a preference table.
+        </p>
+    </statement>
+   </task>
+
+   <task workspace="1in">
+    <statement>
+        <p>
+            Can you think of a different voting system that would help the voters elect 
+                your choice from <xref ref="voting-into-gardening2"/>?
+        </p>
+    </statement>
+   </task>
+</activity>
+
+<definition xml:id="def-Plurality_Voting">
+    <statement>
+        <p>
+            An election run by <term>Plurality</term> voting is ... 
+        </p>
+    </statement>
+    <answer>
+        <p>
+            When the candidate with the most first place votes wins.
+        </p>
+    </answer>
+</definition>
+<definition xml:id="def-Majority">
+    <statement>
+        <p>
+            A <term>Majority</term> is...
+        </p>
+    </statement>
+    <answer>
+        <p>
+            More than 50% of the votes.
+        </p>
+    </answer>
+</definition>
+<definition xml:id="def-Borda_Count">
+    <statement>
+        <p>
+            An election run by <term>Borda Count</term> is ...
+        </p>
+    </statement>
+    <answer>
+        <p>
+            If you have <m>n</m> candidates in the election, you give <m>n</m> points for 
+            every first place votes, <m>n-1</m> points for every second place vote, 
+            etc., and <m>1</m> point for every last place vote.
+            Add up the points for each candidate and the winner is the candidate 
+            with the most points.
+        </p>
+    </answer>
+</definition>
+<activity>
+    <introduction>
+        <p>
+            Recall from <xref ref="voting-systems-gardning-question"/>
+        </p>
+        <tabular>
+    <row>
+        <cell></cell>
+        <cell colspan="5" halign="center">No. of Ballots</cell>
+    </row>
+
+    <row>
+        <cell>Ranking</cell>
+        <cell>3 </cell>
+        <cell>2 </cell>
+        <cell>4 </cell>
+        <cell>3 </cell>
+        <cell>2 </cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+    </row>
+
+    <row>
+        <cell>1st choice</cell>
+        <cell>D</cell>
+        <cell>D</cell>
+        <cell>E</cell>
+        <cell>F</cell>
+        <cell>G</cell>
+    </row>
+
+    <row>
+        <cell>2nd choice</cell>
+        <cell>G</cell>
+        <cell>G</cell>
+        <cell>G</cell>
+        <cell>G</cell>
+        <cell>E</cell>
+    </row>
+
+    <row>
+        <cell>3rd choice</cell>
+        <cell>E</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>D</cell>
+        <cell>F</cell>
+    </row>
+
+    <row>
+        <cell>4th choice</cell>
+        <cell>F</cell>
+        <cell>E</cell>
+        <cell>D</cell>
+        <cell>E</cell>
+        <cell>D</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+</tabular>
+        <p>
+            If the Shell Rock Gardening Club runs their election as a Borda count,
+        who will win?
+        </p>
+    </introduction>
+    <solution>
+        <p>
+          <m>\begin{array}{rlcr}
+            D: &#x26; 5\cdot 4+3\cdot 2+6\cdot 1 &#x26;=&#x26;32 \\ 
+            E: &#x26; 4\cdot 4 + 2\cdot 3+3\cdot 2+5\cdot 1 &#x26;=&#x26; 33 \\ 
+            F: &#x26; 3\cdot 4 + 8\cdot 2+3\cdot 1 &#x26;=&#x26; 31\\ 
+            G: &#x26; 2\cdot 4 + 12\cdot 3 &#x26;=&#x26;44 \\
+            \end{array}</m>
+        </p>
+    </solution>
+</activity>
+</worksheet>

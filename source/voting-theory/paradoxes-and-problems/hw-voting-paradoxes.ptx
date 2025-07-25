@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises>
+
+  <!-- Problem 1 -->
+  <exercise>
+    <!-- <title>Start with a Majority</title> -->   
+    
+    <introduction>
+      <p>Consider the following preference table:</p>
+
+      <tabular halign="center" top="medium">
+        <row>
+          <cell left="medium" right="medium"></cell>
+          <cell colspan="5" right="medium">
+            <hash /> of Ballots
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Ranking</cell>
+          <cell right="medium">4</cell>
+          <cell right="medium">10</cell>
+          <cell right="medium">2</cell>
+          <cell right="medium">3</cell>
+          <cell right="medium">5</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">1st choice</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">A</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">2nd choice</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">B</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">3rd choice</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">D</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">4th choice</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">C</cell>
+        </row>
+      </tabular>
+    </introduction>
+
+    <task>
+      <statement><p>How many votes would be required to win a <em>majority</em> in this election?</p></statement>
+    </task>
+    <answer><p>13</p></answer>
+
+    <task>
+      <statement><p>Does the Borda Count violate the Majority Criterion for this preference table?</p></statement>
+    </task>
+    <answer>
+      <p>
+        Borda Count:  
+        <tabular halign="center">
+          <row><cell>A</cell><cell>58</cell></row>
+          <row><cell>B</cell><cell>46</cell></row>
+          <row><cell>C</cell><cell>69</cell></row>
+          <row><cell>D</cell><cell>67</cell></row>
+        </tabular>  
+        Plurality:
+        <tabular halign="center">
+          <row><cell>A</cell><cell>7</cell></row>
+          <row><cell>B</cell><cell>0</cell></row>
+          <row><cell>C</cell><cell>7</cell></row>
+          <row><cell>D</cell><cell>10</cell></row>
+          <row><cell>total</cell><cell>24</cell></row>
+        </tabular><br/>
+        Thus, <em>no</em>: the majority criterion is not violated because no candidate has a majority.
+      </p>
+    </answer>
+
+    <task>
+      <statement><p>Does the Borda Count violate the Head-to-Head Criterion for this table?</p></statement>
+    </task>
+    <answer>
+      <p><em>Yes</em>. Candidate D beats each of A, B, and C in head-to-head contests but the Borda Count elects someone else.</p>
+    </answer>
+  </exercise>
+
+  <!-- Problem 2 -->
+  <exercise>
+    <introduction>
+      <p>Consider the following preference table:</p>
+
+      <tabular halign="center" top="medium">
+        <row>
+          <cell left="medium" right="medium"></cell>
+          <cell colspan="6" right="medium">
+            <hash /> of Ballots
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Ranking</cell>
+          <cell right="medium">11</cell>
+          <cell right="medium">2</cell>
+          <cell right="medium">5</cell>
+          <cell right="medium">1</cell>
+          <cell right="medium">8</cell>
+          <cell right="medium">4</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">1st choice</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">B</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">2nd choice</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">A</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">3rd choice</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">C</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">4th choice</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">D</cell>
+        </row>
+      </tabular>
+    </introduction>
+
+    <task>
+      <statement><p>Does the Borda Count violate the Majority Criterion for this preference table?</p></statement>
+    </task>
+    <answer>
+      <p>
+        Borda Count:
+        <tabular halign="center">
+          <row><cell>A</cell><cell>101</cell></row>
+          <row><cell>B</cell><cell>49</cell></row>
+          <row><cell>C</cell><cell>93</cell></row>
+          <row><cell>D</cell><cell>67</cell></row>
+        </tabular>  
+        Plurality:
+        <tabular halign="center">
+          <row><cell>A</cell><cell>8</cell></row>
+          <row><cell>B</cell><cell>4</cell></row>
+          <row><cell>C</cell><cell>16</cell></row>
+          <row><cell>D</cell><cell>3</cell></row>
+          <row><cell>total</cell><cell>31</cell></row>
+        </tabular><br/>
+        <em>Yes</em>, C has a majority but Borda Count elects A.
+      </p>
+    </answer>
+
+    <task>
+      <statement><p>Does the Borda Count violate the Head-to-Head Criterion for this table?</p></statement>
+    </task>
+    <answer>
+      <p><em>Yes</em>, C beats A, B, and D in head-to-head contests but the Borda Count elects A.</p>
+    </answer>
+  </exercise>
+
+  <!-- Problem 3 -->
+  <exercise>
+    <introduction>
+      <p>Consider the following preference table:</p>
+
+      <tabular halign="center" top="medium">
+        <row>
+          <cell left="medium" right="medium"></cell>
+          <cell colspan="4" right="medium">
+            <hash /> of Ballots
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Ranking</cell>
+          <cell right="medium">9</cell>
+          <cell right="medium">6</cell>
+          <cell right="medium">8</cell>
+          <cell right="medium">5</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">1st choice</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">D</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">2nd choice</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">D</cell>
+          <cell right="medium">B</cell>
+          <cell right="medium">B</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium">3rd choice</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">C</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">4th choice</cell>
+          <cell right="medium">A</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">C</cell>
+          <cell right="medium">A</cell>
+        </row>
+      </tabular>
+    </introduction>
+
+    <task>
+      <statement><p>How many points will each candidate receive in a Borda Count? Who will win?</p></statement>
+    </task>
+    <answer>
+      <p>
+        A: 42<br/> B: 99<br/> C: 42<br/> D: 97<br/> So B wins.
+      </p>
+    </answer>
+
+    <task>
+      <statement><p>What happens if the last column's voters lie and downgrade B?</p></statement>
+    </task>
+    <answer>
+      <p>
+        New points: A: 47, B: 89, C: 47, D: 97 → D wins.
+      </p>
+    </answer>
+
+    <task>
+      <statement><p>Explain how the voters manipulated the Borda Count and why it's unfair.</p></statement>
+    </task>
+    <answer>
+      <p>
+        They lied on ballots to lower B's points so D would win. This is unfair because dishonest voting can overturn honest majorities.
+      </p>
+    </answer>
+  </exercise>
+
+  <!-- Problem 4 -->
+  <exercise>
+    <introduction>
+      <p>Voters go to the polls to vote on three propositions simultaneously:</p>
+      <ul>
+        <li>Proposition 1: Spend $200,000 to plant new flowers and trees at the zoo.</li>
+        <li>Proposition 2: Spend $400,000 to build a children's playground at the zoo.</li>
+        <li>Proposition 3: Spend $500,000 to add a panda exhibit to the zoo.</li>
+      </ul>
+      <p>They love the zoo, plants, children, and pandas but differ on how much to spend.</p>
+    </introduction>
+
+    <task><statement><p>Which propositions will Alice's bloc vote for?</p></statement></task>
+    <answer><p>Propositions 2 and 3</p></answer>
+
+    <task><statement><p>Which propositions will Zeke's bloc vote for?</p></statement></task>
+    <answer><p>Propositions 1 and 3</p></answer>
+
+    <task><statement><p>Which propositions will Shadrach's bloc vote for?</p></statement></task>
+    <answer><p>Propositions 1 and 2</p></answer>
+
+    <task><statement><p>Fill out the table:</p>
+     <tabular halign="center" top="medium">
+        <row bottom="medium">
+          <cell left="medium" right="medium"></cell>
+          <cell right="medium">Alice et al.</cell>
+          <cell right="medium">Zeke et al.</cell>
+          <cell right="medium">Shadrach et al.</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Proposition 1</cell>
+          <cell right="medium"></cell>
+          <cell right="medium"></cell>
+          <cell right="medium"></cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Proposition 2</cell>
+          <cell right="medium"></cell>
+          <cell right="medium"></cell>
+          <cell right="medium"></cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Proposition 3</cell>
+          <cell right="medium"></cell>
+          <cell right="medium"></cell>
+          <cell right="medium"></cell>
+        </row>
+      </tabular></statement></task>
+    <answer>
+      <tabular halign="center" top="medium">
+        <row bottom="medium">
+          <cell left="medium" right="medium"></cell>
+          <cell right="medium">Alice et al.</cell>
+          <cell right="medium">Zeke et al.</cell>
+          <cell right="medium">Shadrach et al.</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Proposition 1</cell>
+          <cell right="medium">No</cell>
+          <cell right="medium">Yes</cell>
+          <cell right="medium">Yes</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Proposition 2</cell>
+          <cell right="medium">Yes</cell>
+          <cell right="medium">No</cell>
+          <cell right="medium">Yes</cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">Proposition 3</cell>
+          <cell right="medium">Yes</cell>
+          <cell right="medium">Yes</cell>
+          <cell right="medium">No</cell>
+        </row>
+      </tabular>
+    </answer>
+
+    <task><statement><p>Which propositions will pass?</p></statement></task>
+    <answer><p>All three</p></answer>
+
+    <task><statement><p>How many of the 3,000 voters are happy?</p></statement></task>
+    <answer><p>None</p></answer>
+
+    <task><statement><p>What is odd or paradoxical about this situation?</p></statement></task>
+    <answer>
+      <p>
+        Each bloc tried to limit spending, yet together they approved spending more than any bloc wanted.
+      </p>
+    </answer>
+  </exercise>
+
+</exercises>
+
+<!-- <exercises xml:id="ex-voting-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<exercise>
+    <introduction>
+      <p>
+ 
+      </p>
+    </introduction>
+   
+    <task>
+        <statement>
+            <p>
+                
+            </p>
+        </statement>
+            <answer>
+              <p>
+                
+              </p>
+           </answer>
+    <solution>
+      <p>
+     
+      </p>
+    </solution>
+    </task>
+
+</exercise>
+  
+</exercises> -->

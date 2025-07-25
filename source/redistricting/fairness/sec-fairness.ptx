@@ -1,0 +1,6 @@
+<section xml:id="sec-fairness" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Fairness</title>
+    
+    <xi:include href="subsections/fairness/subsec-geomtric-measures.ptx" />
+    <xi:include href="subsections/fairness/subsec-arithmetic-measures.ptx" />
+</section>

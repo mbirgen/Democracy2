@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercise xml:id="ex-voting-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <introduction>
+         <p>
+            Consider the following election ballots:
+        </p>
+       <tabular>
+    <row>
+        <cell>Voter 1</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 2</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 3</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 4</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 5</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 6</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 7</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 8</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 9</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 10</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 11</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>Voter 12</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+</tabular>
+    </introduction>
+ 
+    <task>
+        <statement>
+            <p>
+              Construct a preference table for the above ballots. 
+            </p>
+           <!-- <tabular left="minor">
+    <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
+    <row>
+    </row>
+
+    <row>
+        <cell> </cell>
+        <cell colspan="5" halign="center"> # of Ballots</cell>
+    </row>
+
+    <row>
+        <cell>Ranking</cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+    </row>
+
+    <row>
+        <cell>1st choice</cell>
+        <cell>A</cell>
+        <cell> </cell>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>2nd choice</cell>
+        <cell>B</cell>
+        <cell> </cell>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell>3rd choice</cell>
+        <cell>C</cell>
+        <cell> </cell>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+</tabular> -->
+        <tabular halign="center" top="medium">
+  <row>
+    <cell left="medium" right="medium"></cell>
+    <cell colspan="3" right="medium">
+      <hash /> of Ballots
+    </cell>
+  </row>
+  <row bottom="medium">
+    <cell left="medium" right="medium">
+      Ranking
+    </cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+  <row>
+    <cell left="medium" right="medium">1st choice</cell>
+    <cell right="medium">A</cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+  <row>
+    <cell left="medium" right="medium">2nd choice</cell>
+    <cell right="medium">B</cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+  <row bottom="medium">
+    <cell left="medium" right="medium">3rd choice</cell>
+    <cell right="medium">C</cell>
+    <cell right="medium"></cell>
+    <cell right="medium"></cell>
+  </row>
+</tabular>
+
+        </statement>
+        <solution>
+            <p>
+          <tabular left="minor">
+    <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col>
+    <row>
+    </row>
+
+    <row>
+        <cell> </cell>
+        <cell colspan="5" halign="center"> # of Ballots</cell>
+    </row>
+
+    <row>
+        <cell>Ranking</cell>
+        <cell>5</cell>
+        <cell>4</cell>
+        <cell>3</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+    </row>
+
+    <row>
+        <cell>1st choice</cell>
+        <cell>A</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+    </row>
+
+    <row>
+        <cell>2nd choice</cell>
+        <cell>B</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+    </row>
+
+    <row>
+        <cell>3rd choice</cell>
+        <cell>C</cell>
+        <cell>A</cell>
+        <cell>A</cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+</tabular>
+            </p>
+        </solution>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How many votes would be required to win a <xref ref="def-Majority" text="custom">majority</xref> in this election?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>7</m>
+            </p>
+        </answer>
+    </task>
+    <statement>
+        <p>
+            Find the winner of an election held using each of the following voting schemes.
+        (If it is a tie, say who tied.)
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+                Using <xref ref="def-Plurality_Voting" text="custom">Plurality Voting</xref>.
+            </p>
+        </statement>
+       
+        <answer>
+            <p>
+                A.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Using <xref ref="def-Borda_Count" text="custom">Borda Count Voting</xref>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                B.
+            </p>
+        </answer>
+        <solution>
+            <p>
+             <tabular>
+                <col halign="center"> </col> <col halign="center"> </col>
+                <row>
+                    <cell>A</cell>
+                    <cell>22</cell>
+                </row>
+
+                <row>
+                    <cell>B</cell>
+                    <cell>27</cell>
+                </row>
+
+                <row>
+                    <cell>C</cell>
+                    <cell>23</cell>
+                </row>
+            </tabular>
+            </p>
+        </solution>
+    </task>
+</exercise>

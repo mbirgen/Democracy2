@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-voting-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Voting Paradoxes</title>
+
+<activity>
+      <title>Reflection</title>
+      
+      
+      <introduction>
+            <p>
+                  Of the four voting systems we've studied, which is best? Why?
+            </p>
+      </introduction>
+<!-- <task>
+      <statement>
+            <p>
+                  If you were going to use a voting system to choose among choices that you have, what would you tell your friends to use?
+            </p>
+      </statement>
+</task> -->
+</activity>
+
+<activity>
+      <title>Des Moines Running Club</title>
+      
+      
+   <introduction>
+    <p>
+      The Des Moines Running Club is electing a new team captain.
+      There are three candidates: Irving, Joseph, and Karl.
+      The preference table is the following.
+</p>
+
+<tabular left="minor">
+      <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
+      <row>
+      </row>
+
+      <row>
+            <cell> </cell>
+            <cell colspan="3"> # of Ballots</cell>
+      </row>
+
+      <row>
+            <cell>Ranking</cell>
+            <cell>4</cell>
+            <cell>3</cell>
+            <cell>2</cell>
+      </row>
+
+      <row>
+      </row>
+
+      <row>
+            <cell>1st choice</cell>
+            <cell>J</cell>
+            <cell>I</cell>
+            <cell>K</cell>
+      </row>
+
+      <row>
+            <cell>2nd choice</cell>
+            <cell>I</cell>
+            <cell>J</cell>
+            <cell>I</cell>
+      </row>
+
+      <row>
+            <cell>3rd choice</cell>
+            <cell>K</cell>
+            <cell>K</cell>
+            <cell>J</cell>
+      </row>
+
+</tabular>
+   </introduction>   
+
+<task workspace=".5in">
+      <statement>
+            <p>
+                   If the club uses the plurality method, who will win the election?
+            </p>
+      </statement>
+      <solution>
+            <p>
+                  Joseph
+            </p>
+      </solution>
+</task>
+<task workspace=".5in">
+      <statement>
+            <p>
+                  If it were a head-to-head race between Irving and Joseph, who would win?
+            </p>
+      </statement>
+      <solution>
+            <p>
+                  Irving
+            </p>
+      </solution>
+</task>
+
+
+<task workspace=".5in">
+            <p>
+                  If it were a head-to-head race between Irving and Karl, who would win?
+            </p>
+      <solution>
+            <p>
+                  Irving
+            </p>
+      </solution>
+</task>
+
+
+<task workspace=".5in">
+            <p>
+                  If it were a head-to-head race between Joseph and Karl, who would win?
+            </p>
+                  <solution>
+            <p>
+                  Joseph
+            </p>
+      </solution>
+      </task>
+
+
+<task workspace=".5in">
+            <p>
+                  Why does the plurality method's result seem unfair in this election?
+            </p>
+       <solution>
+            <p>
+                  Irving defeats Joseph and Karl in head-to-head matches, but Joseph wins via plurality.
+            </p>
+      </solution>
+     </task>
+</activity>       
+<definition xml:id="def-Head-to-Head">
+      <title>Head-to-Head Criterion</title>
+      
+      
+      <statement>
+            <p>
+                 
+                  A candidate who beats all the other candidates head to head should win the election.
+            </p>
+      </statement>
+</definition>
+<activity>
+      <title>School Board Building Decision</title>
+      
+      
+      <introduction>
+            <p>
+                  The school board is voting whether to award the contract for building a new 
+                  elementary school
+        to Aardvark Architects,
+        to Bob's Builders,
+        to the Confident Construction Company,
+        or to Davenfield Developers.
+        </p>
+ <tabular left="minor">
+      <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
+      <row>
+      </row>
+
+      <row>
+            <cell> </cell>
+            <cell colspan="4"> # of Ballots</cell>
+      </row>
+
+      <row>
+            <cell>Ranking</cell>
+            <cell>5</cell>
+            <cell>3</cell>
+            <cell>3</cell>
+            <cell>1</cell>
+      </row>
+
+      <row>
+            <cell> </cell>
+      </row>
+
+      <row>
+      </row>
+
+      <row>
+            <cell>1st choice</cell>
+            <cell>B</cell>
+            <cell>B</cell>
+            <cell>C</cell>
+            <cell>A</cell>
+      </row>
+
+      <row>
+            <cell>2nd choice</cell>
+            <cell>C</cell>
+            <cell>C</cell>
+            <cell>A</cell>
+            <cell>D</cell>
+      </row>
+
+      <row>
+            <cell>3rd choice</cell>
+            <cell>D</cell>
+            <cell>A</cell>
+            <cell>D</cell>
+            <cell>C</cell>
+      </row>
+
+      <row>
+            <cell>4th choice</cell>
+            <cell>A</cell>
+            <cell>D</cell>
+            <cell>B</cell>
+            <cell>B</cell>
+      </row>
+
+      <row>
+            <cell> </cell>
+      </row>
+</tabular>
+            
+      </introduction>
+      <task>
+            <statement>
+                  <p>
+                        The school board votes using a Borda count. 
+              Which company will get the contract?
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                       <m>\begin{array}{clcr}A &#x26; 5*1+3*2+3*3+1*4 &#x26;=&#x26; 24 \\ 
+                              B &#x26; 5*4+3*4+3*1+1*1 &#x26;=&#x26; 36 \\ 
+                              C &#x26; 5*3+3*3+3*4+1*2 &#x26;=&#x26; 38 \\ 
+                              D &#x26; 5*2+3*1+3*2+1*3 &#x26;=&#x26; 22 \\\end{array}
+                        </m>
+                        so C wins
+                  </p>
+            </solution>
+      </task>
+      <task>
+           <p> Does this seem fair?  Why or why not?</p>
+            <solution>
+            <p>No; two-thirds of the voters picked Bob's Builders as their first choice!</p>
+      </solution>
+</task>
+
+
+</activity>
+<definition xml:id="def-Majority_Criterion">
+      <title>Majority Criterion</title>
+      
+      <statement>
+            <p>A candidate that wins a majority of first place votes should win the election.</p>
+      </statement>
+
+</definition>
+<activity>
+      <title>Elect a University President</title>
+      
+      
+      <introduction>
+            <p>
+                  The board of regents of
+                  Western Iowa State at Sema
+                  will be voting tomorrow for the University's new president
+                  from four candidates: 
+                  Zehnpfennig, 
+                  Gersbach,    
+                  Haider,    
+                  and Rentmeester. </p>
+           <p>
+                  As of this moment, the voters' preferences are as follows:
+            </p>
+           <tabular left="minor">
+                  <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
+                  <row>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                        <cell colspan="4"> # of Ballots</cell>
+                  </row>
+
+                  <row>
+                        <cell>Ranking</cell>
+                        <cell>7</cell>
+                        <cell>5</cell>
+                        <cell>4</cell>
+                        <cell>1</cell>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                  </row>
+
+                  <row>
+                  </row>
+
+                  <row>
+                        <cell>1st choice</cell>
+                        <cell>Z</cell>
+                        <cell>H</cell>
+                        <cell>G</cell>
+                        <cell>R</cell>
+                  </row>
+
+                  <row>
+                        <cell>2nd choice</cell>
+                        <cell>R</cell>
+                        <cell>Z</cell>
+                        <cell>H</cell>
+                        <cell>G</cell>
+                  </row>
+
+                  <row>
+                        <cell>3rd choice</cell>
+                        <cell>G</cell>
+                        <cell>G</cell>
+                        <cell>R</cell>
+                        <cell>Z</cell>
+                  </row>
+
+                  <row>
+                        <cell>4th choice</cell>
+                        <cell>H</cell>
+                        <cell>R</cell>
+                        <cell>Z</cell>
+                        <cell>H</cell>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                  </row>
+            </tabular>
+      <p>
+             The WIS regents use the plurality with elimination method.
+      </p>
+      </introduction>
+      <task xml:id = "task-voting-paradox-university1">
+            <statement>
+                  <p>
+                        If the vote were held today, who would be chosen as university president?
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                      <me>
+                              \begin{array}{cc}Z&#x26; 7 \\ R&#x26;1 \\ G&#x26;4 \\ H&#x26;5\end{array} \leadsto \begin{array}{cc}Z&#x26;7 \\ G&#x26;5 \\ H&#x26;5\end{array} \leadsto Z
+                        </me>
+                  </p>
+            </solution>
+      </task>
+     <task xml:id = "task-voting-paradox-university2">
+            <statement>
+                  <p>
+                        After thinking it over in bed tonight, 
+                the single voter in the last column decides 
+                that Zehnpfennig really is the best candidate after all, and so his preferences change to Z,R,G,H.
+                Thus when the election is held tomorrow, the preference table is
+                  </p>
+                  <tabular left="minor">
+                        <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
+                        <row>
+                        </row>
+
+                        <row>
+                              <cell> </cell>
+                              <cell colspan="4"> # of Ballots</cell>
+                        </row>
+
+                        <row>
+                              <cell>Ranking</cell>
+                              <cell>7</cell>
+                              <cell>5</cell>
+                              <cell>4</cell>
+                              <cell>1</cell>
+                        </row>
+
+                        <row>
+                              <cell> </cell>
+                        </row>
+
+                        <row>
+                        </row>
+
+                        <row>
+                              <cell>1st choice</cell>
+                              <cell>Z</cell>
+                              <cell>H</cell>
+                              <cell>G</cell>
+                              <cell><delete>R</delete> Z</cell>
+                        </row>
+
+                        <row>
+                              <cell>2nd choice</cell>
+                              <cell>R</cell>
+                              <cell>Z</cell>
+                              <cell>H</cell>
+                              <cell><delete>G</delete> R</cell>
+                        </row>
+
+                        <row>
+                              <cell>3rd choice</cell>
+                              <cell>G</cell>
+                              <cell>G</cell>
+                              <cell>R</cell>
+                              <cell><delete>Z</delete> G</cell>
+                        </row>
+
+                        <row>
+                              <cell>4th choice</cell>
+                              <cell>H</cell>
+                              <cell>R</cell>
+                              <cell>Z</cell>
+                              <cell><delete>H</delete> H</cell>
+                        </row>
+
+                        <row>
+                              <cell> </cell>
+                        </row>
+                  </tabular>
+                  <p>
+                        Who will be elected president?
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                    <me>
+                       \begin{array}{cc}Z&#x26; 8 \\ R&#x26;0 \\ G&#x26;4 \\ H&#x26;5\end{array} \leadsto \begin{array}{cc}Z&#x26; 8 \\ G&#x26;4 \\ H&#x26;5\end{array} \leadsto \begin{array}{cc}Z&#x26;8 \\ H&#x26;9\end{array} \leadsto H
+                    </me>
+                  </p>
+            </solution>
+      </task>
+      <task>
+            <statement>
+                  <p>
+                        What is odd about your answers to <xref ref="task-voting-paradox-university1"/> and <xref ref="task-voting-paradox-university2"/>?
+                  </p>
+            </statement>
+      </task>
+</activity>
+      <definition xml:id="def-Monotonicity_Criterion">
+            <title>Monotonicity Criterion</title>
+            
+            
+      <statement>
+            <p>If the only changes in voting are in favor of the winning candidate, 
+                  that candidate should still win the election.</p>
+      </statement>
+
+</definition>
+
+<activity>
+      <title>State Budget Surplus Decision</title>
+      
+      
+      <introduction>
+            <p>
+                  Voters are trying to decide what to do with a $50 million surplus in the state budget.
+        Their options are: 
+           <dl>
+            <li>
+                  <title>(T)</title>
+
+                  <p>
+                        Give the money back to taxpayers as property tax relief.
+                  </p>
+            </li>
+
+            <li>
+                  <title>(R)</title>
+
+                  <p>
+                        Spend it on road construction and other infrastructure.
+                  </p>
+            </li>
+
+            <li>
+                  <title>(H)</title>
+
+                  <p>
+                        Build a new state historical building.
+                  </p>
+            </li>
+            </dl>
+        Here is the preference table:
+            </p>
+            <tabular left="minor">
+                  <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
+                  <row>
+                        <cell> </cell>
+                        <cell colspan="3"> # of Ballots</cell>
+                  </row>
+
+                  <row>
+                        <cell>Ranking</cell>
+                        <cell>70,000</cell>
+                        <cell>50,000</cell>
+                        <cell>40,000</cell>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                  </row>
+
+                  <row>
+                        <cell>1st choice</cell>
+                        <cell>T</cell>
+                        <cell>R</cell>
+                        <cell>H</cell>
+                  </row>
+
+                  <row>
+                        <cell>2nd choice</cell>
+                        <cell>R</cell>
+                        <cell>H</cell>
+                        <cell>T</cell>
+                  </row>
+
+                  <row>
+                        <cell>3rd choice</cell>
+                        <cell>H</cell>
+                        <cell>T</cell>
+                        <cell>R</cell>
+                  </row>
+
+                  <row>
+                        <cell> </cell>
+                  </row>
+            </tabular>
+      </introduction>
+      <task xml:id="task-voting-paradox-budget1">
+            <statement>
+                  <p>
+                        The election is run by pairwise comparison.  What is the result?
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                        <m>R>H>T>R</m>.
+                  </p>
+            </solution>
+      </task>
+      <task>
+            <statement>
+                  <p>
+                        What is odd about your results from <xref ref="task-voting-paradox-budget1"/>
+                  </p>
+            </statement>
+            <solution>
+                  <p>
+                        Try having candidate R drop out of the race. 
+                  </p>
+            </solution>
+      </task>
+</activity>
+<definition xml:id="def-Irrelevant_Alternatives_Criterion">
+      <title>Irrelevant Alternatives Criterion</title>
+      
+      
+      <statement>
+           <p>If a non-winning candidate leaves the election, the winner should not change.
+</p>
+      </statement>
+
+</definition>
+
+<definition xml:id="def-Approval_Voting">
+      <title>Approval Voting</title>
+      
+      
+      <statement>
+            <p>Vote for all candidates you approve of. For more in-depth explanation of how this works, 
+                  see <em>https://electionscience.org/library/approval-voting/</em>
+            </p>
+      </statement>
+
+</definition>
+
+<definition xml:id="def-Arrow_Theorem">
+      <title>Arrow's Impossibility Theorem</title>
+      
+      
+      <statement>
+            <p>
+                  There is no way of counting votes that does not violate at least one of the criteria except for a Dictator.
+            </p>
+      </statement>
+
+</definition>
+</worksheet>
+

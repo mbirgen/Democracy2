@@ -1,0 +1,114 @@
+<worksheet xml:id="ws-Jefferson">
+      <title>Worksheet for calculating Jefferson's Method</title>
+<p>
+</p>
+
+<ol>
+	<li>
+		<p>
+			What is the total population? parta
+		</p>
+	</li>
+
+	<li>
+		<p>
+			How many seats are you apportioningIf you aren’t given this number, it is the total of the Standard Quotas? partb
+		</p>
+	</li>
+
+	<li>
+		<p>
+			Calculate the Standard Divisor (divide your population by the number of seats):
+		</p>
+	</li>
+
+	<li>
+		<p>
+			Calculate all the Standard Quotas (Q.) (divide the population of each state by your Standard Divisor).
+			The total of your standard quotas should be the same as the number of seats.
+			If that is not the case, you have rounded off too much.:
+		</p>
+
+		<p>
+			<tabular>
+				<col right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="parbox"> </col>
+				<row>
+				</row>
+
+				<row>
+					<cell>State</cell>
+					<cell>Pop.</cell>
+					<cell>Q.</cell>
+					<cell>LQ</cell>
+					<cell>MLQ</cell>
+					<cell>MLQ</cell>
+					<cell>MLQ</cell>
+					<cell>MLQ</cell>
+					<cell>Appor­tionment</cell>
+				</row>
+
+				<row>
+				</row>
+
+				<row>
+					<cell>Divisor</cell>
+					<cell>–</cell>
+					<cell> </cell>
+					<cell>–</cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+				</row>
+
+				<row>
+				</row>
+
+				<row>
+					<cell>0pt72pt72pt</cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+				</row>
+
+				<row>
+					<cell> </cell>
+				</row>
+
+				<row>
+					<cell>Totals</cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+					<cell> </cell>
+				</row>
+			</tabular>
+		</p>
+	</li>
+
+	<li>
+		<p>
+			Write down all the Lower Quotas (LQ) by cutting off the decimal places.
+			The total of your lower quotas should be less than the number of seats.
+		</p>
+	</li>
+
+	<li>
+		<p>
+			Guess a new, Modified Divisor which is less than, but close to, your Standard Divisor.
+			Use that to calculate new Modified Lower Quotas.
+			If the total of your MLQ is the same as the number of seats, you are finished.
+			Otherwise, you need to repeat this process until you find a MD that gives you the correct number of seats.
+		</p>
+	</li>
+</ol>
+  
+</worksheet>
