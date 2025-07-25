@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-voting-shapley-shubik">
+  <title>Shapley–Shubik Power Index</title>
+
+  <definition xml:id="def-sequential-coalition">
+    <title>Sequential Coalition</title>
+    <statement>
+      <p>
+        A <defn>sequential coalition</defn> is...
+      </p>
+    </statement>
+    <answer>
+      <p>
+        A coalition of all voters in a particular order.
+        The assumption is that coalitions are formed sequentially:
+        Players join the coalition and cast their votes in an orderly sequence.
+      </p>
+    </answer>
+  </definition>
+
+  <activity>
+    <introduction>
+        <p>
+            Creating a list of all sequential coalitions gets complicated when the number of players gets large.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Consider a weighted voting system with three voters <me>P_1, P_2 \text{, and } P_3.</me>  
+          List all the sequential coalitions.
+          How many are there?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\{P_1,P_2,P_3\}, \{P_1,P_3,P_2\}, \{P_2,P_1,P_3\}, \{P_3,P_2,P_1\}, \{P_2,P_3,P_1\}, \{P_3,P_1,P_2\}</m>  
+        </p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Consider a weighted voting system with four voters <me>P_1, P_2, P_3 \text{, and } P_4.</me>   
+          List all the sequential coalitions.
+          How many are there?
+        </p>
+      </statement>
+      <solution>
+        <p>There are 24 sequential coalitions (4! = 24).</p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          If a weighted voting system has <m>n</m> voters, how many sequential coalitions are there?
+        </p>
+      </statement>
+      <solution>
+        <p><m>n!</m></p>
+      </solution>
+    </task>
+  </activity>
+
+  <definition xml:id="def-pivotal-player">
+    <title>Pivotal Player</title>
+    <statement>
+      <p>
+        A <defn>pivotal player</defn> is...
+      </p>
+    </statement>
+    <answer>
+      <p>
+        The player who contributes the votes to turn a losing coalition into a winning coalition.
+      </p>
+    </answer>
+  </definition>
+
+  <activity>
+    <introduction>
+        <p>
+            Practice finding the pivotal player in a sequential coalition.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          List all the sequential coalitions in the weighted voting system <m>[4 | 3, 2, 1]</m> and determine the pivotal player for each.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          In the weighted voting system <m>[4 | 3, 2, 1]</m>, is there a voter who is always pivotal?  
+          Is there a voter who is never pivotal?
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          To calculate the power of a voter, count the number of times the voter is pivotal.
+          Then divide by the total number of sequential coalitions.  
+          Calculate the Shapley–Shubik Power Index for each voter in <m>[4 | 3, 2, 1]</m>.
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <title>Full Shapley-Shubik Index Build</title>
+<!--     
+    
+    <introduction>
+        <p>
+            Practice all the steps in creating a Shapley-Shubik Index.
+        </p>
+    </introduction> -->
+    <task>
+      <statement>
+        <p>Consider the voting system <m>[6 | 4, 3, 2, 1]</m>.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>List all the sequential coalitions.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>In each sequential coalition above, circle the pivotal voters.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Count the number of times each voter is a pivotal voter.  
+          This is called that voter's <defn>Shapley–Shubik power</defn>.
+        </p>
+      </statement>
+      <tabular halign="center">
+        <row>
+          <cell left="medium" right="medium">Voter</cell>
+          <cell right="medium">Shapley–Shubik Power</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_1</m></cell>
+          <cell right="medium">10</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_2</m></cell>
+          <cell right="medium">6</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_3</m></cell>
+          <cell right="medium">6</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_4</m></cell>
+          <cell right="medium">2</cell>
+        </row>
+      </tabular>
+    </task>
+
+    <task>
+      <statement>
+        <p>Add up all the voters' Shapley–Shubik powers; this sum is called the <defn>total Shapley–Shubik power</defn> of the system.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Finally, divide each voter's Shapley–Shubik power by the total.  
+          The percentage that results is called the voter's <defn>Shapley–Shubik Power Index</defn>.
+        </p>
+      </statement>
+      <tabular halign="center">
+        <row>
+          <cell left="medium" right="medium">Voter</cell>
+          <cell right="medium">Shapley–Shubik Power Index</cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_1</m></cell>
+          <cell right="medium"></cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_2</m></cell>
+          <cell right="medium"></cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_3</m></cell>
+          <cell right="medium"></cell>
+        </row>
+        <row>
+          <cell left="medium" right="medium"><m>P_4</m></cell>
+          <cell right="medium"></cell>
+        </row>
+      </tabular>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>Calculate the Shapley–Shubik Power Index for each voter in <m>[51 | 32, 22, 12]</m>.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Make up a weighted voting system with a dummy, and calculate the Shapley–Shubik Power Index for the dummy.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>Make up a weighted voting system with a dictator, and calculate the Shapley–Shubik Power Index for the dictator.</p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Make up a weighted voting system in which several voters have veto power.
+          Calculate the Shapley–Shubik Power Index for the voters with veto power.
+          What do you notice?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <task>
+      <statement>
+        <p>
+          In some cities the city council operates under a “strong mayor” system:
+          The council can pass a motion by simple majority, but the mayor can veto it.
+          The mayor's veto can be overruled by a supermajority.
+          In Ice-n-knock, the council has four members plus a strong mayor who can vote and veto.
+          A motion passes if the mayor +2 or more council members approve it,
+          or if the mayor is against it and all four council members support it.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Compute the Shapley–Shubik Power Index of this system to figure out how much more power the mayor has.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          For comparison, calculate the Banzhaf Power Index of Ice-n-knock.
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+</worksheet>
