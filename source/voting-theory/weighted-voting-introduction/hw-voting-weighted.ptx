@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ws-voting-hw-weightedintro">
+  <title>Weighted Voting Introduction Exercises</title>
+
+  <exercise>
+    <introduction>
+      <p>
+        Alice, Bob, Charles, and Danielle are the stockholders in Alphabet Industries, Inc.
+        Alice owns 252 shares, Bob owns 741 shares, Charles inherited 637 shares,
+        and 412 shares are in Danielle's hands.
+        As usual, each share corresponds to a vote in the stockholder's meeting.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          If a certain type of motion requires a majority vote,
+          what is the smallest number of votes needed to pass the motion?
+        </p>
+      </statement>
+      <answer>
+        <p>1022</p>
+      </answer>
+    </task>
+
+    <task xml:id="voting-weighted-homework1">
+      <statement>
+        <p>
+          A different type of motion requires a <m>2/3</m> vote to pass.
+          What is the smallest number of votes needed to pass this motion?
+        </p>
+      </statement>
+      <solution>
+        <p>1362</p>
+      </solution>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using the quota you found in part <xref ref="voting-weighted-homework1"/>, express the weighted voting system
+          in the correct notation.
+        </p>
+      </statement>
+      <answer>
+        <p><m>[1362 | 741, 637, 412, 252]</m></p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+        <p>
+            Consider the weighted voting system <m>[51 | 29, 21, 8, 3, 1]</m>.
+        </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Which voters have veto power?
+        </p>
+      </statement>
+      <solution>
+        <p><m>P_1</m> and <m>P_2</m> have veto power.</p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>      
+    <introduction>
+    <p>
+      Find all dictators, dummies, and voters with veto power in the following weighted voting systems.
+    </p>
+  </introduction>
+    <task>
+        <statement><m>[51 | 20, 20, 20]</m></statement>
+    </task>
+    <task workspace=".5in">
+        <statement>
+            <p>
+                <m>[51 | 36, 34, 23, 6]</m>
+            </p>
+        </statement>
+    </task>
+    <task workspace=".5in">
+        <statement>
+            <p>
+                <m>[25 | 27, 11, 7, 2]</m>
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>[31 | 15, 13, 6, 4, 2]</m>
+            </p>
+        </statement>
+    </task>
+      <solution>
+        <ul>
+          <li><m>[51 | 20, 20, 20]</m> → No dictators, no dummies, all three have veto power.</li>
+          <li><m>[51 | 36, 34, 23, 6]</m> → No dictators, <m>P_4</m> is a dummy, no one has veto power.</li>
+          <li><m>[25 | 27, 11, 7, 2]</m> → <m>P_1</m> is a dictator (and so has veto power); the rest are dummies.</li>
+          <li><m>[31 | 15, 13, 6, 4, 2]</m> → No dictators; <m>P_1</m> and <m>P_2</m> have veto power; <m>P_5</m> is a dummy.</li>
+        </ul>
+    </solution>
+
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        In 1958, the Treaty of Rome established the European Economic Community (EEC)
+        and instituted a weighted voting system for the EEC's governance.
+        The members at that time were France, Germany, Italy, Belgium, the Netherlands, and Luxembourg.
+        The three largest countries (France, Germany, and Italy) were each given a vote with weight 4,
+        Belgium and the Netherlands had votes of weight 2, and Luxembourg's vote had weight 1.
+        The quota was 12.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          What is unusual or interesting about this weighted voting system?
+        </p>
+      </statement>
+      <solution>
+        <p>Luxembourg is a dummy.</p>
+      </solution>
+    </task>
+  </exercise>
+
+</exercises>
