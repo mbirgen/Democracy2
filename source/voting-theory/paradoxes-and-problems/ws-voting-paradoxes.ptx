@@ -2,6 +2,7 @@
 
 <worksheet xml:id="ws-voting-paradoxes" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Voting Paradoxes</title>
+
 <activity>
       <title>Reflection</title>
       
@@ -11,7 +12,13 @@
                   Of the four voting systems we've studied, which is best? Why?
             </p>
       </introduction>
-
+<!-- <task>
+      <statement>
+            <p>
+                  If you were going to use a voting system to choose among choices that you have, what would you tell your friends to use?
+            </p>
+      </statement>
+</task> -->
 </activity>
 
 <activity>
