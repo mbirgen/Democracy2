@@ -5,9 +5,53 @@
       <p>
         Consider the following preference table: 
       </p>
+     <tabular halign="center" top="medium">
+        <row>
+            <cell left="medium" right="medium"></cell>
+            <cell colspan="3" right="medium">
+            <hash /> of Ballots
+            </cell>
+        </row>
+        <row bottom="medium">
+            <cell left="medium" right="medium">Ranking</cell>
+            <cell right="medium">3</cell>
+            <cell right="medium">5</cell>
+            <cell right="medium">4</cell>
+        </row>
+        <row>
+            <cell left="medium" right="medium">1st choice</cell>
+            <cell right="medium">C</cell>
+            <cell right="medium">B</cell>
+            <cell right="medium">D</cell>
+        </row>
+        <row>
+            <cell left="medium" right="medium">2nd choice</cell>
+            <cell right="medium">E</cell>
+            <cell right="medium">E</cell>
+            <cell right="medium">C</cell>
+        </row>
+        <row>
+            <cell left="medium" right="medium">3rd choice</cell>
+            <cell right="medium">A</cell>
+            <cell right="medium">A</cell>
+            <cell right="medium">E</cell>
+        </row>
+        <row>
+            <cell left="medium" right="medium">4th choice</cell>
+            <cell right="medium">D</cell>
+            <cell right="medium">C</cell>
+            <cell right="medium">A</cell>
+        </row>
+        <row bottom="medium">
+            <cell left="medium" right="medium">5th choice</cell>
+            <cell right="medium">B</cell>
+            <cell right="medium">D</cell>
+            <cell right="medium">B</cell>
+        </row>
+    </tabular>
+
      
-     
-   <tabular left="minor">
+   <!-- <tabular left="minor">
     <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center" right="minor"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col> <col halign="center"> </col>
     <row>
     </row>
@@ -69,7 +113,7 @@
     <row>
         <cell> </cell>
     </row>
-</tabular>
+</tabular> -->
 
         <p>
         Find the winner of an election held using each of the following voting schemes.

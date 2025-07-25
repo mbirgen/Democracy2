@@ -5,7 +5,7 @@
         <p>
             Consider the following preference table:
         </p>
-        <table>
+
   <tabular halign="center" top="medium">
     <row>
       <cell left="medium" right="medium">
@@ -115,7 +115,7 @@
       </cell>
     </row>
   </tabular>
-</table>
+  
 <p>
     Find the winner of an election held using each of the following voting schemes.
         (If it is a tie, say who tied.)
