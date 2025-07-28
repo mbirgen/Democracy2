@@ -12,12 +12,12 @@
         
         <task>
             <statement>
-                <p>Complete the definitions for weighted voting systems:</p>
+                <p>To work on weighted voting systems, you need to be very familiar with the following notation. Complete the definitions:</p>
                 <ul>
-                    <li><p><m>P_i</m> = <fillin characters="30"/></p></li>
+                    <li><p><m>P_i</m> = <fillin characters="30"/></p>   </li>
                     <li><p><m>w_i</m> = <fillin characters="30"/></p></li>
-                    <li><p><m>q</m> = <fillin characters="30"/></p></li>
-                    <li><p><m>[q|w_1,w_2,\dots,w_n]</m> = <fillin characters="30"/></p></li>
+                    <li><p><m>q</m> = <fillin characters="30"/></p>></li>
+                    <li><p><m>[q|w_1,w_2,\dots,w_n]</m> = <fillin characters="30"/></p>></li>
                 </ul>
             </statement>
             <solution>
@@ -30,12 +30,16 @@
             </solution>
         </task>
 
-        <task>
-            <statement>
-                <p>Weighted voting systems are when there are <m>n</m> voters labeled <m>P_1, \dots, P_n</m>, and each voter casts a vote with a certain weight, <m>w_i</m>. Think of this as having each voter being able to cast <m>w_i</m> votes all for the same decision. In order for a motion to pass, the sum of all the votes needs to be at least <m>q</m>, the quota. We need the quota to be more than 50% of the sum of all the votes and no more than the sum of all the votes, but it can be anything in between. We give a weighted voting system as <m>[q|w_1,w_2,\dots,w_n]</m>.</p>
-            </statement>
-        </task>
     </activity>
+
+    <definition xml:id="def-Weighted_Voting_System">
+        <title>Weighted Voting System</title>
+        
+        
+        <statement>
+            <p>Weighted voting systems are when there are <m>n</m> voters labeled <m>P_1, \dots, P_n</m>, and each voter casts a vote with a certain weight, <m>w_i</m>. Think of this as having each voter being able to cast <m>w_i</m> votes all for the same decision. In order for a motion to pass, the sum of all the votes needs to be at least <m>q</m>, the quota. We need the quota to be more than 50% of the sum of all the votes and no more than the sum of all the votes, but it can be anything in between. We give a weighted voting system as <me>[q|w_1,w_2,\dots,w_n]</me>.</p>
+        </statement>
+    </definition>
 
     <activity xml:id="act-quota-calculations">
         <title>Quota Calculations</title>
@@ -117,27 +121,36 @@
         </task>
     </activity>
 
-    <assemblage xml:id="weighted-voting-definitions">
-        <title>Key Terms in Weighted Voting</title>
+    <!-- <assemblage xml:id="weighted-voting-definitions">
+        <title>Key Terms in Weighted Voting</title> -->
         
         <definition xml:id="def-dummy">
+            <title>Dummy</title>
+            
+            
             <statement>
                 <p>A <term>dummy</term> is a voter whose vote does not make any difference on whether a motion passes or not.</p>
             </statement>
         </definition>
 
         <definition xml:id="def-dictator">
+            <title>Dictator</title>
+            
+            
             <statement>
                 <p>A <term>dictator</term> is a voter where their vote is the only reason a motion passes.</p>
             </statement>
         </definition>
 
         <definition xml:id="def-veto-power">
+            <title>Veto Power</title>
+            
+            
             <statement>
                 <p>A voter has <term>veto power</term> if they must vote for a motion in order for it to pass.</p>
             </statement>
         </definition>
-    </assemblage>
+    <!-- </assemblage> -->
 
     <activity xml:id="act-power-analysis">
         <title>Analyzing Voting Power</title>
@@ -156,7 +169,7 @@
                 <p>In designing a weighted voting system <m>[q|6,5,4,3,2,1]</m>, what is the largest quota <m>q</m> you could pick without giving veto power to anyone?</p>
             </statement>
             <solution>
-                <p>15. You need the rest of the voters to be able to pass a motion without the largest voter.</p>
+                <p><m>15</m>. You need the rest of the voters to be able to pass a motion without the largest voter.</p>
             </solution>
         </task>
 
@@ -169,4 +182,56 @@
             </solution>
         </task>
     </activity>
+
+    <activity>
+        <title>Committee Voting System</title>
+      
+        <introduction>
+          <p>
+            A committee has four members (<m>P_1</m>, <m>P_2</m>, <m>P_3</m>, and <m>P_4</m>).  
+            In this committee, <m>P_1</m> has twice as many votes as <m>P_2</m>;  
+            <m>P_2</m> has twice as many votes as <m>P_3</m>;  
+            <m>P_3</m> has twice as many votes as <m>P_4</m>.  
+            Describe the committee as a weighted voting system under each voting rule below.
+          </p>
+        </introduction>
+      
+        <task>
+          <statement>
+            <p>At least two-thirds of the votes are required to pass a motion.</p>
+          </statement>
+          <solution>
+            <p><m>[10 \;|\; 8,\, 4,\, 2,\, 1]</m></p>
+          </solution>
+        </task>
+      
+        <task>
+          <statement>
+            <p>More than two-thirds of the votes are required to pass a motion.</p>
+          </statement>
+          <solution>
+            <p><m>[11 \;|\; 8,\, 4,\, 2,\, 1]</m></p>
+          </solution>
+        </task>
+      
+        <task>
+          <statement>
+            <p>At least 80% of the votes are required to pass a motion.</p>
+          </statement>
+          <solution>
+            <p><m>[12 \;|\; 8,\, 4,\, 2,\, 1]</m></p>
+          </solution>
+        </task>
+      
+        <task>
+          <statement>
+            <p>More than 80% of the votes are required to pass a motion.</p>
+          </statement>
+          <solution>
+            <p><m>[13 \;|\; 8,\, 4,\, 2,\, 1]</m></p>
+          </solution>
+        </task>
+      
+      </activity>
+      
 </worksheet>

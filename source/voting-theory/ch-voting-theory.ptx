@@ -22,24 +22,24 @@
    <xi:include href="./paradoxes-and-problems/hw-voting-paradoxes.ptx" />
  </section>
 
- <!-- <section xml:id="sec-Weighted_Voting_Introduction">
+ <section xml:id="sec-Weighted_Voting_Introduction">
   <title>Weighted Voting Introduction</title>
-   <xi:include href="./weighted-voting-introduction/ws-voting-weighted.ptx" />
+   <xi:include href="./weighted-voting-introduction/ws-voting-weighted-voting.ptx" />
    <xi:include href="./weighted-voting-introduction/hw-voting-weighted.ptx" />
- </section> -->
-
- <section xml:id="sec-Banzhaf_Power_Index" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Banzhaf_Power_Index</title>
-   <xi:include href="./banzhaf/ws-voting-banzhaf.ptx" />
-   <!-- <xi:include href="./banzhaf/hw-voting-banzhaf.ptx" />  -->
  </section>
 
- <!-- <section xml:id="sec-Shapley-Shubik_Power_Index">
+ <section xml:id="sec-Banzhaf_Power_Index" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Banzhaf Power Index</title>
+   <xi:include href="./banzhaf/ws-voting-banzhaf.ptx" />
+   <xi:include href="./banzhaf/hw-voting-banzhaf.ptx" /> 
+ </section>
+
+ <section xml:id="sec-Shapley-Shubik_Power_Index">
   <title>Shapley-Shubik Power Index</title>
    <xi:include href="./ws-voting-shapleyshubik.ptx" />
-   <xi:include href="./hw-voting-shapleyshubik.ptx" />
+   <!-- <xi:include href="./hw-voting-shapleyshubik.ptx" /> -->
   
- </section> -->
+ </section>
 
   <!-- <section xml:id="sec-study-guide">
   <title>Study Guide</title>
