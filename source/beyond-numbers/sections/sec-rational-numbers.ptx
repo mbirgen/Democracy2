@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-rational-numbers">
+    <title>Rational Numbers.</title>
+    <p>
+        We might feel more or less stymied in our quest for an infinite set bigger than the set of
+        natural numbers. But let’s not forget that lots of numbers are not integers. For example,
+        how about the rational numbers? Recall that the set of rational numbers is the set of all
+        ratios of integers (fractions). Between any two integers there are infinitely many rationals.
+        Within the set of rational numbers, we actually have infinitely many different infinite sets.
+        The set of rational numbers must be huge.
+    </p>
+    <p>
+        Unfortunately, in our search for different sizes of infinity, the rationals are still not nu
+        merous enough. We rely once again on the definition of same cardinality; namely, two sets
+        have the same cardinality if there is a one-to-one correspondence between the elements of
+        one set and the elements of the other. The trick here is to write down the rational numbers
+        in a convenient and systematic way so that we know we have listed them all. The idea is to
+        put all the rational numbers with numerator 1 in one column, all those with numerator 2 in
+        another column, and so on as shown in the following diagram. Notice that all the rationals
+        in the same row have the same denominator. For example, to find 37/112 in the diagram,
+        we just go 37 spaces to the right of 0 and 112 spaces up. So, we can see that all the rational
+        numbers appear somewhere in the pattern. In fact, each rational number appears many
+        times, because the fractions are not all reduced to lowest terms. For example, 1/2 appears
+        and so does 2/4, 3/6, and so on, but that redundancy is okay, because at this point we
+        merely want a systematic method of writing down every rational number without leaving
+        any out. Notice that all the positive rational numbers appear in the upper-right part of the
+        diagram, all the negative rationals appear in the lower left, and 0 is right in the middle. So
+        far, then, we have described a way of writing down all the rational numbers.
+    </p>
+    <p>
+        TODO draw matrix here
+    </p>
+    <p>
+        To show the one-to-one correspondence between the rational numbers and the natural numbers, 
+        we will thread a single rectangular spiral through all the rationals, 
+        starting in the middle at 0 and moving counterclockwise outward. 
+        To see the one-to-one correspondence with the natural numbers, 
+        we will just count the rational numbers as we encounter them along the spiral and make them bold-face to remind us that we have paired that rational with some natural number. 
+        We start with the rational O corresponding to the natural number l ; then, 
+        moving to the nght and up, the rational 1/1 = 1 corresponds to the natural number 2, 
+        the rational -1/1 = -1 corresponds to 3, the rational 2/1 = 2 corresponds to 4. 
+        We next come to 2/2, which has already been counted, so we skip it and move to 1/2,
+        which corresponds to 5, then-2/1 =-2 corresponds to 6. We skip-2/2 since that equals- 1,
+        which already corresponds to 3, and move to-1/2, which corresponds to 7, and so on. 
+        Notice that every rational number will eventually be reached and put in correspondence with some
+        natural number. This one-to-one correspondence shows that the set of all rational numbers
+        has the same cardinality as the set of the natural numbers.
+    </p>
+    <p>
+        Threading the spiral and counting along it provides an important insight into sets with
+        the same cardinality as the set of natural numbers. If we can write a set out as an infinite
+        list, we can make a one-to-one correspondence with the natural numbers.
+    </p>        
+    <p>
+        We now see that the rational numbers did not provide us with an infinity larger than
+        that of the natural numbers. Our quest for an even grander infinity has thus far failed. But
+        perhaps when we are chasing sets larger than an infinite set, we should expect to have to go
+        a long, long way.
+    </p>
+    <exercise>
+        <statement>
+            <p>
+                <ol marker="1">
+                    <li>
+                        <p>
+                            <term>A grand union</term>. Suppose you have two sets, each having the same cardinality as the set of natural numbers. 
+                            Take the elements of both sets and put them together to make one huge set. 
+                            Prove that this new huge set has the same cardinality as the set of natural numbers.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Unnoticeable pruning. Suppose you have any infinite set. 
+                            Is it always possible to remove some things from that set such that the collection of remaining things has the same cardinality as the original set? 
+                            Explain why or why not, and illustrate your answer with an example.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+</section>

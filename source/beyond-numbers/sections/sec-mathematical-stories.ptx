@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="sec-mathematical-stories">
+<section xml:id="sec-mathematical-stories" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Mathematical Stories.</title>
-    <p>
-        
-    </p>
-    <xi:include href="subsections\mathematical-stories\subsec-damsel-in-distress.ptx" />
-    <xi:include href="subsections\mathematical-stories\subsec-thats-a-meanie-genie.ptx" />
-    <xi:include href="subsections\mathematical-stories\subsec-the-fountain-of-knowledge.ptx" />
-    <xi:include href="subsections\mathematical-stories\subsec-dodge-ball.ptx" />
-    <xi:include href="subsections\mathematical-stories\subsec-dot-of-fortune.ptx" />
+    <introduction>
+        <p>
+            
+        </p>
+    </introduction>
+
+    <xi:include href="subsections/mathematical-stories/subsec-damsel-in-distress.ptx" />
+    <xi:include href="subsections/mathematical-stories/subsec-thats-a-meanie-genie.ptx" />
+    <xi:include href="subsections/mathematical-stories/subsec-the-fountain-of-knowledge.ptx" />
+    <xi:include href="subsections/mathematical-stories/subsec-dodge-ball.ptx" />
+    <xi:include href="subsections/mathematical-stories/subsec-dot-of-fortune.ptx" />
 </section>
