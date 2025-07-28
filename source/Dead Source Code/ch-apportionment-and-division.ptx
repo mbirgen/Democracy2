@@ -3,5 +3,5 @@
     
     <xi:include href="sections/sec-apportionment.ptx" />
     <xi:include href="sections/sec-fair-division.ptx" />
-    <xi:include href="sections/sec-study-guide.ptx" />
+  <!--  <xi:include href="sections/sec-study-guide.ptx" />-->
 </chapter>
