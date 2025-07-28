@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ws-voting-hw-shapley-shubik">
+  <title>Shapley–Shubik Power Index Homework</title>
+
+  <exercise>
+    <task>
+      <introduction>
+        <p>
+          Consider the weighted voting system <m>[16 | 9, 8, 7]</m>.
+        </p>
+      </introduction>
+      <statement>
+        <p>
+          List all the sequential coalitions in the system.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For convenience, we list them by <m>P</m>-number and by their weights:
+        </p>
+        <tabular halign="center">
+          <row>
+            <cell left="medium" right="medium">
+              Coalition
+            </cell>
+            <cell right="medium">
+              Weights
+            </cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">
+              {P_1, P_2, P_3}
+            </cell>
+            <cell right="medium">
+              {9, 8, 7}
+            </cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">
+              {P_1, P_3, P_2}
+            </cell>
+            <cell right="medium">
+              {9, 7, 8}
+            </cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">
+              {P_2, P_1, P_3}
+            </cell>
+            <cell right="medium">
+              {8, 9, 7}
+            </cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">
+              {P_2, P_3, P_1}
+            </cell>
+            <cell right="medium">
+              {8, 7, 9}
+            </cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">
+              {P_3, P_1, P_2}
+            </cell>
+            <cell right="medium">
+              {7, 9, 8}
+            </cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">
+              {P_3, P_2, P_1}
+            </cell>
+            <cell right="medium">
+              {7, 8, 9}
+            </cell>
+          </row>
+        </tabular>
+        
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task>
+      <introduction>
+        <p>
+          Consider the weighted voting system <m>[51 | 40, 30, 20, 10]</m>.
+        </p>
+      </introduction>
+      <statement>
+        <p>
+          List all the sequential coalitions in the system.
+        </p>
+      </statement>
+      <solution>
+        <p>Listed by players and weights:</p>
+        <tabular halign="center">
+          <row>
+            <cell left="medium" right="medium">{P_1,P_2,P_3,P_4}</cell>
+            <cell right="medium">{P_2,P_1,P_3,P_4}</cell>
+            <cell right="medium">{P_3,P_1,P_2,P_4}</cell>
+            <cell right="medium">{P_4,P_1,P_2,P_3}</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">{P_1,P_2,P_4,P_3}</cell>
+            <cell right="medium">{P_2,P_1,P_4,P_3}</cell>
+            <cell right="medium">{P_3,P_1,P_4,P_2}</cell>
+            <cell right="medium">{P_4,P_1,P_3,P_2}</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">{P_1,P_3,P_2,P_4}</cell>
+            <cell right="medium">{P_2,P_3,P_1,P_4}</cell>
+            <cell right="medium">{P_3,P_2,P_1,P_4}</cell>
+            <cell right="medium">{P_4,P_2,P_1,P_3}</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">{P_1,P_3,P_4,P_2}</cell>
+            <cell right="medium">{P_2,P_3,P_4,P_1}</cell>
+            <cell right="medium">{P_3,P_2,P_4,P_1}</cell>
+            <cell right="medium">{P_4,P_2,P_3,P_1}</cell>
+          </row>
+        </tabular>
+        
+        <tabular halign="center">
+          <row>
+            <cell left="medium" right="medium">{40, 30, 20, 10}</cell>
+            <cell right="medium">{30, 40, 20, 10}</cell>
+            <cell right="medium">{20, 40, 30, 10}</cell>
+            <cell right="medium">{10, 40, 30, 20}</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">{40, 30, 10, 20}</cell>
+            <cell right="medium">{30, 40, 10, 20}</cell>
+            <cell right="medium">{20, 40, 10, 30}</cell>
+            <cell right="medium">{10, 40, 20, 30}</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">{40, 20, 30, 10}</cell>
+            <cell right="medium">{30, 20, 40, 10}</cell>
+            <cell right="medium">{20, 30, 40, 10}</cell>
+            <cell right="medium">{10, 30, 40, 20}</cell>
+          </row>
+          <row>
+            <cell left="medium" right="medium">{40, 20, 10, 30}</cell>
+            <cell right="medium">{30, 20, 10, 40}</cell>
+            <cell right="medium">{20, 30, 10, 40}</cell>
+            <cell right="medium">{10, 30, 20, 40}</cell>
+          </row>
+        </tabular>
+        
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the voting system <m>[25 | 24, 20, 1]</m>.</p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>Calculate the percentage of the total weight that each voter holds.</p>
+      </statement>
+      <answer>
+        <p>53.3%, 44.4%, 2.2%</p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>Calculate the Shapley–Shubik Power Index for each voter.</p>
+      </statement>
+      <answer>
+        <p>0.60, 0.20, 0.20</p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>Comparing your answers to parts (a) and (b), explain why weight is not the same as power.</p>
+      </statement>
+      <solution>
+        <p>
+          For example, <m>P_2</m> has twenty times more weight than <m>P_3</m>, but the same power.
+          Also, <m>P_1</m> has three times as much power as <m>P_2</m>, even though the weights are close.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task>
+      <statement>
+        <p>
+          Calculate the Shapley–Shubik Power Index for each voter in <m>[15 | 16, 8, 4, 1]</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>1, 0, 0, 0</p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task>
+      <statement>
+        <p>Calculate the Shapley–Shubik Power Index for each voter in <m>[24 | 16, 8, 4, 1]</m>.</p>
+      </statement>
+      <answer>
+        <p>0.5, 0.5, 0, 0</p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task>
+      <statement>
+        <p>Calculate the Shapley–Shubik Power Index for each voter in <m>[28 | 16, 8, 4, 1]</m>.</p>
+      </statement>
+      <answer>
+        <p>0.33, 0.33, 0.33, 0</p>
+      </answer>
+    </task>
+  </exercise>
+
+</exercises>
