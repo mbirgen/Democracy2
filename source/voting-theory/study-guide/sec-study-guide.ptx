@@ -1,4 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <section xml:id="sec-study-guide-1" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Study Guide</title>
     
+<p>
+    To prepare for the exam over this chapter, you should review the in-class worksheets and homework.
+    Be ready to do the kind of problems you faced on the homework.
+</p>
+
+<p>
+    As a general guide, I recommend reviewing the following topics.
+</p>
+
+<ol>
+    <li>
+        <p>
+            Know how to read a preference table
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Calculate the winner according to
+            <ol>
+                <li>
+                    <p>
+                        Plurality
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Borda count
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Plurality with elimination
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Pairwise comparison
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Devise preference tables that satisfy given conditions (e.g., “Come up with a preference table where the pairwise comparison test produces no winner.”)
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Weighted voting
+            <ol>
+                <li>
+                    <p>
+                        Know how weighted voting on yes/no motions works.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Understand the notation <m>[q|w_{1},\ldots,w_{n}]</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Given a weighted voting system, find any dictators, dummies, or voters with veto power.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Construct weighted voting systems that satisfy given conditions (e.g., “Come up with a weighted voting system where two people have veto power.”)
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Calculate the Banzhaf Power Index for the voters in a weighted voting system.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Calculate the Schaply-Shubik Power Index for the voters in a weighted voting system.
+        </p>
+    </li>
+</ol>
 </section>

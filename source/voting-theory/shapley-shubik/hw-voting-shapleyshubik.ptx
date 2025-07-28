@@ -4,12 +4,15 @@
   <title>Shapley–Shubik Power Index Homework</title>
 
   <exercise>
-    <task>
-      <introduction>
+
+          <introduction>
         <p>
           Consider the weighted voting system <m>[16 | 9, 8, 7]</m>.
         </p>
       </introduction>
+      
+    <task>
+
       <statement>
         <p>
           List all the sequential coalitions in the system.
@@ -83,12 +86,13 @@
   </exercise>
 
   <exercise>
-    <task>
       <introduction>
         <p>
           Consider the weighted voting system <m>[51 | 40, 30, 20, 10]</m>.
         </p>
       </introduction>
+          <task>
+
       <statement>
         <p>
           List all the sequential coalitions in the system.
@@ -159,7 +163,7 @@
       <p>Consider the voting system <m>[25 | 24, 20, 1]</m>.</p>
     </introduction>
 
-    <task>
+    <task xml:id="voting-shapley-shubik-homework1">
       <statement>
         <p>Calculate the percentage of the total weight that each voter holds.</p>
       </statement>
@@ -168,7 +172,7 @@
       </answer>
     </task>
 
-    <task>
+    <task xml:id="voting-shapley-shubik-homework2">
       <statement>
         <p>Calculate the Shapley–Shubik Power Index for each voter.</p>
       </statement>
@@ -179,7 +183,7 @@
 
     <task>
       <statement>
-        <p>Comparing your answers to parts (a) and (b), explain why weight is not the same as power.</p>
+        <p>Comparing your answers to parts <xref ref="voting-shapley-shubik-homework1" text="local"/> and <xref ref="voting-shapley-shubik-homework2" text="local"/>, explain why weight is not the same as power.</p>
       </statement>
       <solution>
         <p>
@@ -191,10 +195,15 @@
   </exercise>
 
   <exercise>
+    <introduction>
+      <p>
+        Consider the weighted voting system <m>[15 | 16, 8, 4, 1]</m>.
+      </p>
+    </introduction>
     <task>
       <statement>
         <p>
-          Calculate the Shapley–Shubik Power Index for each voter in <m>[15 | 16, 8, 4, 1]</m>.
+          Calculate the Shapley–Shubik Power Index for each voter in the system.
         </p>
       </statement>
       <solution>
@@ -204,9 +213,14 @@
   </exercise>
 
   <exercise>
+    <introduction>
+      <p>
+        Consider the weighted voting system <m>[24 | 16, 8, 4, 1]</m>.
+      </p>
+    </introduction>
     <task>
       <statement>
-        <p>Calculate the Shapley–Shubik Power Index for each voter in <m>[24 | 16, 8, 4, 1]</m>.</p>
+        <p>Calculate the Shapley–Shubik Power Index for each voter in the system.</p>
       </statement>
       <answer>
         <p>0.5, 0.5, 0, 0</p>
@@ -215,9 +229,14 @@
   </exercise>
 
   <exercise>
+    <introduction>
+      <p>
+        Consider the weighed voting system <m>[28 | 16, 8, 4, 1]</m>.
+      </p>
+    </introduction>
     <task>
       <statement>
-        <p>Calculate the Shapley–Shubik Power Index for each voter in <m>[28 | 16, 8, 4, 1]</m>.</p>
+        <p>Calculate the Shapley–Shubik Power Index for each voter in the system.</p>
       </statement>
       <answer>
         <p>0.33, 0.33, 0.33, 0</p>

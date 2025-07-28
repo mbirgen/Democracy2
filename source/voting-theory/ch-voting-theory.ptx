@@ -41,9 +41,9 @@
   
  </section>
 
-  <!-- <section xml:id="sec-study-guide">
+  <section xml:id="sec-study-guide">
   <title>Study Guide</title>
    <xi:include href="./study-guide/sec-study-guide.ptx" />
   
- </section> -->
+ </section>
 </chapter>
