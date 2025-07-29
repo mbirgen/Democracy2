@@ -1,4 +1,728 @@
 <subsection xml:id="subsec-method-of-sealed-bids">
     <title>Method of Sealed Bids</title>
+    <p>
+        Sometimes you want to split up items without physically cutting them apart. 
+        For example, suppose R'moni is living with two roommates and everyone is graduating.
+         Over the years, they have purchased some appliances together and now they need to fairly divide the appliances.
+    </p>
+    <p>
+        In the method of sealed bids, each roommate is going to write down what they believe is a fair value for each appliance and seal the <q>bids</q> in an envelope.
+         When the envelopes are opened, we get the following results:
+    </p>
+    <tabular top="medium">
+        <row left="medium">
+            <cell halign="left" right="medium" bottom="medium">T.V.</cell>
+            <cell halign="left" right="medium" bottom="medium">$75</cell>
+            <cell halign="left" right="medium" bottom="medium">$100</cell>
+            <cell halign="left" right="medium" bottom="medium">$120</cell>
+		</row>
+		<row left="medium">
+            <cell halign="left" bottom="medium" right="medium">Microwave</cell>
+            <cell halign="left" right="medium" bottom="medium">$35</cell>
+            <cell halign="left" right="medium" bottom="medium">$30</cell>
+            <cell halign="left" right="medium" bottom="medium">$40</cell>
+		</row>
+		<row left="medium">
+            <cell halign="left" bottom="medium" right="medium">Crock Pot</cell>
+            <cell halign="left" bottom="medium" right="medium">$5</cell>
+            <cell halign="left" bottom="medium" right="medium">$10</cell>
+            <cell halign="left" bottom="medium" right="medium">$7</cell>
+		</row>
+		<row left="medium">
+            <cell halign="left" right="medium" bottom="medium">Toaster Oven</cell>
+            <cell halign="left" right="medium" bottom="medium">$7</cell>
+            <cell halign="left" right="medium" bottom="medium">$10</cell>
+            <cell halign="left" right="medium" bottom="medium">$5</cell>
+		</row>
+		<row left="medium">
+            <cell halign="left" right="medium" bottom="medium">Blender</cell>
+            <cell halign="left" right="medium" bottom="medium">$20</cell>
+            <cell halign="left" right="medium" bottom="medium">$25</cell>
+            <cell halign="left" right="medium" bottom="medium">$20</cell>
+		</row>
+		<row left="medium"> 
+            <cell halign="left" bottom="medium" right="medium">Total</cell>
+            <cell halign="left" bottom="medium" right="medium">$</cell>
+            <cell halign="left" bottom="medium" right="medium">$</cell>
+            <cell halign="left" bottom="medium" right="medium">$</cell>
+		</row>
+		<row left="medium">
+            <cell halign="left" bottom="medium" right="medium">Fair Share</cell>
+            <cell halign="left" bottom="medium" right="medium">$</cell>
+            <cell halign="left" bottom="medium" right="medium">$</cell>
+            <cell halign="left" bottom="medium" right="medium">$</cell>
+		</row>
+    </tabular>
+    <answer>
+        <p>
+            
+        </p>
+        <tabular top="medium">
+            <row left="medium">
+                <cell halign="left" right="medium" bottom="medium">T.V.</cell>
+                <cell halign="left" right="medium" bottom="medium">$75</cell>
+                <cell halign="left" right="medium" bottom="medium">$100</cell>
+                <cell halign="left" right="medium" bottom="medium">$120</cell>
+            </row>
+            <row left="medium">
+                <cell halign="left" bottom="medium" right="medium">Microwave</cell>
+                <cell halign="left" right="medium" bottom="medium">$35</cell>
+                <cell halign="left" right="medium" bottom="medium">$30</cell>
+                <cell halign="left" right="medium" bottom="medium">$40</cell>
+            </row>
+            <row left="medium">
+                <cell halign="left" bottom="medium" right="medium">Crock Pot</cell>
+                <cell halign="left" bottom="medium" right="medium">$5</cell>
+                <cell halign="left" bottom="medium" right="medium">$10</cell>
+                <cell halign="left" bottom="medium" right="medium">$7</cell>
+            </row>
+            <row left="medium">
+                <cell halign="left" right="medium" bottom="medium">Toaster Oven</cell>
+                <cell halign="left" right="medium" bottom="medium">$7</cell>
+                <cell halign="left" right="medium" bottom="medium">$10</cell>
+                <cell halign="left" right="medium" bottom="medium">$5</cell>
+            </row>
+            <row left="medium">
+                <cell halign="left" right="medium" bottom="medium">Blender</cell>
+                <cell halign="left" right="medium" bottom="medium">$20</cell>
+                <cell halign="left" right="medium" bottom="medium">$25</cell>
+                <cell halign="left" right="medium" bottom="medium">$20</cell>
+            </row>
+            <row left="medium">
+                <cell halign="left" bottom="medium" right="medium">Total</cell>
+                <cell halign="left" bottom="medium" right="medium">$142</cell>
+                <cell halign="left" bottom="medium" right="medium">$175</cell>
+                <cell halign="left" bottom="medium" right="medium">$192</cell>
+            </row>
+            <row left="medium">
+                <cell halign="left" bottom="medium" right="medium">Fair Share</cell>
+                <cell halign="left" bottom="medium" right="medium">$ 47.33</cell>
+                <cell halign="left" bottom="medium" right="medium">$ 58.33</cell>
+                <cell halign="left" bottom="medium" right="medium">$ 64.00</cell>
+            </row>
+        </tabular>
+    </answer>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                How much does each person think the whole property to be split is worth?
+                What would be their fair share?
+            </p>
+            <p>
+                <fillin characters="15" />
+            </p>
+            <answer>
+                <p>
+                    <m>$47.33</m>, <m>$58.33</m>, <m>$64.00</m>
+                </p>
+            </answer>
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                How would you propose splitting up the property?
+            </p>
+            <p>
+                <fillin characters="15" />
+            </p>
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                Method of Sealed Bids
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Assign each item to the highest bidder. Who gets what?
+                        </p>
+                        <tabular top="medium">
+                            <row header="yes" left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Roommate</cell>
+                                <cell halign="left" right="medium" bottom="medium">Items</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">R'moni</cell>
+                                <cell halign="left" right="medium" bottom="medium"><fillin characters="5" /></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Alison</cell>
+                                <cell halign="left" right="medium" bottom="medium"><fillin characters="5" /></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Logan</cell>
+                                <cell halign="left" right="medium" bottom="medium"><fillin characters="5" /></cell>
+                            </row>
+                        </tabular>
+                        <answer>
+                            <p>
+                                
+                            </p>
+                            <tabular top="medium">
+                            <row header="yes" left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Roommate</cell>
+                                <cell halign="left" right="medium" bottom="medium">Items</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">R'moni</cell>
+                                <cell halign="left" right="medium" bottom="medium"></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Alison</cell>
+                                <cell halign="left" right="medium" bottom="medium">Crock Pot, Toaster Oven, Blender</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Logan</cell>
+                                <cell halign="left" right="medium" bottom="medium">T.V., Microwave</cell>
+                            </row>
+                           
+                        </tabular>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            What is the total value of the items to the winners?
+                            Use the prices they have assigned themselves.
+                        </p>
+                        <tabular top="medium">
+                            <row header="yes">
+                                <cell halign="left" bottom="medium" right="medium">Roommate</cell>
+                                <cell halign="left" bottom="medium" right="medium">Value</cell>
+                                <cell halign="left" bottom="medium" right="medium">Fair Share</cell>
+                                <cell halign="left" bottom="medium" right="medium">Cash Paid</cell>
+                                <cell halign="left" bottom="medium" right="medium">Cash Received</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">R'moni</cell>
+                                <cell halign="left" bottom="medium" right="medium">$</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Alison</cell>
+                                <cell halign="left" bottom="medium" right="medium">$</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Logan</cell>
+                                <cell halign="left" bottom="medium" right="medium">$</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            
+                        </tabular>
+                        <answer>
+                            <p>
+                                
+                            </p>
+                            <tabular top="medium">
+                            <row header="yes">
+                                <cell halign="left" bottom="medium" right="medium">Roommate</cell>
+                                <cell halign="left" bottom="medium" right="medium">Value</cell>
+                                <cell halign="left" bottom="medium" right="medium">Fair Share</cell>
+                                <cell halign="left" bottom="medium" right="medium">Cash Paid</cell>
+                                <cell halign="left" bottom="medium" right="medium">Cash Received</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">R'moni</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$47.33</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium">$47.33</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Alison</cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$45.00</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$58.33</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$13.33</m></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Logan</cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$160.00</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$64.00</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$96.00</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>   
+                        </tabular>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            Which of the roommates have received more than their fair share of the property? How much more did they receive?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Which of the roommates have received less than their fair share of the property? How much less did they receive? 
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Have the roommates who received too much pay cash for the extra value of the property over and above their fair share. 
+                            Pay the roommates who did not receive enough the shortfall between what they see as a fair share and the value of the property they have received.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            How much cash do you have left?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Divide the extra cash by <m>3</m> and give each roommate one third of the extra cash.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                        <answer>
+                            <p>
+                                
+                            </p>
+                        <tabular top="medium">
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Roommate</cell>
+                                <cell halign="left" bottom="medium" right="medium"> </cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$59.11</m></cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$25.11</m></cell>
+                                <cell halign="left" bottom="medium" right="medium">Crock Pot, Toaster Oven, Blender</cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                                <cell halign="left" bottom="medium" right="medium"><m>$(84.22)</m></cell>
+                                <cell halign="left" bottom="medium" right="medium">T.V., Microwave</cell>
+                            </row>
+                        </tabular>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            Explain how each roommate has received a fair share.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            What are some of the drawbacks of the method of sealed bids?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                Five heirs (<m>A,B,C, D,</m> and <m>E</m>) 
+                are dividing an estate consisting of six items using the method of sealed bids.
+                The heirs bids on each of the times are given in the following table.
+            </p>
+            <tabular top="medium">
+                <row header="yes" left="medium">
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>A</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>B</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>C</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>D</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>E</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 1</cell>
+                    <cell halign="left" right="medium" bottom="medium">$352</cell>
+                    <cell halign="left" right="medium" bottom="medium">$295</cell>
+                    <cell halign="left" right="medium" bottom="medium">$395</cell>
+                    <cell halign="left" right="medium" bottom="medium">$368</cell>
+                    <cell halign="left" right="medium" bottom="medium">$324</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 2</cell>
+                    <cell halign="left" right="medium" bottom="medium">$98</cell>
+                    <cell halign="left" right="medium" bottom="medium">$102</cell>
+                    <cell halign="left" right="medium" bottom="medium">$98</cell>
+                    <cell halign="left" right="medium" bottom="medium">$95</cell>
+                    <cell halign="left" right="medium" bottom="medium">$105</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 3</cell>
+                    <cell halign="left" right="medium" bottom="medium">$460</cell>
+                    <cell halign="left" right="medium" bottom="medium">$449</cell>
+                    <cell halign="left" right="medium" bottom="medium">$510</cell>
+                    <cell halign="left" right="medium" bottom="medium">$501</cell>
+                    <cell halign="left" right="medium" bottom="medium">$476</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 4</cell>
+                    <cell halign="left" right="medium" bottom="medium">$852</cell>
+                    <cell halign="left" right="medium" bottom="medium">$825</cell>
+                    <cell halign="left" right="medium" bottom="medium">$832</cell>
+                    <cell halign="left" right="medium" bottom="medium">$817</cell>
+                    <cell halign="left" right="medium" bottom="medium">$843</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 5</cell>
+                    <cell halign="left" right="medium" bottom="medium">$513</cell>
+                    <cell halign="left" right="medium" bottom="medium">$501</cell>
+                    <cell halign="left" right="medium" bottom="medium">$505</cell>
+                    <cell halign="left" right="medium" bottom="medium">$505</cell>
+                    <cell halign="left" right="medium" bottom="medium">$491</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 6</cell>
+                    <cell halign="left" right="medium" bottom="medium">$725</cell>
+                    <cell halign="left" right="medium" bottom="medium">$738</cell>
+                    <cell halign="left" right="medium" bottom="medium">$750</cell>
+                    <cell halign="left" right="medium" bottom="medium">$744</cell>
+                    <cell halign="left" right="medium" bottom="medium">$761</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Total</cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Fair Share</cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                </row>     
+            </tabular>
+            <answer>
+                <p>
+                    
+                </p>
+                <tabular top="medium">
+                <row header="yes" left="medium">
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>A</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>B</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>C</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>D</m></cell>
+                    <cell halign="left" right="medium" bottom="medium"><m>E</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 1</cell>
+                    <cell halign="left" right="medium" bottom="medium">$352.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$295.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$395.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$368.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$324.00</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 2</cell>
+                    <cell halign="left" right="medium" bottom="medium">$98.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$102.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$98.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$95.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$105.00</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 3</cell>
+                    <cell halign="left" right="medium" bottom="medium">$460.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$449.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$510.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$501.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$476.00</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 4</cell>
+                    <cell halign="left" right="medium" bottom="medium">$852.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$825.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$832.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$817.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$843.00</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 5</cell>
+                    <cell halign="left" right="medium" bottom="medium">$513.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$501.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$505.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$505.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$491.00</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Item 6</cell>
+                    <cell halign="left" right="medium" bottom="medium">$725</cell>
+                    <cell halign="left" right="medium" bottom="medium">$738</cell>
+                    <cell halign="left" right="medium" bottom="medium">$750</cell>
+                    <cell halign="left" right="medium" bottom="medium">$744</cell>
+                    <cell halign="left" right="medium" bottom="medium">$761</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Total</cell>
+                    <cell halign="left" right="medium" bottom="medium">$3,000.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$2,910.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$3,090.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$3,030.00</cell>
+                    <cell halign="left" right="medium" bottom="medium">$3,000.00</cell>
+                </row>
+            </tabular>
+            </answer>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Describe the first settlement of this estate and compute the surplus cash. 
+                        </p>
+                        <answer>
+                            <p>
+                                <m>$130 </m>
+                            </p>
+                            <tabular top="medium">
+                                <row header="yes" left="medium">
+                                    <cell halign="left" right="medium" bottom="medium"></cell>
+                                    <cell halign="right" right="medium" bottom="medium">Items</cell>
+                                    <cell halign="center" right="medium" bottom="medium">Fair Share</cell>
+                                    <cell halign="center" right="medium" bottom="medium">Initial Cash</cell>
+                                    <cell halign="center" right="medium" bottom="medium">Final Cash</cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" right="medium" bottom="medium"><m>A</m></cell>
+                                    <cell halign="right" right="medium" bottom="medium">4,5</cell>
+                                    <cell halign="center" right="medium" bottom="medium">$600.00</cell>
+                                    <cell halign="center" right="medium" bottom="medium">$(765.00)</cell>
+                                    <cell halign="center" right="medium" bottom="medium">($739.00)</cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" right="medium" bottom="medium"><m>B</m></cell>
+                                    <cell halign="left" right="medium" bottom="medium"></cell>
+                                    <cell halign="left" right="medium" bottom="medium">$582.00</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$582.00</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$608.00</cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" right="medium" bottom="medium"><m>C</m></cell>
+                                    <cell halign="left" right="medium" bottom="medium">1,3</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$618.00</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$(287.00)</cell>
+                                    <cell halign="left" right="medium" bottom="medium">($261.00)</cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" right="medium" bottom="medium"><m>D</m></cell>
+                                    <cell halign="left" right="medium" bottom="medium"></cell>
+                                    <cell halign="left" right="medium" bottom="medium">$606.00</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$606.00</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$632.00</cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" right="medium" bottom="medium"><m>E</m></cell>
+                                    <cell halign="left" right="medium" bottom="medium">2,6</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$600.00</cell>
+                                    <cell halign="left" right="medium" bottom="medium">$(266.00)</cell>
+                                    <cell halign="left" right="medium" bottom="medium">($240.00)</cell>
+                                </row>
+                            </tabular>
+                        </answer>    
+                    </li>
+                    <li>
+                        <p>
+                            Describe the final settlement of this estate.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                </ol>
+            </p>
+          </statement>
+    </activity>
+    <exercises xml:id="exercises-homework-20">
+        <title>Homework 20</title>
+        <exercise>
+            <statement>
+                <p>
+                     Aden, Ben, and Charles are dividing four pieces of furniture using the method of sealed bids. 
+                    Their bids on each of the items are given in the following table.
+                </p>
+                <tabular top="medium">
+					<row header="yes" left="medium">
+						<cell halign="left" right="medium" bottom="medium"></cell>
+						<cell halign="left" right="medium" bottom="medium">Aden</cell>
+						<cell halign="left" right="medium" bottom="medium">Ben</cell>
+						<cell halign="left" right="medium" bottom="medium">Charles</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Dresser</cell>
+						<cell halign="left" right="medium" bottom="medium">$150</cell>
+						<cell halign="left" right="medium" bottom="medium">$300</cell>
+						<cell halign="left" right="medium" bottom="medium">$275</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Desk</cell>
+						<cell halign="left" right="medium" bottom="medium">$180</cell>
+						<cell halign="left" right="medium" bottom="medium">$150</cell>
+						<cell halign="left" right="medium" bottom="medium">$165</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">TV Cabinet</cell>
+						<cell halign="left" right="medium" bottom="medium">$170</cell>
+						<cell halign="left" right="medium" bottom="medium">$200</cell>
+						<cell halign="left" right="medium" bottom="medium">$260</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Tapestry</cell>
+						<cell halign="left" right="medium" bottom="medium">$400</cell>
+						<cell halign="left" right="medium" bottom="medium">$250</cell>
+						<cell halign="left" right="medium" bottom="medium">$500</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Total</cell>
+						<cell halign="left" right="medium" bottom="medium">$900</cell>
+						<cell halign="left" right="medium" bottom="medium">$ 900</cell>
+						<cell halign="left" right="medium" bottom="medium">$1200</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Fair Share</cell>
+						<cell halign="left" right="medium" bottom="medium">$300</cell>
+						<cell halign="left" right="medium" bottom="medium">$300</cell>
+						<cell halign="left" right="medium" bottom="medium">$400</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Total</cell>
+						<cell halign="left" right="medium" bottom="medium"></cell>
+						<cell halign="left" right="medium" bottom="medium"></cell>
+						<cell halign="left" right="medium" bottom="medium"></cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Fair Share</cell>
+						<cell halign="left" right="medium" bottom="medium"></cell>
+						<cell halign="left" right="medium" bottom="medium"></cell>
+						<cell halign="left" right="medium" bottom="medium"></cell>
+					</row>
+				</tabular>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                Describe the first settlement of the items and compute the Surplus.
+                            </p>
+                            <p>
+                                <fillin characters="15" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Describe the final settlement of the items.
+                            </p>
+                            <p>
+                                <fillin characters="15" />
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Kathy, Susie, and Judy are equal partners in a small bookstore. 
+                    They can't get along anymore, but they don't want to sell the bookstore to an outsider so they decide to settle the matter using the method of sealed bids. 
+                    Kathy bids <m>$240,000</m> for the business, Susie bids <m>$210,000</m>, and Judy bids <m>$225,000</m>. 
+                    Describe the final settlement of this bookstore.
+                </p>
+                <p>
+                    <fillin characters="15" />
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Three women (Carrie, Jeri, and Violet) share an apartment and wish to divide the chores: bathrooms, cooking, dishes, laundry, and vacuuming.
+                     For each chore, they privately write the least they are willing to receive monthly (their negative valuation) in return for doing that chore. 
+                    The results are shown in the following table.
+                </p>
+                <tabular top="medium">
+                    <row header="yes" left="medium">
+						<cell halign="left" right="medium" bottom="medium"></cell>
+						<cell halign="left" right="medium" bottom="medium">Carrie</cell>
+						<cell halign="left" right="medium" bottom="medium">Jeri</cell>
+						<cell halign="left" right="medium" bottom="medium">Violet</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Clean bathrooms</cell>
+						<cell halign="left" right="medium" bottom="medium">$-20</cell>
+						<cell halign="left" right="medium" bottom="medium">$-30</cell>
+						<cell halign="left" right="medium" bottom="medium">$-40</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Do cooking</cell>
+						<cell halign="left" right="medium" bottom="medium">$-50</cell>
+						<cell halign="left" right="medium" bottom="medium">$-10</cell>
+						<cell halign="left" right="medium" bottom="medium">$-25</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Wash dishes</cell>
+						<cell halign="left" right="medium" bottom="medium">$-30</cell>
+						<cell halign="left" right="medium" bottom="medium">$-20</cell>
+						<cell halign="left" right="medium" bottom="medium">$-15</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Mow the lawn</cell>
+						<cell halign="left" right="medium" bottom="medium">$-30</cell>
+						<cell halign="left" right="medium" bottom="medium">$-20</cell>
+						<cell halign="left" right="medium" bottom="medium">$-10</cell>
+					</row>
+					<row left="medium">
+						<cell halign="left" right="medium" bottom="medium">Vacuum and dust</cell>
+						<cell halign="left" right="medium" bottom="medium">$-20</cell>
+						<cell halign="left" right="medium" bottom="medium">$-40</cell>
+						<cell halign="left" right="medium" bottom="medium">$-15</cell>
+					</row>
+                </tabular>
+                <p>
+                    Divide the chores using the method of sealed bids. 
+                    Who does which chores? Who gets paid, and how much?
+                    Who pays, and how much?
+                </p>
+            </statement>
+        </exercise>
+        
+    </exercises>
     
 </subsection>

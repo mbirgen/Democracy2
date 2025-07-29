@@ -1,0 +1,161 @@
+<section xml:id="sec-fair-division" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Fair Division</title>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                My friend and I decide have pizza for dinner. 
+                We order pizza which is half red sauce with pepperoni and half garlic sauce with ham and pineapple. 
+                To my friend, pizza is pizza. He has no preference for one type of pizza over another. 
+                On the other hand, I have an allergy to oregano and cannot eat any red sauce. 
+                It gives me a horrible stomach ache and I'm grumpy for about eight hours.
+            </p>
+
+            <!-- <image source="/pizza which is half red sauce and half garlic source.png" width="70%">
+                <shortdescription></shortdescription>
+            </image> -->
+            <sidebyside>
+                <figure xml:id="divider-chooser">
+                <caption>pizza which is half red sauce and half garlic sauce</caption>
+                <image width="20%">
+                <latex-image label="divider-chooser-image">
+                    \begin{tikzpicture}
+                         % Draw the wavy circle and clip the fill inside
+                        \begin{scope}
+                            % Clip to a wavy circle using coil with slow/larger wave spacing
+                            \clip[decorate, decoration={coil, aspect=0.4, segment length=16pt}] (0,0) circle (3cm);
+                            
+                            % Top half (dark)
+                            \fill[black!70] (-4,0) rectangle (4,3);
+                            % Bottom half (light)
+                            \fill[black!30] (-4,-3) rectangle (3,0);
+                        \end{scope}
+
+                        % Outline
+                        \draw[very thick,black ,decorate, decoration={coil, aspect=0.4, segment length=16pt}] (0,0) circle (2.5cm);
+                    \end{tikzpicture}
+                </latex-image>
+                </image>
+            </figure>
+            <image width="10%">
+            <latex-image label="divider-chooser-image1">
+                \begin{tikzpicture}
+                    % Red Sauce
+                    \fill[black!70] (0,0) rectangle +(0.7,0.35);
+                    \node[right=1cm] at (0,0.2) {\small{Red Sauce}};
+                    
+                    % Garlic Sauce
+                    \draw[very thick,fill=black!30] (0,-1) rectangle +(0.7,0.35);
+                    \node[very thick,right=1cm] at (0,-0.6) {\small{Garlic Sauce}};
+                \end{tikzpicture}
+            </latex-image>    
+                
+            </image>
+           
+            
+            </sidebyside>
+
+            
+					
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            What is a fair way to divide this pizza so that my friend and I both believe we are getting a value of at least <m>50</m>% of the pizza.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            My friend never remembers that I do not eat red sauce. 
+                            Therefore, he divides the pizza so that each half has exactly half red sauce and half garlic sauce. 
+                            Am I able to choose a slice where I receive <m>50</m>% of the value of the pizza?
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Suppose instead, I slice the pizza. 
+                            When I do so, because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce. 
+                            Have I divided the pizza in such a way that each slice is worth <m>50</m>% to me?
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Is there a way that I could divide the pizza in order to have each slice worth <m>50</m>% to me and have all the red sauce on one of the slices?
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            In the case above, which of the slices with my friend choose?
+                        </p>
+                    </li>
+
+                </ol>
+            </p>
+            <p>
+                The basic issue at all fair division problems can be stated in a reasonably simple terms: How can something that must be shared by a set of competing parties be divided among them in a way that ensures that each party receives a fair share? Of course, part of the answer to this question will involve defining what we mean by a fair share.
+            </p>
+            <p>
+                We are going to start with the most common method for fair division, that of the divider-chooser.
+                This is the problem where there are two people and one thing to divide. 
+                One person has chosen to do the cutting, and then the other person gets to choose which part they want.
+            </p>
+        
+           <p>
+             <term>Rationality</term>
+            <answer>
+                <p>
+                   Each of the players is a thinking, rational agent seeking to maximize his or her share of the booty <m>S</m>.
+                    We further assume that in pursuit of this goal, a player's moves are based on reason alone. 
+                </p>
+            </answer>
+            </p>
+            <p>
+            <term>Cooperation</term>
+            <answer>
+                <p>
+                    The players are willing participants and accept the rules of the game as binding. The rules are such that after a <em>finite</em> number of moves by the players the game terminates with a division of <m>S</m>.
+                </p>
+            </answer>
+            </p>
+            <p>
+            <term>Privacy</term>
+            <answer>
+                <p>
+                   Players have no useful information on the other players' value systems, and thus if what kinds of moves they are going to make in the game. 
+                </p>
+            </answer>
+            </p>
+            <p>
+               <term>Symmetry</term>
+            <answer>
+                <p>
+                  Players have <em>equal</em> rights in sharing the set <m>S</m>. 
+                  A consequence of this assumption is that at a minimum, each player is entitled to a <em>proportional</em> share of <m>S</m>, that is <m>\frac{S}{N}</m> when there are <m>N</m> players.  
+                </p>
+            </answer> 
+            </p>
+         
+        </statement>
+    </activity>
+
+    <definition xml:id="def-fair-division">
+        <statement>
+            <p>
+                Fair Share: <fillin characters="10" />
+            </p>
+        </statement>
+    </definition>
+
+      
+    <xi:include href="subsections/fair-division/subsec-divider-chooser.ptx" />
+    <xi:include href="subsections/fair-division/subsec-lone-divider.ptx" />
+    <xi:include href="subsections/fair-division/subsec-lone-divider-case-2.ptx" />
+    <xi:include href="subsections/fair-division/subsec-method-of-sealed-bids.ptx" />
+    
+</section>
