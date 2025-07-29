@@ -7,7 +7,7 @@
     <title>Sequential Coalition</title>
     <statement>
       <p>
-        A <defn>sequential coalition</defn> is...
+        A <term>sequential coalition</term> is...
       </p>
     </statement>
     <answer>
@@ -69,7 +69,7 @@
     <title>Pivotal Player</title>
     <statement>
       <p>
-        A <defn>pivotal player</defn> is...
+        A <term>pivotal player</term> is...
       </p>
     </statement>
     <answer>
@@ -144,7 +144,7 @@
       <statement>
         <p>
           Count the number of times each voter is a pivotal voter.  
-          This is called that voter's <defn>Shapley–Shubik power</defn>.
+          This is called that voter's <term>Shapley–Shubik power</term>.
         </p>
       </statement>
       <tabular halign="center">
@@ -173,7 +173,7 @@
 
     <task>
       <statement>
-        <p>Add up all the voters' Shapley–Shubik powers; this sum is called the <defn>total Shapley–Shubik power</defn> of the system.</p>
+        <p>Add up all the voters' Shapley–Shubik powers; this sum is called the <term>total Shapley–Shubik power</term> of the system.</p>
       </statement>
     </task>
 
@@ -181,7 +181,7 @@
       <statement>
         <p>
           Finally, divide each voter's Shapley–Shubik power by the total.  
-          The percentage that results is called the voter's <defn>Shapley–Shubik Power Index</defn>.
+          The percentage that results is called the voter's <term>Shapley–Shubik Power Index</term>.
         </p>
       </statement>
       <tabular halign="center">
@@ -208,6 +208,27 @@
       </tabular>
     </task>
   </activity>
+
+  <definition xml:id="def-shapleyshubik-Power">
+  <title>Shapley-Subik Power</title>
+  
+  
+  <statement>
+    <p>
+      The <term>Shapley-Shubik Power</term> of a player is the total number of times the player is a <xref ref="def-pivotal-player" text="custom">Pivotal Player</xref>  in a <xref ref="def-sequential-coalition" text="custom"> Sequential Coalition</xref>. 
+    </p> 
+  </statement>
+</definition>
+<definition xml:id="def-shapleyshubik-Power-Index">
+  <title>Shapley-Shubik Power Index</title>
+  
+  
+  <statement>
+    <p>
+      The <term>Shapley-Shubik Power Index</term> of a player is the total number of times the player is a <xref ref="def-pivotal-player" text="custom">Pivotal Player</xref>  in a <xref ref="def-sequential-coalition" text="custom"> Sequential Coalition</xref> divided by the total number of <term> sequential coalitions</term>. 
+    </p>
+  </statement>
+</definition>
 
   <activity>
     <task>
@@ -264,7 +285,7 @@
     <task>
       <statement>
         <p>
-          For comparison, calculate the Banzhaf Power Index of Ice-n-knock.
+          For comparison, calculate the Shapley-Shubik Power Index of Ice-n-knock.
         </p>
       </statement>
     </task>
