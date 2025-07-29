@@ -19,8 +19,9 @@
         Player One's board:
     </p>
     <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <col width="10%"></col>
         <row>
-            <cell>1</cell><cell></cell><cell></cell>
+            <cell>1</cell><cell><p></p></cell><cell></cell>
             <cell></cell><cell></cell><cell></cell>
             <cell></cell>
         </row>
