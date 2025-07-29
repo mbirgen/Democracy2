@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <statement>
+        <p>
+            Organizational idea for setting up the head-to-head races: <fillin characters="80" /> <fillin characters="80" />
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Put the first <m>n-1</m> candidates vertically. 
+            Then, starting with the missing candidate and working backwards list <m>n-1</m> candidates horizontally.
+        </p>
+    </answer>
+</exercise>

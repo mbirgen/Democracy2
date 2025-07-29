@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <statement>
+        <p>
+            Plurality with elimination: <fillin characters="10" />
+        </p>
+    </statement>
+    <answer>
+        <p>
+            If no candidate has a majority of first place votes, eliminate the candidate, 
+            or candidates with the fewest first place votes. 
+            Repeat until a candidate has a majority of first place votes. 
+        </p>
+    </answer>
+</exercise>

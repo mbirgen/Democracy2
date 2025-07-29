@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <introduction>
+        <p>
+            The AP college football poll is a ranking of the top <m>25</m> college football teams in the country
+                and is one of the key polls used for the BCS<fn>Bowl Championship Series</fn>.
+            The voters in the AP poll are a group of sportswriters and broadcasters chosen from across the country. 
+            The top <m>25</m> teams are ranked using a Borda count: each first-place vote is worth <m>25</m> points, 
+            each second-place vote is worth <m>24</m> points, each third-place vote is worth <m>23</m> points, and so on. 
+            The following table shows the ranking and total points for each of the top three teams at the end of 
+            the <m>2006</m> regular season. (The remaining <m>22</m> teams are not shown here because they are irrelevant to this exercise.)
+        </p>
+        <tabular top="medium" bottom="minor">
+            <row header="yes">
+                <cell halign="left">Team</cell>
+                <cell halign="left">Points</cell>
+            </row>
+            <row>
+                <cell halign="left">1. Ohio State</cell>
+                <cell halign="left">1625</cell>
+            </row>
+            <row>
+                <cell halign="left">2. Florida</cell>
+                <cell halign="left">1529</cell>
+            </row>
+            <row>
+                <cell halign="left">3. Michigan</cell>
+                <cell halign="left">1526</cell>
+            </row>
+        </tabular>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Given that Ohio State was the unanimous first-place choice of all the voters, find the number of voters that participated in the poll.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\fbox{65}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the number of second and third-place votes for Florida.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Since Ohio State was the unanimous first-place choice and we are told the other <m>22</m> teams are irrelevant, 
+                then we can assume that all the second and third place votes went either to Florida or Michigan.  
+                This also means that the voters who didn't put Florida second placed them third. 
+                This is all the information you need to solve the problem.
+            </p>
+        </hint>
+        <answer>
+            <p>
+                <m>\fbox{34, 31}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the number of second and third-place votes for Michigan.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\fbox{31, 34}</m>
+            </p>
+        </answer>
+    </task>
+</exercise>
