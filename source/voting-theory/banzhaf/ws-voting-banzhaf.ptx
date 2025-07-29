@@ -140,7 +140,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
   <statement>
     <p>
       A <defn>critical voter</defn> in a winning coalition is ...
-      <m>\{\overset{\circ}{P_1}, P_2\}</m>
+      <m>\{P_1, P_2\}</m>
     </p>
   </statement>
   <answer>

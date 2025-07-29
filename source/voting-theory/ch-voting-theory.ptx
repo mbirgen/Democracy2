@@ -36,8 +36,8 @@
 
  <section xml:id="sec-Shapley-Shubik_Power_Index">
   <title>Shapley-Shubik Power Index</title>
-   <xi:include href="./ws-voting-shapleyshubik.ptx" />
-   <!-- <xi:include href="./hw-voting-shapleyshubik.ptx" /> -->
+   <xi:include href="./shapley-shubik/ws-voting-shapleyshubik.ptx" />
+   <xi:include href="./shapley-shubik/hw-voting-shapleyshubik.ptx" />
   
  </section>
 
