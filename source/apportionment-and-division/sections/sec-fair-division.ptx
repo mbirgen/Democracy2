@@ -1,7 +1,35 @@
-<section xml:id="sec-fair-division" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <section xml:id="sec-fair-division" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Fair Division</title>
     <xi:include href="subsections/fair-division/subsec-divider-chooser.ptx" />
     <xi:include href="subsections/fair-division/subsec-lone-divider.ptx" />
     <xi:include href="subsections/fair-division/subsec-lone-divider-case-2.ptx" />
     <xi:include href="subsections/fair-division/subsec-method-of-sealed-bids.ptx" />
-</section>
+</section> -->
+
+  <section xml:id="sec-fair-division-methods">
+    <title>Fair Division</title>
+    
+    <p>
+        Fair division deals with the problem of dividing resources among multiple parties 
+        in a way that each party considers fair.
+    </p>
+    
+    <subsection xml:id="subsec-divider-chooser-2">
+      <title>Divider-Chooser Method</title>
+      
+      <p>
+          The divider-chooser method is a simple fair division procedure for two parties.
+      </p>
+      
+      <definition xml:id="def-divider-chooser-2">
+        <title>Divider-Chooser Method</title>
+        <statement>
+          <p>
+            In the <term>divider-chooser method</term>, one party (the divider) divides the resource into what they consider to be equal parts, and the other party (the chooser) selects their preferred part.
+          </p>
+        </statement>
+      </definition>
+    </subsection>
+  </section>

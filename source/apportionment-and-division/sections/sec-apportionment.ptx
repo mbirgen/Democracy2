@@ -1,4 +1,6 @@
-<section xml:id="sec-apportionment" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <section xml:id="sec-apportionment" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Apportionment</title>
     
     <xi:include href="subsections/apportionment/subsec-hamiltons-method.ptx" />
@@ -6,4 +8,17 @@
     <xi:include href="subsections/apportionment/subsec-jeffersons-method.ptx" />
     <xi:include href="subsections/apportionment/subsec-adams-method.ptx" />
     <xi:include href="subsections/apportionment/subsec-websters-method.ptx" />
-</section>
+</section> -->
+
+  <section xml:id="sec-apportionment-methods">
+    <title>Apportionment</title>
+    
+    <p>
+        Apportionment involves distributing a fixed number of items (such as legislative seats) 
+        among different groups based on some measure (such as population).
+    </p>
+    
+    <xi:include href="./sections/subsections/apportionment/wkst-Hamilton-2.ptx"/>
+    <xi:include href="./sections/subsections/apportionment/wkst-Jefferson.ptx"/>
+  </section>
+  

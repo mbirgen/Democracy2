@@ -2,13 +2,17 @@
 
 <worksheet xml:id="ws-voting-banzhaf">
     <title>Banzhaf Power Index</title>
-    
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
 <definition xml:id="def-Voting-Banzhaf_Coalition">
     <title>Banzhaf Coalition</title>
     
       <statement>
         <p>
-          A <defn>Banzhaf coalition</defn> is ...
+          A <term>Banzhaf coalition</term> is ...
         </p>
       </statement>
       <answer>
@@ -31,7 +35,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
 
     <task>
       <statement>
-        <p>Consider a weighted voting system with three voters <m>P_1</m>, <m>P_2</m>, and <m>P_3</m>.  
+        <p>Consider a weighted voting system with three players <m>P_1</m>, <m>P_2</m>, and <m>P_3</m>.  
         List all the coalitions. How many are there?</p>
       </statement>
       <solution>
@@ -44,7 +48,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
 
     <task>
       <statement>
-        <p>Consider a weighted voting system with four voters <m>P_1</m>, <m>P_2</m>, <m>P_3</m>, and <m>P_4</m>.  
+        <p>Consider a weighted voting system with four players <m>P_1</m>, <m>P_2</m>, <m>P_3</m>, and <m>P_4</m>.  
         List all the coalitions. How many are there?</p>
       </statement>
       <solution>
@@ -61,7 +65,7 @@ Since coalitions are just sets of players, the most convenient way to describe c
 
     <task>
       <statement>
-        <p>If a weighted voting system has <m>n</m> voters, how many coalitions are there?</p>
+        <p>If a weighted voting system has <m>n</m> players, how many coalitions are there?</p>
       </statement>
       <solution>
         <p>
@@ -72,9 +76,12 @@ Since coalitions are just sets of players, the most convenient way to describe c
   </activity>
 
   <definition xml:id="def-voting-banzhaf-winning_coalition">
+    <title>Winning Coalition</title>
+    
+    
     <statement>
         <p>
-            A <defn>winning coalition</defn> is ...
+            A <term>winning coalition</term> is ...
         </p>
     </statement>
     <answer>
@@ -112,15 +119,15 @@ Since coalitions are just sets of players, the most convenient way to describe c
 <!-- </activity>
 
 <activity>
-  <title>Finding Critical Voters</title> -->
+  <title>Finding Critical Players</title> -->
 
   <task>
     <statement>
       <p>
         In the weighted voting system <m>[10 | 6,4,3,2,1]</m>,  
         consider the winning coalition <m>\{P_1, P_2, P_3, P_4\}</m>.  
-        Which voter(s) could change their mind and vote “no” without changing the outcome?  
-        Which voter(s) must keep voting “yes” for the motion to pass?
+        Which player(s) could change their mind and vote “no” without changing the outcome?  
+        Which player(s) must keep voting “yes” for the motion to pass?
       </p>
     </statement>
     <solution>
@@ -135,22 +142,21 @@ Since coalitions are just sets of players, the most convenient way to describe c
   </task>
 </activity>
 
-<definition xml:id="def-voting-banzhaf-critical_voter">
-  <title>Critical Voter</title>
+<definition xml:id="def-voting-banzhaf-critical_player">
+  <title>Critical Player</title>
   <statement>
     <p>
-      A <defn>critical voter</defn> in a winning coalition is ...
-      <m>\{P_1, P_2\}</m>
+      A <term>critical player</term> in a winning coalition is ...
     </p>
   </statement>
   <answer>
     <p>
-      a voter who, if they leave the coalition, makes the coalition lose.
+      a player who, if they leave the coalition, makes the coalition lose.
     </p>
   </answer>
 </definition>
 
-<!-- <activity>
+<activity>
   <title>Full Banzhaf Calculation</title>
 
   <introduction>
@@ -175,60 +181,120 @@ Since coalitions are just sets of players, the most convenient way to describe c
 
   <task>
     <statement>
-      <p>In each winning coalition above, identify the critical voters.</p>
+      <p>In each winning coalition above, identify the critical players.</p>
     </statement>
     <solution>
-      <p>
-        - \{P_1, P_2\}: both critical.  
-        - \{P_1, P_3\}: both critical.  
-        - \{P_1, P_4\}: both critical.  
-        - \{P_2, P_3\}: both critical.  
-        - \{P_1, P_2, P_3\}: each critical? 11+9+8=28, so if P_1 leaves: 17 (fails); P_2 leaves: 19–9=19–9=19–9=19–9=19–9=19–9= so still winning. Wait! Must check:
-        Actually:  
-        - If P_1 leaves: 17 → loses → P_1 is critical  
-        - If P_2 leaves: 19–9=19–9=19–9= so 11+8=19 → exactly at quota → still winning → P_2 not critical  
-        - If P_3 leaves: 11+9=20 → still winning → P_3 not critical  
-        - So only P_1 is critical in this coalition.
 
-        Continue:
-        - \{P_1, P_2, P_4\}: 11+9+5=25  
-          - P_1 leaves: 14 → fails → P_1 critical  
-          - P_2 leaves: 16 → fails → P_2 critical  
-          - P_4 leaves: 20 → still passes → P_4 not critical
-
-        - \{P_1, P_3, P_4\}: 11+8+5=24  
-          - P_1 leaves: 13 → fails → P_1 critical  
-          - P_3 leaves: 16 → fails → P_3 critical  
-          - P_4 leaves: 19–5=19 → exactly quota → still wins → P_4 not critical
-
-        - \{P_2, P_3, P_4\}: 9+8+5=22  
-          - P_2 leaves: 13 → fails → P_2 critical  
-          - P_3 leaves: 14 → fails → P_3 critical  
-          - P_4 leaves: 17 → fails → P_4 critical
-
-        - \{P_1, P_2, P_3, P_4\}: sum = 33  
-          - Removing any one still exceeds 19, so no one critical.
-      </p>
+        <p>
+    <m>\mathbf{P_1}, \mathbf{P_2}</m><br/>
+    <m>\mathbf{P_1}, \mathbf{P_3}</m><br/>
+    <m>\mathbf{P_1}, P_2 P_3</m><br/>
+    <m>\mathbf{P_1}, \mathbf{P_2}, P_4</m><br/>
+    <m>\mathbf{P_1}, \mathbf{P_3}, P_4</m><br/>
+    <m>\mathbf{P_2}, \mathbf{P_3}, \mathbf{P_4}</m><br/>
+    <m>P_1 P_2 P_3 P_4</m>
+  </p>
+  
     </solution>
   </task>
 
   <task>
-    <statement>
-      <p>Count the number of times each voter is critical. This is their Banzhaf power.</p>
+    <statement xml:id="voting-banzhaf-power">
+      <p>
+        Count the number of times each player is critical. This is their Banzhaf power.
+        
+      </p>
+       <tabular>
+    <col right="minor"> </col> <col halign="center"> </col>
+    <row>
+        <cell>Player</cell>
+        <cell>Banzhaf power</cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{1}</m> </cell>
+        <cell><fillin characters="5" /></cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{2}</m> </cell>
+        <cell><fillin characters="5" /></cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{3}</m> </cell>
+        <cell><fillin characters="5" /></cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{4}</m> </cell>
+        <cell><fillin characters="5" /></cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+
+    <row>
+        <cell> </cell>
+    </row>
+</tabular>
     </statement>
+    
+   
     <solution>
       <p>
-        - P_1: in <m>\{P_1,P_2\}, \{P_1,P_3\}, \{P_1,P_4\}, \{P_1P_2P_3\}, \{P_1P_2P_4\}, \{P_1P_3P_4\}</m>
-        - P_2: in \{P_1P_2\}, \{P_2P_3\}, \{P_1P_2P_4\}, \{P_2P_3P_4\} → **4 times**  
-        - P_3: in \{P_1P_3\}, \{P_2P_3\}, \{P_1P_3P_4\}, \{P_2P_3P_4\} → **4 times**  
-        - P_4: only in \{P_2P_3P_4\} → **1 time**
+
       </p>
+            <tabular>
+    <col right="minor"> </col> <col halign="center"> </col>
+    <row>
+        <cell>Player</cell>
+        <cell>Banzhaf power</cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{1}</m> </cell>
+        <cell>5</cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{2}</m> </cell>
+        <cell>3</cell>
+    </row>
+
+    <row>
+        <cell> <m>P_{3}</m> </cell>
+        <cell>3</cell>
+    </row>
+
+
+    <row>
+        <cell> <m>P_{4}</m> </cell>
+        <cell>1</cell>
+    </row>
+
+
+</tabular>
+
     </solution>
   </task>
 
   <tabular halign="center" top="medium">
     <row>
-      <cell left="medium" right="medium">Voter</cell>
+      <cell left="medium" right="medium">Player</cell>
       <cell right="medium">Banzhaf Power</cell>
     </row>
     <row bottom="medium">
@@ -259,8 +325,10 @@ Since coalitions are just sets of players, the most convenient way to describe c
   </task>
 
   <task>
-    <statement>
-      <p>Divide each voter’s Banzhaf power by the total to get their Banzhaf power index.</p>
+    <statement xml:id="voting-banzhaf-power_index">
+      <p>Divide each player's Banzhaf power by the total to get their Banzhaf power index. It is just making every number between zero and one.
+
+        </p>
     </statement>
     <solution>
       <p>
@@ -294,12 +362,27 @@ Since coalitions are just sets of players, the most convenient way to describe c
       <cell right="medium">0.07</cell>
     </row>
   </tabular>
-</activity> -->
-
-</worksheet>
-
-<!-- <worksheet>
- 
+</activity>
+<definition xml:id="def-Banzhaf-Power">
+  <title>Banzhaf Power</title>
+  
+  
+  <statement>
+    <p>
+      The <term>Banzhaf Power</term> of a player is the total number of times the player is a <xref ref="def-voting-banzhaf-critical_player" text="custom"> Critical Player</xref>  in a <xref ref="def-voting-banzhaf-winning_coalition" text="custom">Winning Coalition</xref>. 
+    </p>
+  </statement>
+</definition>
+<definition xml:id="def-Banzhaf-Power-Index">
+  <title>Banzhaf Power Index</title>
+  
+  
+  <statement>
+    <p>
+      The <term>Banzhaf Power Index</term> of a player is the total number of times the player is a <xref ref="def-voting-banzhaf-critical_player" text="custom"> Critical Player</xref>  in a <xref ref="def-voting-banzhaf-winning_coalition" text="custom">Winning Coalition</xref> divided by the total number of times any player is <term>critical</term>.
+    </p>
+  </statement>
+</definition>
   <activity>
     <introduction>
       <p>Consider the voting system [19 | 11, 9, 8, 5].</p>
@@ -313,13 +396,13 @@ Since coalitions are just sets of players, the most convenient way to describe c
 
     <task>
       <statement>
-        <p>In each winning coalition above, identify the <defn>critical voters</defn>.</p>
+        <p>In each winning coalition above, identify the <term>critical players</term>.</p>
       </statement>
     </task>
 
     <task>
       <statement>
-        <p>Count the number of times each voter is critical. This is that voter's Banzhaf power.</p>
+        <p>Count the number of times each player is critical. This is that player's Banzhaf power.</p>
       </statement>
     </task>
 
@@ -348,13 +431,13 @@ Since coalitions are just sets of players, the most convenient way to describe c
 
     <task>
       <statement>
-        <p>Add up all the Banzhaf powers; this sum is called the <defn>total Banzhaf power</defn> of the system.</p>
+        <p>Add up all the Banzhaf powers; this sum is called the <term>total Banzhaf power</term> of the system.</p>
       </statement>
     </task>
 
     <task>
       <statement>
-        <p>Divide each voter’s Banzhaf power by the total to get the <defn>Banzhaf power index</defn>.</p>
+        <p>Divide each player’s Banzhaf power by the total to get the <term>Banzhaf power index</term>.</p>
       </statement>
     </task>
 
@@ -383,36 +466,44 @@ Since coalitions are just sets of players, the most convenient way to describe c
   </activity>
 
   <activity>
+    <introduction>
+      <p>
+        Consider the weighted voting system [51 | 32, 22, 12].
+      </p>
+    </introduction>
     <task>
       <statement>
-        <p>Calculate the Banzhaf power index for each voter in [51 | 32, 22, 12].</p>
+        <p>Calculate the Banzhaf power index for each player in the system.</p>
       </statement>
     </task>
   </activity>
 
   <activity>
+    <introduction>
+      <p>
+        Now it is your turn to create your own weighted voting systems and calculate their Power Indexes.
+      </p>
+    </introduction>
     <task>
       <statement>
         <p>Make up a weighted voting system with a dummy, and calculate the Banzhaf index for the dummy.</p>
       </statement>
     </task>
-  </activity>
-
-  <activity>
     <task>
       <statement>
         <p>Make up a weighted voting system with a dictator, and calculate the Banzhaf index for the dictator.</p>
       </statement>
     </task>
-  </activity>
-
-  <activity>
-    <task>
+        <task>
       <statement>
-        <p>Make up a weighted voting system where several voters have veto power. Calculate their Banzhaf indices. What do you notice?</p>
+        <p>Make up a weighted voting system where several players have veto power. Calculate their Banzhaf indices. What do you notice?</p>
       </statement>
     </task>
+    <p>
+      Compare your answers with others. Do they get the same sorts of solutions?
+    </p>
   </activity>
+
 
   <activity>
     <title>United Nations Security Council</title>
@@ -454,4 +545,4 @@ Since coalitions are just sets of players, the most convenient way to describe c
     </task>
   </activity>
 
-</worksheet> -->
+</worksheet>
