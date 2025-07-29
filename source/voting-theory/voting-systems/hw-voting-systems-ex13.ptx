@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <statement>
+        <p>
+            If you use the pairwise comparison method with <m>n</m> candidates, how many head-to-head races are there?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <m>\binom{n}{2} = \frac{n(n-1)}{2}</m>
+        </p>
+    </answer>
+</exercise>

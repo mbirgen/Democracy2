@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <introduction>
+        <p>
+            Consider the following preference table:
+        </p>
+        <tabular top="medium" right="minor" left="minor" bottom="minor">
+            <row>
+                <cell halign="center"></cell>
+                <cell halign="left" colspan="3"># of Ballots</cell>
+                <!-- <cell halign="left"></cell>
+                <cell halign="left"></cell> -->
+            </row>
+            <row>
+                <cell halign="center">Ranking</cell>
+                <cell halign="left">5</cell>
+                <cell halign="left">4</cell>
+                <cell halign="left">3</cell>
+            </row>
+            <row>
+                <cell halign="center">1st choice</cell>
+                <cell halign="left">A</cell>
+                <cell halign="left">C</cell>
+                <cell halign="left">B</cell>
+            </row>
+            <row>
+                <cell halign="center">2nd choice</cell>
+                <cell halign="left">B</cell>
+                <cell halign="left">B</cell>
+                <cell halign="left">C</cell>
+            </row>
+            <row>
+                <cell halign="center">3rd choice</cell>
+                <cell halign="left">C</cell>
+                <cell halign="left">A</cell>
+                <cell halign="left">A</cell>
+            </row>
+        </tabular>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How many votes would be required to win a <em>majority</em> in this election?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>7</m>  votes
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the winner of an election held using each of the following voting schemes. (If it is a tie, say who tied.)
+                <ol marker="(i) ">
+                    <li>
+                        <p>
+                            Find the winner using plurality with elimination. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the winner using pairwise comparison.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ol marker="(i) ">
+                    <li>
+                        <p>
+                            C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            B.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </answer>
+    </task>
+</exercise>

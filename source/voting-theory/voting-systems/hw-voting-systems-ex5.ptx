@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <introduction>
+        <p>
+            The Ashwaubenon Classical League is voting for its new proconsul, 
+            and the candidates are Publius, Quintus, Rufus, and Sextus.
+        </p>
+        <table>
+            <tabular halign="center" top="medium" left="medium" >
+                <row>
+                    <cell right="medium"></cell>
+                    <cell colspan="4" right="medium"><hash/> of Ballots</cell>
+                </row>
+                <row bottom="medium">
+                    <cell right="medium">Ranking </cell>
+                    <cell right="medium">3</cell>
+                    <cell right="medium">10</cell>
+                    <cell right="medium">9</cell>
+                    <cell right="medium">8</cell>
+                </row>
+                <row>
+                    <cell right="medium">1st choice</cell>
+                    <cell right="medium">S</cell>
+                    <cell right="medium">P</cell>
+                    <cell right="medium">Q</cell>
+                    <cell right="medium">R</cell>
+                </row>
+                <row>
+                    <cell right="medium">2nd choice</cell>
+                    <cell right="medium">R</cell>
+                    <cell right="medium">R</cell>
+                    <cell right="medium">S</cell>
+                    <cell right="medium">Q</cell>
+                </row>
+                <row left="medium" >
+                    <cell right="medium">3rd choice</cell>
+                    <cell right="medium">P</cell>
+                    <cell right="medium">S</cell>
+                    <cell right="medium">R</cell>
+                    <cell right="medium">S</cell>
+                </row>
+                <row bottom="medium">
+                    <cell right="medium">4th choice</cell>
+                    <cell right="medium">Q</cell>
+                    <cell right="medium">Q</cell>
+                    <cell right="medium">P</cell>
+                    <cell right="medium">P</cell>
+                </row>
+            </tabular>
+        </table>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Each League member votes for his favorite candidate.  
+                    What percentage of votes did the first-place candidate receive?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                P won with <m>33\%</m> of the vote.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Since none of the candidates received more than <m>50\%</m> of the votes,
+                the League holds a run-off election between the top two candidates.
+                Who will win the run-off election?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Q wins with <m>17</m> votes over P's <m>13</m> votes.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Was anyone eliminated from the run-off who perhaps shouldn’t have been?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                R received nearly the same number of votes as P and Q, especially as compared to S.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Can you think of a better runoff system for the League than a runoff between just the top two candidates?
+                What result does it give?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Eliminate the worst each time. 
+                <me>
+                    \begin{array}{rc} P &amp; 10 \\ Q &amp; 9 \\ R &amp; 8 \\ S &amp; 3\end{array}
+                        \leadsto
+                        \begin{array}{rc} P &amp; 10 \\ Q &amp; 9 \\ R &amp; 11\end{array}
+                        \leadsto
+                        \begin{array}{rc} P &amp; 10 \\ R &amp; 20 
+                    \end{array}\leadsto R
+                </me>
+            </p>
+        </answer>
+    </task>
+</exercise>
