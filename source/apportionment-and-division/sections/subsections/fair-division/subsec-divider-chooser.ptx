@@ -1,4 +1,63 @@
 <subsection xml:id="subsec-divider-chooser">
     <title>Divider Chooser</title>
+    <definition xml:id="def-divider-chooser">
+        <statement>
+            <p>
+                Divider-Chooser: <fillin characters="10" />
+            </p>
+        </statement>
+    </definition>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+             <p>
+                    Sometimes it is easier to work with fair division problems when we put a monetary value on the object being divided because then we can quantify how much each piece is worth to each player. 
+                    Suppose the cost of the pizza which is half red sauce and half white sauce is <m>$10</m>.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                               My friend never remembers that I do not eat red sauce.
+                                Therefore, he divides the pizza so that each half has exactly half red sauce and half garlic sauce.
+                                 How much is each slice of pizza worth to my friend? 
+                                 How much is each slice of pizza worth to me? 
+                            </p>
+                            <image source="/divider-chooser-4(a).png" width="70%">
+                                <shortdescription></shortdescription>
+                            </image>
+
+                        </li>
+                        <li>
+                            <p>
+                                Suppose instead, I slice the pizza.
+                                When I do so, because I value the red sauce part as nothing, I divide the pizza so that one slice is all garlic sauce and the other slice is all red sauce. 
+                                How much is each slice of pizza worth to me? How much of each slice of pizza worth to my friend? If I do the division, why is this not a fair division of the pizza? 
+                                What happens if my friend is the one doing the division? Is it fair?
+                            </p>
+                            <image source="/divider-chooser-4(b).png" width="70%">
+                                <shortdescription></shortdescription>
+                            </image>
+                        </li>
+                        <li>
+                            <p>
+                                Now, divide the pizza in such a way that all the red sauce is in one slice yet both slices are worth five dollars to me.
+                                How much is each slice of the pizza worth to my friend?
+                                If I do the division, why is this a fair division of the pizza? 
+                                What happens if my friend is the one doing the division? Is it fair?
+                            </p>
+                            <image source="/divider-chooser-4(c).png " width="70%">
+                                <shortdescription></shortdescription>
+                            </image>
+                        </li>
+                    </ol>
+                </p>
+        </statement>
+    </activity>
+    
+        
+               
     
 </subsection>
