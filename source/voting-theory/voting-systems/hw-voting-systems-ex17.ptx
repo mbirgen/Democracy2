@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <exercise>
+    <introduction>
+        <p>
+            Consider the following preference table:
+        </p>
+        <tabular top="medium" bottom="minor" right="minor" left="minor">
+            <row>
+                <cell halign="center"></cell>
+                <cell halign="center" colspan="6"># of Ballots</cell>
+                <!-- <cell halign="center"></cell>
+                <cell halign="center"></cell>
+                <cell halign="center"></cell>
+                <cell halign="center"></cell>
+                <cell halign="center"></cell> -->
+            </row>
+            <row>
+                <cell halign="center">Ranking</cell>
+                <cell halign="center">3</cell>
+                <cell halign="center">7</cell>
+                <cell halign="center">4</cell>
+                <cell halign="center">1</cell>
+                <cell halign="center">7</cell>
+                <cell halign="center">8</cell>
+            </row>
+            <row>
+                <cell halign="center">1st choice</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">A</cell>
+            </row>
+            <row>
+                <cell halign="center">2nd choice</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">B</cell>
+            </row>
+            <row>
+                <cell halign="center">3rd choice</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">C</cell>
+            </row>
+        </tabular>
+        <p>
+            Find the winner of an election held using each of the following voting schemes. (If it is a tie, say who tied.)
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Find the winner using plurality with elimination.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\fbox{B.}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Find the winner using pairwise comparison.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\fbox{A.}</m>
+            </p>
+        </answer>
+    </task>
+</exercise>

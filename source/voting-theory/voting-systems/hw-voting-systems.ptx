@@ -3,10 +3,28 @@
 <exercises xml:id="ex-voting" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Voting Systems Exercises</title>
   
-  
+  <!-- Homework 1 -->
+
   <xi:include href="hw-voting-systems-ex1.ptx" />
   <xi:include href="hw-voting-systems-ex2.ptx" />  
   <xi:include href="hw-voting-systems-ex3.ptx" />
   <xi:include href="hw-voting-systems-ex4.ptx" />
   
+  <xi:include href="hw-voting-systems-ex5.ptx" />
+  <xi:include href="hw-voting-systems-ex6.ptx" />
+  <xi:include href="hw-voting-systems-ex7.ptx" />
+  <xi:include href="hw-voting-systems-ex8.ptx" />
+  <xi:include href="hw-voting-systems-ex9.ptx" />
+  <xi:include href="hw-voting-systems-ex10.ptx" />
+  <xi:include href="hw-voting-systems-ex11.ptx" />
+  <xi:include href="hw-voting-systems-ex12.ptx" />
+  <xi:include href="hw-voting-systems-ex13.ptx" />
+
+  <!-- Homework 2 -->
+  <xi:include href="hw-voting-systems-ex14.ptx" />
+  <xi:include href="hw-voting-systems-ex15.ptx" />
+  <xi:include href="hw-voting-systems-ex16.ptx" />
+  <xi:include href="hw-voting-systems-ex17.ptx" />
+  <xi:include href="hw-voting-systems-ex18.ptx" />
+  <xi:include href="hw-voting-systems-ex19.ptx" />
 </exercises>
