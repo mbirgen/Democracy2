@@ -1,4 +1,471 @@
 <subsection xml:id="subsec-lone-divider">
     <title>Lone Divider</title>
-    
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+            Three players (R'moni, Luke, and Hailey) must divide cake among themselves. 
+            Suppose the cake is divided into three slices (<m>s_1</m>, <m>s_2</m>, and <m>s_3</m>). 
+            The values of the entire cake and at each of the three slices in the eyes of each of the players are shown in the following table.
+            </p>
+            <tabular top="medium">
+                <row header="yes" bottom="medium" left="medium">
+                    <cell halign="center" bottom="medium" right="medium"></cell>
+                    <cell halign="center" bottom="medium" right="medium">Whole cake</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>s_1</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>s_2</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>s_3</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="center" bottom="medium" right="medium">R'moni</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$12.00</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$3.00</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$5.00</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$4.00</m></cell>
+                </row>
+                <row left="medium" >
+                    <cell halign="center" bottom="medium" right="medium">Luke</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$15.00</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$4.00</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$4.50</m></cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>$6.50</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="center" right="medium" bottom="medium">Hailey</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>$13.50</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>$4.50</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>$4.50</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>$4.50</m></cell>
+                </row>
+            </tabular>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Indicate which of the three slices are fair shares to R'moni.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Indicate which of the three slices are fair shares to Luke.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Indicate which of the three slices are fair shares to Hailey.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            How do you know which player divided the cake into three equal pieces?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Describe a fair division of the cake.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+    <definition xml:id="def-lone-divider">
+        <statement>
+            <p>
+                Lone Divider: <fillin characters="10" />
+            </p>
+        </statement>
+    </definition>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+               Three partners (David, Carol, and Charlotte) are dividing the plot of land among themselves using the loan divider method. 
+               Using a map, the divider (David) divides the property into three parcels <m>s_1</m>, <m>s_2</m>, and <m>s_3</m>. 
+               When the choosers bid lists are open, Carol's bid list is <m>\{s_1,s_2,s_3\}</m> and Charlotte’s bid list is <m>\{s_1\}</m>. 
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Describe the fair division where David's fair share is <m>s_2</m>
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Describe the fair division where David's fair share is <m>s_3</m>
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                What should you do if both Carol and Charlotte bid <m>\{s_1,s_2\}</m>?
+            </p>
+            <p>
+                <fillin characters="15" />
+            </p>
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                How would you run a fair division if there were four people trying to divide an item?
+            </p>
+            <p>
+                <fillin characters="15" />
+            </p>
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                We have one divider, Demon and three choosers, Chuck, Charlie, and Charles. 
+                Demon divides the cake into four shares, <m>s_1, s_2, s_3</m> and <m>s_4</m>. 
+                The following table shows how each of the players values each of the four shares.
+                Remember that this information is private and not known to the other players.
+            </p>
+            <tabular top="medium">
+                <row header="yes" left="medium" bottom="medium">
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_1</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_2</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_3</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_4</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Demon</cell>
+                    <cell halign="center" right="medium" bottom="medium">25%</cell>
+                    <cell halign="center" right="medium" bottom="medium">25%</cell>
+                    <cell halign="center" right="medium" bottom="medium">25%</cell>
+                    <cell halign="center" right="medium" bottom="medium">25%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Chuck</cell>
+                    <cell halign="center" right="medium" bottom="medium">30%</cell>
+                    <cell halign="center" right="medium" bottom="medium">20%</cell>
+                    <cell halign="center" right="medium" bottom="medium">35%</cell>
+                    <cell halign="center" right="medium" bottom="medium">15%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Charlie</cell>
+                    <cell halign="center" right="medium" bottom="medium">20%</cell>
+                    <cell halign="center" right="medium" bottom="medium">20%</cell>
+                    <cell halign="center" right="medium" bottom="medium">40%</cell>
+                    <cell halign="center" right="medium" bottom="medium">20%</cell>
+                </row>
+                <row bottom="medium" left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Charles</cell>
+                    <cell halign="center" right="medium" bottom="medium">25%</cell>
+                    <cell halign="center" right="medium" bottom="medium">20%</cell>
+                    <cell halign="center" right="medium" bottom="medium">20%</cell>
+                    <cell halign="center" right="medium" bottom="medium">35%</cell>
+                </row>
+            </tabular>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            What are each player's bidding lists?
+                        </p>
+                        <tabular top="medium">
+                            
+                            <row  left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Demon</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row  left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Chuck</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Charlie</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                            <row  left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Charles</cell>
+                                <cell halign="left" bottom="medium" right="medium"></cell>
+                            </row>
+                        </tabular>
+                        <answer>
+                            <p>
+                                
+                            </p>
+                            <tabular top="medium">
+                                <row header="yes" left="medium"> 
+                                    <cell halign="left" bottom="medium" right="medium">Demon</cell>
+                                    <cell halign="left" bottom="medium" right="medium"><m>s_1,s_2, s_3, s_4</m></cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" bottom="medium" right="medium">Chuck</cell> 
+                                    <cell halign="left" bottom="medium" right="medium"><m>s_1, s_3</m></cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left" bottom="medium" right="medium">Charlie</cell>
+                                    <cell halign="left" bottom="medium" right="medium"><m>s_3</m></cell>
+                                </row>
+                                <row  left="medium">
+                                    <cell halign="left" bottom="medium" right="medium">Charles</cell>
+                                    <cell halign="left" bottom="medium" right="medium"><m>s_1, s_4</m></cell>
+                                </row>
+                            </tabular>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            What is the distribution of
+                        </p>
+                        <p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Demon
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Chuck
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Charlie
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Charles
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                <fillin characters="15" />
+            </p>
+
+        </statement>
+    </activity>
+    <exercises xml:id="exercises-homework-18">
+        <title>Homework 18</title>
+        <exercise>
+            <statement>
+                
+                <p>
+                    R'moni buys a chocolate-strawberry-vanilla cake for <m>$14.00</m>. She cuts the cake into six <m>60^o</m> wedges as shown.  R'moni likes chocolate twice as much as vanilla and likes vanilla twice as much as strawberry. 
+                    Calculate the value of each wedge to R'moni.
+                </p>
+                <image source="/Homework 18.png" width="70%">
+                    <shortdescription></shortdescription>
+                </image>
+            </statement>
+        </exercise>  
+        <exercise>
+            <statement>
+                <p>
+                   Three partners (David, Carol, and Charlotte) are dividing the plot of land among themselves using the loan divider method. 
+                    Using a map, the divider (David) divides the property into three parcels <m>s_1</m>, <m>s_2</m>, and <m>s_3</m>. 
+                    When the choosers bid lists are open, Carol's bid list <m>\{s_2,s_3\}</m> and Charlotte's bid list is <m>\{s_1, s_3\}</m>. 
+                </p>
+                 <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                            Describe the fair division where David's fair share is <m>s_1</m>. 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Describe the fair division where David's fair share is <m>s_2</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Describe the fair division where David's fair share is <m>s_3</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>   
+        <exercise>
+            <statement>
+                <p>
+                   Four partners (Luke, Aleah, Zane, and Alisyn) are dividing a piece of land valued at <m>$480,000</m> among themselves using the lone-divider method. 
+                    Using a map, the divider divides the property into four parcels, <m>s_1,s_2,s_3</m> and <m>s_4</m>. 
+                    The following table shows the value of each of the four parcels in the eyes of each partner, but some of the information in the table is missing. 
+                </p>
+                    <tabular top="medium">
+                        <row header="yes" left="medium">
+                            <cell halign="left" bottom="medium" right="medium"></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_1</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_2</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_3</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_4</m></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" right="medium" bottom="medium">Luke</cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$80,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$85,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$195,000</m></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" bottom="medium" right="medium">Aleah</cell>
+                            <cell halign="center" bottom="medium" right="medium"></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$100,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$135,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$120,000</m></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" bottom="medium" right="medium">Zane</cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$120,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$120,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" right="medium" bottom="medium">Alisyn</cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$95,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$100,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$110,000</m></cell>
+                        </row>
+                    </tabular>
+            
+                <answer>
+                    <p>
+                        
+                    </p>
+                    <tabular bottom="medium" top="medium" >
+                        <row header="yes" left="medium">
+                            <cell halign="left" bottom="medium" right="medium"></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_1</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_2</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_3</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>s_4</m></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" right="medium" bottom="medium">Luke</cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$80,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$85,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"><term>$120,000</term></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$195,000</m></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" bottom="medium" right="medium">Aleah</cell>
+                            <cell halign="center" bottom="medium" right="medium"><term>$125,000</term></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$100,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$135,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$120,000</m></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" bottom="medium" right="medium">Zane</cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$120,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><term>$120,000</term></cell>
+                            <cell halign="center" bottom="medium" right="medium"><m>$120,000</m></cell>
+                            <cell halign="center" bottom="medium" right="medium"><term>$120,000</term></cell>
+                        </row>
+                        <row left="medium">
+                            <cell halign="left" right="medium" bottom="medium">Alisyn</cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$95,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$100,000</m></cell>
+                            <cell halign="center" right="medium" bottom="medium"><term>$175,000</term></cell>
+                            <cell halign="center" right="medium" bottom="medium"><m>$110,000</m></cell>
+                        </row>
+                    </tabular>
+                    
+                </answer>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                Who was the divider? Explain.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Describe the choosers' respective bid lists.
+                            </p>
+                            <answer>
+                                <p>
+                                    
+                                </p>
+                                <tabular top="medium">
+                                    <row bottom="medium" left="medium">
+                                        <cell halign="left" right="medium" bottom="medium">Luke</cell>
+                                        <cell halign="center" right="medium" bottom="medium"></cell>
+                                        <cell halign="center" right="medium" bottom="medium"></cell>
+                                        <cell halign="center" right="medium" bottom="medium"><m>s_3</m></cell>
+                                        <cell halign="center" right="medium" bottom="medium"><m>s_4</m></cell>
+                                    </row>
+                                    <row bottom="medium" left="medium">
+                                        <cell halign="left" right="medium" bottom="medium">Aleah</cell>
+                                        <cell halign="center" right="medium" bottom="medium"><m>s_1</m></cell>
+                                        <cell halign="center" right="medium" bottom="medium"></cell>
+                                        <cell halign="center" right="medium" bottom="medium"><m>s_3</m></cell>
+                                        <cell halign="center" right="medium" bottom="medium"><m>s_4</m></cell>
+                                    </row>
+                                    <row left="medium">
+                                        <cell halign="left" bottom="medium" right="medium">Zane</cell>
+                                        <cell halign="center" bottom="medium" right="medium"><m>s_1</m></cell>
+                                        <cell halign="center" bottom="medium" right="medium"><m>s_2</m></cell>
+                                        <cell halign="center" bottom="medium" right="medium"><m>s_3</m></cell>
+                                        <cell halign="center" bottom="medium" right="medium"><m>s_4</m></cell>
+                                    </row>
+                                    <row left="medium">
+                                        <cell halign="left" bottom="medium" right="medium">Alisyn</cell>
+                                        <cell halign="center" bottom="medium" right="medium"></cell>
+                                        <cell halign="center" bottom="medium" right="medium"></cell>
+                                        <cell halign="center" bottom="medium" right="medium"><m>s_3</m></cell>
+                                        <cell halign="center" bottom="medium" right="medium"></cell>
+                                    </row>         
+                                </tabular>
+                            </answer>       
+                        </li>
+                        <li>
+                            <p>
+                                Described a fair division of property.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Explain why your answer above is the only possible fair division of the property.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>       
+                           
+        
+    </exercises>
+
+
+
+
 </subsection>

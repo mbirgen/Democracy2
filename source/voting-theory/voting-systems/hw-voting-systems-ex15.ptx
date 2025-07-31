@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <introduction>
+        <p>
+            Consider the following preference table:
+        </p>
+        <tabular top="medium" bottom="minor" right="minor" left="minor">
+            <row>
+                <cell halign="center"></cell>
+                <cell halign="center" colspan="6"># of Ballots</cell>
+                <!-- <cell halign="center"></cell>
+                <cell halign="center"></cell>
+                <cell halign="center"></cell>
+                <cell halign="center"></cell>
+                <cell halign="center"></cell> -->
+            </row>
+            <row>
+                <cell halign="center">Ranking</cell>
+                <cell halign="center">3</cell>
+                <cell halign="center">4</cell>
+                <cell halign="center">4</cell>
+                <cell halign="center">9</cell>
+                <cell halign="center">3</cell>
+                <cell halign="center">6</cell>
+            </row>
+            <row>
+                <cell halign="center">1st choice</cell>
+                <cell halign="center">D</cell>
+                <cell halign="center">D</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">E</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">A</cell>
+            </row>
+            <row>
+                <cell halign="center">2nd choice</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">E</cell>
+                <cell halign="center">B</cell>
+            </row>
+            <row>
+                <cell halign="center">3rd choice</cell>
+                <cell halign="center">E</cell>
+                <cell halign="center">E</cell>
+                <cell halign="center">E</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">D</cell>
+                <cell halign="center">C</cell>
+            </row>
+            <row>
+                <cell halign="center">4th choice</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">D</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">D</cell>
+            </row>
+            <row>
+                <cell halign="center">5th choice</cell>
+                <cell halign="center">A</cell>
+                <cell halign="center">B</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">D</cell>
+                <cell halign="center">C</cell>
+                <cell halign="center">E</cell>
+            </row>
+        </tabular>
+        <p>
+            This race is being decided by plurality vote.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How many voters are voting in this election?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>3+4+4+9+3+6=\boxed{29.}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                How many votes would be required to win a <em>majority</em> in this election?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\frac{29}{2} = 14.5, \text{ so it takes } \fbox{15 votes.}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Who will win this election? How many votes will that person get? Does that candidate have a majority?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Candidate A wins with <m>10</m> votes, but that is not a majority.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Suppose candidate B drops out of the race. Who will win this election? How many votes will that person get? Does that candidate have a majority?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Now candidate E wins (with <m>12</m> votes, not a majority).
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Suppose all the candidates drop out of the race except A and C. Who will win this election? How many votes will that person get? Does that candidate have a majority?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                A gets <m>13</m> votes and C gets <m>16</m> votes, so C wins with a majority.
+            </p>
+        </answer>
+    </task>
+</exercise>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <statement>
+        <p>
+            If there are <m>n</m> candidates in an election conducted by plurality with elimination, 
+            what is the most rounds of voting that could be required?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <m>n-1</m> or <m>n-2</m>
+        </p>
+    </answer>
+</exercise>

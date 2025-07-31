@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <statement>
+        <p>
+            Pairwise Comparison: <fillin characters="15" />
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Place every candidate head to head against every other candidate.  
+            Give one point for wins and <m>\frac{1}{2}</m> point for ties.  Candidate with most points wins.
+        </p>
+    </answer>
+</exercise>

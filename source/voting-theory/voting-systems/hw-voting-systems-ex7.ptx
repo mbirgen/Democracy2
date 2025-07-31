@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercise>
+    <introduction>
+        <p>
+            The Federal Engineering Board is trying to decide on a flood prevention project
+            for the metro area of Oak Rapids.  The options are
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        A diversion through Marionville
+                    </p>
+                </li>
+    
+                <li>
+                    <p>
+                        A lock-and-dam system along the Oak River
+                    </p>
+                </li>
+    
+                <li>
+                    <p>
+                        Building floodwalls to <m>50'</m> throughout the city
+                    </p>
+                </li>
+    
+                <li>
+                    <p>
+                        Relocating the community to higher ground in, say, Colorado
+                    </p>
+                </li>
+    
+                <li>
+                    <p>
+                        Annual goat sacrifices to Poseidon, God of Waters
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            The eighteen members of the Board have the following preferences:
+        </p>
+        <table>
+            <title></title>
+            <tabular top="medium" bottom="minor" right="minor" left="minor">
+                <row>
+                    <cell halign="center"></cell>
+                    <cell halign="center" colspan="6"># of Ballots</cell>
+                    <!-- <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell> -->
+                </row>
+                <row>
+                    <cell halign="center">Ranking</cell>
+                    <cell halign="center">5</cell>
+                    <cell halign="center">4</cell>
+                    <cell halign="center">2</cell>
+                    <cell halign="center">3</cell>
+                    <cell halign="center">1</cell>
+                    <cell halign="center">3</cell>
+                </row>
+                <row>
+                    <cell halign="center">1st choice</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">G</cell>
+                    <cell halign="center">L</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">C</cell>
+                    <cell halign="center">L</cell>
+                </row>
+                <row>
+                    <cell halign="center">2nd choice</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">G</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                </row>
+                <row>
+                    <cell halign="center">3rd choice</cell>
+                    <cell halign="center">L</cell>
+                    <cell halign="center">L</cell>
+                    <cell halign="center">C</cell>
+                    <cell halign="center">L</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">D</cell>
+                </row>
+                <row>
+                    <cell halign="center">4th choice</cell>
+                    <cell halign="center">G</cell>
+                    <cell halign="center">C</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">G</cell>
+                    <cell halign="center">G</cell>
+                </row>
+                <row>
+                    <cell halign="center">5th choice</cell>
+                    <cell halign="center">C</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">G</cell>
+                    <cell halign="center">C</cell>
+                    <cell halign="center">L</cell>
+                    <cell halign="center">C</cell>
+                </row>
+            </tabular>
+        </table>
+        <p>
+            The Board’s voting rules employ <em>plurality with elimination</em>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What will the vote tallies be after the first round of voting? Is there a winner yet? If not, who should be eliminated?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\begin{array}{rr}D&amp;3\\L&amp;5\\F&amp;5\\C&amp;1\\G&amp;4\end{array}</m>, eliminate C.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What will the vote tallies be after the second round of voting? Is there a winner yet? If not, who should be eliminated?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\begin{array}{rr}D&amp;4\\L&amp;5\\F&amp;5\\G&amp;4\end{array}</m>, eliminate D and G.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What will the vote tallies be after the third round of voting? Is there a winner yet? If not, who should be eliminated?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\begin{array}{rr}L&amp;12\\F&amp;6\end{array}</m>, eliminate F, L wins.
+            </p>
+        </answer>
+    </task>
+</exercise>

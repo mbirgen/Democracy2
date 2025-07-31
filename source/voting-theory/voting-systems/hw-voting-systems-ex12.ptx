@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <exercise>
+    <statement>
+        <p>
+            Our Mathematics in Democracy classes are voting on where to take a math field trip. The options are:
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        The mudflats of Egypt, birthplace of geometry
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Athens, cradle of logical thought
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Moose Lake Credit Union, dispenser of mortgages
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Königsberg, for a walking tour of the bridges
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Papa John’s Pizza, home of yummy garlic sauce
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            The preference table is the following.
+        </p>
+        <table>
+            <title></title>
+            <tabular top="medium" bottom="minor" right="minor" left="minor">
+                <row>
+                    <cell halign="center"></cell>
+                    <cell halign="center" colspan="6"># of Ballots</cell>
+                    <!-- <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell> -->
+                </row>
+                <row>
+                    <cell halign="center">Ranking</cell>
+                    <cell halign="center">5</cell>
+                    <cell halign="center">4</cell>
+                    <cell halign="center">4</cell>
+                    <cell halign="center">3</cell>
+                    <cell halign="center">2</cell>
+                    <cell halign="center">1</cell>
+                </row>
+                <row>
+                    <cell halign="center">1st choice</cell>
+                    <cell halign="center">K</cell>
+                    <cell halign="center">M</cell>
+                    <cell halign="center">M</cell>
+                    <cell halign="center">E</cell>
+                    <cell halign="center">P</cell>
+                    <cell halign="center">K</cell>
+                </row>
+                <row>
+                    <cell halign="center">2nd choice</cell>
+                    <cell halign="center">E</cell>
+                    <cell halign="center">K</cell>
+                    <cell halign="center">E</cell>
+                    <cell halign="center">P</cell>
+                    <cell halign="center">K</cell>
+                    <cell halign="center">A</cell>
+                </row>
+                <row>
+                    <cell halign="center">3rd choice</cell>
+                    <cell halign="center">A</cell>
+                    <cell halign="center">A</cell>
+                    <cell halign="center">A</cell>
+                    <cell halign="center">K</cell>
+                    <cell halign="center">E</cell>
+                    <cell halign="center">M</cell>
+                </row>
+                <row>
+                    <cell halign="center">4th choice</cell>
+                    <cell halign="center">P</cell>
+                    <cell halign="center">E</cell>
+                    <cell halign="center">K</cell>
+                    <cell halign="center">M</cell>
+                    <cell halign="center">M</cell>
+                    <cell halign="center">P</cell>
+                </row>
+                <row>
+                    <cell halign="center">5th choice</cell>
+                    <cell halign="center">M</cell>
+                    <cell halign="center">P</cell>
+                    <cell halign="center">P</cell>
+                    <cell halign="center">A</cell>
+                    <cell halign="center">A</cell>
+                    <cell halign="center">E</cell>
+                </row>
+            </tabular>
+        </table>
+        <p>
+            We decide to use the pairwise comparison method to decide. Where will we go?
+        </p>
+    </statement>
+    <answer>
+            <table>
+                <title></title>
+                <tabular top="medium" right="minor" left="minor" bottom="minor">
+                    <row header="yes">
+                        <cell halign="center"></cell>
+                        <cell halign="center">E</cell>
+                        <cell halign="center">A</cell>
+                        <cell halign="center">M</cell>
+                        <cell halign="center">K</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">P</cell>
+                        <cell halign="center">E</cell>
+                        <cell halign="center">A</cell>
+                        <cell halign="center">P</cell>
+                        <cell halign="center">K</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">K</cell>
+                        <cell halign="center">K</cell>
+                        <cell halign="center">K</cell>
+                        <cell halign="center">K</cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center">M</cell>
+                        <cell halign="center">E</cell>
+                        <cell halign="center">M</cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center">A</cell>
+                        <cell halign="center">E</cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                </tabular>
+            </table>
+            <table>
+                <title></title>
+                <tabular>
+                    <row>
+                        <cell halign="center">E</cell>
+                        <cell halign="right">3</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">A</cell>
+                        <cell halign="right">1</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">M</cell>
+                        <cell halign="right">1</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">K</cell>
+                        <cell halign="right">4</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">P</cell>
+                        <cell halign="right">1</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+                K wins
+            </p>
+    </answer>
+</exercise>
