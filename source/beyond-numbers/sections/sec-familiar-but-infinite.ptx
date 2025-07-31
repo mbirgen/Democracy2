@@ -8,7 +8,7 @@
         of mathematics: “God created the positive integers; all the rest is human creation.”
     </p>
     <p>
-        One, two, three, .. . these are the positive integers. For every positive integer there is a
+        One, two, three, ... these are the positive integers. For every positive integer there is a
         next bigger one. Although we may think of these positive integers successively, we may also
         think of all of them at once, that is, think about the collection of all positive integers. The
         collection (also referred to as the set) of positive integers is so basic and natural to our way
@@ -42,7 +42,7 @@
                     </li>
                     <li>
                         <p>
-                            <term>Naturally even</term>. Let E stand for the set of all even natural numbers (so E =(2, 4, 6,8,....)). 
+                            <term>Naturally even</term>. Let E stand for the set of all even natural numbers (so E = (2, 4, 6, 8, ...)). 
                             Show that the set E and the set of all natural numbers have the same cardinality by describing an explicit one-to-one correspondence between the two sets.
                         </p>
                     </li>
@@ -50,7 +50,7 @@
                         <p>
                             <term>5's take over</term>. Let EIF be the set of all natural numbers ending in 5 (EIF stands for "ends in five"). That is,
                             <me>
-                            EIF = (5,15,25,35,45,55,65,75,...).
+                            EIF = (5, 15, 25, 35, 45, 55, 65, 75,...).
                             </me>
                             Describe a one-to-one correspondence between the set of natural numbers and the set <term>EIF</term>.
                         </p>
@@ -73,7 +73,7 @@
                         <p>
                              <term>Reciprocals</term>. Suppose R is the set defined by
                              <me>
-                                R=1/1,1/2,1/3,1/4,1/5,1/6,....
+                                R=\frac{1}{1}, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, ...
                              </me>
                              Describe the set R in words. Show that it has the same cardinality as the set of natural numbers.
                         </p>
@@ -87,7 +87,7 @@
                             <latex-image>
                                 \begin{tikzpicture}
                                     %Draw a horixatal line 12 units long
-                                    \draw[thin] (0,0) -- (12,0);
+                                    \draw[thick] (0,0) -- (12,0);
                                 \end{tikzpicture}
                             </latex-image>
                         </image>
