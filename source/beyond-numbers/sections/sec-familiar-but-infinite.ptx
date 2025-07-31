@@ -80,11 +80,17 @@
                     </li>
                     <li>
                         <p>
-                            Half way. Suppose you take the line below,
+                            <term>Half way</term>. Suppose you take the line below,
                         </p>
-                        <p>
-                            TODO draw line here
-                        </p>
+                        <image>
+                            <shortdescription>Line</shortdescription>
+                            <latex-image>
+                                \begin{tikzpicture}
+                                    %Draw a horixatal line 12 units long
+                                    \draw[thin] (0,0) -- (12,0);
+                                \end{tikzpicture}
+                            </latex-image>
+                        </image>
                         <p>
                             cut it in half, and then take the left piece and cut it in half, 
                             and then take the leftmost piece and cut it in half, and so on, without ever stopping. 
