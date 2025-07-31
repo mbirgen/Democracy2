@@ -22,12 +22,11 @@
     <!-- <xi:include href="financial-mathematics/ch-financial-mathematics.ptx" />
     <xi:include href="redistricting/ch-redistricting.ptx" />
     <xi:include href="apportionment-and-division/ch-apportionment-and-division.ptx" /> -->
-    <xi:include href="beyond-numbers/ch-beyond-numbers.ptx" />
     <xi:include href="financial-mathematics/ch-financial-mathematics.ptx" />
     <!-- <xi:include href="redistricting/ch-redistricting.ptx" />
     <xi:include href="apportionment-and-division/ch-apportionment-and-division.ptx" />
     <xi:include href="beyond-numbers/ch-beyond-numbers.ptx" /> -->
-
+    <xi:include href="beyond-numbers/ch-beyond-numbers.ptx" />
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
