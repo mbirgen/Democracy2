@@ -19,36 +19,35 @@
         Player One's board:
     </p>
     <tabular top="medium" bottom="medium" right="medium" left="medium">
-        <col width="10%"></col>
         <row>
-            <cell>1</cell><cell><p></p></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>1</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>2</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>2</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>3</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>3</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>4</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>4</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>5</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>5</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>6</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>6</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
     </tabular>
     <p>
@@ -61,9 +60,9 @@
             <cell>6</cell>
         </row>
         <row>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell>
         </row>
     </tabular>
     <p>
@@ -76,34 +75,34 @@
     </p>
     <tabular top="medium" bottom="medium" right="medium" left="medium">
         <row>
-            <cell>1</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>1</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>2</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>2</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>3</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>3</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>4</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>4</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>5</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>5</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>6</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>6</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
     </tabular>
     <p>
@@ -116,9 +115,9 @@
             <cell>6</cell>
         </row>
         <row>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell>
         </row>
     </tabular>
 
@@ -127,34 +126,34 @@
     </p>
     <tabular top="medium" bottom="medium" right="medium" left="medium">
         <row>
-            <cell>1</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>1</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>2</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>2</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>3</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>3</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>4</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>4</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>5</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>5</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
         <row>
-            <cell>6</cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell>6</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
         </row>
     </tabular>
     <p>
@@ -167,9 +166,9 @@
             <cell>6</cell>
         </row>
         <row>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell><cell></cell><cell></cell>
-            <cell></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell>
         </row>
     </tabular>
 </subsection>
