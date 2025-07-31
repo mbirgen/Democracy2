@@ -1,4 +1,291 @@
 <subsection xml:id="subsec-lone-divider-case-2">
     <title>Lone-Divider Case 2</title>
+    <p>
+        There is one complication that can happen with the lone-divider method we have not yet discussed. 
+        It happens when two players want one and only one of the shares. 
+        This can be solved, but requires a little more analysis.
+    </p>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                Dale divides the cake into three pieces <m>s_1</m>, <m>s_2</m>, and <m>s_3</m>.
+                The table below shows the value of the three pieces in the eyes of each of the players.
+            </p>
+            <tabular top="medium">
+                <row header="yes" left="medium">
+                    <cell halign="left" right="medium" bottom="medium"></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_1</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_2</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_3</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Dale</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>33\frac13</m>%</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>33\frac13</m>%</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>33\frac13</m>%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Cindy</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>20</m>%</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>30</m>%</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>50</m>%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" right="medium" bottom="medium">Cher</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>10</m>%</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>20</m>%</cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>70</m>%</cell>
+                </row>
+            </tabular>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Describe the choosers' respective bid lists. 
+                            
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                        <answer>
+                            <p>
+                                Dale <m>\qquad s_1,s_2,s_3</m> 
+                            </p>
+                            <p>
+                                Cindy <m>\qquad  s_2,s_3</m>
+                            </p>
+                            <p>
+                                Cher <m>\qquad  s_3</m>
+                            </p>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            What problem do you run into when you try to divide the cake?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                        <p>
+                            Both Cindy and Cher only want the last piece. What we are going to do is to give Dale one of the pieces that Cindy and Cher do not want, say slice <m>s_2</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            How much are <m>s_1</m> and <m>s_3</m> worth together to Cindy? to Cher?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                        <answer>
+                            <p>
+                               <m>70</m>% and <m>80</m>% 
+                            </p>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            What you are going to do is combine <m>s_1</m> and <m>s_3</m> and give them to Cindy and Cher to perform a Divider-Chooser. 
+                            Explain why this will result in both Cindy and Cher receiving at least <m>33\frac{1}{3}</m>% of the cake in their eyes.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            In fact, what is the minimum percentage Cindy will receive? What is the minimum percentage Cher will receive?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                        <answer>
+                            <p>
+                                <m>35</m>% and <m>40</m>%
+                            </p>
+                        </answer>
+                    </li>
+                </ol>
+            </p>
+
+        </statement>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                
+            </p>
+            <p>
+                Three partners (David, Carol, and Charlotte) are dividing the plot of land among themselves using the loan divider method. Using a map, the divider (David) divides the property into three parcels <m>s_1</m>, <m>s_2</m>, and <m>s_3</m>. 
+                When the choosers bid lists are open, Carol's bid list <m>\{s_1\}</m> and Charlotte's bid list is <m>\{s_1\}</m>.
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Considering that Carol only bid on the first parcel, explain how we know that parcel 2 is worth less than <m>1/3</m> of the value of the land to Carol.
+                            Explain how we know that parcel 3 is worth less than <m>1/3</m> of the value of the land to Carol.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Using the above information, explain how the combination of the first two parcels is worth more than <m>\frac{2}{3}</m> of the value of the land to Carol.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Using similar logic, explain how the combination of the first two parcels is worth more than <m>\frac{2}{3}</m> of the value of the land to Charlotte.
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </activity>
+                        
+   <exercises xml:id="exercises-lone-divider-case-2">
+    <title>Homework 19</title>
+    <exercise>
+        <statement>
+            <p>
+                Six players (D,<m>C_1,C_2,C_3,C_4</m> and <m>C_5</m>) are dividing a cake among themselves using the lone-divider method. D cuts the cake into six slices <m>s_1,s_2,s_3,s_4,s_5,</m> and <m>s_6</m>. When the choosers’ bid lists are opened, <m>C_1</m>’s bid list is <m>\{s_1\}</m>, <m>C_2</m>’s bid list is <m>\{s_2,s_3\}</m>, <m>C_3</m>’s bid list is <m>\{s_4,s_5\}</m>, <m>C_4</m>’s bid list is <m>\{s_4,s_5\}</m>, and <m>C_5</m>’s bid list is <m>\{s_1\}</m>.
+                Describe how to proceed to obtain a fair division of the cake.
+            </p>
+            <p>
+                <fillin characters="15" />
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                We have one divider, Demon and three choosers, Chuck, Charlie, and Charles. 
+                Demon divides the cake into four shares, <m>s_1, s_2, s_3</m> and <m>s_4</m>. 
+                The following table shows how each of the players values each of the four shares. 
+                Remember that this information is private and not known to the other players.
+            </p>
+            <tabular top="medium">
+                <row header="yes" left="medium">
+                    <cell halign="left"></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_1</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_2</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_3</m></cell>
+                    <cell halign="center" right="medium" bottom="medium"><m>s_4</m></cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" bottom="medium" right="medium">Demon</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>25</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>25</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>25</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>25</m>%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" bottom="medium" right="medium">Chuck</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>15</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>20</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>50</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>15</m>%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" bottom="medium" right="medium">Charlie</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>20</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>20</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>40</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>20</m>%</cell>
+                </row>
+                <row left="medium">
+                    <cell halign="left" bottom="medium" right="medium">Charles</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>25</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>20</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>20</m>%</cell>
+                    <cell halign="center" bottom="medium" right="medium"><m>35</m>%</cell>
+                </row>    
+            </tabular>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            What are each player's bidding lists?
+                        </p>
+                        
+                        <tabular top="medium">
+                            <row header="yes" left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Demon</cell>
+                                <cell halign="left" right="medium" bottom="medium"><fillin characters="5" /></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" bottom="medium" right="medium">Chuck</cell>
+                                <cell halign="left" bottom="medium" right="medium"><fillin characters="5" /></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Charlie</cell>
+                                <cell halign="left" right="medium" bottom="medium"><fillin characters="5" /></cell>
+                            </row>
+                            <row left="medium">
+                                <cell halign="left" right="medium" bottom="medium">Charles</cell>
+                                <cell halign="left" right="medium" bottom="medium"><fillin characters="5" /></cell>
+                            </row>
+                        </tabular>
+                        <answer>
+                            <p>
+                                
+                            </p>
+                            <tabular>
+                                <row left="medium">
+                                    <cell halign="left">Demon</cell>
+                                    <cell halign="center"><m>s_1</m></cell>
+                                    <cell halign="center"><m>s_2</m></cell>
+                                    <cell halign="center"><m>s_3</m></cell>
+                                    <cell halign="center"><m>s_4</m></cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left">Chuck</cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"><m>s_3</m></cell>
+                                    <cell halign="center"></cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left">Charlie</cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"><m>s_3</m></cell>
+                                    <cell halign="center"></cell>
+                                </row>
+                                <row left="medium">
+                                    <cell halign="left">Charles</cell>
+                                    <cell halign="center"><m>s_1</m></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"><m>s_4</m></cell>
+                                </row>
+                            </tabular>
+                        </answer>
+                    </li>
+                    <li>
+                        <p>
+                            How are you going to make a fair division?
+                        </p>
+                        <p>
+                            <fillin characters="15" />
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+    
+   </exercises>         
     
 </subsection>
