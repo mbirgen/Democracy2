@@ -48,13 +48,13 @@
         attempt an impossible task in order to understand why it couldn't be done.
     </p>
     <p>
-        We are going to write down a particular real number that we will call M, for "missing." 
-        We will write it in its decimal expansion. Our number M will be between 0 and 1, so its decimal expansion begins with: 0.???...
+        We are going to write down a particular real number that we will call <em>M</em>, for "missing." 
+        We will write it in its decimal expansion. Our number <em>M</em> will be between 0 and 1, so its decimal expansion begins with: 0.???...
         Now, we must decide what the digits “???” will be. Each digit will be one of two possibilities: either 2 or 4. 
-        We will determine the digits of our number M one at a time, successively—so we must be patient. 
-        We now describe the criterion by which we choose each digit of our number M.
+        We will determine the digits of our number <em>M</em> one at a time, successively—so we must be patient. 
+        We now describe the criterion by which we choose each digit of our number <em>M</em>.
     </p>
-    <tabular>
+    <tabular top="minor" bottom="minor">
         <row>
             <cell>1</cell><cell>0.76206658</cell>
         </row>
@@ -83,7 +83,7 @@
     <p>
         
     </p>
-    <tabular>
+    <tabular top="minor" bottom="minor">
         <row>
             <cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell>
         </row>
@@ -92,12 +92,12 @@
         </row>
     </tabular>
     <p>
-         Is M a member of our list of real numbers?
+         Is <em>M</em> a member of our list of real numbers?
     </p>
     <exercise>
         <statement>
             <p>
-                <ol mark="1.">
+                <ol marker ="1.">
                     <li>
                         <p>
                             <term>Don't dodge the connection</term>. Explain the connection between the Dodge Ball game and Cantor's proof that the cardinality of the reals is greater than the cardinality of the natural numbers.
