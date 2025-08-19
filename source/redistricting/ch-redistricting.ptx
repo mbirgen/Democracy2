@@ -1,44 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <chapter xml:id="ch-redistricting" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Redistricting</title>
 
     <introduction>
         <p>
-            According to the Supreme Court, the Constitution requires that population must be equalized across districts. The idea is that if one Iowan lives in a district with 1 million other voters while another Iowan lives in a district with only 200,000 other voters, the second one’s vote is more influential in choosing a member of Congress. Of course, populations shift, growing or shrinking over time.</p>
-
-<p>To prevent those shifts from leaving unbalanced districts, state legislatures must redraw their electoral districts every 10 years, after the Census Bureau releases its new population data. redistricting regularly leads to heated political and legal fights as legislators scramble to gain advantage for their parties.</p>
-
-<p>Once the census has been taken and all the numbers have been added up and the apportionment problem has been solved (up to the Supreme Court if necessary), it is time to divide up each state into districts (one per representative).  Some of the rules of redistricting are:</p>
-<ul>
-    <li>
-        <p>
-            Population must be equalized across districts.
-        </p>
-    </li>
-
-    <li>
-        <p>
-            Each district must be (if possible) physically connected.
-        </p>
-    </li>
-</ul>
-<p> Additionally, each state has more rules that they have decided on.  In most states, the party in power when the census data comes out gets to draw in district lines for Federal Representatives and all state offices that need districts.  This process is done by hand often block by block.  In 2011 the new field of data science made it possible for whoever was in charge to manipulate the lines in such a way that their majority was nearly guaranteed in the near future.
+            
         </p>
     </introduction>
 
-    <!-- <section xml:id="sec-Gerrymandering">
+    <section xml:id="sec-Gerrymandering">
         <title>Gerrymandering</title>
         
         <xi:include href="sections/sec-gerrymandering.ptx" />
-    </section> -->
+    </section>
 
-    <!-- <section xml:id="sec-Fairness">
+    <section xml:id="sec-Fairness">
         <title>Fairness</title>
         
         <xi:include href="sections/sec-fairness.ptx" />
 
-    </section> -->
+    </section>
     
     
 </chapter>
