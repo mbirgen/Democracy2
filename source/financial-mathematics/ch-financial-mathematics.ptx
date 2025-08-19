@@ -16,17 +16,19 @@
         <xi:include href="./simple-interest/hw-financial-simple.ptx"/>
     </section>
 
-     <!-- 
-    <section xml:id="sec-Compound_Interest">
+     
+    <section xml:id="sec-Compound_Interest" >
         <title>Compound Interest</title>
+
+        <xi:include href="sections/sec-compound-interest.ptx"/>
+        <!-- <xi:include href="sections/sec-savings.ptx"/>
+        <xi:include href="sections/sec-loans.ptx"/>
+        <xi:include href="sections/sec-student-loans-and-financing.ptx"/>
+        <xi:include href="sections/sec-study-guide.ptx"/>  -->
         
-        <xi:include href="./compound-interest/wk-financial-compound.ptx"/>
-        <xi:include href="./compound-interest/hw-financial-compound.ptx"/>
-    </section> -->
+        <!-- <xi:include href="./compound-interest/wk-financial-compound.ptx"/>
+        <xi:include href="./compound-interest/hw-financial-compound.ptx"/> -->
+    </section>
 </chapter>
 
-     <!-- <xi:include href="sections/sec-compound-interest.ptx"/>
-     <xi:include href="sections/sec-savings.ptx"/>
-     <xi:include href="sections/sec-loans.ptx"/>
-     <xi:include href="sections/sec-student-loans-and-financing.ptx"/>
-     <xi:include href="sections/sec-study-guide.ptx"/>  -->
+     

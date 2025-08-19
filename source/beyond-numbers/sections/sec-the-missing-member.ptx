@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-the-missing-member">
+    <title>The Missing Member.</title>
+    <p>
+        Around 1872 the German mathematician Georg Cantor shook the foundations of infinity
+        when he showed that the set of real numbers has more elements than the set of natural
+        numbers. In other words, he proved that infinity is not one size but that some infinities are
+        more infinite than others. At first such a notion seems almost nonsensical. Once we have
+        reached infinity, surely we cannot climb farther. But Cantor showed that there were yet
+        higher mountains to scale.
+    </p>
+    <p>
+        To show that the real numbers are more numerous than the natural numbers, Cantor
+        focused intently on what it would mean for the real numbers and the natural numbers to
+        have the same cardinality. It would mean that the real and natural numbers could be put
+        in one-to-one correspondence. Writing down what such a correspondence might look like
+        gives us a visual clue how to demonstrate conclusively that any attempted correspondence
+        between the natural numbers and the real numbers could not include every real; some real
+        is missing-the <em>missing member</em>.
+    </p>
+    <p>
+        To figure out Cantor's argument, we need to recall that each real number can be expressed
+        as an infinitely long decimal expansion. For example,
+        <me>
+             243.476666875446800887672875849345788445321...
+        </me>
+        is a real number. Before moving forward, we must first make an easy observation about real numbers. 
+        Suppose we examine two decimal numbers, but we cover up all the digits in the numbers with ?s except for the digit that is in, say, the fifth place after the decimal point.
+        So, we have a piece of paper with two funny looking numbers on 1't : ??.????2????... and ??.????4????.... 
+        We do not know what these numbers are because we can read only the fifth digit after the decimal point. 
+        But one thing we do know is that these two numbers are different. If they were the same, 
+        we could not have a 2 in the fifth place after the decimal point of one number and a 4 in the fifth place in the other. 
+        Likewise, if we have two numbers and one has a 2 and the other has a 4 in the 87th place after the decimal, then the two numbers must be different. 
+        This observation is not hard to understand, but it is a key to Cantor's reasoning.
+    </p>
+    <p>
+        Cantor proved that there are more real numbers than natural numbers through a clever,
+        yet simple idea. If the set of real numbers and the set of natural numbers had the same
+        cardinality, then there would be a one-to- one correspondence between the set of natural
+        numbers and the set of real numbers. So his idea was to list the natural numbers down the
+        left-hand side of a page, list reals in the right-hand column, and then show how to construct
+        a real number that could not appear on the list. He showed that, once we commit ourselves
+        to a list of reals in the right-hand column, one real number corresponding to each natural
+        number, then we can describe a real decimal number that does not appear anywhere on that
+        infinite list. So, we could not have listed all the real numbers in the right-hand column. Thus,
+        the natural numbers and the real numbers could not be put in one-to-one correspondence,
+        and so there are more real numbers than natural numbers. Cantor's basic strategy was to
+        attempt an impossible task in order to understand why it couldn't be done.
+    </p>
+    <p>
+        We are going to write down a particular real number that we will call <em>M</em>, for "missing." 
+        We will write it in its decimal expansion. Our number <em>M</em> will be between 0 and 1, so its decimal expansion begins with: 0.???...
+        Now, we must decide what the digits “???” will be. Each digit will be one of two possibilities: either 2 or 4. 
+        We will determine the digits of our number <em>M</em> one at a time, successively—so we must be patient. 
+        We now describe the criterion by which we choose each digit of our number <em>M</em>.
+    </p>
+    <tabular top="minor" bottom="minor">
+        <row>
+            <cell>1</cell><cell>0.76206658</cell>
+        </row>
+        <row>
+            <cell>2</cell><cell>0.910928721</cell>
+        </row>
+        <row>
+            <cell>3</cell><cell>0.055783247</cell>
+        </row>
+        <row>
+            <cell>4</cell><cell>0.615411668</cell>
+        </row>
+        <row>
+            <cell>5</cell><cell>0.520502311</cell>
+        </row>
+        <row>
+            <cell>6</cell><cell>0.782172298</cell>
+        </row>
+        <row>
+            <cell>7</cell><cell>0.874793025</cell>
+        </row>
+        <row>
+            <cell></cell><cell>0.334273456</cell>
+        </row>
+    </tabular>
+    <p>
+        
+    </p>
+    <tabular top="minor" bottom="minor">
+        <row>
+            <cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell>
+        </row>
+        <row>
+            <cell>0.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell>
+        </row>
+    </tabular>
+    <p>
+         Is <em>M</em> a member of our list of real numbers?
+    </p>
+    <exercise>
+        <statement>
+            <p>
+                <ol marker ="1.">
+                    <li>
+                        <p>
+                            <term>Don't dodge the connection</term>. Explain the connection between the Dodge Ball game and Cantor's proof that the cardinality of the reals is greater than the cardinality of the natural numbers.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Cantor with 3's and 7's</term>. Rework Cantor's proof from the beginning but this time, 
+                            if the digit under consideration is 3, then make the corresponding digit of M a 7, 
+                            and if the digit is not 3, make the associated digit of M a 3.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Think positive</term>. Prove that the cardinality of the positive real numbers is the same as the cardinality of the negative real numbers. 
+                            (Caution: You need to describe a one-to-one correspondence; however, remember that you cannot list the elements in a table .) 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Diagonalization</term>. Cantor's proof is often referred to as “Cantor's diagonalization argument.” Explain why this is a reasonable name.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>No Vacancy</term>. Recall the Hotel Cardinality, described in the previous section. 
+                            Create a collection of people so that it would be impossible for the (new) night manager to give each of them a room. 
+                            Thus, for a really big group of people, a No Vacancy sign (or actually a Not Enough Room sign) might actually be necessary. 
+                            Explain why it is not possible to give each person from your group a room.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Just guess</term>. This is just a “guessing question.” Do you think there are sets whose cardinality is actually larger than that of the set of real numbers? 
+                            Or do you think the infinity of reals is the largest infinity? Just make a guess and informally explain it.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+</section>

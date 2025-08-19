@@ -1,4 +1,174 @@
 <subsection xml:id="subsec-dodge-ball">
     <title>Dodge Ball</title>
-    
+    <p>
+        Directions for the game:
+    </p>
+    <p>
+        Player One begins by filling in the first horizontal row of her table with X's and O's.
+        Then Player Two places either one X or one O in the first box of his board. The game
+        continues with Player One writing down a run of six X's and/or O's in the second horizontal
+        row of her board, followed by Player Two writing an X or O in the second box of his board.
+        The game continues until all boxes on both boards are filled.
+    </p>
+    <p>
+        Player One wins if any horizontal row she wrote down is identical to the row that Player
+        Two created (Player One matches Player Two). Player Two wins if his row is not one of the
+        six rows made by Player One (Player Two dodges Player One).
+    </p>
+    <p>
+        Player One's board:
+    </p>
+    <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <row>
+            <cell>1</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>2</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>3</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>4</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>5</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>6</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+    </tabular>
+    <p>
+        Player Two's board:
+    </p>
+    <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <row>
+            <cell>1</cell><cell>2</cell><cell>3</cell>
+            <cell>3</cell><cell>4</cell><cell>5</cell>
+            <cell>6</cell>
+        </row>
+        <row>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell>
+        </row>
+    </tabular>
+    <p>
+        Would you rather be Player One or Player Two? Who has the advantage? Why? Can
+        you devise a strategy for either side that will always result in victory? This little game holds
+        within it the key to understanding the sizes of infinity.
+    </p>
+    <p>
+        Player One's board:
+    </p>
+    <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <row>
+            <cell>1</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>2</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>3</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>4</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>5</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>6</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+    </tabular>
+    <p>
+        Player Two's board:
+    </p>
+    <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <row>
+            <cell>1</cell><cell>2</cell><cell>3</cell>
+            <cell>3</cell><cell>4</cell><cell>5</cell>
+            <cell>6</cell>
+        </row>
+        <row>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell>
+        </row>
+    </tabular>
+
+    <p>
+        Player One's board:
+    </p>
+    <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <row>
+            <cell>1</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>2</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>3</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>4</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>5</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+        <row>
+            <cell>6</cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell><cell><fillin characters="2" /></cell>
+            <cell><fillin characters="2" /></cell>
+        </row>
+    </tabular>
+    <p>
+        Player Two's board:
+    </p>
+    <tabular top="medium" bottom="medium" right="medium" left="medium">
+        <row>
+            <cell>1</cell><cell>2</cell><cell>3</cell>
+            <cell>3</cell><cell>4</cell><cell>5</cell>
+            <cell>6</cell>
+        </row>
+        <row>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell><cell><fillin characters="5" /></cell>
+            <cell><fillin characters="5" /></cell>
+        </row>
+    </tabular>
 </subsection>

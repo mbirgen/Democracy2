@@ -1,4 +1,38 @@
 <subsection xml:id="subsec-damsel-in-distress">
-    <title>Damsel in Distress</title>
-    
+    <title>Damsel in Distress.</title>
+    <p>
+        Long ago, knights in shining armor battled dragons and rescued damsels in distress on a daily basis. Although it is not often stressed, many of the surviving stories of chivalry, frequently the rescue involved logical thinking and creative problem-solving, and often the damsel provided the solution. Here then is a typical knightly encounter:
+    </p>
+    <p>
+        Once upon a time, a damsel was captured by a notorious knight and imprisoned in a castle surrounded by square moat. The moat was infested with extraordinarily hungry alligators 25 feet below for whom the prospect of a luncheon damsel brought enormous smiles to their green faces.
+        The moat was 20 feet across, 30 feet deep, and no drawbridge existed because the evil knight took it with him (giving his horse a major hernia).
+    </p>
+    <p>
+        After a time, a good knight and his squire rode up and said, “Hail sweet damsel, for I am here; and thou art there; now what are we going to do?”
+    </p>
+    <p>
+        The knight, though good, was not too bright and the consequently paced back and forth along the moat looking anxiously at the alligators and trying feebly to think of a plan.
+        Then, on the shore the knight found two sturdy beams of wood suitable for walking across but lacking sufficient length. Alas, the moat was 20 feet across, and the beams were each only 19 feet long and 8 inches wide. 
+        He tried to stretch them and tried to think. Neither effort proved successful. He had no nails, rope, screws, saws, superglue, or any other method of joining the two beams to extend their length.
+    </p>
+    <image width="45%">
+        <shortdescription>Princess.</shortdescription>
+        <latex-image>
+        \scalebox{0.5}{ % Adjust this value to control total image size
+        \begin{tikzpicture}
+            % Outer square
+            \draw (0,0) rectangle (5,5);
+
+            % Inner square
+            \draw (0.5,0.5) rectangle (4.5,4.5);
+
+            % Text in the center, scaled down very small
+            \node[scale=0.5] at (2.5,2.5) {Princess};
+        \end{tikzpicture}
+        }
+        </latex-image>
+    </image>
+    <p>
+        What to do? What to do? Fortunately, the damsel, after a suitable time to allow the good knight to attempt to solve the puzzle herself, was able to give the knight a few hints that enabled him to rescue her and carried her home to her own castle. How did the maiden advise the knight to accomplish the rescue?
+    </p>
 </subsection>

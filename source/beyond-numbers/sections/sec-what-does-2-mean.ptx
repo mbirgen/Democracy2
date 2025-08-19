@@ -1,7 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="sec-What-does-2-mean?">
+<section xml:id="sec-What-does-2-mean">
     <title>What does "2" mean?</title>
     <p>
-        
+        Our journey to infinity begins with 2. We are all familiar with 2, and we will use that
+        intuitive intimacy to develop a concept of size that will take us well beyond what we know.
     </p>
+    <p>
+        If we have two apples and two hands, we could put one apple in each hand, and no hand
+        would be un-appled, or any apple un-handed. If we have two socks and we put one sock on
+        each hand, then our socks and our hands correspond exactly. This observation also implies
+        that we can put one apple in each sock and demonstrate that the socks and apples also
+        correspond; however, we do not recommend this last experiment unless the socks are clean.
+    </p>
+    
+        <image>
+            <shortdescription>One-to-one Correspondence:</shortdescription>
+            <latex-image>
+                \begin{tikzpicture}
+                    % Draw single cell (4 cm wide, 1 cm tall)
+                    \draw (0,0) rectangle (10,3);
+
+                    % Text inside the top-left of the cell
+                    \node[anchor=north west, inner sep=2pt] at (0,3) {\textbf{One-to-one Correspondence:}};
+
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    <p>
+        Grappling with infinity requires us to imagine physical scenarios that are not quite pos
+        sible but can be clearly conceived in the mind. Suppose we have a huge barrel full of Volvos
+        and a barrel full of soccer balls, and we want to know if there are more Volvos than soccer
+        balls, more soccer balls than Volvos, or the same number of each. How would we decide?
+    </p>
+    <p>
+        We could take one Volvo from the first barrel and one soccer ball from the second, pair
+        them up and put them aside (probably putting the ball in the car's trunk). Then we could
+        pair up another Volvo from the first barrel with another soccer ball from the second. If we
+        continue pairing in this way and every car has a ball and every ball has a car, we know there
+        are the same number of each.
+    </p>
+    <p>
+        This simple idea is important. We have just described a method for determining when two
+        collections have the same number of objects in them without actually naming that number.
+        Two collections whose objects can be paired together evenly-one from one collection with
+        one from the other collection-are said to have a <term>one-to-one correspondence</term>.
+    </p>
+    <exercise>
+        <statement>
+            <p>
+                <ol marker="1.">
+                    <li>
+                        <p>
+                            <term>The same, but unsure how much</term>. We have used a method of checking whether
+                            two sets of objects have the same number of things by pairing up and removing one
+                            object from each set until we run out. If we run out of objects from both sets at the
+                            same time, then we know that the sets contain the same number of things. Otherwise,
+                            we know that one set is larger than the other. Describe several events whereby we are
+                            able to compare the size of two collections without computing the individual sizes-for
+                            example, people filling all seats in an auditorium.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Don't count on it.</term> The following are two collections of the symbols @ and ©.
+                        </p>
+                        <tabular top="minor" bottom="minor" right="minor" left="minor">
+                            <row>
+                                <cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell>
+                                <cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell>
+                                <cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell>
+                            </row>
+                            <row>
+                                <cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell>
+                                <cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell>
+                                <cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell><cell>©</cell>
+                            </row>
+                        </tabular>
+                        <p>
+                            <term>Are there more @'s than ©'s?</term> Describe how you can quickly answer the question
+                            without counting, and explain the connection with the notion of a one-to-one correspondence.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Here's looking @ ®</term> Below are two collections of the symbols @ and ®.
+                        </p>
+                        <tabular top="minor" bottom="minor" right="minor" left="minor">
+                            <row>
+                                <cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell>
+                                <cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell>
+                                <cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell><cell>@</cell>
+                            </row>
+                            <row>
+                                <cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell>
+                                <cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell>
+                                <cell>®</cell><cell>®</cell><cell>®</cell><cell>®</cell><cell></cell><cell></cell><cell></cell>
+                            </row>
+                        </tabular>
+                        <p>
+                            Are there more @'s than ®'s? Describe how you can quickly answer the question
+                            without actually counting, and explain the connection with the notion of a one-to-one
+                            correspondence.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Hair counts</term>. Do there exist two nonbald people on Earth having the property that
+                            there is a one-to-one correspondence between the collection of hairs on one person's
+                            body and the collection or hairs on the other person's body?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Social Security number</term>. A social security number is a nine-digit number. Suppose
+                            that all nine-digit numbers are allowable social security numbers. Is there a one-to-one
+                            correspondence between allowable social security numbers and U.S. residents? You
+                            may assume that the U.S. population is about 250 million. Explain your answer.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Dorm life</term>. Every student at a certain college is assigned to one and only one dorm
+                            room. Does this imply that there is a one-to- one correspondence between dorm rooms
+                            and students? Explain your answer.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
 </section>
