@@ -7,18 +7,18 @@
         </p>
     </introduction>
 
-    <section xml:id="sec-Gerrymandering">
+   <!-- <section xml:id="sec-Gerrymandering">
         <title>Gerrymandering</title>
         
         <xi:include href="sections/sec-gerrymandering.ptx" />
-    </section>
+    </section>-->
 
-    <section xml:id="sec-Fairness">
+ <!--   <section xml:id="sec-Fairness">
         <title>Fairness</title>
         
         <xi:include href="sections/sec-fairness.ptx" />
 
-    </section>
+    </section>-->
     
     
 </chapter>
