@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="exercises-Compound_Interest">
+    
+    <title>Compound Interest Homework</title>
+
+        <exercise>
+            <p>
+                Logan  deposits <m>$1{,}000</m> in a savings account that pays
+                <m>5\%</m> interest, compounded <em>once per year</em>.
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Complete the three-year ledger below, rounding every 
+                            interest entry to <em>two</em> decimal places (cents).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            After finishing the ledger, verify your final balance with the compound-interest 
+                            formula <me>F = P(1+\frac r n)^{nt}.</me> The 
+                            two answers should agree to the cent if every ledger line is correct.
+                        </p>
+                        <tabular bottom="medium" top="medium" right="medium" left="medium">
+                            <row header="no">
+                                <cell halign="center">Year</cell>
+                                <cell halign="center">Beginning Balance ($)</cell>
+                                <cell halign="center">Interest Earned ($)</cell>
+                                <cell halign="center">Ending Balance ($)</cell>
+                            </row>
+                            <row    >
+                                <cell halign="center">1</cell>
+                                <cell halign="center"></cell>
+                                <cell halign="center"></cell>
+                                <cell halign="center"></cell>
+                            </row>
+                            <row >
+                                <cell halign="center">2</cell>
+                                <cell halign="center"></cell>
+                                <cell halign="center"></cell>
+                                <cell halign="center"></cell>
+                            </row>
+                            <row    >
+                                <cell halign="center">3</cell>
+                                <cell halign="center"></cell>
+                                <cell halign="center"></cell>
+                                <cell halign="center"></cell>
+                            </row>
+                        </tabular>
+                    </li>
+                </ol>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                Given the principal <m>P</m>, the interest rate <m>r</m>, the time <m>t</m>, 
+                and the frequency of compounding, find the future amount <m>F</m>.
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            <m>P={}$15{,}000</m>, <m>r=6.5\%</m> compounded quarterly, <m>t={} 2</m> years
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>P={}$100{,}000</m>, <m>r=3\%</m> compounded monthly, <m>t={} 30</m> years
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>P={}$1{,}500</m>, <m>r=4\%</m> compounded daily, <m>t={}60</m> days
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>P={}$6{,}000</m>, <m>r=5\%</m> compounded monthly, <m>t={} 6</m> months
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                When   was born,  parents deposited <m>$4{,}000</m> into a bank 
+                account bearing <m>5\%</m> interest, compounded monthly. When  reached age <m>18</m>, 
+                how much was in  account?
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                Seventh National Bank is lending $10,000 to   for three years. 
+                The bank compounds interest quarterly. If the bank needs to receive <m>$2{,}300</m> in 
+                interest from  to cover its expenses, what interest rate should it charge?
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                R’moni deposited some money in a bank account earning <m>3\%</m> interest, compounded daily. 
+                Twelve years later, there was <m>$1{,}720</m> in the account. How much money did  originally deposit?
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                How much money must   deposit today in order to have <m>$50{,}000</m> in twenty years, if  account bears
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            <m>8\%</m> interest, compounded annually?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>8\%</m>  interest, compounded quarterly?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>8\%</m> interest, compounded monthly?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>8\%</m> interest, compounded daily?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </exercise>
+        
+    </exercises>

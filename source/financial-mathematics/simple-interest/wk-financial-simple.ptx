@@ -3,5 +3,226 @@
 <worksheet xml:id="ws-Simple_Interest">
     <title>Simple Interest</title>
     
+      <p>In this chapter, we retain the following conventions:</p>
+
+  <table>
+    <title>Times Conventions </title>
+    <tabular>
+      <row><cell>1 year</cell><cell>12 months</cell></row>
+      <row><cell>1 year</cell><cell>52 weeks</cell></row>
+      <row><cell>1 year</cell><cell>365 days</cell></row>
+      <row><cell>1 week</cell><cell>7 days</cell></row>
+      <row><cell>1 day</cell><cell>24 hours</cell></row>
+    </tabular>
+  </table>
+
+  <p>All interest rates will be annual unless specified otherwise.</p>
+
+  <activity>
+    <title> Practice with different Times</title>
+
+    <task>
+        <statement>
+        <p>A student rents a post-hole digger from RentAll to build a fence.
+        The cost is $12.95 per day, and they keep it for three days.
+        How much will they pay?</p>
+      </statement>
+      <solution>
+        <p>$38.85</p>
+      </solution>
+
+    </task>
+    <task><statement>
+        <p>A traveler is visiting Kentucky for work and will need to rent a furnished apartment.
+        The rate is $100 per week. They stay for 18 days. How much will they pay?</p>
+      </statement>
+      <solution>
+        <p>$257.14</p>
+      </solution></task>
     
+    <task workspace=".5in">
+      <statement>
+        <p>A student needs to lease a car for $2500 per year. How much will they pay if they keep the car for:</p>
+        <ol>
+          <li>2 years?</li>
+          <li>5 months?</li>
+          <li>18 days?</li>
+          <li>6 weeks?</li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>$5,000.00</li>
+          <li>$1,041.67</li>
+          <li>$123.29</li>
+          <li>$288.46</li>
+        </ol>
+      </solution>
+    </task>
+        <task workspace=".5in">
+      <statement>
+        <p>Guido “the Organist” Landini is a small-time loan shark in downtown Metropolis.
+        He charges clients 43% simple interest per year. What percentage interest does he charge on a loan of:</p>
+        <ol>
+          <li>3 years?</li>
+          <li>1 month?</li>
+          <li>1 week?</li>
+          <li>3 weeks?</li>
+          <li>4 days?</li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>129%</li>
+          <li>3.58%</li>
+          <li>0.827%</li>
+          <li>2.48%</li>
+          <li>0.471%</li>
+        </ol>
+      </solution>
+    </task>
+
+  </activity>
+
+  <definition xml:id="def-interest">
+    <title>Interest Charged</title>
+    
+    <statement>
+        <p>The interest charged is <idx>interest</idx> the interest rate as a decimal times the time 
+            (in the appropriate units) times the principal.</p>
+    </statement>
+</definition>
+
+  <definition xml:id="def-loan">
+    <title>Loan</title>
+    
+    <statement>
+        <p>A Loan <idx>loan</idx> can be thought of like renting money.
+            You will have the money, but you need to pay a regular fee
+            to keep it. At the end of the length of the loan you will 
+            need to give it back.
+        </p>
+    </statement>
+</definition>
+
+<definition> 
+    <title>Simple Interest Formula</title>
+    
+    
+    <statement>
+        <p><strong>Simple Interest Formula:</strong> <me>F = 
+            P\,(1 + r t)</me> <idx>interest!simple</idx></p>
+      </statement>
+</definition>
+
+<activity>
+     <task workspace=".5in">
+      <statement>
+        <p>Your friend borrows $1800 from you for 3 years, at an annual simple interest rate of 7.0%.
+        How much will they repay you?</p>
+        <table>
+          <tabular>
+            <row><cell><m>F</m></cell><cell>=</cell></row>
+            <row><cell><m>P</m></cell><cell>= $1800</cell></row>
+            <row><cell><m>r</m></cell><cell>= 0.07</cell></row>
+            <row><cell><m>t</m></cell><cell>= 3 years</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>$2178</p>
+      </solution>
+    </task>
+
+    <task workspace=".5in">
+      <statement>
+        <p>Suppose you borrow $1000 for 4 months at an annual simple interest rate of 8.0%.
+        Find the total amount that you will have to repay.</p>
+        <table>
+          <tabular>
+            <row><cell><m>F</m></cell><cell>=</cell></row>
+            <row><cell><m>P</m></cell><cell>=</cell></row>
+            <row><cell><m>r</m></cell><cell>=</cell></row>
+            <row><cell><m>t</m></cell><cell>=</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>$1026.66</p>
+      </solution>
+    </task>
+
+    <task workspace=".5in">
+      <statement>
+        <p>Suppose a friend borrows $1500 for a period of 2 years, at an annual simple interest rate of 6.0%.
+        Find the amount of interest you will earn.</p>
+        <table>
+          <tabular>
+            <row><cell><m>F</m></cell><cell>=</cell></row>
+            <row><cell><m>P</m></cell><cell>=</cell></row>
+            <row><cell><m>r</m></cell><cell>=</cell></row>
+            <row><cell><m>t</m></cell><cell>=</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>$180</p>
+      </solution>
+    </task>
+
+    <task workspace=".5in">
+      <statement>
+        <p>A student took out a loan for 6 months at an annual simple interest rate of 4.0%.
+        The total amount they paid for the loan was $1890.46. How much did they borrow?</p>
+        <table>
+          <tabular>
+            <row><cell><m>F</m></cell><cell>=</cell></row>
+            <row><cell><m>P</m></cell><cell>=</cell></row>
+            <row><cell><m>r</m></cell><cell>=</cell></row>
+            <row><cell><m>t</m></cell><cell>=</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>$1853.39</p>
+      </solution>
+    </task>
+
+    <task workspace=".5in">
+      <statement>
+        <p>Suppose $2000 is borrowed for 7 months, at the end of which $2100 is repaid.
+        Find the annual simple interest rate <m>r</m>.</p>
+        <table>
+          <tabular>
+            <row><cell><m>F</m></cell><cell>=</cell></row>
+            <row><cell><m>P</m></cell><cell>=</cell></row>
+            <row><cell><m>r</m></cell><cell>=</cell></row>
+            <row><cell><m>t</m></cell><cell>=</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>8.57%</p>
+      </solution>
+    </task>
+
+    <task workspace=".5in">
+      <statement>
+        <p>A homeowner got a loan from the city to help repair the sidewalk in front of their home.
+        They borrowed $1800 at an annual simple interest rate of 5%. The amount repaid was $2025.
+        How long was the loan?</p>
+        <table>
+          <tabular>
+            <row><cell><m>F</m></cell><cell>=</cell></row>
+            <row><cell><m>P</m></cell><cell>=</cell></row>
+            <row><cell><m>r</m></cell><cell>=</cell></row>
+            <row><cell><m>t</m></cell><cell>=</cell></row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>2.5 years (30 months)</p>
+      </solution>
+    </task>
+</activity>
 </worksheet>
