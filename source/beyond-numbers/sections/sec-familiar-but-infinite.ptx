@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-familiar-but-infinite">
+    <title>Familiar but Infinite.</title>
+    <p>
+        What is familiar and concrete to one person may be foreign and abstract to another, but as
+        far as numbers are concerned we probably all agree on which are the most familiar. In 1886
+        Leopold Kronecker, a number theorist, made a statement about what is basic in the world
+        of mathematics: “God created the positive integers; all the rest is human creation.”
+    </p>
+    <p>
+        One, two, three, ... these are the positive integers. For every positive integer there is a
+        next bigger one. Although we may think of these positive integers successively, we may also
+        think of all of them at once, that is, think about the collection of all positive integers. The
+        collection (also referred to as the set) of positive integers is so basic and natural to our way
+        of thinking that it is called the set of natural numbers.
+    </p>
+    <p>
+        The set of all natural numbers is our first infinite set, and it has a comfortable feel about
+        it. Among infinite sets, the natural numbers seem the most natural. By examining this and
+        related collections of numbers, we will begin to develop a better and more precise idea of
+        infinity.
+    </p>
+    <exercise>
+        <statement>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Are there as many natural numbers as there are integers starting with 2, 3, 4, .. ., 
+                            we are asking neither more nor less than the question: Is there a one-to-one correspondence 
+                            between the elements of the set
+                        </p>
+                        <p>
+                            <me>
+                                2, 3, 4, ...
+                            </me>
+                            and the set of natural numbers
+                            <me>
+                                1, 2, 3, ...?
+                            </me>                
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Naturally even</term>. Let E stand for the set of all even natural numbers (so E = (2, 4, 6, 8, ...)). 
+                            Show that the set E and the set of all natural numbers have the same cardinality by describing an explicit one-to-one correspondence between the two sets.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>5's take over</term>. Let EIF be the set of all natural numbers ending in 5 (EIF stands for "ends in five"). That is,
+                            <me>
+                            EIF = (5, 15, 25, 35, 45, 55, 65, 75,...).
+                            </me>
+                            Describe a one-to-one correspondence between the set of natural numbers and the set <term>EIF</term>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>6 times as much</term>. If we let N stand for the set of all natural numbers, 
+                            then we write 6N for the set of natural numbers all multiplied by 6 (so 6N = (6,12,18,24,...)). 
+                            Show that the sets N and 6N have the same cardinality by describing an explicit one-to-one correspondence between the two sets.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Any times as much</term>. If we let N stand for the set of all natural numbers, 
+                            and a stand for any particular natural number, then we write aN for the set of natural numbers all multiplied by a. 
+                            Do the sets N and aN have the same cardinality? If so, describe an explicit one-to-one correspondence between the two sets.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                             <term>Reciprocals</term>. Suppose R is the set defined by
+                             <me>
+                                R=\frac{1}{1}, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, ...
+                             </me>
+                             Describe the set R in words. Show that it has the same cardinality as the set of natural numbers.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <term>Half way</term>. Suppose you take the line below,
+                        </p>
+                        <image>
+                            <shortdescription>Line</shortdescription>
+                            <latex-image>
+                                \begin{tikzpicture}
+                                    %Draw a horixatal line 12 units long
+                                    \draw[thick] (0,0) -- (12,0);
+                                \end{tikzpicture}
+                            </latex-image>
+                        </image>
+                        <p>
+                            cut it in half, and then take the left piece and cut it in half, 
+                            and then take the leftmost piece and cut it in half, and so on, without ever stopping. 
+                            How many different pieces of the line would you have? Does the set of all pieces have the same cardinality as the set of all natural numbers? 
+                            Justify your answer.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+</section>
