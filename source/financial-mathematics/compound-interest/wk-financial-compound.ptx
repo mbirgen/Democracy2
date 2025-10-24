@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-Compound_Interest">
+    <title>Compound Interest Worksheet</title>
+    <introduction>
+        <p>
+            
+        </p>
+    </introduction>
+    
+    <subsection xml:id="subsubsec-How-to-Fill-Out-a-Compound-Interest-Balance-Sheet">
+        <title>How to Fill Out a Compound-Interest Balance Sheet</title>
+        <p>
+            The ledger below grows your money <em>one period at a time</em>. 
+            Each row covers a slice of the year--one year, one quarter, one month,
+            or one day- so the <q>time</q> <m>t</m> in the simple-interest formula
+            <me>I = Prt</me> is written as a <alert>fraction of a year</alert>. 
+            Follow the four steps every time you move to a new row. Work with a 
+            basic calculator (or by hand) and round 
+            all money amounts to the nearest cent. Do <em>not</em> jump ahead to 
+            the compound-interest shortcut until your instructor says so.
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <alert>Record the Beginning Balance.</alert> In the first row this is the 
+                        principal you deposited. In every later row copy the <em>Ending Balance</em> from the line just above.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <alert>Compute the Interest for this Period.</alert>
+                         Use <m>I = Prt</m> <em>exactly as written</em>: <me>\text{Interest} \;=\; (\text{Beginning Balance})\;(\text{Interest Rate})\;
+                        (\text{Time in years}).</me> 
+                        
+                        <me>\begin{aligned}
+                        \\
+                        5\% \text{ interest rate, yearly period}      &amp;\Longrightarrow t = 1
+                        &amp;&amp; I = P(0.05)(1)      \\[2pt]
+                        4.8\% \text{ interest rate, quarterly period} &amp;\Longrightarrow t = \tfrac14
+                        &amp;&amp; I = P(0.048)\!\bigl(\tfrac14\bigr) \\[2pt]
+                        3.6\% \text{ interest rate, monthly period}   &amp;\Longrightarrow t = \tfrac1{12}
+                        &amp;&amp; I = P(0.036)\!\bigl(\tfrac1{12}\bigr)
+                        
+                       \end{aligned}</me> Write the dollar value for <m>I</m> in the <q>Interest</q> column.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <alert>Find the Ending Balance.</alert> Add the
+                        interest you just calculated to the beginning balance: <me>\text{Ending Balance}
+                        \;=\;
+                        \text{Beginning Balance} + \text{Interest}.</me> Enter this rounded amount in the right-hand column.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <alert>Carry Forward.</alert> The Ending Balance you just found becomes 
+                        next period’s Beginning Balance. Repeat Steps <m>2-4</m> for as many rows as the problem requires.
+                    </p>
+                </li>
+
+            </ol>
+            </p>
+
+            <activity>
+                <statement>
+                    <p>
+                        Alison deposits <m>\$1{,}000</m> in a savings account that pays <m>5\%</m> interest,
+                        compounded <em>once per year</em>. Fill in the balance sheet for three years.
+                    </p>
+                    <tabular top="medium" bottom="medium" left="medium" right="medium">
+                    <row header="no">
+                        <cell halign="center"    >Year</cell>
+                        <cell halign="center"     >Beginning Balance ($)</cell>
+                        <cell halign="center"      >Interest Earned ($)</cell>
+                        <cell halign="center"       >Ending Balance ($)</cell>
+                    </row>
+                    <row  >
+                        <cell halign="center" >1</cell>
+                        <cell halign="center" >1000</cell>
+                        <cell halign="center">50</cell>
+                        <cell halign="center" >1050</cell>
+                    </row>
+                    <row   >
+                    <cell halign="center">2</cell>
+                    <cell halign="center">1050</cell>
+                    <cell halign="center"></cell>
+                    <cell halign="center"></cell>
+                    </row>
+                    <row  >
+                        <cell halign="center">3</cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                </tabular>
+                </statement>
+                
+                <answer>
+                    <p>
+                       <m>
+                            \begin{align}
+                            \text{F} &amp;= 1000 \left( 1 + \dfrac{0.05}{1} \right)^{1 \times 3}\\
+                            &amp;= \$1{,}157.63
+                            \end{align}
+                        </m> 
+                    </p>
+                </answer>
+            </activity>
+
+            <activity>
+                <statement>
+                     <p>
+                    A certificate of deposit (CD) offers <m>4\%</m> interest compounded <em>quarterly</em>. If  places <m>$500</m> in the CD, 
+                    complete the ledger for the first year (four quarters).
+                </p>
+            
+                <!-- div attr= class="center"-->
+                
+                <tabular top="medium" bottom="medium" left="medium" right="medium">
+                    <row header="no">
+                        <cell halign="center">Quarter</cell>
+                        <cell halign="center">Beginning Balance ($)</cell>
+                        <cell halign="center">Interest Earned ($)</cell>
+                        <cell halign="center">Ending Balance ($)</cell>
+                    </row>
+                    <row  >
+                        <cell halign="center">Q1</cell>
+                        <cell halign="center">500</cell>
+                        <cell halign="center">5</cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row   >
+                        <cell halign="center">Q2</cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row  >
+                        <cell halign="center">Q3</cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row   >
+                        <cell halign="center">Q4</cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                </tabular>
+                
+                </statement>
+                <answer>
+                    <p>
+                        
+                        <m>
+                            \begin{align} 
+                            F &amp;= 500 \left( 1 + \dfrac{0.04}{4} \right)^{4}\\
+                            &amp;= \$520.24
+                            \end{align}
+                       </m>
+                    </p>
+                </answer>
+               
+               
+            </activity>
+            
+            <exercises xml:id="exercises-questions">
+                <exercise>
+                    <p>
+                        A certificate of deposit starts at <m>$2{,}500</m> and earns <m>3.6\%</m> APR, compounded <em>monthly</em>. wants to track the balance for the first six months.
+                    </p>
+                
+                    <!-- div attr= class="center"-->
+                
+                        
+                    <tabular top="medium" bottom="medium" left="medium" right="medium">
+                        <row header="no">
+                            <cell halign="center">Month</cell>
+                            <cell halign="center">Beginning Balance ($)</cell>
+                            <cell halign="center">Interest Earned ($)</cell>
+                            <cell halign="center">Ending Balance ($)</cell>
+                        </row>
+                        <row  >
+                            <cell halign="center">1</cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                        </row>
+                        <row   >
+                            <cell halign="center">2</cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                        </row>
+                        <row  >
+                            <cell halign="center">3</cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                        </row>
+                        <row   >
+                            <cell halign="center">4</cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                        </row>
+                        <row  >
+                            <cell halign="center">5</cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                        </row>
+                        <row   >
+                            <cell halign="center">6</cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                            <cell halign="center"></cell>
+                        </row>
+                    </tabular>
+                </exercise>
+            </exercises>
+
+            
+
+           
+					
+	</subsection>
+
+    
+        
+    <subsection xml:id="subsubsec-Using-the-Compound-Interest-Formula">
+        <title>Using the Compound Interest Formula</title>
+        
+        <p>
+            <alert>Compound interest Formula:</alert>
+            <me>
+                F = P \left(1 + \dfrac{r}{n} \right)^{nt}
+            </me>
+        </p>
+
+        
+     
+        <p>
+            If you have seen this content before, you may be more familiar with a different notation: let <m>i = \dfrac{r}{n}</m>, <m>m = nt</m>, then
+            <me>F = P (1 + i)^{m}</me>. You should feel free to use this notation if you are more comfortable with it, but it will not be given in the examples in the text. 
+        </p>
+       
+<!--
+
+        <p>
+           Notes on nominal interest rate and interest per period: <fillin characters="20" />
+        </p>
+      -->
+
+        <activity>
+            <statement>
+                <p>
+                Suppose <m>$1000 </m> is deposited into an account that yields <m>9\%</m> annually. 
+                Find the amount in the 
+                account at the end of the fifth year if the compounding is done
+            </p>
+            <p>
+                <ol marker="(a)">
+                <li>
+                    
+                    <p>
+                        annually
+                    </p>
+                    
+                    
+                </li>
+
+                <li>
+                    <p>
+                        semiannually
+                    </p>
+                    
+                </li>
+
+                <li>
+                    <p>
+                        quarterly
+                    </p>
+                    
+                </li>
+
+                <li>
+                    <p>
+                        monthly
+                    </p>
+                    
+                </li>
+
+                <li>
+                    <p>
+                        weekly
+                    </p>
+                    
+                </li>
+
+                <li>
+                    <p>
+                        daily
+                    </p>
+                    
+                </li>
+            </ol>
+            </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                <m>\$ 1538.62</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\$ 1552.97</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\$ 1560.51</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\$ 1565.68</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\$ 1567.70</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\$ 1568.23</m>
+                            </p>
+                        </li>
+                        
+                    </ol>
+                </p>
+            </answer>
+            
+        </activity>
+        <activity>
+            <statement>
+               <p>
+                Luke is going to take out a short-term business loan of <m>$5000 </m>
+                for a period of <m>5\%</m> months. The interest rate is <m>4\%</m>, compounded monthly.
+                How much will  have to repay at the end of the loan?
+            </p>
+            <p>
+                <m>
+                    \begin{align}
+                    F &amp;= \\
+                    P &amp;= \\
+                    r &amp;= \\
+                    s &amp;= \\
+                    n &amp;= \\
+                    t &amp;= 
+                    \end{align}
+                </m>
+            </p>
+            
+            </statement>
+            
+            <answer>
+                <p>
+                    <m>\$ 5083.89 </m>
+                </p>
+            </answer>
+        </activity>
+        <activity>
+            <statement>
+                <p>
+                    R’moni deposits <m>$538</m> in a savings account that earns <m>3\% </m> interest,
+                    compounded monthly. How much interest will  earn in four years? (Your answer should be in dollars.)
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <m>\$\,68.50</m>
+                </p>
+            </answer>
+        </activity>
+        <activity>
+            <statement>
+                <p>
+                    In January 18 years ago Bob’s uncle deposited some money into a college savings account for Bob. The account paid <m>5\%</m> interest, compounded quarterly. 
+                    In January there was <m>$28{,}626.40</m> in the account. How much did Bob’s uncle deposit originally?
+               </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <m>\$12{,}299.98</m>
+                </p>
+            </answer>
+            
+        </activity>
+        <activity>
+            <statement>
+                <p>
+                    Alisyn akes out a loan of <m>$10{,}000.00</m> for four years. 
+                    At the end of the four years,  pays back <m>$11{,}273.30</m> to the bank. 
+                    
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                If the interest was compounded monthly, what was the interest rate?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If the loan that  took out was only compounded yearly, 
+                                what was the interest rate?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                Interest rate <m>=3.00\%</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Interest rate <m>=</m><fillin characters="25" />
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </answer>
+        </activity>
+        <activity>
+            <task>
+                <statement>
+                <p>
+                    Moose Jaw State Bank offers an savings account paying <m>5.4\%</m> interest, compounded daily. 
+                    The savings account at Moose Lake Credit Union pays <m>5.41\%</m> interest, compounded quarterly. Finally,
+                    Moose Kneecap Savings &amp; Loan offers a 
+                    CD earning <m>5.5\%</m> interest, compounded annually. You have <m>$4500</m> to invest.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                If you deposit your money in Moose Jaw State Bank, how many dollars of interest will you <em>really</em> earn in 
+                                one year? What percent is that of your deposit?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If you instead deposit your money at Moose Lake Credit Union, how many dollars of 
+                                interest will you have earned one year later? 
+                                What percent is that of your deposit?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Finally, how many dollars of interest would you earn if you put your money into Moose Kneecap Savings &amp; 
+                                Loan for one year? What percent is that of your deposit?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                
+								Which account is best?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </task>
+    </activity>
+        
+
+
+
+       
+        
+       
+
+
+        
+        
+    </subsection>
+    <subsection xml:id="subsec-Annual-Effective-Yield-Formula1">
+        <title>Annual Effective Yield Formula:</title>
+        <definition xml:id="def-Annual-effective">
+            <statement>
+                <p>
+                    Sometimes this is referred to as Annual Percentage Rate (APR):
+                </p>
+                <p>
+                    <m>
+                        \begin{align}
+                            \text{APR} &amp;= \left(1 + \frac{r}{n}\right)^n - 1\\
+                            or \\
+                            \text{APR} &amp;= (1 + i)^n - 1
+                        \end{align}
+                    </m>
+                </p>
+                
+                
+                
+                   
+                
+                
+            </statement>
+        </definition>
+        <activity>
+           <task> <statement>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                If you open a savings account at Muddy Lake Credit Union, you will earn <m>3\%</m> interest 
+                                compounded daily. What is the annual effective yield?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If you open a CD at Muddy Ridge State Bank, you will earn <m>3.2\%</m> interest 
+                                compounded quarterly. What is the annual effective yield?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>3.0453\%</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>3.2386\%</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </answer></task>
+<!--        </activity>
+        <activity>-->
+           <task> 
+            <statement>
+                <p>
+                    Your financial adviser offers you two investment funds. 
+                    If you invest in the AmerEquiShare Fund, you can expect a return of <m>9\%</m> 
+                    compounded semiannually (twice a year). If you invest in the PreferredSource
+                    Fund, you can expect a return of <m>8.8\%</m> compounded monthly.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                What is the annual effective yield for the AmerEquiShare Fund?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is the annual effective yield for the PreferredSource Fund?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Which investment offers the higher return?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                AmerEquiShare Fund <m>=9.20\%</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                PreferredSource Fund <m>=9.16\%</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                investment <m>=</m> <fillin characters="15" />
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </answer></task>
+        </activity>
+        
+    </subsection>
+
+
+</worksheet>

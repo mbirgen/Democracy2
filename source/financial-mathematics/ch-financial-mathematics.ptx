@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-financial-mathematics" xmlns:xi="http://www.w3.org/2001/XInclude">
+
     <title>Financial Mathematics</title>
     <introduction>
         <p>
@@ -17,18 +18,37 @@
     </section>
 
      
-    <section xml:id="sec-Compound_Interest" >
+    <section xml:id="sec-Compound_Interest">
         <title>Compound Interest</title>
 
-        <xi:include href="sections/sec-compound-interest.ptx"/>
-        <!-- <xi:include href="sections/sec-savings.ptx"/>
-        <xi:include href="sections/sec-loans.ptx"/>
-        <xi:include href="sections/sec-student-loans-and-financing.ptx"/>
-        <xi:include href="sections/sec-study-guide.ptx"/>  -->
-        
-        <!-- <xi:include href="./compound-interest/wk-financial-compound.ptx"/>
-        <xi:include href="./compound-interest/hw-financial-compound.ptx"/> -->
+        <xi:include href="./compound-interest/wk-financial-compound.ptx"/>
+        <xi:include href="./compound-interest/hw-financial-compound.ptx"/>     
     </section>
+
+    <section xml:id="sec-Savings">
+        <title>Savings</title>
+        
+<!--    <xi:include href="./savings/wk-financial-savings.ptx"/>
+        <xi:include href="./savings/hw-financial-savings.ptx"/>-->
+    </section>
+
+    <section xml:id="sec-Loans">
+        <title>Loans</title>
+        
+<!--    <xi:include href="./loans/wk-financial-loans.ptx"/>
+        <xi:include href="./loans/hw-financial-loans.ptx"/>-->
+    </section>
+
+    <section xml:id="sec-student-loans-and-financing">
+        <title>Student Loans and Financing</title>
+        
+<!--    <xi:include href="./student-loans-and-financing/wk-financial-student-loans-and-financing.ptx"/>
+        <xi:include href="./student-loans-and-financing/hw-financial-student-loans-and-financing.ptx"/>-->
+    </section>
+
+
+  <!--      <xi:include href="sections/sec-study-guide.ptx"/>  -->
+    
 </chapter>
 
      
