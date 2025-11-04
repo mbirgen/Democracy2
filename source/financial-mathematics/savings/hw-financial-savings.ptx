@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="exercises-Savings_Homework">
+    <title>Savings Homework</title>
+
+
+    <exercise>
+            <introduction>
+        <p>
+            Find the future value of each of the following ordinary annuities.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+                    <p>
+             Deposits of $1200 made at the end of each year for 10 years, where 7% 
+        annual interest is compounded annually.
+        </p>
+        </statement>
+        <answer>
+        <p>
+            <m>\$1200\dfrac{(1+\frac{.07}{1})^{10}-1}{\frac{.07}{1}}= \boxed{\$16579.74.}</m>
+        </p>
+    </answer>
+    </task>
+    <task>
+        <statement>
+                    <p>
+            Deposits of $300 made at the end of each quarter for 10 years, where 8% annual interest is 
+            compounded quarterly.
+        </p>
+        </statement>
+            <answer>
+        <p>
+            <m>\$300\dfrac{(1+\frac{.08}{4})^{4\cdot 10}-1}{\frac{.08}{4}}= \boxed{\$18{,}120.59.}</m>
+        </p>
+    </answer>
+
+    </task>
+    <task>
+        <statement>
+               <p>
+           Deposits of $51 made at the end of each month for 20 years, where 6%
+        annual interest is compounded monthly. 
+        </p>
+        </statement>
+            
+        
+    <answer>
+        <p>
+             <m>\$51\dfrac{(1+\frac{.06}{12})^{20\cdot 12}-1}{\frac{.06}{12}}= \boxed{\$23564.09.}</m>
+        </p>
+    </answer>
+
+    </task>
+    <task>
+        <statement>
+        <p>
+             Deposits of $100 made at the end of each week for 2 years, where 8%
+        annual interest is compounded weekly.
+        </p>
+        </statement>
+    </task>
+    <answer>
+        <p>
+            <m>\$100\dfrac{(1+\frac{.08}{52})^{52\cdot 2}-1}{\frac{.08}{52}}= \boxed{\$11268.83.}</m>
+        </p>
+    </answer>
+    </exercise>
+    
+    <exercise>
+        <introduction>
+            <p>
+            Brandee deposits $50 each week in a bank CD earning 4% interest compounded weekly.
+She does this for 14 years.
+        </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+            How much is in  bank account at the end of those 14 years?
+        </p>
+            </statement>
+            <answer>
+        <p>
+            <m>\$50\dfrac{(1+\frac{0.04}{52})^{52\cdot 14}-1}{\frac{0.04}{52}}= \boxed{\$48{,}769.22}</m>  $48,769.22
+        </p>
+        </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+            How many dollars of interest did  earn, in total, over those 14 years? 
+        </p>
+            </statement>
+            <answer>
+            <p>
+            She deposited a total of <m>\$50 \cdot 52\cdot 14 = \$36{,}400</m>, so the interest  
+            earned is <m>\$48{,}769.22 - \$36{,}400 = \boxed{\$12{,}369.22.}</m>
+            </p>
+        </answer>
+
+        </task>
+        
+    </exercise>
+    <exercise>
+        <p>
+           Isaac is graduating from Wartburg College and wants to have $20,000 ready for a down payment 
+           on a house in 5 years.
+        </p>
+        <p>
+            If  investments pay 6% interest, compounded monthly, how much money should  invest every month in 
+order to achieve  goal? 
+        </p>
+        <answer>
+            <p>
+We want <m>\$20{,}000 = P \dfrac{(1+\frac{0.06}{12})^{12\cdot 5}-1}{\frac{0.06}{12}}</m>,  
+so <m>P = \$20{,}000 \div \dfrac{(1+\frac{0.06}{12})^{12\cdot 5}-1}{\frac{0.06}{12}}= \boxed{\$286.66.}</m>                
+            </p>
+        </answer>
+    </exercise>
+    <exercise>
+       <introduction>
+         <p>
+            Karen said would set up an ordinary annuity for  newborn niece Gloria and deposit 
+            $100 each month, with the last payment to occur on Gloria's 18th birthday.
+            The payments would earn 6% annual interest, compounded monthly.
+            
+        </p>
+       </introduction>
+       <task>
+        <statement>
+            <p>
+                How much will Gloria have on her 18th birthday?
+            </p>
+        </statement>
+                <answer>
+            <p>
+                <m>\$100\dfrac{(1+\frac{.06}{12})^{12\cdot 18}-1}{\frac{.06}{12}}= 
+                \boxed{\$38735.32.}</m>
+        </p>
+        </answer>
+       </task>
+       <task>
+        <statement>
+            <p>
+            Karen's spouse Mark suggested they should just deposit a lump sum of money 
+            <em>now</em> into a bank account (earning 6% annual interest, compounded monthly), 
+            so that it would grow to the same amount by Gloria's 18th birthday as you found above.
+            If they go with Mark's plan, how much money must the loving relatives deposit in the 
+            account now?
+        </p>
+        </statement>
+        <answer>
+            <p>
+                We want to find <m>P</m> such that <m>\$38735.32=P\left(1+\frac{.06}{12}\right)^{12\cdot 18}</m>;
+                 solving, we find they would need to deposit $13,189.79 today.
+            </p>
+        </answer>
+       </task>
+
+    </exercise>
+    <exercise>
+        <p>
+            Jim decides to pay $300 at the end of each month into an ordinary annuity that pays 8%
+            annual interest, compounded monthly, for five years.
+            Jim decides to calculate the future value of this annuity at the end of five years, but Jim
+             makes a mistake in his calculations.
+        </p>
+        <p>
+            <me>
+                FV = P  ( (1+i)^{m}-1*i)
+            </me>
+            <me>
+                FV = 300  *( (1+.08)^{60}-1.08)
+            </me>
+            <me>
+                FV = 300 * 1253.213296 = $375,963.99
+            </me>
+        </p>
+        <p>
+            What was  mistake? Is  answer too big or too small?
+        </p>
+    <answer>
+        <p>
+            They used <m>i=.08</m>, which is wrong.
+            The <em>annual</em> interest rate is <m>.08</m>, but the interest rate 
+            <em>per month</em> is only <m>.08/12\approx .0066667</m>.
+The answer is too big.
+        </p>
+    </answer>
+    </exercise>
+    </exercises>

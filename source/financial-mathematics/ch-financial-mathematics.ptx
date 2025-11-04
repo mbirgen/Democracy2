@@ -22,14 +22,14 @@
         <title>Compound Interest</title>
 
         <xi:include href="./compound-interest/wk-financial-compound.ptx"/>
-        <xi:include href="./compound-interest/hw-financial-compound.ptx"/>     
+        <xi:include href="./compound-interest/hw-financial-compound.ptx"/>    
     </section>
 
     <section xml:id="sec-Savings">
         <title>Savings</title>
         
-<!--    <xi:include href="./savings/wk-financial-savings.ptx"/>
-        <xi:include href="./savings/hw-financial-savings.ptx"/>-->
+        <xi:include href="./savings/wk-financial-savings.ptx"/>
+        <xi:include href="./savings/hw-financial-savings.ptx"/>
     </section>
 
     <section xml:id="sec-Loans">
