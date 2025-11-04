@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws-Savings_Annuity">
+    <title>Savings Worksheet</title>
+    <introduction>
+        <p>
+            
+        </p>
+    </introduction>
+
+
+    <section xml:id="subsec-savings_introduction">
+        <title>Savings Introduction</title>
+        <ol>
+        <li>
+            <p>
+                Deriving a very useful formula:  The basic idea for a future value annuity is that every 
+                month we receive compound interest on our new payment along with all of our previous payments.
+        
+                Therefore at each time when we are going to compound the interest, each payment has been compounded an additional time.
+            </p>
+
+            <p>
+                Example: Payment is paid four times a year and the interest is compounded quarterly 
+                for an annual interest rate of <m>r</m> for one year:
+                <ul>
+                    <li>
+                        <p>
+                            Start: 0
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            After quarter one: <m>R</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            After quarter two the original <m>R</m> is compounded once now and we pay an additional <m>R</m>
+                            <me>
+                                R (1 +\frac{r}{4}) + R
+                            </me>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            After quarter three the original <m>R</m> has been compounded twice, the second <m>R</m> has been compounded once, and we pay an additional <m>R</m>
+                            <me>
+                                R(1+\frac{r}{4})^{2} + R (1 +\frac{r}{4}) + R
+                            </me>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            After quarter four (one year) the original <m>R</m> has been compounded three times, the second <m>R</m> has been compounded twice, the third <m>R</m> has been compounded once, and we pay an additional <m>R</m>
+                            <me>
+                                R(1+\frac{r}{4})^{3}+ R(1+\frac{r}{4})^{2} + R (1 +\frac{r}{4}) + R
+                            </me>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Thus you can see the pattern that the original payment will always be compounded one less that compounding period, which in general will be <m>nt</m> for <m>n</m> compounds per year and <m>t</m> total years
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                The general formula for Future Value <m>F</m> is
+                            <me>
+                F=R(1 +\frac{r}{n})^{nt-1}+R(1 +\frac{r}{n})^{nt-2}+\cdots +R(1 +\frac{r}{n})^{1}+R
+            </me>
+            </p>
+            <p>
+            <me>
+                F=R\frac{(1+\frac{r}{n})^{nt}-1}{\frac{r}{n}}                
+            </me>
+            </p>
+
+        </li>
+
+        <li>
+            <p>
+                An annuity is a series of equal payments made at regular intervals.
+                For an ordinary annuity, the payments are made at the <em>end</em> of the interval.
+                annuity!ordinary If the payments are made at the <em>beginning</em> of the interval, 
+                it is called an annuity due.
+                We will not be working with this type of annuity in this class.annuity!due
+            </p>
+
+            <p>
+                A good way to think about these is as a savings account.
+                You are putting some money, <m>R</m>, into the account every compounding period in order 
+                to save up for something in the future.
+            </p>
+        </li>
+    </ol>
+
+    <definition xml:id="def-future-annuity">
+        <title>Future Value of an Annuity:</title>
+        
+        
+        <statement>
+            <p>
+                <me>
+                    F=R\left(\frac{(1+\frac{r}{n})^{nt}-1}{\frac{r}{n}}\right)
+                </me>
+                <em>If we let <m>i=\frac{r}{n}</m> and <m>m=nt</m>, we can shorten the formula to:</em>
+                <me>
+                    F=R\left(\frac{(1+i)^{m}-1}{i}\right)
+                </me>
+            </p>
+        </statement>
+    </definition>
+
+       <activity>
+        <introduction>
+            <p>
+                Susan starts saving for a down payment on a house by depositing $100 each month into an 
+                annuity that pays 4.8% interest, compounded monthly.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+            <p>
+                How large a down payment can Susan afford in 3 years?
+            </p>
+            </statement>
+                  <answer>
+            <p>
+                $3863.81
+            </p>
+        </answer>
+        </task>
+  
+
+
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                Hoopla Publishing Company knows its printing press is nearing the end of its life.
+                They will need to purchase a new printing press for $65,000 in 10 years.
+                What payment should Hoopla make every year into a sinking fund earning 7%
+                interest, compounded annually, in order to have the $65,000 in ten years? 
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $4,704.54
+            </p>
+        </answer>
+    </activity>
+    <activity>
+        <introduction>                    
+        <p>
+            Suppose you wanted to compute how much money would be in an account earning 5%
+            interest compounded monthly if you deposited $100/month for 25 years.        
+        </p>
+        </introduction>
+
+        
+        <task>
+            <statement>
+            <p>
+                How much would you have if you used <m>\displaystyle \frac{0.05}{12}\simeq 0.004</m>?
+            </p>
+            </statement>
+        <answer>
+            <p>
+                $57,804.48
+            </p>
+        </answer>
+        </task>
+
+        <task>
+             <statement>
+                <p>
+                    How much would you have if you used <m>\displaystyle \frac{0.05}{12}\simeq 0.0041</m>?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    $59,907.89
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+            <p>
+                How much would you have if you used <m>\displaystyle \frac{0.05}{12}\simeq 0.00417</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $59,586.55
+            </p>
+        </answer>
+        </task>
+        <task>
+            <statement>
+            <p>
+                How much would you have if you used <m>\displaystyle \frac{0.05}{12}\simeq 0.004167</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $59,554.53
+            </p>
+        </answer>
+        </task>
+        
+    </activity>
+
+    <activity>
+        <introduction>
+            <p>
+Suppose you wanted to save up $60,000 over 20 years by depositing an amount of money in the 
+bank account earning 5% interest compounded monthly.                
+            </p>
+        </introduction>
+        <task>
+            <statement>
+           <p>
+                 How much would you have to save every month if you used 
+                 <m>\displaystyle \frac{0.05}{12}\simeq 0.004</m>?
+            </p>
+ 
+            </statement>
+                    <answer>
+            <p>
+                $149.37
+            </p>
+        </answer>
+        </task>
+
+        <task>
+        <statement>
+            <p>
+                How much would you have to save every month if you used 
+                <m>\displaystyle \frac{0.05}{12}\simeq 0.0041</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $145.30
+            </p>
+        </answer>
+        </task>
+        <task>
+            <statement>
+            <p>
+                 How much would you have to save every month if you used 
+                 <m>\displaystyle \frac{0.05}{12}\simeq 0.00417</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $145.91
+            </p>
+        </answer>
+        </task>
+
+        <task>
+            <statement>
+            <p>
+                How much would you have to save every month if you used 
+                <m>\displaystyle \frac{0.05}{12}\simeq 0.004167</m>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $145.97
+            </p>
+        </answer>
+        </task>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                You are going to graduate, get a job, and want to buy a house in two years. 
+                How much should you deposit each month into an account bearing 7% interest, 
+                compounded monthly, in order to have $15,000 for a down payment in two years?
+  
+            </p>
+        </statement>
+        <answer>
+            <p>
+                $584.07
+            </p>
+        </answer>
+    </activity>
+    <activity>
+        <statement>
+            <p>
+                How much money will you have when you retire if you save $20 each month from graduation 
+                (age 22) until retirement (age 63), if you can average 6.6%annual interest compounded monthly?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                 41 years, $50395.28
+            </p>
+        </answer>
+    </activity>
+
+</section>
+</worksheet>
